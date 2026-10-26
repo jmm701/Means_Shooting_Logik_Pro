@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="fill" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableLayout android:padding="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2">
+            <TableRow>
+                <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+            </TableRow>
+            <TableRow android:paddingBottom="15.0dip">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:id="@id/LabelDopInfo" android:layout_span="3" android:text="@string/dop_info_label" android:singleLine="true" style="@style/bigTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/LabelCorrectedVelocity" android:paddingRight="@dimen/right_padding" android:layout_span="2" android:text="@string/corrected_velocity_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/CorrectedVelocity" android:text="@string/zero_text" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/LabelMuzzleEnergy" android:paddingRight="@dimen/right_padding" android:layout_span="2" android:text="@string/muzzle_energy_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/MuzzleEnergy" android:text="@string/zero_text" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:id="@id/LabelRetVelocity" android:paddingRight="@dimen/right_padding" android:layout_span="2" android:text="@string/ret_velocity_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/RetVelocity" android:text="@string/zero_text" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/LabelRetainedEnergy" android:paddingRight="@dimen/right_padding" android:layout_span="2" android:text="@string/retained_energy_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/RetainedEnergy" android:text="@string/zero_text" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:id="@id/LabelSoundSpeed" android:paddingRight="@dimen/right_padding" android:layout_span="2" android:text="@string/sound_speed_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/SoundSpeed" android:text="@string/zero_text" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:paddingRight="@dimen/right_padding" android:layout_width="fill_parent" android:layout_span="2" android:text="@string/time_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/Time" android:text="@string/zero_text" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/LabelClickPrice" android:paddingRight="@dimen/right_padding" android:layout_width="fill_parent" android:layout_span="2" android:text="@string/current_click_price_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ClickPrice" android:text="@string/zero_text" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/LabelTrajectoryHeight" android:paddingRight="@dimen/right_padding" android:layout_width="fill_parent" android:layout_span="2" android:text="@string/max_height" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/TrajectoryHeight" android:text="@string/zero_text" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/LabelTrajectoryHeightDistance" android:paddingRight="@dimen/right_padding" android:layout_width="fill_parent" android:layout_span="2" android:text="@string/max_height_distance" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/TrajectoryHeightDistance" android:text="@string/zero_text" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:paddingRight="@dimen/right_padding" android:text="@string/vert_factor_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/VertFactor" android:text="@string/zero_text" style="@style/regularTextStyle" />
+                <Spinner android:layout_gravity="center_vertical" android:id="@id/spinnerUnitsVertFactor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:paddingRight="@dimen/right_padding" android:text="@string/spin_drift_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/SpinDrift" android:text="@string/zero_text" style="@style/regularTextStyle" />
+                <Spinner android:layout_gravity="center_vertical" android:id="@id/spinnerUnitsSpinDrift" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="25.0dip">
+                <TextView android:textStyle="bold" android:textColor="#fffef502" android:gravity="center_horizontal" android:layout_span="3" android:text="@string/coriolis_effect_label" android:singleLine="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:paddingRight="@dimen/right_padding" android:text="@string/vert_deflection_coriolis_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/VertCoriolis" android:text="@string/zero_text" style="@style/regularTextStyle" />
+                <Spinner android:layout_gravity="center_vertical" android:id="@id/spinnerCoriolisVertFactor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:paddingRight="@dimen/right_padding" android:text="@string/hor_deflection_coriolis_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/HorCoriolis" android:text="@string/zero_text" style="@style/regularTextStyle" />
+                <Spinner android:id="@id/spinnerCoriolisHorFactor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/buttonCoriolis" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="3" android:text="@string/set_coriolis_values_label" style="@style/regularTextStyle" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:paddingBottom="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonOK" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/close_label" style="@style/regularTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

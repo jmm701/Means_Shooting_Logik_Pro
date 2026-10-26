@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clicks_array">
+        <item>MOA</item>
+        <item>MRAD (MIL)</item>
+        <item>инч дар 100 ярд (SMOA)</item>
+        <item>см дар 100 метр</item>
+    </string-array>
+    <string-array name="pressure_array">
+        <item>мм.рт.ст.</item>
+        <item>hPa (mb)</item>
+        <item>PSI</item>
+    </string-array>
+    <string-array name="speed_units_array">
+        <item>м/с</item>
+        <item>км/ч</item>
+        <item>MOA/с</item>
+        <item>MRAD/с</item>
+    </string-array>
+    <string-array name="speed_units_array_imp">
+        <item>ф/с</item>
+        <item>миль/соат</item>
+        <item>MOA/с</item>
+        <item>MRAD/с</item>
+    </string-array>
+    <string-array name="units_array">
+        <item>MOA</item>
+        <item>MRAD</item>
+        <item>Кликҳо</item>
+        <item>см</item>
+    </string-array>
+    <string-array name="units_array_imp">
+        <item>MOA</item>
+        <item>MRAD</item>
+        <item>Кликҳо</item>
+        <item>инч</item>
+    </string-array>
+</resources>

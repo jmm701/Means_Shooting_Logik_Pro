@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clicks_array">
+        <item>MOA</item>
+        <item>MRAD</item>
+        <item>在100码处英寸</item>
+        <item>厘米在100米</item>
+    </string-array>
+    <string-array name="pressure_array">
+        <item>毫米汞柱 (mmHg_</item>
+        <item>hPa (mb)</item>
+        <item>PSI</item>
+    </string-array>
+    <string-array name="speed_units_array">
+        <item>米/秒</item>
+        <item>公里/小时</item>
+        <item>MOA/秒</item>
+        <item>MRAD/秒</item>
+    </string-array>
+    <string-array name="speed_units_array_imp">
+        <item>英尺/秒</item>
+        <item>英里/小时</item>
+        <item>MOA/秒</item>
+        <item>MRAD/秒</item>
+    </string-array>
+    <string-array name="units_array">
+        <item>MOA</item>
+        <item>MRAD</item>
+        <item>点击</item>
+        <item>公分</item>
+    </string-array>
+    <string-array name="units_array_imp">
+        <item>MOA</item>
+        <item>MRAD</item>
+        <item>点击</item>
+        <item>英寸</item>
+    </string-array>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_text" />
+    <ImageButton android:layout_gravity="center_horizontal" android:id="@id/ButtonLogo" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" />
+    <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_text" />
+    <TextView android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/LabelAppName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/appname_label" />
+    <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_text" />
+    <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/author_label" />
+    <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_text" />
+    <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_text" />
+    <Button android:textStyle="bold" android:id="@id/ButtonEmail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/send_email_to_author" />
+    <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_text" />
+    <Button android:textStyle="bold" android:id="@id/ButtonReview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rate_app" />
+    <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_text" />
+    <Button android:textStyle="bold" android:id="@id/ButtonWebsite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/website_str" />
+    <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_text" />
+    <RelativeLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textStyle="bold" android:id="@id/ButtonClose" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/close_label" />
+    </RelativeLayout>
+</LinearLayout>

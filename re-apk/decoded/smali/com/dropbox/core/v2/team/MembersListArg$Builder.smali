@@ -1,0 +1,203 @@
+.class public Lcom/dropbox/core/v2/team/MembersListArg$Builder;
+.super Ljava/lang/Object;
+.source "MembersListArg.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dropbox/core/v2/team/MembersListArg;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Builder"
+.end annotation
+
+
+# instance fields
+.field protected includeRemoved:Z
+
+.field protected limit:J
+
+
+# direct methods
+.method protected constructor <init>()V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const-wide/16 v0, 0x3e8
+
+    .line 5
+    .line 6
+    iput-wide v0, p0, Lcom/dropbox/core/v2/team/MembersListArg$Builder;->limit:J
+
+    .line 7
+    .line 8
+    const/4 v0, 0x0
+
+    .line 9
+    iput-boolean v0, p0, Lcom/dropbox/core/v2/team/MembersListArg$Builder;->includeRemoved:Z
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public build()Lcom/dropbox/core/v2/team/MembersListArg;
+    .locals 4
+
+    .line 1
+    new-instance v0, Lcom/dropbox/core/v2/team/MembersListArg;
+
+    .line 2
+    .line 3
+    iget-wide v1, p0, Lcom/dropbox/core/v2/team/MembersListArg$Builder;->limit:J
+
+    .line 4
+    .line 5
+    iget-boolean v3, p0, Lcom/dropbox/core/v2/team/MembersListArg$Builder;->includeRemoved:Z
+
+    .line 6
+    .line 7
+    invoke-direct {v0, v1, v2, v3}, Lcom/dropbox/core/v2/team/MembersListArg;-><init>(JZ)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object v0
+.end method
+
+.method public withIncludeRemoved(Ljava/lang/Boolean;)Lcom/dropbox/core/v2/team/MembersListArg$Builder;
+    .locals 0
+
+    .line 1
+    if-eqz p1, :cond_0
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    iput-boolean p1, p0, Lcom/dropbox/core/v2/team/MembersListArg$Builder;->includeRemoved:Z
+
+    .line 8
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 11
+    iput-boolean p1, p0, Lcom/dropbox/core/v2/team/MembersListArg$Builder;->includeRemoved:Z
+
+    .line 12
+    .line 13
+    :goto_0
+    return-object p0
+.end method
+
+.method public withLimit(Ljava/lang/Long;)Lcom/dropbox/core/v2/team/MembersListArg$Builder;
+    .locals 5
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    const-wide/16 v2, 0x1
+
+    .line 6
+    .line 7
+    cmp-long v4, v0, v2
+
+    .line 8
+    .line 9
+    if-ltz v4, :cond_1
+
+    .line 10
+    .line 11
+    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-wide v0
+
+    .line 15
+    const-wide/16 v2, 0x3e8
+
+    .line 16
+    .line 17
+    cmp-long v4, v0, v2
+
+    .line 18
+    .line 19
+    if-gtz v4, :cond_0
+
+    .line 20
+    .line 21
+    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-wide v0
+
+    .line 25
+    iput-wide v0, p0, Lcom/dropbox/core/v2/team/MembersListArg$Builder;->limit:J
+
+    .line 26
+    .line 27
+    return-object p0
+
+    .line 28
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 29
+    .line 30
+    const-string v0, "Number \'limit\' is larger than 1000L"
+
+    .line 31
+    .line 32
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 33
+    .line 34
+    .line 35
+    throw p1
+
+    .line 36
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 37
+    .line 38
+    const-string v0, "Number \'limit\' is smaller than 1L"
+
+    .line 39
+    .line 40
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 41
+    .line 42
+    .line 43
+    throw p1
+.end method

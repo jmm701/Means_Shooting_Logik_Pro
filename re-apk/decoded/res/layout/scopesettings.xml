@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="fill" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableLayout android:padding="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1">
+            <TableRow>
+                <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+            </TableRow>
+            <TableRow android:paddingBottom="25.0dip">
+                <TextView android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/LabelRifleNAme" android:layout_span="2" android:text="@string/weather_label" android:singleLine="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <CheckBox android:id="@id/m_ffp_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="3" android:text="@string/FFP_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:id="@id/LabelMinMag" android:paddingRight="10.0dip" android:text="@string/MinMag_label" style="@style/regularTextStyle" />
+                <EditText android:gravity="center" android:id="@id/EditMinMag" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/LabelTrueMag" android:paddingRight="10.0dip" android:text="@string/TrueMag_label" android:singleLine="false" style="@style/regularTextStyle" />
+                <EditText android:gravity="center" android:id="@id/EditTrueMag" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:id="@id/LabelMaxMag" android:paddingRight="10.0dip" android:text="@string/MaxMag_label" style="@style/regularTextStyle" />
+                <EditText android:gravity="center" android:id="@id/EditMaxMag" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:textColor="#ffff0000" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="3" android:text="@string/scopecomment_label" android:singleLine="false" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big" android:paddingBottom="@dimen/row_padding_big">
+                <CheckBox android:id="@id/show_nf_zero_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="3" android:text="@string/show_zero" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big" android:paddingBottom="@dimen/row_padding_big">
+                <CheckBox android:id="@id/use_volume_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="3" android:text="@string/use_volume_buttons_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big" android:paddingBottom="@dimen/row_padding_big">
+                <CheckBox android:id="@id/set_turret_at_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="3" android:text="@string/set_turret_at_start_label" style="@style/regularTextStyle" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:paddingBottom="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonOK" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/close_label" style="@style/regularTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

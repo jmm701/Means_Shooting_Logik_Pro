@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/MildotLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <WebView android:id="@id/webview" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/table_padding" android:layout_marginRight="@dimen/table_padding" app:layout_constraintBottom_toTopOf="@id/tableLayoutButtons" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/regularTextStyle" />
+    <TableLayout android:id="@id/tableLayoutButtons" android:paddingLeft="@dimen/table_padding" android:paddingTop="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:paddingBottom="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2,3" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/webview">
+        <TableRow>
+            <ImageButton android:id="@id/ButtonSettings" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@null" android:scaleType="centerInside" />
+            <ImageButton android:id="@id/ButtonXLS" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@null" android:scaleType="centerInside" />
+            <ImageButton android:id="@id/ButtonClose" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@null" android:scaleType="centerInside" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

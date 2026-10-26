@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="fill" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableLayout android:padding="@dimen/table_padding" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1">
+            <TableRow>
+                <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textStyle="bold" android:textColor="#fffef502" android:gravity="center_horizontal" android:id="@id/LabelWeather" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/settings" android:singleLine="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <CheckBox android:id="@id/use_powder_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/use_powder_temperature" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding" />
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <CheckBox android:id="@id/smoa_instead_moa_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/show_smoa" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <CheckBox android:id="@id/m_add_vert_factor" android:layout_width="wrap_content" android:layout_height="fill_parent" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/m_add_vert_factor" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <CheckBox android:layout_gravity="right" android:id="@id/m_vert_factor_manual" android:layout_width="wrap_content" android:layout_height="fill_parent" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/m_vert_factor_manual" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:gravity="center|right" android:id="@id/LabelVertFactor" android:paddingRight="5.0dip" android:text="@string/m_vert_factor_procent" style="@style/regularTextStyle" />
+                <EditText android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/EditVertFactorManual" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <CheckBox android:id="@id/m_add_rotation_factors_to_results" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/m_add_rotation_factors_to_results" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <CheckBox android:id="@id/m_add_coriolis_to_results" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/m_add_coriolis_to_results" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <CheckBox android:id="@id/use_UpDown_LeftRight_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/use_UpDown_LeftRight_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <CheckBox android:id="@id/clicks_in_fractions_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/clicks_in_fractions_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <CheckBox android:id="@id/prevent_screenoff_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/prevent_screenoff_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <CheckBox android:id="@id/turret_step_equals_click_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/turret_step_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <CheckBox android:id="@id/no_sound_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/no_sound" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <CheckBox android:id="@id/contrast_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/contrast_mode_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/rf_type" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <Spinner android:layout_gravity="center_vertical" android:id="@id/spinnerRFType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/slope_ways" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <Spinner android:layout_gravity="center_vertical" android:id="@id/spinnerSlopeAngle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/right_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/backup_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding" android:paddingBottom="@dimen/right_padding">
+                <TableLayout android:layout_width="wrap_content" android:stretchColumns="0,1,2,3,4" android:layout_span="2">
+                    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageButton android:id="@id/DropboxImageButton" android:background="@null" android:src="@null" />
+                        <ImageButton android:id="@id/BoxImageButton" android:background="@null" android:src="@null" />
+                        <ImageButton android:id="@id/GoogleDriveImageButton" android:background="@null" android:src="@null" />
+                        <ImageButton android:id="@id/FolderImageButton" android:background="@null" android:src="@null" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:id="@id/LabelWeatherDevice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/select_device_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Button android:textStyle="bold" android:id="@id/ButtonSelectWeatherDevice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/weather_stations_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Button android:textStyle="bold" android:id="@id/ButtonSelectKestrel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/BluetoothDevices_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Button android:textStyle="bold" android:id="@id/ButtonKeyboardSettings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/keyboard_settings_button" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Button android:textStyle="bold" android:id="@id/ButtonSelectUnits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/select_units_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding">
+                <Button android:textStyle="bold" android:id="@id/ButtonSelectLanguage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/select_language" style="@style/regularTextStyle" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:paddingBottom="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonOK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok_label" android:layout_weight="2.0" style="@style/regularTextStyle" />
+            <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_label" android:layout_weight="2.0" style="@style/regularTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

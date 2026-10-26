@@ -1,0 +1,57 @@
+.class Lcom/borisov/strelokpro/DropboxTargets$c;
+.super Ljava/lang/Object;
+.source "DropboxTargets.java"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/borisov/strelokpro/DropboxTargets;->u()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/borisov/strelokpro/DropboxTargets;
+
+
+# direct methods
+.method constructor <init>(Lcom/borisov/strelokpro/DropboxTargets;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/borisov/strelokpro/DropboxTargets$c;->a:Lcom/borisov/strelokpro/DropboxTargets;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, Lcom/borisov/strelokpro/DropboxTargets$c;->a:Lcom/borisov/strelokpro/DropboxTargets;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Lcom/borisov/strelokpro/DropboxTargets;->l()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

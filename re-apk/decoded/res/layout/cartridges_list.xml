@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.1">
+        <ListView android:id="@id/listCartridges" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:dividerHeight="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:padding="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1">
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonCopyCartridge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/copy_word" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonAddCartridge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_word" style="@style/regularTextStyle" />
+                <Button android:textStyle="bold" android:id="@id/ButtonCartridgeDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Delete_str" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow>
+                <Button android:textStyle="bold" android:id="@id/ButtonOK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok_label" style="@style/regularTextStyle" />
+                <Button android:textStyle="bold" android:id="@id/ButtonCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_label" style="@style/regularTextStyle" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

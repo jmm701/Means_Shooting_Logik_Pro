@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="fill" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableLayout android:padding="@dimen/table_padding" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1">
+            <TableRow>
+                <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+            </TableRow>
+            <TableRow android:paddingTop="15.0dip">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_span="2" android:text="@string/converters_label" android:singleLine="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="15.0dip">
+                <View android:layout_gravity="center" android:background="#ff75b1fb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_span="2" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonDistanceFromMOA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/distance_from_moa_label" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonMOAatDistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/moa_at_distance_label" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonTurretTruing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/turret_truing_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonAngleUnits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/angle_units_label" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonSpeedUnits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="3" android:text="@string/speed_units_label" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonLengthUnits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="3" android:text="@string/length_units_label" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonWeightUnits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/weight_units_label" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonPressureUnits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/pressure_units_label2" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonTemperatureUnits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/temperature_units_label" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonBCCalculate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/bc_2speed_calculate" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:paddingBottom="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonOK" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/close_label" style="@style/regularTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="0,1,2,3"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:paddingTop="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:textColor="#ffff0000" android:id="@id/CartridgeName" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_span="3" android:text="Cartridge name" style="@style/regularTextStyle" />
+        <CheckBox android:textColor="#ff8c8c8c" android:id="@id/selection_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/regularTextStyle" />
+    </TableRow>
+    <TableRow android:paddingTop="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:id="@id/CartridgeInfo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_span="4" android:text="Cartridge info" android:singleLine="false" style="@style/regularTextStyle" />
+    </TableRow>
+    <TableRow android:paddingTop="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:id="@id/CartridgeNotes" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_span="4" android:text="Cartridge notes" android:singleLine="false" style="@style/regularTextStyle" />
+    </TableRow>
+</TableLayout>

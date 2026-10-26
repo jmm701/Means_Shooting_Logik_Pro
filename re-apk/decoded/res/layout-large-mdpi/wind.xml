@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="60.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.borisov.strelokpro.WindDraw android:id="@id/WindView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1">
+            <TableRow>
+                <Button android:textStyle="bold" android:id="@id/ButtonSet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/set_ninety" />
+            </TableRow>
+            <TableRow>
+                <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonOK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok_label" android:layout_weight="2.0" />
+                <Button android:textStyle="bold" android:id="@id/ButtonCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_label" android:layout_toRightOf="@id/spinnerMark" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</LinearLayout>

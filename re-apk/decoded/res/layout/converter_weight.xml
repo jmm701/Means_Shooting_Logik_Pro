@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="fill" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1">
+            <TableRow>
+                <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+            </TableRow>
+            <TableRow android:paddingBottom="15.0dip">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_span="2" android:text="@string/weight_units_converter_label" />
+            </TableRow>
+            <TableRow android:paddingBottom="15.0dip">
+                <View android:layout_gravity="center" android:background="#ff75b1fb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_span="3" />
+            </TableRow>
+            <TableRow android:paddingBottom="5.0dip">
+                <TextView android:textStyle="bold" android:gravity="right" android:paddingRight="10.0dip" android:text="@string/weight_unit_grams_label" android:singleLine="false" />
+                <EditText android:gravity="center" android:id="@id/EditGrams" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:digits="0,1,2,3,4,5,6,7,8,9" android:inputType="phone" android:imeOptions="actionDone" />
+            </TableRow>
+            <TableRow android:paddingBottom="5.0dip">
+                <TextView android:textStyle="bold" android:gravity="right" android:paddingRight="10.0dip" android:text="@string/weight_unit_kg_label" android:singleLine="false" />
+                <EditText android:gravity="center" android:id="@id/EditKg" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:digits="0,1,2,3,4,5,6,7,8,9" android:inputType="phone" android:imeOptions="actionDone" />
+            </TableRow>
+            <TableRow android:paddingBottom="5.0dip">
+                <TextView android:textStyle="bold" android:gravity="right" android:paddingRight="10.0dip" android:text="@string/weight_unit_pounds_label" android:singleLine="false" />
+                <EditText android:gravity="center" android:id="@id/EditPounds" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:digits="0,1,2,3,4,5,6,7,8,9" android:inputType="phone" android:imeOptions="actionDone" />
+            </TableRow>
+            <TableRow android:paddingBottom="5.0dip">
+                <TextView android:textStyle="bold" android:gravity="right" android:paddingRight="10.0dip" android:text="@string/weight_unit_grains_label" android:singleLine="false" />
+                <EditText android:gravity="center" android:id="@id/EditGrains" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:digits="0,1,2,3,4,5,6,7,8,9" android:inputType="phone" android:imeOptions="actionDone" />
+            </TableRow>
+            <TableRow android:paddingBottom="5.0dip">
+                <TextView android:textStyle="bold" android:gravity="right" android:paddingRight="10.0dip" android:text="@string/weight_unit_ounces_label" android:singleLine="false" />
+                <EditText android:gravity="center" android:id="@id/EditOunces" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:digits="0,1,2,3,4,5,6,7,8,9" android:inputType="phone" android:imeOptions="actionDone" />
+            </TableRow>
+            <TableRow android:paddingTop="25.0dip">
+                <TextView android:textStyle="bold" android:textColor="#ff00ff00" android:gravity="center_horizontal" android:layout_span="2" android:text="@string/input_in_any_field_label" />
+            </TableRow>
+            <TableRow android:paddingTop="15.0dip">
+                <Button android:textStyle="bold" android:textColor="#ffff0000" android:id="@id/ButtonCalculate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="3" android:text="@string/calc_label" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonCancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/close_label" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

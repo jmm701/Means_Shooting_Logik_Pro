@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:textColor="#fffef502" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/download_lapua_label" style="@style/regularTextStyle" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/table_padding" android:paddingTop="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.1">
+        <ListView android:id="@id/listLapua" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:dividerHeight="4.0dip" style="@style/smallTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:padding="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1">
+            <TableRow>
+                <ImageButton android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ButtonRefresh" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@null" android:scaleType="centerInside" android:adjustViewBounds="true" />
+                <TextView android:textStyle="bold" android:textColor="#fffe0202" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/SelectLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_lapua_label" style="@style/regularTextStyle" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

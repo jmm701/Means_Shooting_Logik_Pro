@@ -1,0 +1,4 @@
+.DS_Store
+re-apk/unaligned.apk
+re-apk/decoded/build/
+*.idsig

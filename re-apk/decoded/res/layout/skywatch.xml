@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="fill" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:padding="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1">
+            <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+            </TableRow>
+            <TableRow android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textStyle="bold" android:textColor="#fffef502" android:gravity="center_horizontal" android:id="@id/LabelWeather" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="SkyWatch BL" android:singleLine="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:gravity="center|right" android:id="@id/LabelTemperature" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/Temperature_label" style="@style/regularTextStyle" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffff0000" android:gravity="center_horizontal" android:id="@id/ValueTemperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero_text" android:singleLine="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:gravity="center|right" android:id="@id/LabelPressure" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/Pressure_label" style="@style/regularTextStyle" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffff0000" android:gravity="center_horizontal" android:id="@id/ValuePressure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero_text" android:singleLine="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:gravity="center|right" android:id="@id/LabelHumidity" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/Humidity_label" style="@style/regularTextStyle" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffff0000" android:gravity="center_horizontal" android:id="@id/ValueHumidity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero_text" android:singleLine="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:gravity="center|right" android:id="@id/LabelWindSpeed" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/wind_label" style="@style/regularTextStyle" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffff0000" android:gravity="center_horizontal" android:id="@id/ValueWindSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero_text" android:singleLine="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big" android:paddingBottom="@dimen/row_padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ProgressBar android:id="@id/progressBar1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big" android:paddingBottom="@dimen/row_padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textStyle="bold" android:textColor="#ffff0000" android:id="@id/ButtonOK" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/use_web_values" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/no_sound_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/no_sound" style="@style/regularTextStyle" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:paddingBottom="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonCancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/close_label" style="@style/regularTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

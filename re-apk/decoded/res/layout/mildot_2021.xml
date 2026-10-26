@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/MildotLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:id="@id/ButtonWatch" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/watch_icon" android:scaleType="centerInside" app:layout_constraintBottom_toTopOf="@id/MildotView" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="@id/MildotView" />
+    <com.borisov.strelokpro.ScopeTurretSnap2 android:gravity="center_horizontal" android:id="@id/ScopeTurret" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/MildotView" app:layout_constraintDimensionRatio="3:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_max="50.0dip" app:layout_constraintHeight_percent="0.1" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.5" />
+    <com.borisov.strelokpro.MildotDraw android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/MildotView" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginLeft="15.0sp" android:layout_marginRight="15.0sp" app:layout_constraintBottom_toTopOf="@id/tableLayout1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ScopeTurret" />
+    <TableLayout android:layout_gravity="bottom" android:id="@id/tableLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2" app:layout_constraintBottom_toTopOf="@id/tableLayoutButtons" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/MildotView">
+        <TableRow android:layout_width="fill_parent" android:layout_margin="15.0sp" android:weightSum="4.0">
+            <TextView android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@id/LabelMin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zero_text" android:singleLine="true" android:layout_weight="1.0" style="@style/regularTextStyle" />
+            <TextView android:textStyle="bold" android:textColor="#fffafac2" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/LabelCurrent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zero_text" android:singleLine="true" android:layout_weight="2.0" style="@style/regularTextStyle" />
+            <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/LabelMax" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zero_text" android:singleLine="true" android:layout_weight="1.0" style="@style/regularTextStyle" />
+        </TableRow>
+        <TableRow>
+            <SeekBar android:id="@id/Slider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0sp" android:layout_marginRight="15.0sp" android:max="800" android:layout_span="3" android:defaultValue="20" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout android:id="@id/tableLayoutButtons" android:padding="15.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2,3,4" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tableLayout1">
+        <TableRow android:paddingBottom="@dimen/row_padding">
+            <Spinner android:id="@id/spinnerMark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="5" />
+        </TableRow>
+        <TableRow android:paddingBottom="@dimen/row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/ButtonSettings" android:tag="regular" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" />
+            <ImageButton android:id="@id/ButtonSearch" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" />
+            <ImageButton android:id="@id/ButtonMail" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" />
+            <ImageButton android:id="@id/ButtonTarget" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" />
+            <ImageButton android:id="@id/ButtonClose" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

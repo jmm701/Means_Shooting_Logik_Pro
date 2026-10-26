@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="fill" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableLayout android:padding="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1">
+            <TableRow>
+                <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+            </TableRow>
+            <TableRow android:paddingBottom="35.0dip">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_span="2" android:text="@string/weather_label" android:singleLine="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:gravity="right" android:id="@id/LabelTemperature" android:paddingRight="@dimen/right_padding" android:text="@string/Temperature_label" android:layout_weight="0.1" style="@style/regularTextStyle" />
+                <EditText android:textStyle="bold" android:gravity="center" android:id="@id/EditTemperature" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="0.1" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <CheckBox android:id="@id/thermometer_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/use_thermometer_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:gravity="right" android:id="@id/LabelPressure" android:paddingRight="@dimen/right_padding" android:text="@string/Pressure_label" android:layout_weight="0.1" style="@style/regularTextStyle" />
+                <EditText android:textStyle="bold" android:gravity="center" android:id="@id/EditPressure" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="0.1" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <CheckBox android:id="@id/barometer_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/use_barometer_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonAltitude" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/altitude_label" android:layout_weight="2.0" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:gravity="right" android:id="@id/LabelHumidity" android:paddingRight="@dimen/right_padding" android:text="@string/Humidity_label" android:layout_weight="0.1" style="@style/regularTextStyle" />
+                <EditText android:textStyle="bold" android:gravity="center" android:id="@id/EditHumidity" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="0.1" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <CheckBox android:id="@id/humidity_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/use_humidity_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/LabelPowderTemperature" android:paddingRight="@dimen/right_padding" android:text="@string/PowderTemperature_label" android:layout_weight="0.1" style="@style/regularTextStyle" />
+                <EditText android:textStyle="bold" android:gravity="center" android:id="@id/EditPowderTemperature" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="0.1" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <CheckBox android:id="@id/density_altitude_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/use_density_altitude" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding_big">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/LabelDensityAltitude" android:paddingRight="@dimen/right_padding" android:text="@string/density_altitude" android:layout_weight="0.1" style="@style/regularTextStyle" />
+                <EditText android:textStyle="bold" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/EditDensityAltitude" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="0.2" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_span="2">
+                    <ImageButton android:id="@id/ButtonWebWeather" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" android:layout_weight="2.0" />
+                    <ImageButton android:layout_gravity="center_vertical" android:id="@id/ButtonWeatherMeter" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" android:layout_weight="2.0" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:paddingBottom="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonOK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok_label" android:layout_weight="2.0" style="@style/regularTextStyle" />
+            <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_label" android:layout_weight="2.0" style="@style/regularTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

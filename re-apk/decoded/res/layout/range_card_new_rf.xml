@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="fill" android:orientation="vertical" android:padding="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TableLayout android:padding="@dimen/table_padding" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1"> > <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+            </TableRow>
+            <TableRow android:paddingTop="25.0dip" android:paddingBottom="25.0dip">
+                <TextView android:textColor="#ffffff00" android:gravity="center" android:id="@id/LocationName" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="My treestand" android:minLines="2" android:scrollHorizontally="false" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big" android:paddingBottom="@dimen/row_padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_span="2" android:text="@string/target_name" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big" android:paddingBottom="@dimen/row_padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/EditName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:selectAllOnFocus="true" android:inputType="text" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big" android:paddingBottom="@dimen/row_padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:gravity="center|right" android:id="@id/LabelDistance" android:paddingRight="@dimen/right_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/distance_label" style="@style/regularTextStyle" />
+                <EditText android:textStyle="bold" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/EditDistanceLRF" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big" android:paddingBottom="@dimen/row_padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center|right" android:id="@id/LabelSlope" android:paddingRight="@dimen/right_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/slope_label" style="@style/regularTextStyle" />
+                <EditText android:textStyle="bold" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/EditSlope" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="35.0dip">
+                <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_span="2"
+                  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+                    <ProgressBar android:id="@id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="?android:progressBarStyle" />
+                    <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_vertical" android:id="@id/LabelConnectionStatus" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/lrf_isnotready" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/regularTextStyle" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonLRF" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/get_from_lrf" style="@style/regularTextStyle" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:paddingBottom="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonOK" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ok_label" android:layout_weight="1.0" style="@style/regularTextStyle" />
+            <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonCancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel_label" android:layout_weight="1.0" style="@style/regularTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

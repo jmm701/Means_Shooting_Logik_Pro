@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/TargetListLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout4" android:paddingLeft="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/linearLayout5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.5">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1">
+            <TableRow>
+                <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <RadioButton android:id="@id/radioButton_RoundTarget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radiobuttonstyle" android:layout_span="2" android:text="@string/round_target_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <CheckBox android:id="@id/virtual_target_size_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/virtual_target_size_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:gravity="right" android:id="@id/LabelTargetSize" android:paddingRight="10.0dip" android:text="@string/target_size_label" style="@style/regularTextStyle" />
+                <EditText android:id="@id/EditTargetSize" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <RadioButton android:id="@id/radioButton_RectangleTarget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radiobuttonstyle" android:layout_span="2" android:text="@string/rectangle_target_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:gravity="right" android:id="@id/LabelTargetHeight" android:paddingRight="10.0dip" android:text="@string/target_height_label" style="@style/regularTextStyle" />
+                <EditText android:id="@id/EditTargetHeight" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:gravity="right" android:id="@id/LabelTargetWidth" android:paddingRight="10.0dip" android:text="@string/target_width_label" style="@style/regularTextStyle" />
+                <EditText android:id="@id/EditTargetWidth" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout5" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/linearLayout4" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.5">
+        <ListView android:id="@id/listTargets" android:paddingTop="@dimen/row_padding" android:paddingBottom="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:dividerHeight="1.0dip" android:layout_weight="0.1" style="@style/regularTextStyle" />
+        <Button android:textStyle="bold" android:id="@id/ButtonOK" android:paddingTop="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/close_label" android:layout_weight="0.8" style="@style/regularTextStyle" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

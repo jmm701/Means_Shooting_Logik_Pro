@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="32" android:compileSdkVersionCodename="12" android:installLocation="auto" package="com.borisov.strelokpro" platformBuildVersionCode="32" platformBuildVersionName="12">
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@drawable/app_logo" android:roundIcon="@drawable/app_logo" android:label="@string/app_name" android:name="com.borisov.strelokpro.StrelokProApplication" android:networkSecurityConfig="@xml/network_security_config" android:theme="@style/MyTheme">
+        <provider android:authorities="com.borisov.strelokpro.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <meta-data android:name="android.max_aspect" android:value="2.4"/>
+        <activity android:configChanges="locale" android:exported="true" android:label="@string/app_name" android:name="com.borisov.strelokpro.SeniorPro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/octet-stream"/>
+                <data android:pathPattern=".*.xmz"/>
+                <data android:pathPattern=".*.XMZ"/>
+                <data android:pathPattern=".*.snr"/>
+                <data android:pathPattern=".*.SNR"/>
+                <data android:pathPattern=".*.drg"/>
+                <data android:pathPattern=".*.DRG"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:pathPattern=".*.xmz" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*.xmz" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*..*.xmz" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*..*..*.xmz" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*..*..*..*.xmz" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*.XMZ" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*.XMZ" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*..*.XMZ" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*..*..*.XMZ" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*..*..*..*.XMZ" android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*" android:pathPattern=".*.xmz" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*.xmz" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*..*.xmz" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*..*..*.xmz" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*..*..*..*.xmz" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*.XMZ" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*.XMZ" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*..*.XMZ" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*..*..*.XMZ" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*..*..*..*.XMZ" android:scheme="file"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.borisov.strelokpro.Rifle"/>
+        <activity android:name="com.borisov.strelokpro.Slope"/>
+        <activity android:name="com.borisov.strelokpro.Slope_hor"/>
+        <activity android:name="com.borisov.strelokpro.SlopeCamera"/>
+        <activity android:name="com.borisov.strelokpro.SlopeCameraNew"/>
+        <activity android:name="com.borisov.strelokpro.SlopeCameraReticle"/>
+        <activity android:name="com.borisov.strelokpro.Wind"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.borisov.strelokpro.Atm"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.borisov.strelokpro.RifleAtm"/>
+        <activity android:name="com.borisov.strelokpro.RifleScope"/>
+        <activity android:name="com.borisov.strelokpro.Cartridge"/>
+        <activity android:name="com.borisov.strelokpro.DragList"/>
+        <activity android:name="com.borisov.strelokpro.DragShow"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.borisov.strelokpro.DlgSettings"/>
+        <activity android:name="com.borisov.strelokpro.DopInfo"/>
+        <activity android:name="com.borisov.strelokpro.SFCalc"/>
+        <activity android:name="com.borisov.strelokpro.About"/>
+        <activity android:configChanges="locale" android:name="com.borisov.strelokpro.Table"/>
+        <activity android:name="com.borisov.strelokpro.TableSettings"/>
+        <activity android:name="com.borisov.strelokpro.PowderSensitivity"/>
+        <activity android:name="com.borisov.strelokpro.Mildot_2021"/>
+        <activity android:name="com.borisov.strelokpro.AutoComplete"/>
+        <activity android:name="com.borisov.strelokpro.ScopeSettings"/>
+        <activity android:name="com.borisov.strelokpro.ScopeSettingsNew"/>
+        <activity android:name="com.borisov.strelokpro.Converters"/>
+        <activity android:name="com.borisov.strelokpro.MOAatDistance"/>
+        <activity android:name="com.borisov.strelokpro.DistanceFromMOA"/>
+        <activity android:name="com.borisov.strelokpro.ConverterAngle"/>
+        <activity android:name="com.borisov.strelokpro.ConverterSpeed"/>
+        <activity android:name="com.borisov.strelokpro.ConverterEnergy"/>
+        <activity android:name="com.borisov.strelokpro.ConverterTemperature"/>
+        <activity android:name="com.borisov.strelokpro.ConverterLength"/>
+        <activity android:name="com.borisov.strelokpro.ConverterWeight"/>
+        <activity android:name="com.borisov.strelokpro.ConverterPressure"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.borisov.strelokpro.Vector"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.borisov.strelokpro.Kestrel4x00Atm"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.borisov.strelokpro.Kestrel4x00RifleAtm"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.borisov.strelokpro.Kestrel4x00Vane"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.borisov.strelokpro.Coriolis"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.borisov.strelokpro.BondedList"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.borisov.strelokpro.VectorSelectList"/>
+        <activity android:configChanges="keyboardHidden" android:label="@string/select_device" android:name="com.borisov.strelokpro.DeviceListActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden" android:label="@string/select_device" android:name="com.borisov.strelokpro.DedalListActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="com.borisov.strelokpro.ExportRifles"/>
+        <activity android:name="com.borisov.strelokpro.ExportRiflesXML"/>
+        <activity android:name="com.borisov.strelokpro.Truing"/>
+        <activity android:name="com.borisov.strelokpro.Truing_multi"/>
+        <activity android:name="com.borisov.strelokpro.TruingTurret"/>
+        <activity android:name="com.borisov.strelokpro.Dropbox"/>
+        <activity android:name="com.borisov.strelokpro.DropboxTargets"/>
+        <activity android:name="com.borisov.strelokpro.KeyboardSettings"/>
+        <activity android:configChanges="keyboard|orientation" android:exported="true" android:launchMode="singleTask" android:name="com.dropbox.core.android.AuthActivity">
+            <intent-filter>
+                <data android:scheme="db-wgrviht0rz35677"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.borisov.strelokpro.DownloadLapua"/>
+        <activity android:name="com.borisov.strelokpro.VectorAuto"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.apps.drive.493022329528" android:value="id=AIzaSyAWpMRGG7QOmQfUMOhSl03_3cpuEbwvb34"/>
+        <activity android:name="com.borisov.strelokpro.Altitude"/>
+        <activity android:name="com.borisov.strelokpro.RangeCardCreate"/>
+        <activity android:name="com.borisov.strelokpro.RangeCardEdit"/>
+        <activity android:name="com.borisov.strelokpro.MovingTargetNew"/>
+        <activity android:name="com.borisov.strelokpro.MovingTargetAngle" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.borisov.strelokpro.CartridgesList"/>
+        <activity android:name="com.borisov.strelokpro.CartridgesListNew"/>
+        <activity android:name="com.borisov.strelokpro.RiflesList"/>
+        <activity android:name="com.borisov.strelokpro.RiflesListNew"/>
+        <activity android:name="com.borisov.strelokpro.WebWeather"/>
+        <activity android:name="com.borisov.strelokpro.MRDCalculator"/>
+        <activity android:name="com.borisov.strelokpro.SelectLanguage"/>
+        <activity android:name="com.borisov.strelokpro.MultiBC"/>
+        <activity android:name="com.borisov.strelokpro.DB_CartridgesList"/>
+        <activity android:name="com.borisov.strelokpro.DB_BulletsList"/>
+        <activity android:name="com.borisov.strelokpro.DB_BulletsG7List"/>
+        <activity android:name="com.borisov.strelokpro.QuitActivity"/>
+        <activity android:name="com.borisov.strelokpro.KestrelDrop"/>
+        <activity android:name="com.borisov.strelokpro.Kestrel5x00Atm"/>
+        <activity android:name="com.borisov.strelokpro.Kestrel5x00Vane"/>
+        <activity android:name="com.borisov.strelokpro.SettingsUnits"/>
+        <activity android:name="com.borisov.strelokpro.WeatherMeterVaneReticle"/>
+        <activity android:name="com.borisov.strelokpro.WeatherMeterRead"/>
+        <activity android:name="com.borisov.strelokpro.SkyWatchRead"/>
+        <activity android:name="com.borisov.strelokpro.SkyWatchReadRifleAtm"/>
+        <activity android:name="com.borisov.strelokpro.SkyWatchVaneReticle"/>
+        <activity android:name="com.borisov.strelokpro.WeatherMeterReadRifleAtm"/>
+        <activity android:name="com.borisov.strelokpro.Kestrel5x00RifleAtm"/>
+        <activity android:name="com.borisov.strelokpro.SelectDevice"/>
+        <activity android:name="com.borisov.strelokpro.BluetoothDevices"/>
+        <activity android:name="com.borisov.strelokpro.UltrasonicVane_reticle"/>
+        <activity android:name="com.borisov.strelokpro.IWT_Vane"/>
+        <activity android:name="com.borisov.strelokpro.IWT_Atm"/>
+        <activity android:name="com.borisov.strelokpro.IWT_RifleAtm"/>
+        <activity android:configChanges="keyboard|orientation" android:name="com.borisov.strelokpro.DedalSend3"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.borisov.strelokpro.Coriolis_new"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.borisov.strelokpro.hud" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|orientation" android:name="com.borisov.strelokpro.BoxCom"/>
+        <activity android:configChanges="keyboard|orientation" android:name="com.borisov.strelokpro.FileBrowser"/>
+        <activity android:configChanges="keyboard|orientation" android:name="com.borisov.strelokpro.GoogleService"/>
+        <activity android:configChanges="keyboard" android:name="com.borisov.strelokpro.RangesListNew" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|orientation" android:name="com.borisov.strelokpro.RangeLocationsList"/>
+        <activity android:name="com.borisov.strelokpro.DB_PelletsList"/>
+        <activity android:configChanges="keyboard|orientation" android:name="com.borisov.strelokpro.RangeFinder"/>
+        <activity android:configChanges="keyboard|orientation" android:name="com.borisov.strelokpro.AthlonRangeFinder"/>
+        <activity android:configChanges="keyboard|orientation" android:name="com.borisov.strelokpro.MildotRanger"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.borisov.strelokpro.VectronixRangeFinder"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.borisov.strelokpro.BC_from_2speeds"/>
+        <activity android:name="com.borisov.strelokpro.TargetSelectPicture"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.borisov.strelokpro.MTCRangeFinder"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.borisov.strelokpro.NTCRangeFinder"/>
+        <activity android:name="com.borisov.strelokpro.RangeCardCreateVectronix"/>
+        <activity android:name="com.borisov.strelokpro.RangeCardCreateMTC"/>
+        <activity android:name="com.borisov.strelokpro.RangeCardCreateNTC"/>
+        <activity android:name="com.borisov.strelokpro.AutoCompleteNew"/>
+        <activity android:configChanges="locale" android:name="com.borisov.strelokpro.CompareEnergy"/>
+        <activity android:name="com.borisov.strelokpro.RangeCardWind"/>
+        <activity android:name="com.borisov.strelokpro.RangeCardWind2"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.borisov.strelokpro.SpeedDropFactor"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.borisov.strelokpro.SpeedDropSettings"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="com.box.androidsdk.content.auth.OAuthActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.box.androidsdk.content.auth.BlockedIPErrorActivity"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.borisov.strelokpro.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        </application>
+</manifest>

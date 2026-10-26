@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clicks_array">
+        <item>MOA</item>
+        <item>MRAD (MIL)</item>
+        <item>Inch@100yard (SMOA)</item>
+        <item>cm@100meter</item>
+    </string-array>
+    <string-array name="pressure_array">
+        <item>mmHg</item>
+        <item>hPa (mb)</item>
+        <item>PSI</item>
+    </string-array>
+    <string-array name="speed_units_array">
+        <item>m/s</item>
+        <item>km/h</item>
+        <item>MOA/s</item>
+        <item>MRAD/s</item>
+    </string-array>
+    <string-array name="speed_units_array_imp">
+        <item>f/s</item>
+        <item>mph</item>
+        <item>MOA/s</item>
+        <item>MRAD/s</item>
+    </string-array>
+    <string-array name="units_array">
+        <item>MOA</item>
+        <item>MRAD</item>
+        <item>Klicks</item>
+        <item>cm</item>
+    </string-array>
+    <string-array name="units_array_imp">
+        <item>MOA</item>
+        <item>MRAD</item>
+        <item>Klicks</item>
+        <item>Inch</item>
+    </string-array>
+</resources>

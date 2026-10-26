@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/MildotLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TableLayout android:id="@id/tableLayoutUpper" android:padding="@dimen/table_padding" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1" app:layout_constraintBottom_toTopOf="@id/webview" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"> > <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TableRow android:paddingTop="15.0dip" android:paddingBottom="@dimen/row_padding_big">
+            <TextView android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/TargetName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="My treestand" android:singleLine="false" style="@style/regularTextStyle" />
+        </TableRow>
+        <TableRow android:paddingTop="@dimen/row_padding" android:paddingBottom="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:gravity="center|right" android:id="@id/LabelDistance" android:paddingRight="@dimen/right_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/distance_label" style="@style/regularTextStyle" />
+            <TextView android:textStyle="bold" android:textColor="#ff00ff00" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ValueDistance" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zero_text" android:singleLine="true" android:layout_weight="1.0" style="@style/regularTextStyle" />
+        </TableRow>
+        <TableRow android:paddingTop="@dimen/row_padding" android:paddingBottom="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:gravity="center|right" android:id="@id/LabelSlope" android:paddingRight="@dimen/right_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/slope_label" style="@style/regularTextStyle" />
+            <TextView android:textStyle="bold" android:textColor="#ff00ff00" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ValueSlope" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zero_text" android:singleLine="true" android:layout_weight="1.0" style="@style/regularTextStyle" />
+        </TableRow>
+        <TableRow android:paddingTop="@dimen/row_padding" android:paddingBottom="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:gravity="center|right" android:id="@id/LabelElevation" android:paddingRight="@dimen/right_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Vertical Correction" style="@style/regularTextStyle" />
+            <TextView android:textStyle="bold" android:textColor="#ff00ff00" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ValueElevation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zero_text" android:singleLine="true" android:layout_weight="1.0" style="@style/regularTextStyle" />
+        </TableRow>
+        <TableRow android:paddingTop="@dimen/row_padding" android:paddingBottom="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:gravity="center|right" android:id="@id/LabelCoriolis" android:paddingRight="@dimen/right_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Coriolis+SpinDrift" style="@style/regularTextStyle" />
+            <TextView android:textStyle="bold" android:textColor="#ff00ff00" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ValueCoriolis" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zero_text" android:singleLine="true" android:layout_weight="1.0" style="@style/regularTextStyle" />
+        </TableRow>
+        <TableRow android:paddingTop="@dimen/row_padding_big" android:paddingBottom="@dimen/row_padding">
+            <TextView android:textStyle="bold" android:textColor="#ffffff00" android:gravity="center" android:id="@id/WindageLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/windage_label" android:singleLine="false" style="@style/regularTextStyle" />
+        </TableRow>
+        <TableRow />
+    </TableLayout>
+    <WebView android:id="@id/webview" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/tableLayoutButtons" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tableLayoutUpper" style="@style/regularTextStyle" />
+    <TableLayout android:id="@id/tableLayoutButtons" android:paddingLeft="@dimen/table_padding" android:paddingTop="@dimen/row_padding" android:paddingRight="@dimen/table_padding" android:paddingBottom="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2,3" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/webview">
+        <TableRow>
+            <ImageButton android:id="@id/ButtonXLS" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@null" android:scaleType="centerInside" />
+            <ImageButton android:id="@id/ButtonClose" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@null" android:scaleType="centerInside" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clicks_array">
+        <item>دقيقة</item>
+        <item>ملراد (مليم)</item>
+        <item>بوصة@100ياردة (دقيقة رماية)</item>
+        <item>سم@100متر</item>
+    </string-array>
+    <string-array name="pressure_array">
+        <item>مم زئبق</item>
+        <item>هكتوبسكال</item>
+        <item>رطل\\بوصة مربعة</item>
+    </string-array>
+    <string-array name="speed_units_array">
+        <item>م\\ث</item>
+        <item>كم\\س</item>
+        <item>دقيقة\\ث</item>
+        <item>ملراد\\ث</item>
+    </string-array>
+    <string-array name="speed_units_array_imp">
+        <item>قدم\\ث</item>
+        <item>ميل\\س</item>
+        <item>دقيقة\\ث</item>
+        <item>ملراد\\ث</item>
+    </string-array>
+    <string-array name="units_array">
+        <item>دقيقة</item>
+        <item>ملراد</item>
+        <item>تكات</item>
+        <item>سم</item>
+    </string-array>
+    <string-array name="units_array_imp">
+        <item>دقيقة</item>
+        <item>ملراد</item>
+        <item>تكات</item>
+        <item>بوصة</item>
+    </string-array>
+</resources>

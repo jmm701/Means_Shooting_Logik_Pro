@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/toautocompleteLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_vertical" android:id="@id/TargetName" android:paddingLeft="10.0dip" android:paddingTop="@dimen/row_padding_big" android:paddingRight="10.0dip" android:paddingBottom="@dimen/row_padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Test test test test test test test test test test test" android:layout_weight="2.0" style="@style/reticlelistTextStyle" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/ButtonEditSize" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.borisov.strelokpro.LockableScrollView android:id="@id/MyScrollView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="fill" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:id="@id/MildotLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:textColor="#fffef502" android:gravity="center_horizontal" android:paddingBottom="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Geron Ballistic 10" style="@style/regularTextStyle" />
+            <com.borisov.strelokpro.MildotDraw android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/MildotView" android:layout_width="fill_parent" android:layout_height="300.0dip" />
+        </LinearLayout>
+        <TableLayout android:paddingLeft="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:paddingBottom="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2">
+            <TableRow android:paddingBottom="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ProgressBar android:id="@id/progressBar1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="3" />
+            </TableRow>
+            <TableLayout android:stretchColumns="0,1,2,3,4">
+                <TableRow android:paddingBottom="@dimen/row_padding_big">
+                    <TextView android:textStyle="bold" android:gravity="center" android:text="@string/empty_text" />
+                    <TextView android:textStyle="bold" android:textColor="#fffef502" android:gravity="center" android:id="@id/MOA_label" android:text="@string/MOA_text" style="@style/smallTextStyle" />
+                    <TextView android:textStyle="bold" android:textColor="#ff00ff00" android:gravity="center" android:id="@id/MIL_label" android:text="@string/MIL_text" style="@style/smallTextStyle" />
+                    <TextView android:textStyle="bold" android:textColor="#ffff00ff" android:gravity="center" android:id="@id/cm_text_label" android:text="@string/cm_text" style="@style/smallTextStyle" />
+                    <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/clicks_text_label" android:text="@string/clicks_text" style="@style/smallTextStyle" />
+                </TableRow>
+                <TableRow android:paddingBottom="@dimen/row_padding_big">
+                    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/vert_text_label" android:text="@string/Vert_label" style="@style/smallTextStyle" />
+                    <TextView android:textStyle="bold" android:textColor="#fffef502" android:gravity="center" android:id="@id/VertDropMOA" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                    <TextView android:textStyle="bold" android:textColor="#ff00ff00" android:gravity="center" android:id="@id/VertDropMIL" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                    <TextView android:textStyle="bold" android:textColor="#ffff00ff" android:gravity="center" android:id="@id/VertDropCM" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                    <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/VertDropClicks" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                </TableRow>
+                <TableRow android:paddingBottom="@dimen/row_padding_big">
+                    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/gor_text_label" android:text="@string/Hor_label" style="@style/smallTextStyle" />
+                    <TextView android:textStyle="bold" android:textColor="#fffef502" android:gravity="center" android:id="@id/GorWindMOA" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                    <TextView android:textStyle="bold" android:textColor="#ff00ff00" android:gravity="center" android:id="@id/GorWindMIL" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                    <TextView android:textStyle="bold" android:textColor="#ffff00ff" android:gravity="center" android:id="@id/GorWindCM" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                    <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/GorWindClicks" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                </TableRow>
+            </TableLayout>
+            <TableRow android:paddingTop="@dimen/row_padding">
+                <CheckBox android:id="@id/tts_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_custom_01" android:layout_span="2" android:text="@string/use_tts_engine" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonClose" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="3" android:text="@string/close_label" style="@style/regularTextStyle" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</com.borisov.strelokpro.LockableScrollView>

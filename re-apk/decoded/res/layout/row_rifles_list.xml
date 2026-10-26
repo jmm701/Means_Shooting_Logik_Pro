@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/r_layout" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:id="@id/text_row">
+            <TextView android:id="@id/text_view_rifle_name" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="45.0dip" android:text="test word test sentense test name test very big test big test name" android:singleLine="false" android:layout_weight="5.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/reticlelistTextStyle" />
+        </TableRow>
+    </TableLayout>
+    <ImageView android:layout_gravity="center|right" android:id="@id/handle" android:background="@null" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

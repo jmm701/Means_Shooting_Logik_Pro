@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.borisov.strelokpro.LockableScrollView android:id="@id/MyScrollView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:orientation="vertical" android:padding="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TableRow>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_span="2"
+                      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+                        <ProgressBar android:id="@id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="?android:progressBarStyle" />
+                        <com.borisov.strelokpro.WindDrawKestrel android:id="@id/WindViewKestrel" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1">
+                        <TableRow android:paddingBottom="@dimen/row_padding">
+                            <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:id="@id/DistanceLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/distance_label" style="@style/regularTextStyle" />
+                            <EditText android:gravity="center" android:id="@id/EditDistance" android:layout_width="wrap_content" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:digits="0,1,2,3,4,5,6,7,8,9" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+                        </TableRow>
+                        <TableRow android:paddingBottom="@dimen/row_padding">
+                            <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:id="@id/SlopeLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/slope_label" style="@style/regularTextStyle" />
+                            <EditText android:gravity="center" android:id="@id/EditSlope" android:layout_width="wrap_content" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:digits="0123456789." android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+                        </TableRow>
+                    </TableLayout>
+                    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1,2,3,4">
+                        <TableRow android:paddingBottom="@dimen/row_padding_big">
+                            <TextView android:textStyle="bold" android:gravity="center" android:text="@string/empty_text" />
+                            <TextView android:textStyle="bold" android:textColor="#fffef502" android:gravity="center" android:id="@id/MOA_label" android:text="@string/MOA_text" style="@style/smallTextStyle" />
+                            <TextView android:textStyle="bold" android:textColor="#ff00ff00" android:gravity="center" android:id="@id/MIL_label" android:text="@string/MIL_text" style="@style/smallTextStyle" />
+                            <TextView android:textStyle="bold" android:textColor="#ffff00ff" android:gravity="center" android:id="@id/cm_text_label" android:text="@string/cm_text" style="@style/smallTextStyle" />
+                            <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/clicks_text_label" android:text="@string/clicks_text" style="@style/smallTextStyle" />
+                        </TableRow>
+                        <TableRow android:paddingBottom="@dimen/row_padding_big">
+                            <TextView android:textStyle="bold" android:gravity="center" android:id="@id/vert_text_label" android:text="@string/Vert_label" style="@style/bigTextStyle" />
+                            <TextView android:textStyle="bold" android:textColor="#fffef502" android:gravity="center" android:id="@id/VertDropMOA" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                            <TextView android:textStyle="bold" android:textColor="#ff00ff00" android:gravity="center" android:id="@id/VertDropMIL" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                            <TextView android:textStyle="bold" android:textColor="#ffff00ff" android:gravity="center" android:id="@id/VertDropCM" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                            <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/VertDropClicks" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                        </TableRow>
+                        <TableRow android:paddingBottom="@dimen/row_padding_big">
+                            <TextView android:textStyle="bold" android:gravity="center" android:id="@id/gor_text_label" android:text="@string/Hor_label" style="@style/bigTextStyle" />
+                            <TextView android:textStyle="bold" android:textColor="#fffef502" android:gravity="center" android:id="@id/GorWindMOA" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                            <TextView android:textStyle="bold" android:textColor="#ff00ff00" android:gravity="center" android:id="@id/GorWindMIL" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                            <TextView android:textStyle="bold" android:textColor="#ffff00ff" android:gravity="center" android:id="@id/GorWindCM" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                            <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/GorWindClicks" android:text="@string/zero_text" style="@style/bigTextStyle" />
+                        </TableRow>
+                    </TableLayout>
+                    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2,3,4">
+                        <TableRow android:paddingBottom="@dimen/row_padding_big">
+                            <Button android:textStyle="bold" android:id="@id/ButtonCalypsoAzimuth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/calypso_direction_label" style="@style/regularTextStyle" />
+                            <Button android:textStyle="bold" android:id="@id/ButtonHelp" android:layout_width="40.0dip" android:layout_height="wrap_content" android:text="\?" style="@style/regularTextStyle" />
+                        </TableRow>
+                        <TableRow android:paddingBottom="@dimen/row_padding_big">
+                            <Button android:textStyle="bold" android:id="@id/ButtonTargetAzimuth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dof_direction_label" style="@style/regularTextStyle" />
+                            <Button android:textStyle="bold" android:id="@id/ButtonHelp2" android:layout_width="40.0dip" android:layout_height="wrap_content" android:text="\?" style="@style/regularTextStyle" />
+                        </TableRow>
+                        <TableRow android:paddingBottom="@dimen/row_padding_big">
+                            <Button android:textStyle="bold" android:id="@id/ButtonReticle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mark_label" style="@style/regularTextStyle" />
+                            <Button android:textStyle="bold" android:id="@id/ButtonClose" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/close_label" style="@style/regularTextStyle" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</com.borisov.strelokpro.LockableScrollView>

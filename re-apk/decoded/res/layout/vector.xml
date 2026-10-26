@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="fill" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableLayout android:padding="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2">
+            <TableRow android:paddingTop="15.0dip" android:paddingBottom="15.0dip">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:id="@id/ResponseLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="3" android:text="Vector" style="@style/bigTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="5.0dip">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/LabelDistance" android:paddingRight="@dimen/right_padding" android:layout_span="2" android:text="@string/distance_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/DistanceValue" android:text="@string/empty_text" style="@style/bigTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="5.0dip">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/LabelSlope" android:paddingRight="@dimen/right_padding" android:layout_span="2" android:text="@string/slope_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/SlopeValue" android:text="@string/empty_text" style="@style/bigTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="25.0dip">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/LabelAzimuth" android:paddingRight="@dimen/right_padding" android:layout_span="2" android:text="@string/azimuth_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:id="@id/AzimuthValue" android:text="@string/empty_text" style="@style/bigTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="5.0dip" />
+            <TableRow android:paddingTop="45.0dip">
+                <Button android:textStyle="bold" android:id="@id/ButtonUseVectorData" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="3" android:text="@string/use_vector_data" style="@style/regularTextStyle" />
+            </TableRow>
+        </TableLayout>
+        <RelativeLayout android:gravity="bottom" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textStyle="bold" android:id="@id/ButtonClose" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/close_label" style="@style/regularTextStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

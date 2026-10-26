@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="fill" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableLayout android:paddingLeft="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_vertical_margin" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2,3">
+            <TableRow>
+                <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/LabelRifleName" android:layout_span="4" android:text="@string/rifle_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Button android:textStyle="bold" android:id="@id/ButtonCartridgesList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/change_cartridge_label" android:singleLine="false" style="@style/regularTextStyle" />
+                <EditText android:layout_gravity="center_vertical" android:id="@id/EditCartridgeName" android:layout_span="2" android:text="@string/empty_text" android:singleLine="true" android:selectAllOnFocus="true" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="5.0dip">
+                <TextView android:textStyle="bold" android:gravity="center|right" android:id="@id/LabelBulletSpeed" android:paddingRight="@dimen/right_padding" android:text="@string/BulletSpeed_label" style="@style/regularTextStyle" />
+                <Button android:textStyle="bold" android:id="@id/ButtonBulletSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero_text" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:layout_gravity="center|right" android:id="@id/LabelBulletLength" android:paddingRight="@dimen/right_padding" android:text="@string/bullet_length_label" android:singleLine="false" android:layout_weight="0.4" style="@style/regularTextStyle" />
+                <EditText android:textStyle="bold" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/EditBulletLength" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="5.0dip">
+                <TextView android:textStyle="bold" android:gravity="right" android:id="@id/LabelBulletTemp" android:paddingRight="@dimen/right_padding" android:text="@string/BulletTemperature_label" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:id="@id/ValueBulletTemp" android:text="@string/zero_text" android:singleLine="true" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:layout_gravity="center|right" android:id="@id/LabelBulletDiameter" android:paddingRight="@dimen/right_padding" android:text="@string/bullet_diam_label" android:singleLine="false" android:layout_weight="0.4" style="@style/regularTextStyle" />
+                <EditText android:textStyle="bold" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/EditBulletDiameter" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="5.0dip">
+                <TextView android:textStyle="bold" android:layout_gravity="center|right" android:id="@id/LabelBulletWeight" android:paddingRight="@dimen/right_padding" android:layout_span="3" android:text="@string/bullet_weight_label" android:singleLine="false" android:layout_weight="0.4" style="@style/regularTextStyle" />
+                <EditText android:textStyle="bold" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/EditBulletWeight" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:gravity="center|right" android:paddingRight="@dimen/right_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_span="2" android:text="@string/bc_label2" style="@style/regularTextStyle" />
+                <Button android:textStyle="bold" android:id="@id/ButtonMultiBC" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/multi_bc" android:singleLine="false" style="@style/regularTextStyle" />
+                <EditText android:textStyle="bold" android:gravity="center" android:id="@id/EditBulletBC" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:gravity="center" android:paddingRight="@dimen/right_padding" android:text="@string/drag_function_label" style="@style/regularTextStyle" />
+                <Button android:textStyle="bold" android:id="@id/ButtonDragFunction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="3" android:text="@string/drag_function_label" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonRifleAtm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="4" android:text="@string/weather_label" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/ZeroOffsetHeader" android:paddingRight="@dimen/right_padding" android:layout_span="3" android:text="@string/zero_offset_label" style="@style/regularTextStyle" />
+                <Spinner android:id="@id/spinnerUnitsZeroShift" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:gravity="right" android:id="@id/LabelVerticalOffset" android:paddingRight="@dimen/right_padding" android:text="@string/Vertical_offset_label" style="@style/regularTextStyle" />
+                <EditText android:gravity="center" android:id="@id/EditVerticalOffset" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+                <TextView android:textStyle="bold" android:gravity="right" android:id="@id/LabelHorizontalOffset" android:paddingRight="@dimen/right_padding" android:text="@string/Horizontal_offset_label" style="@style/regularTextStyle" />
+                <EditText android:gravity="center" android:id="@id/EditHorizontalOffset" android:text="@string/zero_text" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="phone" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:gravity="center" android:text="@string/note" android:singleLine="false" style="@style/regularTextStyle" />
+                <EditText android:textStyle="bold" android:id="@id/EditCartridgeNote" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="3" android:text="@string/empty_text" android:lines="3" android:minLines="1" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textMultiLine" android:imeOptions="actionDone" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/row_padding_big" android:paddingBottom="@dimen/row_padding_big">
+                <Button android:textStyle="bold" android:id="@id/ButtonSDF" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="4" android:text="@string/sdf_label" android:singleLine="false" style="@style/regularTextStyle" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2,3">
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/ButtonDBCartridges" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" />
+                <ImageButton android:id="@id/ButtonBulletsG1" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" />
+                <ImageButton android:id="@id/ButtonBulletsG7" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" />
+                <ImageButton android:id="@id/ButtonPellets" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/activity_vertical_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonOK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok_label" android:layout_weight="2.0" style="@style/regularTextStyle" />
+            <Button android:textStyle="bold" android:layout_gravity="bottom" android:id="@id/ButtonCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_label" android:layout_weight="2.0" style="@style/regularTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

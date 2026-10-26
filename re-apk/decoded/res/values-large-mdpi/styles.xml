@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="bigTextStyle">
+        <item name="android:textSize">20.0sp</item>
+    </style>
+    <style name="calculateTextStyle">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">#ff0000ff</item>
+    </style>
+    <style name="hugeTextStyle">
+        <item name="android:textSize">24.0sp</item>
+    </style>
+    <style name="medium2TextStyle">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="mediumTextStyle">
+        <item name="android:textSize">17.0sp</item>
+    </style>
+    <style name="regularTextStyle" />
+    <style name="rifleinfoTextStyle">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+    <style name="smallTextStyle">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+</resources>

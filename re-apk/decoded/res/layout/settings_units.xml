@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="fill" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableLayout android:padding="@dimen/table_padding" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1">
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Button android:textStyle="bold" android:id="@id/ButtonImperial" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/imperial_units" style="@style/regularTextStyle" />
+                <Button android:textStyle="bold" android:id="@id/ButtonMetric" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/metric_units" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#fffef502" android:gravity="center_horizontal" android:layout_span="2" android:text="@string/select_units_label" android:singleLine="false" style="@style/bigTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/distance_units_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Spinner android:id="@id/spinnerDistanceUnits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/inches_cm_units_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Spinner android:id="@id/spinnerInchesUnits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/scope_height_units_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Spinner android:id="@id/spinnerScopeHeightUnits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/speed_units_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Spinner android:id="@id/spinnerSpeedUnits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/temperature_units_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Spinner android:id="@id/spinnerTemperatureUnits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/pressure_units_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Spinner android:id="@id/spinnerPressureUnits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/wind_speed_units_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Spinner android:id="@id/spinnerWindUnits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/altitude_units_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Spinner android:id="@id/spinnerAltitudeUnits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/slope_units_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Spinner android:id="@id/spinnerAngleUnits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/energy_units_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Spinner android:id="@id/spinnerEnergyUnits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/bullet_weight_units_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Spinner android:id="@id/spinnerBulletWeightUnits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/bullet_length_units_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Spinner android:id="@id/spinnerBulletLengthUnits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/bullet_diameter_units_label" style="@style/regularTextStyle" />
+            </TableRow>
+            <TableRow android:paddingBottom="@dimen/row_padding">
+                <Spinner android:id="@id/spinnerBulletDiameterUnits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_span="2" style="@style/regularTextStyle" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:paddingBottom="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textStyle="bold" android:id="@id/ButtonOK" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ok_label" style="@style/regularTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@id/r_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2,3,4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/edit_handle" android:background="@null" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:layout_centerVertical="true" />
+        <TextView android:textStyle="bold" android:textColor="#fffbf4cc" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/TargetNameValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="Target name" android:layout_centerVertical="true" style="@style/hugeTextStyle" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/handle" android:background="@null" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:layout_centerVertical="true" />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:id="@id/LabelDistance" android:paddingRight="@dimen/right_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Distance" android:layout_weight="0.0" style="@style/regularTextStyle" />
+        <TextView android:gravity="center|right" android:id="@id/LabelCorrection" android:paddingRight="@dimen/right_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Vert.Correction" android:layout_weight="1.0" style="@style/regularTextStyle" />
+        <TextView android:textStyle="bold" android:textColor="#fffef502" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/CorrectionValue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zero_text" android:layout_weight="1.0" style="@style/bigTextStyle" />
+        <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/VertDifferenceValue" android:layout_width="10.0dip" android:layout_height="fill_parent" android:text=" " android:layout_weight="1.0" style="@style/regularTextStyle" />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:textColor="#ff75b1fb" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/DistanceValue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zero_text" android:layout_weight="0.0" style="@style/bigTextStyle" />
+        <TextView android:gravity="center|right" android:id="@id/LabelHorCorrection" android:paddingRight="@dimen/right_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Hor.Correction" android:layout_weight="1.0" style="@style/regularTextStyle" />
+        <TextView android:textStyle="bold" android:textColor="#ff00ff00" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/HorCorrectionValue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zero_text" android:layout_weight="1.0" style="@style/bigTextStyle" />
+        <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/HorDifferenceValue" android:layout_width="10.0dip" android:layout_height="fill_parent" android:text=" " android:layout_weight="1.0" style="@style/regularTextStyle" />
+    </TableRow>
+</TableLayout>

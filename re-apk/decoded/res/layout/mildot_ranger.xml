@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/MildotLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TableLayout android:id="@id/tableLayoutTop" android:paddingLeft="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2" app:layout_constraintBottom_toTopOf="@id/MildotViewLayout" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TableRow android:paddingBottom="15.0dip">
+            <TextView android:textStyle="bold" android:textColor="#ffffff00" android:gravity="center_horizontal" android:id="@id/LabelDopInfo" android:layout_span="3" android:text="@string/stadiametric_rangefinding" android:singleLine="true" style="@style/regularTextStyle" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/MildotViewLayout" android:paddingLeft="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/tableLayout1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tableLayoutTop">
+        <com.borisov.strelokpro.MildotRangerDraw android:id="@id/MildotView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <TableLayout android:layout_gravity="bottom" android:id="@id/tableLayout1" android:paddingLeft="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2" app:layout_constraintBottom_toTopOf="@id/linearLayoutBottom" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/MildotViewLayout">
+        <TableRow android:layout_width="fill_parent" android:layout_margin="15.0sp">
+            <TextView android:textStyle="bold" android:id="@id/LabelMin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero_text" android:singleLine="true" android:layout_weight="0.1" style="@style/regularTextStyle" />
+            <TextView android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/LabelCurrent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero_text" android:singleLine="true" android:layout_weight="0.1" style="@style/regularTextStyle" />
+            <TextView android:textStyle="bold" android:gravity="right" android:id="@id/LabelMax" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero_text" android:singleLine="true" android:layout_weight="0.1" style="@style/regularTextStyle" />
+        </TableRow>
+        <TableRow>
+            <SeekBar android:id="@id/Slider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0sp" android:layout_marginRight="15.0sp" android:max="800" android:layout_span="3" android:defaultValue="200" />
+        </TableRow>
+        <TableRow android:paddingTop="@dimen/row_padding_big" android:paddingBottom="@dimen/row_padding_big">
+            <Button android:textStyle="bold" android:id="@id/ButtonUseThisDistance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="3" android:text="@string/use_this_distance" style="@style/regularTextStyle" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayoutBottom" android:paddingLeft="@dimen/table_padding" android:paddingTop="@dimen/table_padding" android:paddingRight="@dimen/table_padding" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_max="70.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tableLayout1">
+        <ImageButton android:id="@id/ButtonTarget" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" android:layout_weight="0.5" />
+        <ImageButton android:gravity="right" android:id="@id/ButtonClose" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerInside" android:layout_weight="0.5" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

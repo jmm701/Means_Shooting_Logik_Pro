@@ -1,0 +1,24012 @@
+.class final Lcom/google/android/gms/internal/wearable/zzda;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-wearable@@17.1.0"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/wearable/zzdi;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lcom/google/android/gms/internal/wearable/zzdi<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final zza:[I
+
+.field private static final zzb:Lsun/misc/Unsafe;
+
+
+# instance fields
+.field private final zzc:[I
+
+.field private final zzd:[Ljava/lang/Object;
+
+.field private final zze:I
+
+.field private final zzf:I
+
+.field private final zzg:Lcom/google/android/gms/internal/wearable/zzcx;
+
+.field private final zzh:Z
+
+.field private final zzi:Z
+
+.field private final zzj:[I
+
+.field private final zzk:I
+
+.field private final zzl:I
+
+.field private final zzm:Lcom/google/android/gms/internal/wearable/zzcl;
+
+.field private final zzn:Lcom/google/android/gms/internal/wearable/zzdw;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/internal/wearable/zzdw<",
+            "**>;"
+        }
+    .end annotation
+.end field
+
+.field private final zzo:Lcom/google/android/gms/internal/wearable/zzbh;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/internal/wearable/zzbh<",
+            "*>;"
+        }
+    .end annotation
+.end field
+
+.field private final zzp:Lcom/google/android/gms/internal/wearable/zzdc;
+
+.field private final zzq:Lcom/google/android/gms/internal/wearable/zzcs;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    new-array v0, v0, [I
+
+    .line 3
+    .line 4
+    sput-object v0, Lcom/google/android/gms/internal/wearable/zzda;->zza:[I
+
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzeg;->zzq()Lsun/misc/Unsafe;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    sput-object v0, Lcom/google/android/gms/internal/wearable/zzda;->zzb:Lsun/misc/Unsafe;
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method private constructor <init>([I[Ljava/lang/Object;IILcom/google/android/gms/internal/wearable/zzcx;ZZ[IIILcom/google/android/gms/internal/wearable/zzdc;Lcom/google/android/gms/internal/wearable/zzcl;Lcom/google/android/gms/internal/wearable/zzdw;Lcom/google/android/gms/internal/wearable/zzbh;Lcom/google/android/gms/internal/wearable/zzcs;[B)V
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "([I[",
+            "Ljava/lang/Object;",
+            "II",
+            "Lcom/google/android/gms/internal/wearable/zzcx;",
+            "ZZ[III",
+            "Lcom/google/android/gms/internal/wearable/zzdc;",
+            "Lcom/google/android/gms/internal/wearable/zzcl;",
+            "Lcom/google/android/gms/internal/wearable/zzdw<",
+            "**>;",
+            "Lcom/google/android/gms/internal/wearable/zzbh<",
+            "*>;",
+            "Lcom/google/android/gms/internal/wearable/zzcs;",
+            ")V"
+        }
+    .end annotation
+
+    move-object v0, p0
+
+    move-object v1, p5
+
+    move-object/from16 v2, p14
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    move-object v3, p1
+
+    iput-object v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    move-object v3, p2
+
+    iput-object v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzd:[Ljava/lang/Object;
+
+    move v3, p3
+
+    iput v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zze:I
+
+    move v3, p4
+
+    iput v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzf:I
+
+    move v3, p6
+
+    iput-boolean v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzi:Z
+
+    const/4 v3, 0x0
+
+    if-eqz v2, :cond_0
+
+    .line 1
+    invoke-virtual {v2, p5}, Lcom/google/android/gms/internal/wearable/zzbh;->zza(Lcom/google/android/gms/internal/wearable/zzcx;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    const/4 v3, 0x1
+
+    :cond_0
+    iput-boolean v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzh:Z
+
+    move-object v3, p8
+
+    iput-object v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzj:[I
+
+    move v3, p9
+
+    iput v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzk:I
+
+    move v3, p10
+
+    iput v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzl:I
+
+    move-object/from16 v3, p11
+
+    iput-object v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzp:Lcom/google/android/gms/internal/wearable/zzdc;
+
+    move-object/from16 v3, p12
+
+    iput-object v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzm:Lcom/google/android/gms/internal/wearable/zzcl;
+
+    move-object/from16 v3, p13
+
+    iput-object v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzn:Lcom/google/android/gms/internal/wearable/zzdw;
+
+    iput-object v2, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzo:Lcom/google/android/gms/internal/wearable/zzbh;
+
+    iput-object v1, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzg:Lcom/google/android/gms/internal/wearable/zzcx;
+
+    move-object/from16 v1, p15
+
+    iput-object v1, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzq:Lcom/google/android/gms/internal/wearable/zzcs;
+
+    return-void
+.end method
+
+.method private final zzA(I)I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 2
+    .line 3
+    add-int/lit8 p1, p1, 0x1
+
+    .line 4
+    .line 5
+    aget p1, v0, p1
+
+    .line 6
+    .line 7
+    return p1
+.end method
+
+.method private final zzB(I)I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 2
+    .line 3
+    add-int/lit8 p1, p1, 0x2
+
+    .line 4
+    .line 5
+    aget p1, v0, p1
+
+    .line 6
+    .line 7
+    return p1
+.end method
+
+.method private static zzC(I)I
+    .locals 0
+
+    .line 1
+    ushr-int/lit8 p0, p0, 0x14
+
+    .line 2
+    .line 3
+    and-int/lit16 p0, p0, 0xff
+
+    .line 4
+    .line 5
+    return p0
+.end method
+
+.method private static zzD(Ljava/lang/Object;J)D
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(TT;J)D"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    check-cast p0, Ljava/lang/Double;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Ljava/lang/Double;->doubleValue()D
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-wide p0
+
+    .line 11
+    return-wide p0
+.end method
+
+.method private static zzE(Ljava/lang/Object;J)F
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(TT;J)F"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    check-cast p0, Ljava/lang/Float;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Ljava/lang/Float;->floatValue()F
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method private static zzF(Ljava/lang/Object;J)I
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(TT;J)I"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    check-cast p0, Ljava/lang/Integer;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method private static zzG(Ljava/lang/Object;J)J
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(TT;J)J"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    check-cast p0, Ljava/lang/Long;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-wide p0
+
+    .line 11
+    return-wide p0
+.end method
+
+.method private static zzH(Ljava/lang/Object;J)Z
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(TT;J)Z"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    check-cast p0, Ljava/lang/Boolean;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method private final zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;I)Z"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1, p3}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p1
+
+    .line 5
+    invoke-direct {p0, p2, p3}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p2
+
+    .line 9
+    if-ne p1, p2, :cond_0
+
+    .line 10
+    .line 11
+    const/4 p1, 0x1
+
+    .line 12
+    return p1
+
+    .line 13
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 14
+    return p1
+.end method
+
+.method private final zzJ(Ljava/lang/Object;IIII)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;IIII)Z"
+        }
+    .end annotation
+
+    .line 1
+    const v0, 0xfffff
+
+    .line 2
+    .line 3
+    .line 4
+    if-ne p3, v0, :cond_0
+
+    .line 5
+    .line 6
+    invoke-direct {p0, p1, p2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 7
+    .line 8
+    .line 9
+    move-result p1
+
+    .line 10
+    return p1
+
+    .line 11
+    :cond_0
+    and-int p1, p4, p5
+
+    .line 12
+    .line 13
+    if-eqz p1, :cond_1
+
+    .line 14
+    .line 15
+    const/4 p1, 0x1
+
+    .line 16
+    return p1
+
+    .line 17
+    :cond_1
+    const/4 p1, 0x0
+
+    .line 18
+    return p1
+.end method
+
+.method private final zzK(Ljava/lang/Object;I)Z
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;I)Z"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p2}, Lcom/google/android/gms/internal/wearable/zzda;->zzB(I)I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const v1, 0xfffff
+
+    .line 6
+    .line 7
+    .line 8
+    and-int v2, v0, v1
+
+    .line 9
+    .line 10
+    int-to-long v2, v2
+
+    .line 11
+    const-wide/32 v4, 0xfffff
+
+    .line 12
+    .line 13
+    .line 14
+    const/4 v6, 0x0
+
+    .line 15
+    const/4 v7, 0x1
+
+    .line 16
+    cmp-long v8, v2, v4
+
+    .line 17
+    .line 18
+    if-nez v8, :cond_14
+
+    .line 19
+    .line 20
+    invoke-direct {p0, p2}, Lcom/google/android/gms/internal/wearable/zzda;->zzA(I)I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result p2
+
+    .line 24
+    and-int v0, p2, v1
+
+    .line 25
+    .line 26
+    int-to-long v0, v0
+
+    .line 27
+    invoke-static {p2}, Lcom/google/android/gms/internal/wearable/zzda;->zzC(I)I
+
+    .line 28
+    .line 29
+    .line 30
+    move-result p2
+
+    .line 31
+    const-wide/16 v2, 0x0
+
+    .line 32
+    .line 33
+    packed-switch p2, :pswitch_data_0
+
+    .line 34
+    .line 35
+    .line 36
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 37
+    .line 38
+    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
+
+    .line 39
+    .line 40
+    .line 41
+    throw p1
+
+    .line 42
+    :pswitch_0
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p1
+
+    .line 46
+    if-eqz p1, :cond_0
+
+    .line 47
+    .line 48
+    return v7
+
+    .line 49
+    :cond_0
+    return v6
+
+    .line 50
+    :pswitch_1
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-wide p1
+
+    .line 54
+    cmp-long v0, p1, v2
+
+    .line 55
+    .line 56
+    if-eqz v0, :cond_1
+
+    .line 57
+    .line 58
+    return v7
+
+    .line 59
+    :cond_1
+    return v6
+
+    .line 60
+    :pswitch_2
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 61
+    .line 62
+    .line 63
+    move-result p1
+
+    .line 64
+    if-eqz p1, :cond_2
+
+    .line 65
+    .line 66
+    return v7
+
+    .line 67
+    :cond_2
+    return v6
+
+    .line 68
+    :pswitch_3
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-wide p1
+
+    .line 72
+    cmp-long v0, p1, v2
+
+    .line 73
+    .line 74
+    if-eqz v0, :cond_3
+
+    .line 75
+    .line 76
+    return v7
+
+    .line 77
+    :cond_3
+    return v6
+
+    .line 78
+    :pswitch_4
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 79
+    .line 80
+    .line 81
+    move-result p1
+
+    .line 82
+    if-eqz p1, :cond_4
+
+    .line 83
+    .line 84
+    return v7
+
+    .line 85
+    :cond_4
+    return v6
+
+    .line 86
+    :pswitch_5
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 87
+    .line 88
+    .line 89
+    move-result p1
+
+    .line 90
+    if-eqz p1, :cond_5
+
+    .line 91
+    .line 92
+    return v7
+
+    .line 93
+    :cond_5
+    return v6
+
+    .line 94
+    :pswitch_6
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 95
+    .line 96
+    .line 97
+    move-result p1
+
+    .line 98
+    if-eqz p1, :cond_6
+
+    .line 99
+    .line 100
+    return v7
+
+    .line 101
+    :cond_6
+    return v6
+
+    .line 102
+    :pswitch_7
+    sget-object p2, Lcom/google/android/gms/internal/wearable/zzau;->zzb:Lcom/google/android/gms/internal/wearable/zzau;
+
+    .line 103
+    .line 104
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 105
+    .line 106
+    .line 107
+    move-result-object p1
+
+    .line 108
+    invoke-virtual {p2, p1}, Lcom/google/android/gms/internal/wearable/zzau;->equals(Ljava/lang/Object;)Z
+
+    .line 109
+    .line 110
+    .line 111
+    move-result p1
+
+    .line 112
+    if-nez p1, :cond_7
+
+    .line 113
+    .line 114
+    return v7
+
+    .line 115
+    :cond_7
+    return v6
+
+    .line 116
+    :pswitch_8
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 117
+    .line 118
+    .line 119
+    move-result-object p1
+
+    .line 120
+    if-eqz p1, :cond_8
+
+    .line 121
+    .line 122
+    return v7
+
+    .line 123
+    :cond_8
+    return v6
+
+    .line 124
+    :pswitch_9
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 125
+    .line 126
+    .line 127
+    move-result-object p1
+
+    .line 128
+    instance-of p2, p1, Ljava/lang/String;
+
+    .line 129
+    .line 130
+    if-eqz p2, :cond_a
+
+    .line 131
+    .line 132
+    check-cast p1, Ljava/lang/String;
+
+    .line 133
+    .line 134
+    invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
+
+    .line 135
+    .line 136
+    .line 137
+    move-result p1
+
+    .line 138
+    if-nez p1, :cond_9
+
+    .line 139
+    .line 140
+    return v7
+
+    .line 141
+    :cond_9
+    return v6
+
+    .line 142
+    :cond_a
+    instance-of p2, p1, Lcom/google/android/gms/internal/wearable/zzau;
+
+    .line 143
+    .line 144
+    if-eqz p2, :cond_c
+
+    .line 145
+    .line 146
+    sget-object p2, Lcom/google/android/gms/internal/wearable/zzau;->zzb:Lcom/google/android/gms/internal/wearable/zzau;
+
+    .line 147
+    .line 148
+    invoke-virtual {p2, p1}, Lcom/google/android/gms/internal/wearable/zzau;->equals(Ljava/lang/Object;)Z
+
+    .line 149
+    .line 150
+    .line 151
+    move-result p1
+
+    .line 152
+    if-nez p1, :cond_b
+
+    .line 153
+    .line 154
+    return v7
+
+    .line 155
+    :cond_b
+    return v6
+
+    .line 156
+    :cond_c
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 157
+    .line 158
+    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
+
+    .line 159
+    .line 160
+    .line 161
+    throw p1
+
+    .line 162
+    :pswitch_a
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzh(Ljava/lang/Object;J)Z
+
+    .line 163
+    .line 164
+    .line 165
+    move-result p1
+
+    .line 166
+    return p1
+
+    .line 167
+    :pswitch_b
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 168
+    .line 169
+    .line 170
+    move-result p1
+
+    .line 171
+    if-eqz p1, :cond_d
+
+    .line 172
+    .line 173
+    return v7
+
+    .line 174
+    :cond_d
+    return v6
+
+    .line 175
+    :pswitch_c
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 176
+    .line 177
+    .line 178
+    move-result-wide p1
+
+    .line 179
+    cmp-long v0, p1, v2
+
+    .line 180
+    .line 181
+    if-eqz v0, :cond_e
+
+    .line 182
+    .line 183
+    return v7
+
+    .line 184
+    :cond_e
+    return v6
+
+    .line 185
+    :pswitch_d
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 186
+    .line 187
+    .line 188
+    move-result p1
+
+    .line 189
+    if-eqz p1, :cond_f
+
+    .line 190
+    .line 191
+    return v7
+
+    .line 192
+    :cond_f
+    return v6
+
+    .line 193
+    :pswitch_e
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 194
+    .line 195
+    .line 196
+    move-result-wide p1
+
+    .line 197
+    cmp-long v0, p1, v2
+
+    .line 198
+    .line 199
+    if-eqz v0, :cond_10
+
+    .line 200
+    .line 201
+    return v7
+
+    .line 202
+    :cond_10
+    return v6
+
+    .line 203
+    :pswitch_f
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 204
+    .line 205
+    .line 206
+    move-result-wide p1
+
+    .line 207
+    cmp-long v0, p1, v2
+
+    .line 208
+    .line 209
+    if-eqz v0, :cond_11
+
+    .line 210
+    .line 211
+    return v7
+
+    .line 212
+    :cond_11
+    return v6
+
+    .line 213
+    :pswitch_10
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzj(Ljava/lang/Object;J)F
+
+    .line 214
+    .line 215
+    .line 216
+    move-result p1
+
+    .line 217
+    const/4 p2, 0x0
+
+    .line 218
+    cmpl-float p1, p1, p2
+
+    .line 219
+    .line 220
+    if-eqz p1, :cond_12
+
+    .line 221
+    .line 222
+    return v7
+
+    .line 223
+    :cond_12
+    return v6
+
+    .line 224
+    :pswitch_11
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzl(Ljava/lang/Object;J)D
+
+    .line 225
+    .line 226
+    .line 227
+    move-result-wide p1
+
+    .line 228
+    const-wide/16 v0, 0x0
+
+    .line 229
+    .line 230
+    cmpl-double v2, p1, v0
+
+    .line 231
+    .line 232
+    if-eqz v2, :cond_13
+
+    .line 233
+    .line 234
+    return v7
+
+    .line 235
+    :cond_13
+    return v6
+
+    .line 236
+    :cond_14
+    invoke-static {p1, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 237
+    .line 238
+    .line 239
+    move-result p1
+
+    .line 240
+    ushr-int/lit8 p2, v0, 0x14
+
+    .line 241
+    .line 242
+    shl-int p2, v7, p2
+
+    .line 243
+    .line 244
+    and-int/2addr p1, p2
+
+    .line 245
+    if-eqz p1, :cond_15
+
+    .line 246
+    .line 247
+    return v7
+
+    .line 248
+    :cond_15
+    return v6
+
+    .line 249
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method private final zzL(Ljava/lang/Object;I)V
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;I)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p2}, Lcom/google/android/gms/internal/wearable/zzda;->zzB(I)I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p2
+
+    .line 5
+    const v0, 0xfffff
+
+    .line 6
+    .line 7
+    .line 8
+    and-int/2addr v0, p2
+
+    .line 9
+    int-to-long v0, v0
+
+    .line 10
+    const-wide/32 v2, 0xfffff
+
+    .line 11
+    .line 12
+    .line 13
+    cmp-long v4, v0, v2
+
+    .line 14
+    .line 15
+    if-nez v4, :cond_0
+
+    .line 16
+    .line 17
+    return-void
+
+    .line 18
+    :cond_0
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v2
+
+    .line 22
+    ushr-int/lit8 p2, p2, 0x14
+
+    .line 23
+    .line 24
+    const/4 v3, 0x1
+
+    .line 25
+    shl-int p2, v3, p2
+
+    .line 26
+    .line 27
+    or-int/2addr p2, v2
+
+    .line 28
+    invoke-static {p1, v0, v1, p2}, Lcom/google/android/gms/internal/wearable/zzeg;->zze(Ljava/lang/Object;JI)V
+
+    .line 29
+    .line 30
+    .line 31
+    return-void
+.end method
+
+.method private final zzM(Ljava/lang/Object;II)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;II)Z"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p3}, Lcom/google/android/gms/internal/wearable/zzda;->zzB(I)I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p3
+
+    .line 5
+    const v0, 0xfffff
+
+    .line 6
+    .line 7
+    .line 8
+    and-int/2addr p3, v0
+
+    .line 9
+    int-to-long v0, p3
+
+    .line 10
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    if-ne p1, p2, :cond_0
+
+    .line 15
+    .line 16
+    const/4 p1, 0x1
+
+    .line 17
+    return p1
+
+    .line 18
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 19
+    return p1
+.end method
+
+.method private final zzN(Ljava/lang/Object;II)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;II)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p3}, Lcom/google/android/gms/internal/wearable/zzda;->zzB(I)I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p3
+
+    .line 5
+    const v0, 0xfffff
+
+    .line 6
+    .line 7
+    .line 8
+    and-int/2addr p3, v0
+
+    .line 9
+    int-to-long v0, p3
+
+    .line 10
+    invoke-static {p1, v0, v1, p2}, Lcom/google/android/gms/internal/wearable/zzeg;->zze(Ljava/lang/Object;JI)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method private final zzO(I)I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zze:I
+
+    .line 2
+    .line 3
+    if-lt p1, v0, :cond_0
+
+    .line 4
+    .line 5
+    iget v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzf:I
+
+    .line 6
+    .line 7
+    if-gt p1, v0, :cond_0
+
+    .line 8
+    .line 9
+    const/4 v0, 0x0
+
+    .line 10
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzQ(II)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
+
+    .line 15
+    :cond_0
+    const/4 p1, -0x1
+
+    .line 16
+    return p1
+.end method
+
+.method private final zzP(II)I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zze:I
+
+    .line 2
+    .line 3
+    if-lt p1, v0, :cond_0
+
+    .line 4
+    .line 5
+    iget v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzf:I
+
+    .line 6
+    .line 7
+    if-gt p1, v0, :cond_0
+
+    .line 8
+    .line 9
+    invoke-direct {p0, p1, p2}, Lcom/google/android/gms/internal/wearable/zzda;->zzQ(II)I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p1
+
+    .line 13
+    return p1
+
+    .line 14
+    :cond_0
+    const/4 p1, -0x1
+
+    .line 15
+    return p1
+.end method
+
+.method private final zzQ(II)I
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 2
+    .line 3
+    array-length v0, v0
+
+    .line 4
+    div-int/lit8 v0, v0, 0x3
+
+    .line 5
+    .line 6
+    const/4 v1, -0x1
+
+    .line 7
+    add-int/2addr v0, v1
+
+    .line 8
+    :goto_0
+    if-gt p2, v0, :cond_2
+
+    .line 9
+    .line 10
+    add-int v2, v0, p2
+
+    .line 11
+    .line 12
+    ushr-int/lit8 v2, v2, 0x1
+
+    .line 13
+    .line 14
+    mul-int/lit8 v3, v2, 0x3
+
+    .line 15
+    .line 16
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 17
+    .line 18
+    aget v4, v4, v3
+
+    .line 19
+    .line 20
+    if-ne p1, v4, :cond_0
+
+    .line 21
+    .line 22
+    return v3
+
+    .line 23
+    :cond_0
+    if-ge p1, v4, :cond_1
+
+    .line 24
+    .line 25
+    add-int/lit8 v2, v2, -0x1
+
+    .line 26
+    .line 27
+    move v0, v2
+
+    .line 28
+    goto :goto_0
+
+    .line 29
+    :cond_1
+    add-int/lit8 v2, v2, 0x1
+
+    .line 30
+    .line 31
+    move p2, v2
+
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_2
+    return v1
+.end method
+
+.method private final zzR(Ljava/lang/Object;Lcom/google/android/gms/internal/wearable/zzbc;)V
+    .locals 16
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lcom/google/android/gms/internal/wearable/zzbc;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    move-object/from16 v1, p1
+
+    .line 4
+    .line 5
+    move-object/from16 v2, p2
+
+    .line 6
+    .line 7
+    iget-boolean v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzh:Z
+
+    .line 8
+    .line 9
+    if-nez v3, :cond_5
+
+    .line 10
+    .line 11
+    iget-object v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 12
+    .line 13
+    array-length v3, v3
+
+    .line 14
+    sget-object v4, Lcom/google/android/gms/internal/wearable/zzda;->zzb:Lsun/misc/Unsafe;
+
+    .line 15
+    .line 16
+    const v5, 0xfffff
+
+    .line 17
+    .line 18
+    .line 19
+    const/4 v7, 0x0
+
+    .line 20
+    const/4 v8, 0x0
+
+    .line 21
+    const v9, 0xfffff
+
+    .line 22
+    .line 23
+    .line 24
+    :goto_0
+    if-ge v7, v3, :cond_4
+
+    .line 25
+    .line 26
+    invoke-direct {v0, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzA(I)I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v10
+
+    .line 30
+    iget-object v11, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 31
+    .line 32
+    aget v11, v11, v7
+
+    .line 33
+    .line 34
+    invoke-static {v10}, Lcom/google/android/gms/internal/wearable/zzda;->zzC(I)I
+
+    .line 35
+    .line 36
+    .line 37
+    move-result v12
+
+    .line 38
+    const/16 v13, 0x11
+
+    .line 39
+    .line 40
+    const/4 v14, 0x1
+
+    .line 41
+    if-gt v12, v13, :cond_1
+
+    .line 42
+    .line 43
+    iget-object v13, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 44
+    .line 45
+    add-int/lit8 v15, v7, 0x2
+
+    .line 46
+    .line 47
+    aget v13, v13, v15
+
+    .line 48
+    .line 49
+    and-int v15, v13, v5
+
+    .line 50
+    .line 51
+    if-eq v15, v9, :cond_0
+
+    .line 52
+    .line 53
+    int-to-long v8, v15
+
+    .line 54
+    invoke-virtual {v4, v1, v8, v9}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    .line 55
+    .line 56
+    .line 57
+    move-result v8
+
+    .line 58
+    move v9, v15
+
+    .line 59
+    :cond_0
+    ushr-int/lit8 v13, v13, 0x14
+
+    .line 60
+    .line 61
+    shl-int v13, v14, v13
+
+    .line 62
+    .line 63
+    goto :goto_1
+
+    .line 64
+    :cond_1
+    const/4 v13, 0x0
+
+    .line 65
+    :goto_1
+    and-int/2addr v10, v5
+
+    .line 66
+    int-to-long v5, v10
+
+    .line 67
+    packed-switch v12, :pswitch_data_0
+
+    .line 68
+    .line 69
+    .line 70
+    :cond_2
+    :goto_2
+    const/4 v12, 0x0
+
+    .line 71
+    goto/16 :goto_3
+
+    .line 72
+    .line 73
+    :pswitch_0
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 74
+    .line 75
+    .line 76
+    move-result v10
+
+    .line 77
+    if-eqz v10, :cond_2
+
+    .line 78
+    .line 79
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 80
+    .line 81
+    .line 82
+    move-result-object v5
+
+    .line 83
+    invoke-direct {v0, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object v6
+
+    .line 87
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzs(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzdi;)V
+
+    .line 88
+    .line 89
+    .line 90
+    goto :goto_2
+
+    .line 91
+    :pswitch_1
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 92
+    .line 93
+    .line 94
+    move-result v10
+
+    .line 95
+    if-eqz v10, :cond_2
+
+    .line 96
+    .line 97
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 98
+    .line 99
+    .line 100
+    move-result-wide v5
+
+    .line 101
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzq(IJ)V
+
+    .line 102
+    .line 103
+    .line 104
+    goto :goto_2
+
+    .line 105
+    :pswitch_2
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 106
+    .line 107
+    .line 108
+    move-result v10
+
+    .line 109
+    if-eqz v10, :cond_2
+
+    .line 110
+    .line 111
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 112
+    .line 113
+    .line 114
+    move-result v5
+
+    .line 115
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzp(II)V
+
+    .line 116
+    .line 117
+    .line 118
+    goto :goto_2
+
+    .line 119
+    :pswitch_3
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 120
+    .line 121
+    .line 122
+    move-result v10
+
+    .line 123
+    if-eqz v10, :cond_2
+
+    .line 124
+    .line 125
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 126
+    .line 127
+    .line 128
+    move-result-wide v5
+
+    .line 129
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzd(IJ)V
+
+    .line 130
+    .line 131
+    .line 132
+    goto :goto_2
+
+    .line 133
+    :pswitch_4
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 134
+    .line 135
+    .line 136
+    move-result v10
+
+    .line 137
+    if-eqz v10, :cond_2
+
+    .line 138
+    .line 139
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 140
+    .line 141
+    .line 142
+    move-result v5
+
+    .line 143
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzb(II)V
+
+    .line 144
+    .line 145
+    .line 146
+    goto :goto_2
+
+    .line 147
+    :pswitch_5
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 148
+    .line 149
+    .line 150
+    move-result v10
+
+    .line 151
+    if-eqz v10, :cond_2
+
+    .line 152
+    .line 153
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 154
+    .line 155
+    .line 156
+    move-result v5
+
+    .line 157
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzg(II)V
+
+    .line 158
+    .line 159
+    .line 160
+    goto :goto_2
+
+    .line 161
+    :pswitch_6
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 162
+    .line 163
+    .line 164
+    move-result v10
+
+    .line 165
+    if-eqz v10, :cond_2
+
+    .line 166
+    .line 167
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 168
+    .line 169
+    .line 170
+    move-result v5
+
+    .line 171
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzo(II)V
+
+    .line 172
+    .line 173
+    .line 174
+    goto :goto_2
+
+    .line 175
+    :pswitch_7
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 176
+    .line 177
+    .line 178
+    move-result v10
+
+    .line 179
+    if-eqz v10, :cond_2
+
+    .line 180
+    .line 181
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 182
+    .line 183
+    .line 184
+    move-result-object v5
+
+    .line 185
+    check-cast v5, Lcom/google/android/gms/internal/wearable/zzau;
+
+    .line 186
+    .line 187
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzn(ILcom/google/android/gms/internal/wearable/zzau;)V
+
+    .line 188
+    .line 189
+    .line 190
+    goto :goto_2
+
+    .line 191
+    :pswitch_8
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 192
+    .line 193
+    .line 194
+    move-result v10
+
+    .line 195
+    if-eqz v10, :cond_2
+
+    .line 196
+    .line 197
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 198
+    .line 199
+    .line 200
+    move-result-object v5
+
+    .line 201
+    invoke-direct {v0, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 202
+    .line 203
+    .line 204
+    move-result-object v6
+
+    .line 205
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzr(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzdi;)V
+
+    .line 206
+    .line 207
+    .line 208
+    goto/16 :goto_2
+
+    .line 209
+    .line 210
+    :pswitch_9
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 211
+    .line 212
+    .line 213
+    move-result v10
+
+    .line 214
+    if-eqz v10, :cond_2
+
+    .line 215
+    .line 216
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 217
+    .line 218
+    .line 219
+    move-result-object v5
+
+    .line 220
+    invoke-static {v11, v5, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzT(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzbc;)V
+
+    .line 221
+    .line 222
+    .line 223
+    goto/16 :goto_2
+
+    .line 224
+    .line 225
+    :pswitch_a
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 226
+    .line 227
+    .line 228
+    move-result v10
+
+    .line 229
+    if-eqz v10, :cond_2
+
+    .line 230
+    .line 231
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzH(Ljava/lang/Object;J)Z
+
+    .line 232
+    .line 233
+    .line 234
+    move-result v5
+
+    .line 235
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzl(IZ)V
+
+    .line 236
+    .line 237
+    .line 238
+    goto/16 :goto_2
+
+    .line 239
+    .line 240
+    :pswitch_b
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 241
+    .line 242
+    .line 243
+    move-result v10
+
+    .line 244
+    if-eqz v10, :cond_2
+
+    .line 245
+    .line 246
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 247
+    .line 248
+    .line 249
+    move-result v5
+
+    .line 250
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzk(II)V
+
+    .line 251
+    .line 252
+    .line 253
+    goto/16 :goto_2
+
+    .line 254
+    .line 255
+    :pswitch_c
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 256
+    .line 257
+    .line 258
+    move-result v10
+
+    .line 259
+    if-eqz v10, :cond_2
+
+    .line 260
+    .line 261
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 262
+    .line 263
+    .line 264
+    move-result-wide v5
+
+    .line 265
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzj(IJ)V
+
+    .line 266
+    .line 267
+    .line 268
+    goto/16 :goto_2
+
+    .line 269
+    .line 270
+    :pswitch_d
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 271
+    .line 272
+    .line 273
+    move-result v10
+
+    .line 274
+    if-eqz v10, :cond_2
+
+    .line 275
+    .line 276
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 277
+    .line 278
+    .line 279
+    move-result v5
+
+    .line 280
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzi(II)V
+
+    .line 281
+    .line 282
+    .line 283
+    goto/16 :goto_2
+
+    .line 284
+    .line 285
+    :pswitch_e
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 286
+    .line 287
+    .line 288
+    move-result v10
+
+    .line 289
+    if-eqz v10, :cond_2
+
+    .line 290
+    .line 291
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 292
+    .line 293
+    .line 294
+    move-result-wide v5
+
+    .line 295
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzh(IJ)V
+
+    .line 296
+    .line 297
+    .line 298
+    goto/16 :goto_2
+
+    .line 299
+    .line 300
+    :pswitch_f
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 301
+    .line 302
+    .line 303
+    move-result v10
+
+    .line 304
+    if-eqz v10, :cond_2
+
+    .line 305
+    .line 306
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 307
+    .line 308
+    .line 309
+    move-result-wide v5
+
+    .line 310
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzc(IJ)V
+
+    .line 311
+    .line 312
+    .line 313
+    goto/16 :goto_2
+
+    .line 314
+    .line 315
+    :pswitch_10
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 316
+    .line 317
+    .line 318
+    move-result v10
+
+    .line 319
+    if-eqz v10, :cond_2
+
+    .line 320
+    .line 321
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzE(Ljava/lang/Object;J)F
+
+    .line 322
+    .line 323
+    .line 324
+    move-result v5
+
+    .line 325
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zze(IF)V
+
+    .line 326
+    .line 327
+    .line 328
+    goto/16 :goto_2
+
+    .line 329
+    .line 330
+    :pswitch_11
+    invoke-direct {v0, v1, v11, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 331
+    .line 332
+    .line 333
+    move-result v10
+
+    .line 334
+    if-eqz v10, :cond_2
+
+    .line 335
+    .line 336
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzD(Ljava/lang/Object;J)D
+
+    .line 337
+    .line 338
+    .line 339
+    move-result-wide v5
+
+    .line 340
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzf(ID)V
+
+    .line 341
+    .line 342
+    .line 343
+    goto/16 :goto_2
+
+    .line 344
+    .line 345
+    :pswitch_12
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 346
+    .line 347
+    .line 348
+    move-result-object v5
+
+    .line 349
+    invoke-direct {v0, v2, v11, v5, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzS(Lcom/google/android/gms/internal/wearable/zzbc;ILjava/lang/Object;I)V
+
+    .line 350
+    .line 351
+    .line 352
+    goto/16 :goto_2
+
+    .line 353
+    .line 354
+    :pswitch_13
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 355
+    .line 356
+    aget v10, v10, v7
+
+    .line 357
+    .line 358
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 359
+    .line 360
+    .line 361
+    move-result-object v5
+
+    .line 362
+    check-cast v5, Ljava/util/List;
+
+    .line 363
+    .line 364
+    invoke-direct {v0, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 365
+    .line 366
+    .line 367
+    move-result-object v6
+
+    .line 368
+    invoke-static {v10, v5, v2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzaa(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Lcom/google/android/gms/internal/wearable/zzdi;)V
+
+    .line 369
+    .line 370
+    .line 371
+    goto/16 :goto_2
+
+    .line 372
+    .line 373
+    :pswitch_14
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 374
+    .line 375
+    aget v10, v10, v7
+
+    .line 376
+    .line 377
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 378
+    .line 379
+    .line 380
+    move-result-object v5
+
+    .line 381
+    check-cast v5, Ljava/util/List;
+
+    .line 382
+    .line 383
+    invoke-static {v10, v5, v2, v14}, Lcom/google/android/gms/internal/wearable/zzdk;->zzN(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 384
+    .line 385
+    .line 386
+    goto/16 :goto_2
+
+    .line 387
+    .line 388
+    :pswitch_15
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 389
+    .line 390
+    aget v10, v10, v7
+
+    .line 391
+    .line 392
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 393
+    .line 394
+    .line 395
+    move-result-object v5
+
+    .line 396
+    check-cast v5, Ljava/util/List;
+
+    .line 397
+    .line 398
+    invoke-static {v10, v5, v2, v14}, Lcom/google/android/gms/internal/wearable/zzdk;->zzS(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 399
+    .line 400
+    .line 401
+    goto/16 :goto_2
+
+    .line 402
+    .line 403
+    :pswitch_16
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 404
+    .line 405
+    aget v10, v10, v7
+
+    .line 406
+    .line 407
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 408
+    .line 409
+    .line 410
+    move-result-object v5
+
+    .line 411
+    check-cast v5, Ljava/util/List;
+
+    .line 412
+    .line 413
+    invoke-static {v10, v5, v2, v14}, Lcom/google/android/gms/internal/wearable/zzdk;->zzP(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 414
+    .line 415
+    .line 416
+    goto/16 :goto_2
+
+    .line 417
+    .line 418
+    :pswitch_17
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 419
+    .line 420
+    aget v10, v10, v7
+
+    .line 421
+    .line 422
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 423
+    .line 424
+    .line 425
+    move-result-object v5
+
+    .line 426
+    check-cast v5, Ljava/util/List;
+
+    .line 427
+    .line 428
+    invoke-static {v10, v5, v2, v14}, Lcom/google/android/gms/internal/wearable/zzdk;->zzU(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 429
+    .line 430
+    .line 431
+    goto/16 :goto_2
+
+    .line 432
+    .line 433
+    :pswitch_18
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 434
+    .line 435
+    aget v10, v10, v7
+
+    .line 436
+    .line 437
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 438
+    .line 439
+    .line 440
+    move-result-object v5
+
+    .line 441
+    check-cast v5, Ljava/util/List;
+
+    .line 442
+    .line 443
+    invoke-static {v10, v5, v2, v14}, Lcom/google/android/gms/internal/wearable/zzdk;->zzV(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 444
+    .line 445
+    .line 446
+    goto/16 :goto_2
+
+    .line 447
+    .line 448
+    :pswitch_19
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 449
+    .line 450
+    aget v10, v10, v7
+
+    .line 451
+    .line 452
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 453
+    .line 454
+    .line 455
+    move-result-object v5
+
+    .line 456
+    check-cast v5, Ljava/util/List;
+
+    .line 457
+    .line 458
+    invoke-static {v10, v5, v2, v14}, Lcom/google/android/gms/internal/wearable/zzdk;->zzR(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 459
+    .line 460
+    .line 461
+    goto/16 :goto_2
+
+    .line 462
+    .line 463
+    :pswitch_1a
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 464
+    .line 465
+    aget v10, v10, v7
+
+    .line 466
+    .line 467
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 468
+    .line 469
+    .line 470
+    move-result-object v5
+
+    .line 471
+    check-cast v5, Ljava/util/List;
+
+    .line 472
+    .line 473
+    invoke-static {v10, v5, v2, v14}, Lcom/google/android/gms/internal/wearable/zzdk;->zzW(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 474
+    .line 475
+    .line 476
+    goto/16 :goto_2
+
+    .line 477
+    .line 478
+    :pswitch_1b
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 479
+    .line 480
+    aget v10, v10, v7
+
+    .line 481
+    .line 482
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 483
+    .line 484
+    .line 485
+    move-result-object v5
+
+    .line 486
+    check-cast v5, Ljava/util/List;
+
+    .line 487
+    .line 488
+    invoke-static {v10, v5, v2, v14}, Lcom/google/android/gms/internal/wearable/zzdk;->zzT(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 489
+    .line 490
+    .line 491
+    goto/16 :goto_2
+
+    .line 492
+    .line 493
+    :pswitch_1c
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 494
+    .line 495
+    aget v10, v10, v7
+
+    .line 496
+    .line 497
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 498
+    .line 499
+    .line 500
+    move-result-object v5
+
+    .line 501
+    check-cast v5, Ljava/util/List;
+
+    .line 502
+    .line 503
+    invoke-static {v10, v5, v2, v14}, Lcom/google/android/gms/internal/wearable/zzdk;->zzO(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 504
+    .line 505
+    .line 506
+    goto/16 :goto_2
+
+    .line 507
+    .line 508
+    :pswitch_1d
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 509
+    .line 510
+    aget v10, v10, v7
+
+    .line 511
+    .line 512
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 513
+    .line 514
+    .line 515
+    move-result-object v5
+
+    .line 516
+    check-cast v5, Ljava/util/List;
+
+    .line 517
+    .line 518
+    invoke-static {v10, v5, v2, v14}, Lcom/google/android/gms/internal/wearable/zzdk;->zzQ(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 519
+    .line 520
+    .line 521
+    goto/16 :goto_2
+
+    .line 522
+    .line 523
+    :pswitch_1e
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 524
+    .line 525
+    aget v10, v10, v7
+
+    .line 526
+    .line 527
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 528
+    .line 529
+    .line 530
+    move-result-object v5
+
+    .line 531
+    check-cast v5, Ljava/util/List;
+
+    .line 532
+    .line 533
+    invoke-static {v10, v5, v2, v14}, Lcom/google/android/gms/internal/wearable/zzdk;->zzM(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 534
+    .line 535
+    .line 536
+    goto/16 :goto_2
+
+    .line 537
+    .line 538
+    :pswitch_1f
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 539
+    .line 540
+    aget v10, v10, v7
+
+    .line 541
+    .line 542
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 543
+    .line 544
+    .line 545
+    move-result-object v5
+
+    .line 546
+    check-cast v5, Ljava/util/List;
+
+    .line 547
+    .line 548
+    invoke-static {v10, v5, v2, v14}, Lcom/google/android/gms/internal/wearable/zzdk;->zzL(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 549
+    .line 550
+    .line 551
+    goto/16 :goto_2
+
+    .line 552
+    .line 553
+    :pswitch_20
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 554
+    .line 555
+    aget v10, v10, v7
+
+    .line 556
+    .line 557
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 558
+    .line 559
+    .line 560
+    move-result-object v5
+
+    .line 561
+    check-cast v5, Ljava/util/List;
+
+    .line 562
+    .line 563
+    invoke-static {v10, v5, v2, v14}, Lcom/google/android/gms/internal/wearable/zzdk;->zzK(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 564
+    .line 565
+    .line 566
+    goto/16 :goto_2
+
+    .line 567
+    .line 568
+    :pswitch_21
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 569
+    .line 570
+    aget v10, v10, v7
+
+    .line 571
+    .line 572
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 573
+    .line 574
+    .line 575
+    move-result-object v5
+
+    .line 576
+    check-cast v5, Ljava/util/List;
+
+    .line 577
+    .line 578
+    invoke-static {v10, v5, v2, v14}, Lcom/google/android/gms/internal/wearable/zzdk;->zzJ(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 579
+    .line 580
+    .line 581
+    goto/16 :goto_2
+
+    .line 582
+    .line 583
+    :pswitch_22
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 584
+    .line 585
+    aget v10, v10, v7
+
+    .line 586
+    .line 587
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 588
+    .line 589
+    .line 590
+    move-result-object v5
+
+    .line 591
+    check-cast v5, Ljava/util/List;
+
+    .line 592
+    .line 593
+    const/4 v11, 0x0
+
+    .line 594
+    invoke-static {v10, v5, v2, v11}, Lcom/google/android/gms/internal/wearable/zzdk;->zzN(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 595
+    .line 596
+    .line 597
+    goto/16 :goto_2
+
+    .line 598
+    .line 599
+    :pswitch_23
+    const/4 v11, 0x0
+
+    .line 600
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 601
+    .line 602
+    aget v10, v10, v7
+
+    .line 603
+    .line 604
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 605
+    .line 606
+    .line 607
+    move-result-object v5
+
+    .line 608
+    check-cast v5, Ljava/util/List;
+
+    .line 609
+    .line 610
+    invoke-static {v10, v5, v2, v11}, Lcom/google/android/gms/internal/wearable/zzdk;->zzS(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 611
+    .line 612
+    .line 613
+    goto/16 :goto_2
+
+    .line 614
+    .line 615
+    :pswitch_24
+    const/4 v11, 0x0
+
+    .line 616
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 617
+    .line 618
+    aget v10, v10, v7
+
+    .line 619
+    .line 620
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 621
+    .line 622
+    .line 623
+    move-result-object v5
+
+    .line 624
+    check-cast v5, Ljava/util/List;
+
+    .line 625
+    .line 626
+    invoke-static {v10, v5, v2, v11}, Lcom/google/android/gms/internal/wearable/zzdk;->zzP(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 627
+    .line 628
+    .line 629
+    goto/16 :goto_2
+
+    .line 630
+    .line 631
+    :pswitch_25
+    const/4 v11, 0x0
+
+    .line 632
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 633
+    .line 634
+    aget v10, v10, v7
+
+    .line 635
+    .line 636
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 637
+    .line 638
+    .line 639
+    move-result-object v5
+
+    .line 640
+    check-cast v5, Ljava/util/List;
+
+    .line 641
+    .line 642
+    invoke-static {v10, v5, v2, v11}, Lcom/google/android/gms/internal/wearable/zzdk;->zzU(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 643
+    .line 644
+    .line 645
+    goto/16 :goto_2
+
+    .line 646
+    .line 647
+    :pswitch_26
+    const/4 v11, 0x0
+
+    .line 648
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 649
+    .line 650
+    aget v10, v10, v7
+
+    .line 651
+    .line 652
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 653
+    .line 654
+    .line 655
+    move-result-object v5
+
+    .line 656
+    check-cast v5, Ljava/util/List;
+
+    .line 657
+    .line 658
+    invoke-static {v10, v5, v2, v11}, Lcom/google/android/gms/internal/wearable/zzdk;->zzV(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 659
+    .line 660
+    .line 661
+    goto/16 :goto_2
+
+    .line 662
+    .line 663
+    :pswitch_27
+    const/4 v11, 0x0
+
+    .line 664
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 665
+    .line 666
+    aget v10, v10, v7
+
+    .line 667
+    .line 668
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 669
+    .line 670
+    .line 671
+    move-result-object v5
+
+    .line 672
+    check-cast v5, Ljava/util/List;
+
+    .line 673
+    .line 674
+    invoke-static {v10, v5, v2, v11}, Lcom/google/android/gms/internal/wearable/zzdk;->zzR(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 675
+    .line 676
+    .line 677
+    goto/16 :goto_2
+
+    .line 678
+    .line 679
+    :pswitch_28
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 680
+    .line 681
+    aget v10, v10, v7
+
+    .line 682
+    .line 683
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 684
+    .line 685
+    .line 686
+    move-result-object v5
+
+    .line 687
+    check-cast v5, Ljava/util/List;
+
+    .line 688
+    .line 689
+    invoke-static {v10, v5, v2}, Lcom/google/android/gms/internal/wearable/zzdk;->zzY(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;)V
+
+    .line 690
+    .line 691
+    .line 692
+    goto/16 :goto_2
+
+    .line 693
+    .line 694
+    :pswitch_29
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 695
+    .line 696
+    aget v10, v10, v7
+
+    .line 697
+    .line 698
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 699
+    .line 700
+    .line 701
+    move-result-object v5
+
+    .line 702
+    check-cast v5, Ljava/util/List;
+
+    .line 703
+    .line 704
+    invoke-direct {v0, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 705
+    .line 706
+    .line 707
+    move-result-object v6
+
+    .line 708
+    invoke-static {v10, v5, v2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzZ(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Lcom/google/android/gms/internal/wearable/zzdi;)V
+
+    .line 709
+    .line 710
+    .line 711
+    goto/16 :goto_2
+
+    .line 712
+    .line 713
+    :pswitch_2a
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 714
+    .line 715
+    aget v10, v10, v7
+
+    .line 716
+    .line 717
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 718
+    .line 719
+    .line 720
+    move-result-object v5
+
+    .line 721
+    check-cast v5, Ljava/util/List;
+
+    .line 722
+    .line 723
+    invoke-static {v10, v5, v2}, Lcom/google/android/gms/internal/wearable/zzdk;->zzX(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;)V
+
+    .line 724
+    .line 725
+    .line 726
+    goto/16 :goto_2
+
+    .line 727
+    .line 728
+    :pswitch_2b
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 729
+    .line 730
+    aget v10, v10, v7
+
+    .line 731
+    .line 732
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 733
+    .line 734
+    .line 735
+    move-result-object v5
+
+    .line 736
+    check-cast v5, Ljava/util/List;
+
+    .line 737
+    .line 738
+    const/4 v12, 0x0
+
+    .line 739
+    invoke-static {v10, v5, v2, v12}, Lcom/google/android/gms/internal/wearable/zzdk;->zzW(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 740
+    .line 741
+    .line 742
+    goto/16 :goto_3
+
+    .line 743
+    .line 744
+    :pswitch_2c
+    const/4 v12, 0x0
+
+    .line 745
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 746
+    .line 747
+    aget v10, v10, v7
+
+    .line 748
+    .line 749
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 750
+    .line 751
+    .line 752
+    move-result-object v5
+
+    .line 753
+    check-cast v5, Ljava/util/List;
+
+    .line 754
+    .line 755
+    invoke-static {v10, v5, v2, v12}, Lcom/google/android/gms/internal/wearable/zzdk;->zzT(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 756
+    .line 757
+    .line 758
+    goto/16 :goto_3
+
+    .line 759
+    .line 760
+    :pswitch_2d
+    const/4 v12, 0x0
+
+    .line 761
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 762
+    .line 763
+    aget v10, v10, v7
+
+    .line 764
+    .line 765
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 766
+    .line 767
+    .line 768
+    move-result-object v5
+
+    .line 769
+    check-cast v5, Ljava/util/List;
+
+    .line 770
+    .line 771
+    invoke-static {v10, v5, v2, v12}, Lcom/google/android/gms/internal/wearable/zzdk;->zzO(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 772
+    .line 773
+    .line 774
+    goto/16 :goto_3
+
+    .line 775
+    .line 776
+    :pswitch_2e
+    const/4 v12, 0x0
+
+    .line 777
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 778
+    .line 779
+    aget v10, v10, v7
+
+    .line 780
+    .line 781
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 782
+    .line 783
+    .line 784
+    move-result-object v5
+
+    .line 785
+    check-cast v5, Ljava/util/List;
+
+    .line 786
+    .line 787
+    invoke-static {v10, v5, v2, v12}, Lcom/google/android/gms/internal/wearable/zzdk;->zzQ(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 788
+    .line 789
+    .line 790
+    goto/16 :goto_3
+
+    .line 791
+    .line 792
+    :pswitch_2f
+    const/4 v12, 0x0
+
+    .line 793
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 794
+    .line 795
+    aget v10, v10, v7
+
+    .line 796
+    .line 797
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 798
+    .line 799
+    .line 800
+    move-result-object v5
+
+    .line 801
+    check-cast v5, Ljava/util/List;
+
+    .line 802
+    .line 803
+    invoke-static {v10, v5, v2, v12}, Lcom/google/android/gms/internal/wearable/zzdk;->zzM(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 804
+    .line 805
+    .line 806
+    goto/16 :goto_3
+
+    .line 807
+    .line 808
+    :pswitch_30
+    const/4 v12, 0x0
+
+    .line 809
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 810
+    .line 811
+    aget v10, v10, v7
+
+    .line 812
+    .line 813
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 814
+    .line 815
+    .line 816
+    move-result-object v5
+
+    .line 817
+    check-cast v5, Ljava/util/List;
+
+    .line 818
+    .line 819
+    invoke-static {v10, v5, v2, v12}, Lcom/google/android/gms/internal/wearable/zzdk;->zzL(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 820
+    .line 821
+    .line 822
+    goto/16 :goto_3
+
+    .line 823
+    .line 824
+    :pswitch_31
+    const/4 v12, 0x0
+
+    .line 825
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 826
+    .line 827
+    aget v10, v10, v7
+
+    .line 828
+    .line 829
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 830
+    .line 831
+    .line 832
+    move-result-object v5
+
+    .line 833
+    check-cast v5, Ljava/util/List;
+
+    .line 834
+    .line 835
+    invoke-static {v10, v5, v2, v12}, Lcom/google/android/gms/internal/wearable/zzdk;->zzK(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 836
+    .line 837
+    .line 838
+    goto/16 :goto_3
+
+    .line 839
+    .line 840
+    :pswitch_32
+    const/4 v12, 0x0
+
+    .line 841
+    iget-object v10, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 842
+    .line 843
+    aget v10, v10, v7
+
+    .line 844
+    .line 845
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 846
+    .line 847
+    .line 848
+    move-result-object v5
+
+    .line 849
+    check-cast v5, Ljava/util/List;
+
+    .line 850
+    .line 851
+    invoke-static {v10, v5, v2, v12}, Lcom/google/android/gms/internal/wearable/zzdk;->zzJ(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 852
+    .line 853
+    .line 854
+    goto/16 :goto_3
+
+    .line 855
+    .line 856
+    :pswitch_33
+    const/4 v12, 0x0
+
+    .line 857
+    and-int v10, v8, v13
+
+    .line 858
+    .line 859
+    if-eqz v10, :cond_3
+
+    .line 860
+    .line 861
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 862
+    .line 863
+    .line 864
+    move-result-object v5
+
+    .line 865
+    invoke-direct {v0, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 866
+    .line 867
+    .line 868
+    move-result-object v6
+
+    .line 869
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzs(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzdi;)V
+
+    .line 870
+    .line 871
+    .line 872
+    goto/16 :goto_3
+
+    .line 873
+    .line 874
+    :pswitch_34
+    const/4 v12, 0x0
+
+    .line 875
+    and-int v10, v8, v13
+
+    .line 876
+    .line 877
+    if-eqz v10, :cond_3
+
+    .line 878
+    .line 879
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J
+
+    .line 880
+    .line 881
+    .line 882
+    move-result-wide v5
+
+    .line 883
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzq(IJ)V
+
+    .line 884
+    .line 885
+    .line 886
+    goto/16 :goto_3
+
+    .line 887
+    .line 888
+    :pswitch_35
+    const/4 v12, 0x0
+
+    .line 889
+    and-int v10, v8, v13
+
+    .line 890
+    .line 891
+    if-eqz v10, :cond_3
+
+    .line 892
+    .line 893
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    .line 894
+    .line 895
+    .line 896
+    move-result v5
+
+    .line 897
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzp(II)V
+
+    .line 898
+    .line 899
+    .line 900
+    goto/16 :goto_3
+
+    .line 901
+    .line 902
+    :pswitch_36
+    const/4 v12, 0x0
+
+    .line 903
+    and-int v10, v8, v13
+
+    .line 904
+    .line 905
+    if-eqz v10, :cond_3
+
+    .line 906
+    .line 907
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J
+
+    .line 908
+    .line 909
+    .line 910
+    move-result-wide v5
+
+    .line 911
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzd(IJ)V
+
+    .line 912
+    .line 913
+    .line 914
+    goto/16 :goto_3
+
+    .line 915
+    .line 916
+    :pswitch_37
+    const/4 v12, 0x0
+
+    .line 917
+    and-int v10, v8, v13
+
+    .line 918
+    .line 919
+    if-eqz v10, :cond_3
+
+    .line 920
+    .line 921
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    .line 922
+    .line 923
+    .line 924
+    move-result v5
+
+    .line 925
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzb(II)V
+
+    .line 926
+    .line 927
+    .line 928
+    goto/16 :goto_3
+
+    .line 929
+    .line 930
+    :pswitch_38
+    const/4 v12, 0x0
+
+    .line 931
+    and-int v10, v8, v13
+
+    .line 932
+    .line 933
+    if-eqz v10, :cond_3
+
+    .line 934
+    .line 935
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    .line 936
+    .line 937
+    .line 938
+    move-result v5
+
+    .line 939
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzg(II)V
+
+    .line 940
+    .line 941
+    .line 942
+    goto/16 :goto_3
+
+    .line 943
+    .line 944
+    :pswitch_39
+    const/4 v12, 0x0
+
+    .line 945
+    and-int v10, v8, v13
+
+    .line 946
+    .line 947
+    if-eqz v10, :cond_3
+
+    .line 948
+    .line 949
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    .line 950
+    .line 951
+    .line 952
+    move-result v5
+
+    .line 953
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzo(II)V
+
+    .line 954
+    .line 955
+    .line 956
+    goto/16 :goto_3
+
+    .line 957
+    .line 958
+    :pswitch_3a
+    const/4 v12, 0x0
+
+    .line 959
+    and-int v10, v8, v13
+
+    .line 960
+    .line 961
+    if-eqz v10, :cond_3
+
+    .line 962
+    .line 963
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 964
+    .line 965
+    .line 966
+    move-result-object v5
+
+    .line 967
+    check-cast v5, Lcom/google/android/gms/internal/wearable/zzau;
+
+    .line 968
+    .line 969
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzn(ILcom/google/android/gms/internal/wearable/zzau;)V
+
+    .line 970
+    .line 971
+    .line 972
+    goto/16 :goto_3
+
+    .line 973
+    .line 974
+    :pswitch_3b
+    const/4 v12, 0x0
+
+    .line 975
+    and-int v10, v8, v13
+
+    .line 976
+    .line 977
+    if-eqz v10, :cond_3
+
+    .line 978
+    .line 979
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 980
+    .line 981
+    .line 982
+    move-result-object v5
+
+    .line 983
+    invoke-direct {v0, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 984
+    .line 985
+    .line 986
+    move-result-object v6
+
+    .line 987
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzr(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzdi;)V
+
+    .line 988
+    .line 989
+    .line 990
+    goto/16 :goto_3
+
+    .line 991
+    .line 992
+    :pswitch_3c
+    const/4 v12, 0x0
+
+    .line 993
+    and-int v10, v8, v13
+
+    .line 994
+    .line 995
+    if-eqz v10, :cond_3
+
+    .line 996
+    .line 997
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 998
+    .line 999
+    .line 1000
+    move-result-object v5
+
+    .line 1001
+    invoke-static {v11, v5, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzT(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzbc;)V
+
+    .line 1002
+    .line 1003
+    .line 1004
+    goto/16 :goto_3
+
+    .line 1005
+    .line 1006
+    :pswitch_3d
+    const/4 v12, 0x0
+
+    .line 1007
+    and-int v10, v8, v13
+
+    .line 1008
+    .line 1009
+    if-eqz v10, :cond_3
+
+    .line 1010
+    .line 1011
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzh(Ljava/lang/Object;J)Z
+
+    .line 1012
+    .line 1013
+    .line 1014
+    move-result v5
+
+    .line 1015
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzl(IZ)V
+
+    .line 1016
+    .line 1017
+    .line 1018
+    goto :goto_3
+
+    .line 1019
+    :pswitch_3e
+    const/4 v12, 0x0
+
+    .line 1020
+    and-int v10, v8, v13
+
+    .line 1021
+    .line 1022
+    if-eqz v10, :cond_3
+
+    .line 1023
+    .line 1024
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    .line 1025
+    .line 1026
+    .line 1027
+    move-result v5
+
+    .line 1028
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzk(II)V
+
+    .line 1029
+    .line 1030
+    .line 1031
+    goto :goto_3
+
+    .line 1032
+    :pswitch_3f
+    const/4 v12, 0x0
+
+    .line 1033
+    and-int v10, v8, v13
+
+    .line 1034
+    .line 1035
+    if-eqz v10, :cond_3
+
+    .line 1036
+    .line 1037
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J
+
+    .line 1038
+    .line 1039
+    .line 1040
+    move-result-wide v5
+
+    .line 1041
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzj(IJ)V
+
+    .line 1042
+    .line 1043
+    .line 1044
+    goto :goto_3
+
+    .line 1045
+    :pswitch_40
+    const/4 v12, 0x0
+
+    .line 1046
+    and-int v10, v8, v13
+
+    .line 1047
+    .line 1048
+    if-eqz v10, :cond_3
+
+    .line 1049
+    .line 1050
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    .line 1051
+    .line 1052
+    .line 1053
+    move-result v5
+
+    .line 1054
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzi(II)V
+
+    .line 1055
+    .line 1056
+    .line 1057
+    goto :goto_3
+
+    .line 1058
+    :pswitch_41
+    const/4 v12, 0x0
+
+    .line 1059
+    and-int v10, v8, v13
+
+    .line 1060
+    .line 1061
+    if-eqz v10, :cond_3
+
+    .line 1062
+    .line 1063
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J
+
+    .line 1064
+    .line 1065
+    .line 1066
+    move-result-wide v5
+
+    .line 1067
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzh(IJ)V
+
+    .line 1068
+    .line 1069
+    .line 1070
+    goto :goto_3
+
+    .line 1071
+    :pswitch_42
+    const/4 v12, 0x0
+
+    .line 1072
+    and-int v10, v8, v13
+
+    .line 1073
+    .line 1074
+    if-eqz v10, :cond_3
+
+    .line 1075
+    .line 1076
+    invoke-virtual {v4, v1, v5, v6}, Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J
+
+    .line 1077
+    .line 1078
+    .line 1079
+    move-result-wide v5
+
+    .line 1080
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzc(IJ)V
+
+    .line 1081
+    .line 1082
+    .line 1083
+    goto :goto_3
+
+    .line 1084
+    :pswitch_43
+    const/4 v12, 0x0
+
+    .line 1085
+    and-int v10, v8, v13
+
+    .line 1086
+    .line 1087
+    if-eqz v10, :cond_3
+
+    .line 1088
+    .line 1089
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzj(Ljava/lang/Object;J)F
+
+    .line 1090
+    .line 1091
+    .line 1092
+    move-result v5
+
+    .line 1093
+    invoke-virtual {v2, v11, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zze(IF)V
+
+    .line 1094
+    .line 1095
+    .line 1096
+    goto :goto_3
+
+    .line 1097
+    :pswitch_44
+    const/4 v12, 0x0
+
+    .line 1098
+    and-int v10, v8, v13
+
+    .line 1099
+    .line 1100
+    if-eqz v10, :cond_3
+
+    .line 1101
+    .line 1102
+    invoke-static {v1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzl(Ljava/lang/Object;J)D
+
+    .line 1103
+    .line 1104
+    .line 1105
+    move-result-wide v5
+
+    .line 1106
+    invoke-virtual {v2, v11, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzf(ID)V
+
+    .line 1107
+    .line 1108
+    .line 1109
+    :cond_3
+    :goto_3
+    add-int/lit8 v7, v7, 0x3
+
+    .line 1110
+    .line 1111
+    const v5, 0xfffff
+
+    .line 1112
+    .line 1113
+    .line 1114
+    goto/16 :goto_0
+
+    .line 1115
+    .line 1116
+    :cond_4
+    iget-object v3, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzn:Lcom/google/android/gms/internal/wearable/zzdw;
+
+    .line 1117
+    .line 1118
+    invoke-virtual {v3, v1}, Lcom/google/android/gms/internal/wearable/zzdw;->zzd(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1119
+    .line 1120
+    .line 1121
+    move-result-object v1
+
+    .line 1122
+    invoke-virtual {v3, v1, v2}, Lcom/google/android/gms/internal/wearable/zzdw;->zzi(Ljava/lang/Object;Lcom/google/android/gms/internal/wearable/zzbc;)V
+
+    .line 1123
+    .line 1124
+    .line 1125
+    return-void
+
+    .line 1126
+    :cond_5
+    iget-object v2, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzo:Lcom/google/android/gms/internal/wearable/zzbh;
+
+    .line 1127
+    .line 1128
+    invoke-virtual {v2, v1}, Lcom/google/android/gms/internal/wearable/zzbh;->zzb(Ljava/lang/Object;)Lcom/google/android/gms/internal/wearable/zzbl;
+
+    .line 1129
+    .line 1130
+    .line 1131
+    const/4 v1, 0x0
+
+    .line 1132
+    throw v1
+
+    .line 1133
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_44
+        :pswitch_43
+        :pswitch_42
+        :pswitch_41
+        :pswitch_40
+        :pswitch_3f
+        :pswitch_3e
+        :pswitch_3d
+        :pswitch_3c
+        :pswitch_3b
+        :pswitch_3a
+        :pswitch_39
+        :pswitch_38
+        :pswitch_37
+        :pswitch_36
+        :pswitch_35
+        :pswitch_34
+        :pswitch_33
+        :pswitch_32
+        :pswitch_31
+        :pswitch_30
+        :pswitch_2f
+        :pswitch_2e
+        :pswitch_2d
+        :pswitch_2c
+        :pswitch_2b
+        :pswitch_2a
+        :pswitch_29
+        :pswitch_28
+        :pswitch_27
+        :pswitch_26
+        :pswitch_25
+        :pswitch_24
+        :pswitch_23
+        :pswitch_22
+        :pswitch_21
+        :pswitch_20
+        :pswitch_1f
+        :pswitch_1e
+        :pswitch_1d
+        :pswitch_1c
+        :pswitch_1b
+        :pswitch_1a
+        :pswitch_19
+        :pswitch_18
+        :pswitch_17
+        :pswitch_16
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method private final zzS(Lcom/google/android/gms/internal/wearable/zzbc;ILjava/lang/Object;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<K:",
+            "Ljava/lang/Object;",
+            "V:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lcom/google/android/gms/internal/wearable/zzbc;",
+            "I",
+            "Ljava/lang/Object;",
+            "I)V"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    if-nez p3, :cond_0
+
+    .line 2
+    .line 3
+    return-void
+
+    .line 4
+    :cond_0
+    invoke-direct {p0, p4}, Lcom/google/android/gms/internal/wearable/zzda;->zzw(I)Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    check-cast p1, Lcom/google/android/gms/internal/wearable/zzcq;
+
+    .line 9
+    .line 10
+    const/4 p1, 0x0
+
+    .line 11
+    throw p1
+.end method
+
+.method private static final zzT(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzbc;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    instance-of v0, p1, Ljava/lang/String;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    check-cast p1, Ljava/lang/String;
+
+    .line 6
+    .line 7
+    invoke-virtual {p2, p0, p1}, Lcom/google/android/gms/internal/wearable/zzbc;->zzm(ILjava/lang/String;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+
+    .line 11
+    :cond_0
+    check-cast p1, Lcom/google/android/gms/internal/wearable/zzau;
+
+    .line 12
+    .line 13
+    invoke-virtual {p2, p0, p1}, Lcom/google/android/gms/internal/wearable/zzbc;->zzn(ILcom/google/android/gms/internal/wearable/zzau;)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-void
+.end method
+
+.method static zzf(Ljava/lang/Object;)Lcom/google/android/gms/internal/wearable/zzdx;
+    .locals 2
+
+    .line 1
+    check-cast p0, Lcom/google/android/gms/internal/wearable/zzbs;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzbs;->zzc:Lcom/google/android/gms/internal/wearable/zzdx;
+
+    .line 4
+    .line 5
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzdx;->zza()Lcom/google/android/gms/internal/wearable/zzdx;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    if-ne v0, v1, :cond_0
+
+    .line 10
+    .line 11
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzdx;->zzb()Lcom/google/android/gms/internal/wearable/zzdx;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iput-object v0, p0, Lcom/google/android/gms/internal/wearable/zzbs;->zzc:Lcom/google/android/gms/internal/wearable/zzdx;
+
+    .line 16
+    .line 17
+    :cond_0
+    return-object v0
+.end method
+
+.method static zzk(Ljava/lang/Class;Lcom/google/android/gms/internal/wearable/zzcu;Lcom/google/android/gms/internal/wearable/zzdc;Lcom/google/android/gms/internal/wearable/zzcl;Lcom/google/android/gms/internal/wearable/zzdw;Lcom/google/android/gms/internal/wearable/zzbh;Lcom/google/android/gms/internal/wearable/zzcs;)Lcom/google/android/gms/internal/wearable/zzda;
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/Class<",
+            "TT;>;",
+            "Lcom/google/android/gms/internal/wearable/zzcu;",
+            "Lcom/google/android/gms/internal/wearable/zzdc;",
+            "Lcom/google/android/gms/internal/wearable/zzcl;",
+            "Lcom/google/android/gms/internal/wearable/zzdw<",
+            "**>;",
+            "Lcom/google/android/gms/internal/wearable/zzbh<",
+            "*>;",
+            "Lcom/google/android/gms/internal/wearable/zzcs;",
+            ")",
+            "Lcom/google/android/gms/internal/wearable/zzda<",
+            "TT;>;"
+        }
+    .end annotation
+
+    .line 1
+    instance-of p0, p1, Lcom/google/android/gms/internal/wearable/zzdh;
+
+    .line 2
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 4
+    .line 5
+    move-object v0, p1
+
+    .line 6
+    check-cast v0, Lcom/google/android/gms/internal/wearable/zzdh;
+
+    .line 7
+    .line 8
+    move-object v1, p2
+
+    .line 9
+    move-object v2, p3
+
+    .line 10
+    move-object v3, p4
+
+    .line 11
+    move-object v4, p5
+
+    .line 12
+    move-object v5, p6
+
+    .line 13
+    invoke-static/range {v0 .. v5}, Lcom/google/android/gms/internal/wearable/zzda;->zzl(Lcom/google/android/gms/internal/wearable/zzdh;Lcom/google/android/gms/internal/wearable/zzdc;Lcom/google/android/gms/internal/wearable/zzcl;Lcom/google/android/gms/internal/wearable/zzdw;Lcom/google/android/gms/internal/wearable/zzbh;Lcom/google/android/gms/internal/wearable/zzcs;)Lcom/google/android/gms/internal/wearable/zzda;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    return-object p0
+
+    .line 18
+    :cond_0
+    check-cast p1, Lcom/google/android/gms/internal/wearable/zzdt;
+
+    .line 19
+    .line 20
+    const/4 p0, 0x0
+
+    .line 21
+    throw p0
+.end method
+
+.method static zzl(Lcom/google/android/gms/internal/wearable/zzdh;Lcom/google/android/gms/internal/wearable/zzdc;Lcom/google/android/gms/internal/wearable/zzcl;Lcom/google/android/gms/internal/wearable/zzdw;Lcom/google/android/gms/internal/wearable/zzbh;Lcom/google/android/gms/internal/wearable/zzcs;)Lcom/google/android/gms/internal/wearable/zzda;
+    .locals 34
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lcom/google/android/gms/internal/wearable/zzdh;",
+            "Lcom/google/android/gms/internal/wearable/zzdc;",
+            "Lcom/google/android/gms/internal/wearable/zzcl;",
+            "Lcom/google/android/gms/internal/wearable/zzdw<",
+            "**>;",
+            "Lcom/google/android/gms/internal/wearable/zzbh<",
+            "*>;",
+            "Lcom/google/android/gms/internal/wearable/zzcs;",
+            ")",
+            "Lcom/google/android/gms/internal/wearable/zzda<",
+            "TT;>;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual/range {p0 .. p0}, Lcom/google/android/gms/internal/wearable/zzdh;->zzc()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x2
+
+    .line 6
+    const/4 v2, 0x0
+
+    .line 7
+    if-ne v0, v1, :cond_0
+
+    .line 8
+    .line 9
+    const/4 v10, 0x1
+
+    .line 10
+    goto :goto_0
+
+    .line 11
+    :cond_0
+    const/4 v10, 0x0
+
+    .line 12
+    :goto_0
+    invoke-virtual/range {p0 .. p0}, Lcom/google/android/gms/internal/wearable/zzdh;->zzd()Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v1
+
+    .line 20
+    invoke-virtual {v0, v2}, Ljava/lang/String;->charAt(I)C
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v4
+
+    .line 24
+    const v5, 0xd800
+
+    .line 25
+    .line 26
+    .line 27
+    if-lt v4, v5, :cond_1
+
+    .line 28
+    .line 29
+    const/4 v4, 0x1
+
+    .line 30
+    :goto_1
+    add-int/lit8 v6, v4, 0x1
+
+    .line 31
+    .line 32
+    invoke-virtual {v0, v4}, Ljava/lang/String;->charAt(I)C
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v4
+
+    .line 36
+    if-lt v4, v5, :cond_2
+
+    .line 37
+    .line 38
+    move v4, v6
+
+    .line 39
+    goto :goto_1
+
+    .line 40
+    :cond_1
+    const/4 v6, 0x1
+
+    .line 41
+    :cond_2
+    add-int/lit8 v4, v6, 0x1
+
+    .line 42
+    .line 43
+    invoke-virtual {v0, v6}, Ljava/lang/String;->charAt(I)C
+
+    .line 44
+    .line 45
+    .line 46
+    move-result v6
+
+    .line 47
+    if-lt v6, v5, :cond_4
+
+    .line 48
+    .line 49
+    and-int/lit16 v6, v6, 0x1fff
+
+    .line 50
+    .line 51
+    const/16 v8, 0xd
+
+    .line 52
+    .line 53
+    :goto_2
+    add-int/lit8 v9, v4, 0x1
+
+    .line 54
+    .line 55
+    invoke-virtual {v0, v4}, Ljava/lang/String;->charAt(I)C
+
+    .line 56
+    .line 57
+    .line 58
+    move-result v4
+
+    .line 59
+    if-lt v4, v5, :cond_3
+
+    .line 60
+    .line 61
+    and-int/lit16 v4, v4, 0x1fff
+
+    .line 62
+    .line 63
+    shl-int/2addr v4, v8
+
+    .line 64
+    or-int/2addr v6, v4
+
+    .line 65
+    add-int/lit8 v8, v8, 0xd
+
+    .line 66
+    .line 67
+    move v4, v9
+
+    .line 68
+    goto :goto_2
+
+    .line 69
+    :cond_3
+    shl-int/2addr v4, v8
+
+    .line 70
+    or-int/2addr v6, v4
+
+    .line 71
+    move v4, v9
+
+    .line 72
+    :cond_4
+    if-nez v6, :cond_5
+
+    .line 73
+    .line 74
+    sget-object v6, Lcom/google/android/gms/internal/wearable/zzda;->zza:[I
+
+    .line 75
+    .line 76
+    move-object v13, v6
+
+    .line 77
+    const/4 v6, 0x0
+
+    .line 78
+    const/4 v8, 0x0
+
+    .line 79
+    const/4 v9, 0x0
+
+    .line 80
+    const/4 v11, 0x0
+
+    .line 81
+    const/4 v12, 0x0
+
+    .line 82
+    const/4 v14, 0x0
+
+    .line 83
+    const/16 v16, 0x0
+
+    .line 84
+    .line 85
+    goto/16 :goto_b
+
+    .line 86
+    .line 87
+    :cond_5
+    add-int/lit8 v6, v4, 0x1
+
+    .line 88
+    .line 89
+    invoke-virtual {v0, v4}, Ljava/lang/String;->charAt(I)C
+
+    .line 90
+    .line 91
+    .line 92
+    move-result v4
+
+    .line 93
+    if-lt v4, v5, :cond_7
+
+    .line 94
+    .line 95
+    and-int/lit16 v4, v4, 0x1fff
+
+    .line 96
+    .line 97
+    const/16 v8, 0xd
+
+    .line 98
+    .line 99
+    :goto_3
+    add-int/lit8 v9, v6, 0x1
+
+    .line 100
+    .line 101
+    invoke-virtual {v0, v6}, Ljava/lang/String;->charAt(I)C
+
+    .line 102
+    .line 103
+    .line 104
+    move-result v6
+
+    .line 105
+    if-lt v6, v5, :cond_6
+
+    .line 106
+    .line 107
+    and-int/lit16 v6, v6, 0x1fff
+
+    .line 108
+    .line 109
+    shl-int/2addr v6, v8
+
+    .line 110
+    or-int/2addr v4, v6
+
+    .line 111
+    add-int/lit8 v8, v8, 0xd
+
+    .line 112
+    .line 113
+    move v6, v9
+
+    .line 114
+    goto :goto_3
+
+    .line 115
+    :cond_6
+    shl-int/2addr v6, v8
+
+    .line 116
+    or-int/2addr v4, v6
+
+    .line 117
+    move v6, v9
+
+    .line 118
+    :cond_7
+    add-int/lit8 v8, v6, 0x1
+
+    .line 119
+    .line 120
+    invoke-virtual {v0, v6}, Ljava/lang/String;->charAt(I)C
+
+    .line 121
+    .line 122
+    .line 123
+    move-result v6
+
+    .line 124
+    if-lt v6, v5, :cond_9
+
+    .line 125
+    .line 126
+    and-int/lit16 v6, v6, 0x1fff
+
+    .line 127
+    .line 128
+    const/16 v9, 0xd
+
+    .line 129
+    .line 130
+    :goto_4
+    add-int/lit8 v11, v8, 0x1
+
+    .line 131
+    .line 132
+    invoke-virtual {v0, v8}, Ljava/lang/String;->charAt(I)C
+
+    .line 133
+    .line 134
+    .line 135
+    move-result v8
+
+    .line 136
+    if-lt v8, v5, :cond_8
+
+    .line 137
+    .line 138
+    and-int/lit16 v8, v8, 0x1fff
+
+    .line 139
+    .line 140
+    shl-int/2addr v8, v9
+
+    .line 141
+    or-int/2addr v6, v8
+
+    .line 142
+    add-int/lit8 v9, v9, 0xd
+
+    .line 143
+    .line 144
+    move v8, v11
+
+    .line 145
+    goto :goto_4
+
+    .line 146
+    :cond_8
+    shl-int/2addr v8, v9
+
+    .line 147
+    or-int/2addr v6, v8
+
+    .line 148
+    move v8, v11
+
+    .line 149
+    :cond_9
+    add-int/lit8 v9, v8, 0x1
+
+    .line 150
+    .line 151
+    invoke-virtual {v0, v8}, Ljava/lang/String;->charAt(I)C
+
+    .line 152
+    .line 153
+    .line 154
+    move-result v8
+
+    .line 155
+    if-lt v8, v5, :cond_b
+
+    .line 156
+    .line 157
+    and-int/lit16 v8, v8, 0x1fff
+
+    .line 158
+    .line 159
+    const/16 v11, 0xd
+
+    .line 160
+    .line 161
+    :goto_5
+    add-int/lit8 v12, v9, 0x1
+
+    .line 162
+    .line 163
+    invoke-virtual {v0, v9}, Ljava/lang/String;->charAt(I)C
+
+    .line 164
+    .line 165
+    .line 166
+    move-result v9
+
+    .line 167
+    if-lt v9, v5, :cond_a
+
+    .line 168
+    .line 169
+    and-int/lit16 v9, v9, 0x1fff
+
+    .line 170
+    .line 171
+    shl-int/2addr v9, v11
+
+    .line 172
+    or-int/2addr v8, v9
+
+    .line 173
+    add-int/lit8 v11, v11, 0xd
+
+    .line 174
+    .line 175
+    move v9, v12
+
+    .line 176
+    goto :goto_5
+
+    .line 177
+    :cond_a
+    shl-int/2addr v9, v11
+
+    .line 178
+    or-int/2addr v8, v9
+
+    .line 179
+    move v9, v12
+
+    .line 180
+    :cond_b
+    add-int/lit8 v11, v9, 0x1
+
+    .line 181
+    .line 182
+    invoke-virtual {v0, v9}, Ljava/lang/String;->charAt(I)C
+
+    .line 183
+    .line 184
+    .line 185
+    move-result v9
+
+    .line 186
+    if-lt v9, v5, :cond_d
+
+    .line 187
+    .line 188
+    and-int/lit16 v9, v9, 0x1fff
+
+    .line 189
+    .line 190
+    const/16 v12, 0xd
+
+    .line 191
+    .line 192
+    :goto_6
+    add-int/lit8 v13, v11, 0x1
+
+    .line 193
+    .line 194
+    invoke-virtual {v0, v11}, Ljava/lang/String;->charAt(I)C
+
+    .line 195
+    .line 196
+    .line 197
+    move-result v11
+
+    .line 198
+    if-lt v11, v5, :cond_c
+
+    .line 199
+    .line 200
+    and-int/lit16 v11, v11, 0x1fff
+
+    .line 201
+    .line 202
+    shl-int/2addr v11, v12
+
+    .line 203
+    or-int/2addr v9, v11
+
+    .line 204
+    add-int/lit8 v12, v12, 0xd
+
+    .line 205
+    .line 206
+    move v11, v13
+
+    .line 207
+    goto :goto_6
+
+    .line 208
+    :cond_c
+    shl-int/2addr v11, v12
+
+    .line 209
+    or-int/2addr v9, v11
+
+    .line 210
+    move v11, v13
+
+    .line 211
+    :cond_d
+    add-int/lit8 v12, v11, 0x1
+
+    .line 212
+    .line 213
+    invoke-virtual {v0, v11}, Ljava/lang/String;->charAt(I)C
+
+    .line 214
+    .line 215
+    .line 216
+    move-result v11
+
+    .line 217
+    if-lt v11, v5, :cond_f
+
+    .line 218
+    .line 219
+    and-int/lit16 v11, v11, 0x1fff
+
+    .line 220
+    .line 221
+    const/16 v13, 0xd
+
+    .line 222
+    .line 223
+    :goto_7
+    add-int/lit8 v14, v12, 0x1
+
+    .line 224
+    .line 225
+    invoke-virtual {v0, v12}, Ljava/lang/String;->charAt(I)C
+
+    .line 226
+    .line 227
+    .line 228
+    move-result v12
+
+    .line 229
+    if-lt v12, v5, :cond_e
+
+    .line 230
+    .line 231
+    and-int/lit16 v12, v12, 0x1fff
+
+    .line 232
+    .line 233
+    shl-int/2addr v12, v13
+
+    .line 234
+    or-int/2addr v11, v12
+
+    .line 235
+    add-int/lit8 v13, v13, 0xd
+
+    .line 236
+    .line 237
+    move v12, v14
+
+    .line 238
+    goto :goto_7
+
+    .line 239
+    :cond_e
+    shl-int/2addr v12, v13
+
+    .line 240
+    or-int/2addr v11, v12
+
+    .line 241
+    move v12, v14
+
+    .line 242
+    :cond_f
+    add-int/lit8 v13, v12, 0x1
+
+    .line 243
+    .line 244
+    invoke-virtual {v0, v12}, Ljava/lang/String;->charAt(I)C
+
+    .line 245
+    .line 246
+    .line 247
+    move-result v12
+
+    .line 248
+    if-lt v12, v5, :cond_11
+
+    .line 249
+    .line 250
+    and-int/lit16 v12, v12, 0x1fff
+
+    .line 251
+    .line 252
+    const/16 v14, 0xd
+
+    .line 253
+    .line 254
+    :goto_8
+    add-int/lit8 v15, v13, 0x1
+
+    .line 255
+    .line 256
+    invoke-virtual {v0, v13}, Ljava/lang/String;->charAt(I)C
+
+    .line 257
+    .line 258
+    .line 259
+    move-result v13
+
+    .line 260
+    if-lt v13, v5, :cond_10
+
+    .line 261
+    .line 262
+    and-int/lit16 v13, v13, 0x1fff
+
+    .line 263
+    .line 264
+    shl-int/2addr v13, v14
+
+    .line 265
+    or-int/2addr v12, v13
+
+    .line 266
+    add-int/lit8 v14, v14, 0xd
+
+    .line 267
+    .line 268
+    move v13, v15
+
+    .line 269
+    goto :goto_8
+
+    .line 270
+    :cond_10
+    shl-int/2addr v13, v14
+
+    .line 271
+    or-int/2addr v12, v13
+
+    .line 272
+    move v13, v15
+
+    .line 273
+    :cond_11
+    add-int/lit8 v14, v13, 0x1
+
+    .line 274
+    .line 275
+    invoke-virtual {v0, v13}, Ljava/lang/String;->charAt(I)C
+
+    .line 276
+    .line 277
+    .line 278
+    move-result v13
+
+    .line 279
+    if-lt v13, v5, :cond_13
+
+    .line 280
+    .line 281
+    and-int/lit16 v13, v13, 0x1fff
+
+    .line 282
+    .line 283
+    const/16 v15, 0xd
+
+    .line 284
+    .line 285
+    :goto_9
+    add-int/lit8 v16, v14, 0x1
+
+    .line 286
+    .line 287
+    invoke-virtual {v0, v14}, Ljava/lang/String;->charAt(I)C
+
+    .line 288
+    .line 289
+    .line 290
+    move-result v14
+
+    .line 291
+    if-lt v14, v5, :cond_12
+
+    .line 292
+    .line 293
+    and-int/lit16 v14, v14, 0x1fff
+
+    .line 294
+    .line 295
+    shl-int/2addr v14, v15
+
+    .line 296
+    or-int/2addr v13, v14
+
+    .line 297
+    add-int/lit8 v15, v15, 0xd
+
+    .line 298
+    .line 299
+    move/from16 v14, v16
+
+    .line 300
+    .line 301
+    goto :goto_9
+
+    .line 302
+    :cond_12
+    shl-int/2addr v14, v15
+
+    .line 303
+    or-int/2addr v13, v14
+
+    .line 304
+    move/from16 v14, v16
+
+    .line 305
+    .line 306
+    :cond_13
+    add-int/lit8 v15, v14, 0x1
+
+    .line 307
+    .line 308
+    invoke-virtual {v0, v14}, Ljava/lang/String;->charAt(I)C
+
+    .line 309
+    .line 310
+    .line 311
+    move-result v14
+
+    .line 312
+    if-lt v14, v5, :cond_15
+
+    .line 313
+    .line 314
+    and-int/lit16 v14, v14, 0x1fff
+
+    .line 315
+    .line 316
+    const/16 v16, 0xd
+
+    .line 317
+    .line 318
+    :goto_a
+    add-int/lit8 v17, v15, 0x1
+
+    .line 319
+    .line 320
+    invoke-virtual {v0, v15}, Ljava/lang/String;->charAt(I)C
+
+    .line 321
+    .line 322
+    .line 323
+    move-result v15
+
+    .line 324
+    if-lt v15, v5, :cond_14
+
+    .line 325
+    .line 326
+    and-int/lit16 v15, v15, 0x1fff
+
+    .line 327
+    .line 328
+    shl-int v15, v15, v16
+
+    .line 329
+    .line 330
+    or-int/2addr v14, v15
+
+    .line 331
+    add-int/lit8 v16, v16, 0xd
+
+    .line 332
+    .line 333
+    move/from16 v15, v17
+
+    .line 334
+    .line 335
+    goto :goto_a
+
+    .line 336
+    :cond_14
+    shl-int v15, v15, v16
+
+    .line 337
+    .line 338
+    or-int/2addr v14, v15
+
+    .line 339
+    move/from16 v15, v17
+
+    .line 340
+    .line 341
+    :cond_15
+    add-int v16, v14, v12
+
+    .line 342
+    .line 343
+    add-int v13, v16, v13
+
+    .line 344
+    .line 345
+    new-array v13, v13, [I
+
+    .line 346
+    .line 347
+    add-int v16, v4, v4
+
+    .line 348
+    .line 349
+    add-int v16, v16, v6
+
+    .line 350
+    .line 351
+    move v6, v4
+
+    .line 352
+    move v4, v15
+
+    .line 353
+    move/from16 v33, v12
+
+    .line 354
+    .line 355
+    move v12, v9
+
+    .line 356
+    move/from16 v9, v33
+
+    .line 357
+    .line 358
+    :goto_b
+    sget-object v15, Lcom/google/android/gms/internal/wearable/zzda;->zzb:Lsun/misc/Unsafe;
+
+    .line 359
+    .line 360
+    invoke-virtual/range {p0 .. p0}, Lcom/google/android/gms/internal/wearable/zzdh;->zze()[Ljava/lang/Object;
+
+    .line 361
+    .line 362
+    .line 363
+    move-result-object v17
+
+    .line 364
+    invoke-virtual/range {p0 .. p0}, Lcom/google/android/gms/internal/wearable/zzdh;->zzb()Lcom/google/android/gms/internal/wearable/zzcx;
+
+    .line 365
+    .line 366
+    .line 367
+    move-result-object v18
+
+    .line 368
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 369
+    .line 370
+    .line 371
+    move-result-object v2
+
+    .line 372
+    mul-int/lit8 v7, v11, 0x3
+
+    .line 373
+    .line 374
+    new-array v7, v7, [I
+
+    .line 375
+    .line 376
+    add-int/2addr v11, v11
+
+    .line 377
+    new-array v11, v11, [Ljava/lang/Object;
+
+    .line 378
+    .line 379
+    add-int v21, v14, v9
+
+    .line 380
+    .line 381
+    move/from16 v22, v14
+
+    .line 382
+    .line 383
+    move/from16 v23, v21
+
+    .line 384
+    .line 385
+    const/4 v9, 0x0
+
+    .line 386
+    const/16 v20, 0x0
+
+    .line 387
+    .line 388
+    :goto_c
+    if-ge v4, v1, :cond_32
+
+    .line 389
+    .line 390
+    add-int/lit8 v24, v4, 0x1
+
+    .line 391
+    .line 392
+    invoke-virtual {v0, v4}, Ljava/lang/String;->charAt(I)C
+
+    .line 393
+    .line 394
+    .line 395
+    move-result v4
+
+    .line 396
+    if-lt v4, v5, :cond_17
+
+    .line 397
+    .line 398
+    and-int/lit16 v4, v4, 0x1fff
+
+    .line 399
+    .line 400
+    move/from16 v3, v24
+
+    .line 401
+    .line 402
+    const/16 v24, 0xd
+
+    .line 403
+    .line 404
+    :goto_d
+    add-int/lit8 v26, v3, 0x1
+
+    .line 405
+    .line 406
+    invoke-virtual {v0, v3}, Ljava/lang/String;->charAt(I)C
+
+    .line 407
+    .line 408
+    .line 409
+    move-result v3
+
+    .line 410
+    if-lt v3, v5, :cond_16
+
+    .line 411
+    .line 412
+    and-int/lit16 v3, v3, 0x1fff
+
+    .line 413
+    .line 414
+    shl-int v3, v3, v24
+
+    .line 415
+    .line 416
+    or-int/2addr v4, v3
+
+    .line 417
+    add-int/lit8 v24, v24, 0xd
+
+    .line 418
+    .line 419
+    move/from16 v3, v26
+
+    .line 420
+    .line 421
+    goto :goto_d
+
+    .line 422
+    :cond_16
+    shl-int v3, v3, v24
+
+    .line 423
+    .line 424
+    or-int/2addr v4, v3
+
+    .line 425
+    move/from16 v3, v26
+
+    .line 426
+    .line 427
+    goto :goto_e
+
+    .line 428
+    :cond_17
+    move/from16 v3, v24
+
+    .line 429
+    .line 430
+    :goto_e
+    add-int/lit8 v24, v3, 0x1
+
+    .line 431
+    .line 432
+    invoke-virtual {v0, v3}, Ljava/lang/String;->charAt(I)C
+
+    .line 433
+    .line 434
+    .line 435
+    move-result v3
+
+    .line 436
+    if-lt v3, v5, :cond_19
+
+    .line 437
+    .line 438
+    and-int/lit16 v3, v3, 0x1fff
+
+    .line 439
+    .line 440
+    move/from16 v5, v24
+
+    .line 441
+    .line 442
+    const/16 v24, 0xd
+
+    .line 443
+    .line 444
+    :goto_f
+    add-int/lit8 v27, v5, 0x1
+
+    .line 445
+    .line 446
+    invoke-virtual {v0, v5}, Ljava/lang/String;->charAt(I)C
+
+    .line 447
+    .line 448
+    .line 449
+    move-result v5
+
+    .line 450
+    move/from16 v28, v1
+
+    .line 451
+    .line 452
+    const v1, 0xd800
+
+    .line 453
+    .line 454
+    .line 455
+    if-lt v5, v1, :cond_18
+
+    .line 456
+    .line 457
+    and-int/lit16 v1, v5, 0x1fff
+
+    .line 458
+    .line 459
+    shl-int v1, v1, v24
+
+    .line 460
+    .line 461
+    or-int/2addr v3, v1
+
+    .line 462
+    add-int/lit8 v24, v24, 0xd
+
+    .line 463
+    .line 464
+    move/from16 v5, v27
+
+    .line 465
+    .line 466
+    move/from16 v1, v28
+
+    .line 467
+    .line 468
+    goto :goto_f
+
+    .line 469
+    :cond_18
+    shl-int v1, v5, v24
+
+    .line 470
+    .line 471
+    or-int/2addr v3, v1
+
+    .line 472
+    move/from16 v1, v27
+
+    .line 473
+    .line 474
+    goto :goto_10
+
+    .line 475
+    :cond_19
+    move/from16 v28, v1
+
+    .line 476
+    .line 477
+    move/from16 v1, v24
+
+    .line 478
+    .line 479
+    :goto_10
+    and-int/lit16 v5, v3, 0xff
+
+    .line 480
+    .line 481
+    move/from16 v24, v14
+
+    .line 482
+    .line 483
+    and-int/lit16 v14, v3, 0x400
+
+    .line 484
+    .line 485
+    if-eqz v14, :cond_1a
+
+    .line 486
+    .line 487
+    add-int/lit8 v14, v20, 0x1
+
+    .line 488
+    .line 489
+    aput v9, v13, v20
+
+    .line 490
+    .line 491
+    move/from16 v20, v14
+
+    .line 492
+    .line 493
+    :cond_1a
+    const/16 v14, 0x33
+
+    .line 494
+    .line 495
+    if-lt v5, v14, :cond_22
+
+    .line 496
+    .line 497
+    add-int/lit8 v14, v1, 0x1
+
+    .line 498
+    .line 499
+    invoke-virtual {v0, v1}, Ljava/lang/String;->charAt(I)C
+
+    .line 500
+    .line 501
+    .line 502
+    move-result v1
+
+    .line 503
+    move/from16 v27, v14
+
+    .line 504
+    .line 505
+    const v14, 0xd800
+
+    .line 506
+    .line 507
+    .line 508
+    if-lt v1, v14, :cond_1c
+
+    .line 509
+    .line 510
+    and-int/lit16 v1, v1, 0x1fff
+
+    .line 511
+    .line 512
+    move/from16 v14, v27
+
+    .line 513
+    .line 514
+    const/16 v27, 0xd
+
+    .line 515
+    .line 516
+    :goto_11
+    add-int/lit8 v31, v14, 0x1
+
+    .line 517
+    .line 518
+    invoke-virtual {v0, v14}, Ljava/lang/String;->charAt(I)C
+
+    .line 519
+    .line 520
+    .line 521
+    move-result v14
+
+    .line 522
+    move/from16 v32, v12
+
+    .line 523
+    .line 524
+    const v12, 0xd800
+
+    .line 525
+    .line 526
+    .line 527
+    if-lt v14, v12, :cond_1b
+
+    .line 528
+    .line 529
+    and-int/lit16 v12, v14, 0x1fff
+
+    .line 530
+    .line 531
+    shl-int v12, v12, v27
+
+    .line 532
+    .line 533
+    or-int/2addr v1, v12
+
+    .line 534
+    add-int/lit8 v27, v27, 0xd
+
+    .line 535
+    .line 536
+    move/from16 v14, v31
+
+    .line 537
+    .line 538
+    move/from16 v12, v32
+
+    .line 539
+    .line 540
+    goto :goto_11
+
+    .line 541
+    :cond_1b
+    shl-int v12, v14, v27
+
+    .line 542
+    .line 543
+    or-int/2addr v1, v12
+
+    .line 544
+    move/from16 v14, v31
+
+    .line 545
+    .line 546
+    goto :goto_12
+
+    .line 547
+    :cond_1c
+    move/from16 v32, v12
+
+    .line 548
+    .line 549
+    move/from16 v14, v27
+
+    .line 550
+    .line 551
+    :goto_12
+    add-int/lit8 v12, v5, -0x33
+
+    .line 552
+    .line 553
+    move/from16 v27, v14
+
+    .line 554
+    .line 555
+    const/16 v14, 0x9
+
+    .line 556
+    .line 557
+    if-eq v12, v14, :cond_1e
+
+    .line 558
+    .line 559
+    const/16 v14, 0x11
+
+    .line 560
+    .line 561
+    if-ne v12, v14, :cond_1d
+
+    .line 562
+    .line 563
+    goto :goto_13
+
+    .line 564
+    :cond_1d
+    const/16 v14, 0xc
+
+    .line 565
+    .line 566
+    if-ne v12, v14, :cond_1f
+
+    .line 567
+    .line 568
+    if-nez v10, :cond_1f
+
+    .line 569
+    .line 570
+    div-int/lit8 v12, v9, 0x3
+
+    .line 571
+    .line 572
+    add-int/lit8 v14, v16, 0x1
+
+    .line 573
+    .line 574
+    add-int/2addr v12, v12
+
+    .line 575
+    const/16 v25, 0x1
+
+    .line 576
+    .line 577
+    add-int/lit8 v12, v12, 0x1
+
+    .line 578
+    .line 579
+    aget-object v16, v17, v16
+
+    .line 580
+    .line 581
+    aput-object v16, v11, v12
+
+    .line 582
+    .line 583
+    goto :goto_14
+
+    .line 584
+    :cond_1e
+    :goto_13
+    div-int/lit8 v12, v9, 0x3
+
+    .line 585
+    .line 586
+    add-int/lit8 v14, v16, 0x1
+
+    .line 587
+    .line 588
+    add-int/2addr v12, v12
+
+    .line 589
+    const/16 v25, 0x1
+
+    .line 590
+    .line 591
+    add-int/lit8 v12, v12, 0x1
+
+    .line 592
+    .line 593
+    aget-object v16, v17, v16
+
+    .line 594
+    .line 595
+    aput-object v16, v11, v12
+
+    .line 596
+    .line 597
+    :goto_14
+    move/from16 v16, v14
+
+    .line 598
+    .line 599
+    :cond_1f
+    add-int/2addr v1, v1
+
+    .line 600
+    aget-object v12, v17, v1
+
+    .line 601
+    .line 602
+    instance-of v14, v12, Ljava/lang/reflect/Field;
+
+    .line 603
+    .line 604
+    if-eqz v14, :cond_20
+
+    .line 605
+    .line 606
+    check-cast v12, Ljava/lang/reflect/Field;
+
+    .line 607
+    .line 608
+    goto :goto_15
+
+    .line 609
+    :cond_20
+    check-cast v12, Ljava/lang/String;
+
+    .line 610
+    .line 611
+    invoke-static {v2, v12}, Lcom/google/android/gms/internal/wearable/zzda;->zzn(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    .line 612
+    .line 613
+    .line 614
+    move-result-object v12
+
+    .line 615
+    aput-object v12, v17, v1
+
+    .line 616
+    .line 617
+    :goto_15
+    move-object/from16 v31, v7
+
+    .line 618
+    .line 619
+    move v14, v8
+
+    .line 620
+    invoke-virtual {v15, v12}, Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J
+
+    .line 621
+    .line 622
+    .line 623
+    move-result-wide v7
+
+    .line 624
+    long-to-int v8, v7
+
+    .line 625
+    add-int/lit8 v1, v1, 0x1
+
+    .line 626
+    .line 627
+    aget-object v7, v17, v1
+
+    .line 628
+    .line 629
+    instance-of v12, v7, Ljava/lang/reflect/Field;
+
+    .line 630
+    .line 631
+    if-eqz v12, :cond_21
+
+    .line 632
+    .line 633
+    check-cast v7, Ljava/lang/reflect/Field;
+
+    .line 634
+    .line 635
+    goto :goto_16
+
+    .line 636
+    :cond_21
+    check-cast v7, Ljava/lang/String;
+
+    .line 637
+    .line 638
+    invoke-static {v2, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzn(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    .line 639
+    .line 640
+    .line 641
+    move-result-object v7
+
+    .line 642
+    aput-object v7, v17, v1
+
+    .line 643
+    .line 644
+    :goto_16
+    move v1, v8
+
+    .line 645
+    invoke-virtual {v15, v7}, Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J
+
+    .line 646
+    .line 647
+    .line 648
+    move-result-wide v7
+
+    .line 649
+    long-to-int v8, v7
+
+    .line 650
+    move-object/from16 v30, v0
+
+    .line 651
+    .line 652
+    move v0, v6
+
+    .line 653
+    move v7, v8
+
+    .line 654
+    move-object/from16 v29, v11
+
+    .line 655
+    .line 656
+    const/16 v25, 0x1
+
+    .line 657
+    .line 658
+    move v8, v1
+
+    .line 659
+    const/4 v1, 0x0
+
+    .line 660
+    goto/16 :goto_21
+
+    .line 661
+    .line 662
+    :cond_22
+    move-object/from16 v31, v7
+
+    .line 663
+    .line 664
+    move v14, v8
+
+    .line 665
+    move/from16 v32, v12
+
+    .line 666
+    .line 667
+    add-int/lit8 v7, v16, 0x1
+
+    .line 668
+    .line 669
+    aget-object v8, v17, v16
+
+    .line 670
+    .line 671
+    check-cast v8, Ljava/lang/String;
+
+    .line 672
+    .line 673
+    invoke-static {v2, v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzn(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    .line 674
+    .line 675
+    .line 676
+    move-result-object v8
+
+    .line 677
+    const/16 v12, 0x9
+
+    .line 678
+    .line 679
+    if-eq v5, v12, :cond_2a
+
+    .line 680
+    .line 681
+    const/16 v12, 0x11
+
+    .line 682
+    .line 683
+    if-ne v5, v12, :cond_23
+
+    .line 684
+    .line 685
+    goto :goto_1a
+
+    .line 686
+    :cond_23
+    const/16 v12, 0x1b
+
+    .line 687
+    .line 688
+    if-eq v5, v12, :cond_29
+
+    .line 689
+    .line 690
+    const/16 v12, 0x31
+
+    .line 691
+    .line 692
+    if-ne v5, v12, :cond_24
+
+    .line 693
+    .line 694
+    goto :goto_18
+
+    .line 695
+    :cond_24
+    const/16 v12, 0xc
+
+    .line 696
+    .line 697
+    if-eq v5, v12, :cond_28
+
+    .line 698
+    .line 699
+    const/16 v12, 0x1e
+
+    .line 700
+    .line 701
+    if-eq v5, v12, :cond_28
+
+    .line 702
+    .line 703
+    const/16 v12, 0x2c
+
+    .line 704
+    .line 705
+    if-ne v5, v12, :cond_25
+
+    .line 706
+    .line 707
+    goto :goto_17
+
+    .line 708
+    :cond_25
+    const/16 v12, 0x32
+
+    .line 709
+    .line 710
+    if-ne v5, v12, :cond_26
+
+    .line 711
+    .line 712
+    add-int/lit8 v12, v22, 0x1
+
+    .line 713
+    .line 714
+    aput v9, v13, v22
+
+    .line 715
+    .line 716
+    div-int/lit8 v22, v9, 0x3
+
+    .line 717
+    .line 718
+    add-int v22, v22, v22
+
+    .line 719
+    .line 720
+    add-int/lit8 v27, v7, 0x1
+
+    .line 721
+    .line 722
+    aget-object v7, v17, v7
+
+    .line 723
+    .line 724
+    aput-object v7, v11, v22
+
+    .line 725
+    .line 726
+    and-int/lit16 v7, v3, 0x800
+
+    .line 727
+    .line 728
+    if-eqz v7, :cond_27
+
+    .line 729
+    .line 730
+    add-int/lit8 v7, v27, 0x1
+
+    .line 731
+    .line 732
+    add-int/lit8 v22, v22, 0x1
+
+    .line 733
+    .line 734
+    aget-object v27, v17, v27
+
+    .line 735
+    .line 736
+    aput-object v27, v11, v22
+
+    .line 737
+    .line 738
+    move/from16 v22, v12
+
+    .line 739
+    .line 740
+    :cond_26
+    const/16 v25, 0x1
+
+    .line 741
+    .line 742
+    goto :goto_1b
+
+    .line 743
+    :cond_27
+    move/from16 v22, v12
+
+    .line 744
+    .line 745
+    move/from16 v12, v27
+
+    .line 746
+    .line 747
+    const/16 v25, 0x1
+
+    .line 748
+    .line 749
+    goto :goto_1c
+
+    .line 750
+    :cond_28
+    :goto_17
+    if-nez v10, :cond_26
+
+    .line 751
+    .line 752
+    div-int/lit8 v12, v9, 0x3
+
+    .line 753
+    .line 754
+    add-int/lit8 v27, v7, 0x1
+
+    .line 755
+    .line 756
+    add-int/2addr v12, v12
+
+    .line 757
+    const/16 v25, 0x1
+
+    .line 758
+    .line 759
+    add-int/lit8 v12, v12, 0x1
+
+    .line 760
+    .line 761
+    aget-object v7, v17, v7
+
+    .line 762
+    .line 763
+    aput-object v7, v11, v12
+
+    .line 764
+    .line 765
+    goto :goto_19
+
+    .line 766
+    :cond_29
+    :goto_18
+    const/16 v25, 0x1
+
+    .line 767
+    .line 768
+    div-int/lit8 v12, v9, 0x3
+
+    .line 769
+    .line 770
+    add-int/lit8 v27, v7, 0x1
+
+    .line 771
+    .line 772
+    add-int/2addr v12, v12
+
+    .line 773
+    add-int/lit8 v12, v12, 0x1
+
+    .line 774
+    .line 775
+    aget-object v7, v17, v7
+
+    .line 776
+    .line 777
+    aput-object v7, v11, v12
+
+    .line 778
+    .line 779
+    :goto_19
+    move/from16 v12, v27
+
+    .line 780
+    .line 781
+    goto :goto_1c
+
+    .line 782
+    :cond_2a
+    :goto_1a
+    const/16 v25, 0x1
+
+    .line 783
+    .line 784
+    div-int/lit8 v12, v9, 0x3
+
+    .line 785
+    .line 786
+    add-int/2addr v12, v12
+
+    .line 787
+    add-int/lit8 v12, v12, 0x1
+
+    .line 788
+    .line 789
+    invoke-virtual {v8}, Ljava/lang/reflect/Field;->getType()Ljava/lang/Class;
+
+    .line 790
+    .line 791
+    .line 792
+    move-result-object v27
+
+    .line 793
+    aput-object v27, v11, v12
+
+    .line 794
+    .line 795
+    :goto_1b
+    move v12, v7
+
+    .line 796
+    :goto_1c
+    invoke-virtual {v15, v8}, Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J
+
+    .line 797
+    .line 798
+    .line 799
+    move-result-wide v7
+
+    .line 800
+    long-to-int v8, v7
+
+    .line 801
+    and-int/lit16 v7, v3, 0x1000
+
+    .line 802
+    .line 803
+    const v27, 0xfffff
+
+    .line 804
+    .line 805
+    .line 806
+    move-object/from16 v29, v11
+
+    .line 807
+    .line 808
+    const/16 v11, 0x1000
+
+    .line 809
+    .line 810
+    if-ne v7, v11, :cond_2e
+
+    .line 811
+    .line 812
+    const/16 v7, 0x11
+
+    .line 813
+    .line 814
+    if-gt v5, v7, :cond_2e
+
+    .line 815
+    .line 816
+    add-int/lit8 v7, v1, 0x1
+
+    .line 817
+    .line 818
+    invoke-virtual {v0, v1}, Ljava/lang/String;->charAt(I)C
+
+    .line 819
+    .line 820
+    .line 821
+    move-result v1
+
+    .line 822
+    const v11, 0xd800
+
+    .line 823
+    .line 824
+    .line 825
+    if-lt v1, v11, :cond_2c
+
+    .line 826
+    .line 827
+    and-int/lit16 v1, v1, 0x1fff
+
+    .line 828
+    .line 829
+    const/16 v26, 0xd
+
+    .line 830
+    .line 831
+    :goto_1d
+    add-int/lit8 v27, v7, 0x1
+
+    .line 832
+    .line 833
+    invoke-virtual {v0, v7}, Ljava/lang/String;->charAt(I)C
+
+    .line 834
+    .line 835
+    .line 836
+    move-result v7
+
+    .line 837
+    if-lt v7, v11, :cond_2b
+
+    .line 838
+    .line 839
+    and-int/lit16 v7, v7, 0x1fff
+
+    .line 840
+    .line 841
+    shl-int v7, v7, v26
+
+    .line 842
+    .line 843
+    or-int/2addr v1, v7
+
+    .line 844
+    add-int/lit8 v26, v26, 0xd
+
+    .line 845
+    .line 846
+    move/from16 v7, v27
+
+    .line 847
+    .line 848
+    goto :goto_1d
+
+    .line 849
+    :cond_2b
+    shl-int v7, v7, v26
+
+    .line 850
+    .line 851
+    or-int/2addr v1, v7
+
+    .line 852
+    goto :goto_1e
+
+    .line 853
+    :cond_2c
+    move/from16 v27, v7
+
+    .line 854
+    .line 855
+    :goto_1e
+    add-int v7, v6, v6
+
+    .line 856
+    .line 857
+    div-int/lit8 v26, v1, 0x20
+
+    .line 858
+    .line 859
+    add-int v7, v7, v26
+
+    .line 860
+    .line 861
+    aget-object v11, v17, v7
+
+    .line 862
+    .line 863
+    move-object/from16 v30, v0
+
+    .line 864
+    .line 865
+    instance-of v0, v11, Ljava/lang/reflect/Field;
+
+    .line 866
+    .line 867
+    if-eqz v0, :cond_2d
+
+    .line 868
+    .line 869
+    check-cast v11, Ljava/lang/reflect/Field;
+
+    .line 870
+    .line 871
+    goto :goto_1f
+
+    .line 872
+    :cond_2d
+    check-cast v11, Ljava/lang/String;
+
+    .line 873
+    .line 874
+    invoke-static {v2, v11}, Lcom/google/android/gms/internal/wearable/zzda;->zzn(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    .line 875
+    .line 876
+    .line 877
+    move-result-object v11
+
+    .line 878
+    aput-object v11, v17, v7
+
+    .line 879
+    .line 880
+    :goto_1f
+    move v0, v6
+
+    .line 881
+    invoke-virtual {v15, v11}, Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J
+
+    .line 882
+    .line 883
+    .line 884
+    move-result-wide v6
+
+    .line 885
+    long-to-int v7, v6
+
+    .line 886
+    rem-int/lit8 v1, v1, 0x20
+
+    .line 887
+    .line 888
+    goto :goto_20
+
+    .line 889
+    :cond_2e
+    move-object/from16 v30, v0
+
+    .line 890
+    .line 891
+    move v0, v6
+
+    .line 892
+    move/from16 v27, v1
+
+    .line 893
+    .line 894
+    const/4 v1, 0x0
+
+    .line 895
+    const v7, 0xfffff
+
+    .line 896
+    .line 897
+    .line 898
+    :goto_20
+    const/16 v6, 0x12
+
+    .line 899
+    .line 900
+    if-lt v5, v6, :cond_2f
+
+    .line 901
+    .line 902
+    const/16 v6, 0x31
+
+    .line 903
+    .line 904
+    if-gt v5, v6, :cond_2f
+
+    .line 905
+    .line 906
+    add-int/lit8 v6, v23, 0x1
+
+    .line 907
+    .line 908
+    aput v8, v13, v23
+
+    .line 909
+    .line 910
+    move/from16 v23, v6
+
+    .line 911
+    .line 912
+    :cond_2f
+    move/from16 v16, v12
+
+    .line 913
+    .line 914
+    :goto_21
+    add-int/lit8 v6, v9, 0x1
+
+    .line 915
+    .line 916
+    aput v4, v31, v9
+
+    .line 917
+    .line 918
+    add-int/lit8 v4, v6, 0x1
+
+    .line 919
+    .line 920
+    and-int/lit16 v9, v3, 0x200
+
+    .line 921
+    .line 922
+    if-eqz v9, :cond_30
+
+    .line 923
+    .line 924
+    const/high16 v9, 0x20000000
+
+    .line 925
+    .line 926
+    goto :goto_22
+
+    .line 927
+    :cond_30
+    const/4 v9, 0x0
+
+    .line 928
+    :goto_22
+    and-int/lit16 v3, v3, 0x100
+
+    .line 929
+    .line 930
+    if-eqz v3, :cond_31
+
+    .line 931
+    .line 932
+    const/high16 v3, 0x10000000
+
+    .line 933
+    .line 934
+    goto :goto_23
+
+    .line 935
+    :cond_31
+    const/4 v3, 0x0
+
+    .line 936
+    :goto_23
+    or-int/2addr v3, v9
+
+    .line 937
+    shl-int/lit8 v5, v5, 0x14
+
+    .line 938
+    .line 939
+    or-int/2addr v3, v5
+
+    .line 940
+    or-int/2addr v3, v8
+
+    .line 941
+    aput v3, v31, v6
+
+    .line 942
+    .line 943
+    add-int/lit8 v9, v4, 0x1
+
+    .line 944
+    .line 945
+    shl-int/lit8 v1, v1, 0x14
+
+    .line 946
+    .line 947
+    or-int/2addr v1, v7
+
+    .line 948
+    aput v1, v31, v4
+
+    .line 949
+    .line 950
+    move v6, v0
+
+    .line 951
+    move v8, v14
+
+    .line 952
+    move/from16 v14, v24
+
+    .line 953
+    .line 954
+    move/from16 v4, v27
+
+    .line 955
+    .line 956
+    move/from16 v1, v28
+
+    .line 957
+    .line 958
+    move-object/from16 v11, v29
+
+    .line 959
+    .line 960
+    move-object/from16 v0, v30
+
+    .line 961
+    .line 962
+    move-object/from16 v7, v31
+
+    .line 963
+    .line 964
+    move/from16 v12, v32
+
+    .line 965
+    .line 966
+    const v5, 0xd800
+
+    .line 967
+    .line 968
+    .line 969
+    goto/16 :goto_c
+
+    .line 970
+    .line 971
+    :cond_32
+    move-object/from16 v31, v7
+
+    .line 972
+    .line 973
+    move-object/from16 v29, v11
+
+    .line 974
+    .line 975
+    move/from16 v32, v12
+
+    .line 976
+    .line 977
+    move/from16 v24, v14
+
+    .line 978
+    .line 979
+    move v14, v8
+
+    .line 980
+    new-instance v0, Lcom/google/android/gms/internal/wearable/zzda;
+
+    .line 981
+    .line 982
+    move-object v4, v0
+
+    .line 983
+    invoke-virtual/range {p0 .. p0}, Lcom/google/android/gms/internal/wearable/zzdh;->zzb()Lcom/google/android/gms/internal/wearable/zzcx;
+
+    .line 984
+    .line 985
+    .line 986
+    move-result-object v9
+
+    .line 987
+    const/4 v11, 0x0
+
+    .line 988
+    move-object/from16 v1, v29
+
+    .line 989
+    .line 990
+    const/16 v20, 0x0
+
+    .line 991
+    .line 992
+    move-object/from16 v5, v31
+
+    .line 993
+    .line 994
+    move-object v6, v1
+
+    .line 995
+    move v7, v14
+
+    .line 996
+    move/from16 v8, v32
+
+    .line 997
+    .line 998
+    move-object v12, v13
+
+    .line 999
+    move/from16 v13, v24
+
+    .line 1000
+    .line 1001
+    move/from16 v14, v21
+
+    .line 1002
+    .line 1003
+    move-object/from16 v15, p1
+
+    .line 1004
+    .line 1005
+    move-object/from16 v16, p2
+
+    .line 1006
+    .line 1007
+    move-object/from16 v17, p3
+
+    .line 1008
+    .line 1009
+    move-object/from16 v18, p4
+
+    .line 1010
+    .line 1011
+    move-object/from16 v19, p5
+
+    .line 1012
+    .line 1013
+    invoke-direct/range {v4 .. v20}, Lcom/google/android/gms/internal/wearable/zzda;-><init>([I[Ljava/lang/Object;IILcom/google/android/gms/internal/wearable/zzcx;ZZ[IIILcom/google/android/gms/internal/wearable/zzdc;Lcom/google/android/gms/internal/wearable/zzcl;Lcom/google/android/gms/internal/wearable/zzdw;Lcom/google/android/gms/internal/wearable/zzbh;Lcom/google/android/gms/internal/wearable/zzcs;[B)V
+
+    .line 1014
+    .line 1015
+    .line 1016
+    return-object v0
+.end method
+
+.method private static zzn(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "*>;",
+            "Ljava/lang/String;",
+            ")",
+            "Ljava/lang/reflect/Field;"
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p0, p1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 5
+    return-object p0
+
+    .line 6
+    :catch_0
+    invoke-virtual {p0}, Ljava/lang/Class;->getDeclaredFields()[Ljava/lang/reflect/Field;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    array-length v1, v0
+
+    .line 11
+    const/4 v2, 0x0
+
+    .line 12
+    :goto_0
+    if-ge v2, v1, :cond_1
+
+    .line 13
+    .line 14
+    aget-object v3, v0, v2
+
+    .line 15
+    .line 16
+    invoke-virtual {v3}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v4
+
+    .line 20
+    invoke-virtual {p1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v4
+
+    .line 24
+    if-eqz v4, :cond_0
+
+    .line 25
+    .line 26
+    return-object v3
+
+    .line 27
+    :cond_0
+    add-int/lit8 v2, v2, 0x1
+
+    .line 28
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :cond_1
+    new-instance v1, Ljava/lang/RuntimeException;
+
+    .line 31
+    .line 32
+    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    invoke-static {v0}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v0
+
+    .line 40
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v2
+
+    .line 44
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
+
+    .line 45
+    .line 46
+    .line 47
+    move-result v2
+
+    .line 48
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    .line 49
+    .line 50
+    .line 51
+    move-result v3
+
+    .line 52
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v4
+
+    .line 56
+    invoke-virtual {v4}, Ljava/lang/String;->length()I
+
+    .line 57
+    .line 58
+    .line 59
+    move-result v4
+
+    .line 60
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 61
+    .line 62
+    add-int/lit8 v2, v2, 0x28
+
+    .line 63
+    .line 64
+    add-int/2addr v2, v3
+
+    .line 65
+    add-int/2addr v2, v4
+
+    .line 66
+    invoke-direct {v5, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    .line 67
+    .line 68
+    .line 69
+    const-string v2, "Field "
+
+    .line 70
+    .line 71
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 72
+    .line 73
+    .line 74
+    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 75
+    .line 76
+    .line 77
+    const-string p1, " for "
+
+    .line 78
+    .line 79
+    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 80
+    .line 81
+    .line 82
+    invoke-virtual {v5, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 83
+    .line 84
+    .line 85
+    const-string p0, " not found. Known fields are "
+
+    .line 86
+    .line 87
+    invoke-virtual {v5, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 88
+    .line 89
+    .line 90
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 91
+    .line 92
+    .line 93
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 94
+    .line 95
+    .line 96
+    move-result-object p0
+
+    .line 97
+    invoke-direct {v1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    .line 98
+    .line 99
+    .line 100
+    throw v1
+.end method
+
+.method private final zzo(Ljava/lang/Object;Ljava/lang/Object;I)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;I)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p3}, Lcom/google/android/gms/internal/wearable/zzda;->zzA(I)I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const v1, 0xfffff
+
+    .line 6
+    .line 7
+    .line 8
+    and-int/2addr v0, v1
+
+    .line 9
+    int-to-long v0, v0
+
+    .line 10
+    invoke-direct {p0, p2, p3}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v2
+
+    .line 14
+    if-nez v2, :cond_0
+
+    .line 15
+    .line 16
+    return-void
+
+    .line 17
+    :cond_0
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v2
+
+    .line 21
+    invoke-static {p2, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p2
+
+    .line 25
+    if-eqz v2, :cond_2
+
+    .line 26
+    .line 27
+    if-nez p2, :cond_1
+
+    .line 28
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :cond_1
+    invoke-static {v2, p2}, Lcom/google/android/gms/internal/wearable/zzca;->zzi(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object p2
+
+    .line 34
+    invoke-static {p1, v0, v1, p2}, Lcom/google/android/gms/internal/wearable/zzeg;->zzo(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-direct {p0, p1, p3}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 38
+    .line 39
+    .line 40
+    return-void
+
+    .line 41
+    :cond_2
+    :goto_0
+    if-eqz p2, :cond_3
+
+    .line 42
+    .line 43
+    invoke-static {p1, v0, v1, p2}, Lcom/google/android/gms/internal/wearable/zzeg;->zzo(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-direct {p0, p1, p3}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 47
+    .line 48
+    .line 49
+    :cond_3
+    return-void
+.end method
+
+.method private final zzp(Ljava/lang/Object;Ljava/lang/Object;I)V
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;I)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p3}, Lcom/google/android/gms/internal/wearable/zzda;->zzA(I)I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    iget-object v1, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 6
+    .line 7
+    aget v1, v1, p3
+
+    .line 8
+    .line 9
+    const v2, 0xfffff
+
+    .line 10
+    .line 11
+    .line 12
+    and-int/2addr v0, v2
+
+    .line 13
+    int-to-long v2, v0
+
+    .line 14
+    invoke-direct {p0, p2, v1, p3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    if-nez v0, :cond_0
+
+    .line 19
+    .line 20
+    return-void
+
+    .line 21
+    :cond_0
+    invoke-direct {p0, p1, v1, p3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v0
+
+    .line 25
+    if-eqz v0, :cond_1
+
+    .line 26
+    .line 27
+    invoke-static {p1, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    goto :goto_0
+
+    .line 32
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 33
+    :goto_0
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object p2
+
+    .line 37
+    if-eqz v0, :cond_3
+
+    .line 38
+    .line 39
+    if-nez p2, :cond_2
+
+    .line 40
+    .line 41
+    goto :goto_1
+
+    .line 42
+    :cond_2
+    invoke-static {v0, p2}, Lcom/google/android/gms/internal/wearable/zzca;->zzi(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p2
+
+    .line 46
+    invoke-static {p1, v2, v3, p2}, Lcom/google/android/gms/internal/wearable/zzeg;->zzo(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 47
+    .line 48
+    .line 49
+    invoke-direct {p0, p1, v1, p3}, Lcom/google/android/gms/internal/wearable/zzda;->zzN(Ljava/lang/Object;II)V
+
+    .line 50
+    .line 51
+    .line 52
+    return-void
+
+    .line 53
+    :cond_3
+    :goto_1
+    if-eqz p2, :cond_4
+
+    .line 54
+    .line 55
+    invoke-static {p1, v2, v3, p2}, Lcom/google/android/gms/internal/wearable/zzeg;->zzo(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 56
+    .line 57
+    .line 58
+    invoke-direct {p0, p1, v1, p3}, Lcom/google/android/gms/internal/wearable/zzda;->zzN(Ljava/lang/Object;II)V
+
+    .line 59
+    .line 60
+    .line 61
+    :cond_4
+    return-void
+.end method
+
+.method private final zzq(Ljava/lang/Object;)I
+    .locals 14
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)I"
+        }
+    .end annotation
+
+    sget-object v0, Lcom/google/android/gms/internal/wearable/zzda;->zzb:Lsun/misc/Unsafe;
+
+    const/4 v1, 0x0
+
+    const v2, 0xfffff
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const v6, 0xfffff
+
+    :goto_0
+    iget-object v7, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    array-length v7, v7
+
+    if-ge v3, v7, :cond_5
+
+    .line 1
+    invoke-direct {p0, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzA(I)I
+
+    move-result v7
+
+    iget-object v8, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 2
+    aget v8, v8, v3
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzC(I)I
+
+    move-result v9
+
+    const/16 v10, 0x11
+
+    const/4 v11, 0x1
+
+    if-gt v9, v10, :cond_0
+
+    iget-object v10, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    add-int/lit8 v12, v3, 0x2
+
+    .line 3
+    aget v10, v10, v12
+
+    and-int v12, v10, v2
+
+    ushr-int/lit8 v10, v10, 0x14
+
+    shl-int v10, v11, v10
+
+    if-eq v12, v6, :cond_1
+
+    int-to-long v5, v12
+
+    .line 4
+    invoke-virtual {v0, p1, v5, v6}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    move-result v5
+
+    move v6, v12
+
+    goto :goto_1
+
+    :cond_0
+    const/4 v10, 0x0
+
+    :cond_1
+    :goto_1
+    and-int/2addr v7, v2
+
+    int-to-long v12, v7
+
+    const/16 v7, 0x3f
+
+    packed-switch v9, :pswitch_data_0
+
+    goto/16 :goto_b
+
+    .line 5
+    :pswitch_0
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    .line 6
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Lcom/google/android/gms/internal/wearable/zzcx;
+
+    .line 7
+    invoke-direct {p0, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v9
+
+    .line 8
+    invoke-static {v8, v7, v9}, Lcom/google/android/gms/internal/wearable/zzbb;->zzE(ILcom/google/android/gms/internal/wearable/zzcx;Lcom/google/android/gms/internal/wearable/zzdi;)I
+
+    move-result v7
+
+    goto/16 :goto_3
+
+    .line 9
+    :pswitch_1
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_4
+
+    .line 10
+    invoke-static {p1, v12, v13}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    move-result-wide v9
+
+    shl-int/lit8 v8, v8, 0x3
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    add-long v11, v9, v9
+
+    shr-long/2addr v9, v7
+
+    xor-long/2addr v9, v11
+
+    invoke-static {v9, v10}, Lcom/google/android/gms/internal/wearable/zzbb;->zzx(J)I
+
+    move-result v7
+
+    goto/16 :goto_6
+
+    .line 11
+    :pswitch_2
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    .line 12
+    invoke-static {p1, v12, v13}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    move-result v7
+
+    shl-int/lit8 v8, v8, 0x3
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    add-int v9, v7, v7
+
+    shr-int/lit8 v7, v7, 0x1f
+
+    xor-int/2addr v7, v9
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto/16 :goto_6
+
+    .line 13
+    :pswitch_3
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    shl-int/lit8 v7, v8, 0x3
+
+    .line 14
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto/16 :goto_a
+
+    .line 15
+    :pswitch_4
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    shl-int/lit8 v7, v8, 0x3
+
+    .line 16
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto/16 :goto_9
+
+    .line 17
+    :pswitch_5
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    .line 18
+    invoke-static {p1, v12, v13}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    move-result v7
+
+    shl-int/lit8 v8, v8, 0x3
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzv(I)I
+
+    move-result v7
+
+    goto/16 :goto_6
+
+    .line 19
+    :pswitch_6
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    .line 20
+    invoke-static {p1, v12, v13}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    move-result v7
+
+    shl-int/lit8 v8, v8, 0x3
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto/16 :goto_6
+
+    .line 21
+    :pswitch_7
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    .line 22
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Lcom/google/android/gms/internal/wearable/zzau;
+
+    shl-int/lit8 v8, v8, 0x3
+
+    .line 23
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    .line 24
+    invoke-virtual {v7}, Lcom/google/android/gms/internal/wearable/zzau;->zzc()I
+
+    move-result v7
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto/16 :goto_4
+
+    .line 25
+    :pswitch_8
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    .line 26
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    .line 27
+    invoke-direct {p0, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v9
+
+    invoke-static {v8, v7, v9}, Lcom/google/android/gms/internal/wearable/zzdk;->zzw(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzdi;)I
+
+    move-result v7
+
+    goto/16 :goto_3
+
+    .line 28
+    :pswitch_9
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    .line 29
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    .line 30
+    instance-of v9, v7, Lcom/google/android/gms/internal/wearable/zzau;
+
+    if-eqz v9, :cond_2
+
+    .line 31
+    check-cast v7, Lcom/google/android/gms/internal/wearable/zzau;
+
+    shl-int/lit8 v8, v8, 0x3
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    .line 32
+    invoke-virtual {v7}, Lcom/google/android/gms/internal/wearable/zzau;->zzc()I
+
+    move-result v7
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto/16 :goto_4
+
+    .line 33
+    :cond_2
+    check-cast v7, Ljava/lang/String;
+
+    shl-int/lit8 v8, v8, 0x3
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    .line 34
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzy(Ljava/lang/String;)I
+
+    move-result v7
+
+    goto/16 :goto_6
+
+    .line 35
+    :pswitch_a
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    shl-int/lit8 v7, v8, 0x3
+
+    .line 36
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto/16 :goto_5
+
+    .line 37
+    :pswitch_b
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    shl-int/lit8 v7, v8, 0x3
+
+    .line 38
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto/16 :goto_9
+
+    .line 39
+    :pswitch_c
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    shl-int/lit8 v7, v8, 0x3
+
+    .line 40
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto/16 :goto_a
+
+    .line 41
+    :pswitch_d
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    .line 42
+    invoke-static {p1, v12, v13}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    move-result v7
+
+    shl-int/lit8 v8, v8, 0x3
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzv(I)I
+
+    move-result v7
+
+    goto/16 :goto_6
+
+    .line 43
+    :pswitch_e
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    .line 44
+    invoke-static {p1, v12, v13}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    move-result-wide v9
+
+    shl-int/lit8 v7, v8, 0x3
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    invoke-static {v9, v10}, Lcom/google/android/gms/internal/wearable/zzbb;->zzx(J)I
+
+    move-result v8
+
+    goto/16 :goto_8
+
+    .line 45
+    :pswitch_f
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    .line 46
+    invoke-static {p1, v12, v13}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    move-result-wide v9
+
+    shl-int/lit8 v7, v8, 0x3
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    invoke-static {v9, v10}, Lcom/google/android/gms/internal/wearable/zzbb;->zzx(J)I
+
+    move-result v8
+
+    goto/16 :goto_8
+
+    .line 47
+    :pswitch_10
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    shl-int/lit8 v7, v8, 0x3
+
+    .line 48
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto/16 :goto_9
+
+    .line 49
+    :pswitch_11
+    invoke-direct {p0, p1, v8, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    shl-int/lit8 v7, v8, 0x3
+
+    .line 50
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto/16 :goto_a
+
+    .line 51
+    :pswitch_12
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-direct {p0, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzw(I)Ljava/lang/Object;
+
+    move-result-object v9
+
+    .line 52
+    invoke-static {v8, v7, v9}, Lcom/google/android/gms/internal/wearable/zzcs;->zza(ILjava/lang/Object;Ljava/lang/Object;)I
+
+    goto/16 :goto_b
+
+    .line 53
+    :pswitch_13
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 54
+    invoke-direct {p0, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v9
+
+    .line 55
+    invoke-static {v8, v7, v9}, Lcom/google/android/gms/internal/wearable/zzdk;->zzz(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzdi;)I
+
+    move-result v7
+
+    goto/16 :goto_3
+
+    .line 56
+    :pswitch_14
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 57
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzf(Ljava/util/List;)I
+
+    move-result v7
+
+    if-lez v7, :cond_4
+
+    .line 58
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto/16 :goto_2
+
+    .line 59
+    :pswitch_15
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 60
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzn(Ljava/util/List;)I
+
+    move-result v7
+
+    if-lez v7, :cond_4
+
+    .line 61
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto/16 :goto_2
+
+    .line 62
+    :pswitch_16
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 63
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzr(Ljava/util/List;)I
+
+    move-result v7
+
+    if-lez v7, :cond_4
+
+    .line 64
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto/16 :goto_2
+
+    .line 65
+    :pswitch_17
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 66
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzp(Ljava/util/List;)I
+
+    move-result v7
+
+    if-lez v7, :cond_4
+
+    .line 67
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto/16 :goto_2
+
+    .line 68
+    :pswitch_18
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 69
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzh(Ljava/util/List;)I
+
+    move-result v7
+
+    if-lez v7, :cond_4
+
+    .line 70
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto/16 :goto_2
+
+    .line 71
+    :pswitch_19
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 72
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzl(Ljava/util/List;)I
+
+    move-result v7
+
+    if-lez v7, :cond_4
+
+    .line 73
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto/16 :goto_2
+
+    .line 74
+    :pswitch_1a
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 75
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzt(Ljava/util/List;)I
+
+    move-result v7
+
+    if-lez v7, :cond_4
+
+    .line 76
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto/16 :goto_2
+
+    .line 77
+    :pswitch_1b
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 78
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzp(Ljava/util/List;)I
+
+    move-result v7
+
+    if-lez v7, :cond_4
+
+    .line 79
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto/16 :goto_2
+
+    .line 80
+    :pswitch_1c
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 81
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzr(Ljava/util/List;)I
+
+    move-result v7
+
+    if-lez v7, :cond_4
+
+    .line 82
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto :goto_2
+
+    .line 83
+    :pswitch_1d
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 84
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzj(Ljava/util/List;)I
+
+    move-result v7
+
+    if-lez v7, :cond_4
+
+    .line 85
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto :goto_2
+
+    .line 86
+    :pswitch_1e
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 87
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzd(Ljava/util/List;)I
+
+    move-result v7
+
+    if-lez v7, :cond_4
+
+    .line 88
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto :goto_2
+
+    .line 89
+    :pswitch_1f
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 90
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzb(Ljava/util/List;)I
+
+    move-result v7
+
+    if-lez v7, :cond_4
+
+    .line 91
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto :goto_2
+
+    .line 92
+    :pswitch_20
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 93
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzp(Ljava/util/List;)I
+
+    move-result v7
+
+    if-lez v7, :cond_4
+
+    .line 94
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto :goto_2
+
+    .line 95
+    :pswitch_21
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 96
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzr(Ljava/util/List;)I
+
+    move-result v7
+
+    if-lez v7, :cond_4
+
+    .line 97
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    :goto_2
+    add-int/2addr v8, v9
+
+    goto/16 :goto_6
+
+    .line 98
+    :pswitch_22
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 99
+    invoke-static {v8, v7, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzg(ILjava/util/List;Z)I
+
+    move-result v7
+
+    goto/16 :goto_3
+
+    .line 100
+    :pswitch_23
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 101
+    invoke-static {v8, v7, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzo(ILjava/util/List;Z)I
+
+    move-result v7
+
+    goto/16 :goto_3
+
+    .line 102
+    :pswitch_24
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 103
+    invoke-static {v8, v7, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzs(ILjava/util/List;Z)I
+
+    move-result v7
+
+    goto/16 :goto_3
+
+    .line 104
+    :pswitch_25
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 105
+    invoke-static {v8, v7, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzq(ILjava/util/List;Z)I
+
+    move-result v7
+
+    goto/16 :goto_3
+
+    .line 106
+    :pswitch_26
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 107
+    invoke-static {v8, v7, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzi(ILjava/util/List;Z)I
+
+    move-result v7
+
+    goto/16 :goto_3
+
+    .line 108
+    :pswitch_27
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 109
+    invoke-static {v8, v7, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzm(ILjava/util/List;Z)I
+
+    move-result v7
+
+    goto/16 :goto_3
+
+    .line 110
+    :pswitch_28
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 111
+    invoke-static {v8, v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzy(ILjava/util/List;)I
+
+    move-result v7
+
+    goto/16 :goto_3
+
+    .line 112
+    :pswitch_29
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    invoke-direct {p0, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v9
+
+    .line 113
+    invoke-static {v8, v7, v9}, Lcom/google/android/gms/internal/wearable/zzdk;->zzx(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzdi;)I
+
+    move-result v7
+
+    goto :goto_3
+
+    .line 114
+    :pswitch_2a
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    invoke-static {v8, v7}, Lcom/google/android/gms/internal/wearable/zzdk;->zzv(ILjava/util/List;)I
+
+    move-result v7
+
+    goto :goto_3
+
+    .line 115
+    :pswitch_2b
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 116
+    invoke-static {v8, v7, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzu(ILjava/util/List;Z)I
+
+    move-result v7
+
+    goto :goto_3
+
+    .line 117
+    :pswitch_2c
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 118
+    invoke-static {v8, v7, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzq(ILjava/util/List;Z)I
+
+    move-result v7
+
+    goto :goto_3
+
+    .line 119
+    :pswitch_2d
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 120
+    invoke-static {v8, v7, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzs(ILjava/util/List;Z)I
+
+    move-result v7
+
+    goto :goto_3
+
+    .line 121
+    :pswitch_2e
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 122
+    invoke-static {v8, v7, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzk(ILjava/util/List;Z)I
+
+    move-result v7
+
+    goto :goto_3
+
+    .line 123
+    :pswitch_2f
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 124
+    invoke-static {v8, v7, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zze(ILjava/util/List;Z)I
+
+    move-result v7
+
+    goto :goto_3
+
+    .line 125
+    :pswitch_30
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 126
+    invoke-static {v8, v7, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzc(ILjava/util/List;Z)I
+
+    move-result v7
+
+    goto :goto_3
+
+    .line 127
+    :pswitch_31
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 128
+    invoke-static {v8, v7, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzq(ILjava/util/List;Z)I
+
+    move-result v7
+
+    goto :goto_3
+
+    .line 129
+    :pswitch_32
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/List;
+
+    .line 130
+    invoke-static {v8, v7, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzs(ILjava/util/List;Z)I
+
+    move-result v7
+
+    :goto_3
+    add-int/2addr v4, v7
+
+    goto/16 :goto_b
+
+    :pswitch_33
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    .line 131
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Lcom/google/android/gms/internal/wearable/zzcx;
+
+    .line 132
+    invoke-direct {p0, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v9
+
+    .line 133
+    invoke-static {v8, v7, v9}, Lcom/google/android/gms/internal/wearable/zzbb;->zzE(ILcom/google/android/gms/internal/wearable/zzcx;Lcom/google/android/gms/internal/wearable/zzdi;)I
+
+    move-result v7
+
+    goto :goto_3
+
+    :pswitch_34
+    and-int v9, v5, v10
+
+    if-eqz v9, :cond_4
+
+    .line 134
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J
+
+    move-result-wide v9
+
+    shl-int/lit8 v8, v8, 0x3
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    add-long v11, v9, v9
+
+    shr-long/2addr v9, v7
+
+    xor-long/2addr v9, v11
+
+    invoke-static {v9, v10}, Lcom/google/android/gms/internal/wearable/zzbb;->zzx(J)I
+
+    move-result v7
+
+    goto/16 :goto_6
+
+    :pswitch_35
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    .line 135
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    move-result v7
+
+    shl-int/lit8 v8, v8, 0x3
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    add-int v9, v7, v7
+
+    shr-int/lit8 v7, v7, 0x1f
+
+    xor-int/2addr v7, v9
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto/16 :goto_6
+
+    :pswitch_36
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    shl-int/lit8 v7, v8, 0x3
+
+    .line 136
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto/16 :goto_a
+
+    :pswitch_37
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    shl-int/lit8 v7, v8, 0x3
+
+    .line 137
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto/16 :goto_9
+
+    :pswitch_38
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    .line 138
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    move-result v7
+
+    shl-int/lit8 v8, v8, 0x3
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzv(I)I
+
+    move-result v7
+
+    goto/16 :goto_6
+
+    :pswitch_39
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    .line 139
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    move-result v7
+
+    shl-int/lit8 v8, v8, 0x3
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto/16 :goto_6
+
+    :pswitch_3a
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    .line 140
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Lcom/google/android/gms/internal/wearable/zzau;
+
+    shl-int/lit8 v8, v8, 0x3
+
+    .line 141
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    .line 142
+    invoke-virtual {v7}, Lcom/google/android/gms/internal/wearable/zzau;->zzc()I
+
+    move-result v7
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    :goto_4
+    add-int/2addr v9, v7
+
+    add-int/2addr v8, v9
+
+    goto/16 :goto_7
+
+    :pswitch_3b
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    .line 143
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    .line 144
+    invoke-direct {p0, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v9
+
+    invoke-static {v8, v7, v9}, Lcom/google/android/gms/internal/wearable/zzdk;->zzw(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzdi;)I
+
+    move-result v7
+
+    goto/16 :goto_3
+
+    :pswitch_3c
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    .line 145
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v7
+
+    .line 146
+    instance-of v9, v7, Lcom/google/android/gms/internal/wearable/zzau;
+
+    if-eqz v9, :cond_3
+
+    .line 147
+    check-cast v7, Lcom/google/android/gms/internal/wearable/zzau;
+
+    shl-int/lit8 v8, v8, 0x3
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    .line 148
+    invoke-virtual {v7}, Lcom/google/android/gms/internal/wearable/zzau;->zzc()I
+
+    move-result v7
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v9
+
+    goto :goto_4
+
+    .line 149
+    :cond_3
+    check-cast v7, Ljava/lang/String;
+
+    shl-int/lit8 v8, v8, 0x3
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    .line 150
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzy(Ljava/lang/String;)I
+
+    move-result v7
+
+    goto :goto_6
+
+    :pswitch_3d
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    shl-int/lit8 v7, v8, 0x3
+
+    .line 151
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    :goto_5
+    add-int/2addr v7, v11
+
+    goto/16 :goto_3
+
+    :pswitch_3e
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    shl-int/lit8 v7, v8, 0x3
+
+    .line 152
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto :goto_9
+
+    :pswitch_3f
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    shl-int/lit8 v7, v8, 0x3
+
+    .line 153
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    goto :goto_a
+
+    :pswitch_40
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    .line 154
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    move-result v7
+
+    shl-int/lit8 v8, v8, 0x3
+
+    invoke-static {v8}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v8
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzv(I)I
+
+    move-result v7
+
+    :goto_6
+    add-int/2addr v8, v7
+
+    :goto_7
+    add-int/2addr v4, v8
+
+    goto :goto_b
+
+    :pswitch_41
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    .line 155
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J
+
+    move-result-wide v9
+
+    shl-int/lit8 v7, v8, 0x3
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    invoke-static {v9, v10}, Lcom/google/android/gms/internal/wearable/zzbb;->zzx(J)I
+
+    move-result v8
+
+    goto :goto_8
+
+    :pswitch_42
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    .line 156
+    invoke-virtual {v0, p1, v12, v13}, Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J
+
+    move-result-wide v9
+
+    shl-int/lit8 v7, v8, 0x3
+
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    invoke-static {v9, v10}, Lcom/google/android/gms/internal/wearable/zzbb;->zzx(J)I
+
+    move-result v8
+
+    :goto_8
+    add-int/2addr v7, v8
+
+    goto/16 :goto_3
+
+    :pswitch_43
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    shl-int/lit8 v7, v8, 0x3
+
+    .line 157
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    :goto_9
+    add-int/lit8 v7, v7, 0x4
+
+    goto/16 :goto_3
+
+    :pswitch_44
+    and-int v7, v5, v10
+
+    if-eqz v7, :cond_4
+
+    shl-int/lit8 v7, v8, 0x3
+
+    .line 158
+    invoke-static {v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v7
+
+    :goto_a
+    add-int/lit8 v7, v7, 0x8
+
+    goto/16 :goto_3
+
+    :cond_4
+    :goto_b
+    add-int/lit8 v3, v3, 0x3
+
+    goto/16 :goto_0
+
+    .line 159
+    :cond_5
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzn:Lcom/google/android/gms/internal/wearable/zzdw;
+
+    .line 160
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/wearable/zzdw;->zzd(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 161
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/wearable/zzdw;->zzh(Ljava/lang/Object;)I
+
+    move-result v0
+
+    add-int/2addr v4, v0
+
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzh:Z
+
+    if-nez v0, :cond_6
+
+    return v4
+
+    :cond_6
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzo:Lcom/google/android/gms/internal/wearable/zzbh;
+
+    .line 162
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/wearable/zzbh;->zzb(Ljava/lang/Object;)Lcom/google/android/gms/internal/wearable/zzbl;
+
+    const/4 p1, 0x0
+
+    throw p1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_44
+        :pswitch_43
+        :pswitch_42
+        :pswitch_41
+        :pswitch_40
+        :pswitch_3f
+        :pswitch_3e
+        :pswitch_3d
+        :pswitch_3c
+        :pswitch_3b
+        :pswitch_3a
+        :pswitch_39
+        :pswitch_38
+        :pswitch_37
+        :pswitch_36
+        :pswitch_35
+        :pswitch_34
+        :pswitch_33
+        :pswitch_32
+        :pswitch_31
+        :pswitch_30
+        :pswitch_2f
+        :pswitch_2e
+        :pswitch_2d
+        :pswitch_2c
+        :pswitch_2b
+        :pswitch_2a
+        :pswitch_29
+        :pswitch_28
+        :pswitch_27
+        :pswitch_26
+        :pswitch_25
+        :pswitch_24
+        :pswitch_23
+        :pswitch_22
+        :pswitch_21
+        :pswitch_20
+        :pswitch_1f
+        :pswitch_1e
+        :pswitch_1d
+        :pswitch_1c
+        :pswitch_1b
+        :pswitch_1a
+        :pswitch_19
+        :pswitch_18
+        :pswitch_17
+        :pswitch_16
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method private final zzr(Ljava/lang/Object;)I
+    .locals 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)I"
+        }
+    .end annotation
+
+    sget-object v0, Lcom/google/android/gms/internal/wearable/zzda;->zzb:Lsun/misc/Unsafe;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    :goto_0
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    array-length v4, v4
+
+    if-ge v2, v4, :cond_4
+
+    .line 1
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzA(I)I
+
+    move-result v4
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzda;->zzC(I)I
+
+    move-result v5
+
+    iget-object v6, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 2
+    aget v6, v6, v2
+
+    const v7, 0xfffff
+
+    and-int/2addr v4, v7
+
+    int-to-long v7, v4
+
+    .line 3
+    sget-object v4, Lcom/google/android/gms/internal/wearable/zzbm;->zzJ:Lcom/google/android/gms/internal/wearable/zzbm;
+
+    .line 4
+    invoke-virtual {v4}, Lcom/google/android/gms/internal/wearable/zzbm;->zza()I
+
+    move-result v4
+
+    if-lt v5, v4, :cond_0
+
+    sget-object v4, Lcom/google/android/gms/internal/wearable/zzbm;->zzW:Lcom/google/android/gms/internal/wearable/zzbm;
+
+    .line 5
+    invoke-virtual {v4}, Lcom/google/android/gms/internal/wearable/zzbm;->zza()I
+
+    move-result v4
+
+    if-gt v5, v4, :cond_0
+
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    add-int/lit8 v9, v2, 0x2
+
+    .line 6
+    aget v4, v4, v9
+
+    :cond_0
+    const/16 v4, 0x3f
+
+    packed-switch v5, :pswitch_data_0
+
+    goto/16 :goto_a
+
+    .line 7
+    :pswitch_0
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 8
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/google/android/gms/internal/wearable/zzcx;
+
+    .line 9
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v5
+
+    .line 10
+    invoke-static {v6, v4, v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzE(ILcom/google/android/gms/internal/wearable/zzcx;Lcom/google/android/gms/internal/wearable/zzdi;)I
+
+    move-result v4
+
+    goto/16 :goto_2
+
+    .line 11
+    :pswitch_1
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_3
+
+    .line 12
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    move-result-wide v7
+
+    shl-int/lit8 v5, v6, 0x3
+
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    add-long v9, v7, v7
+
+    shr-long v6, v7, v4
+
+    xor-long/2addr v6, v9
+
+    invoke-static {v6, v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzx(J)I
+
+    move-result v4
+
+    goto/16 :goto_5
+
+    .line 13
+    :pswitch_2
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 14
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    move-result v4
+
+    shl-int/lit8 v5, v6, 0x3
+
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    add-int v6, v4, v4
+
+    shr-int/lit8 v4, v4, 0x1f
+
+    xor-int/2addr v4, v6
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto/16 :goto_5
+
+    .line 15
+    :pswitch_3
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    shl-int/lit8 v4, v6, 0x3
+
+    .line 16
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto/16 :goto_9
+
+    .line 17
+    :pswitch_4
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    shl-int/lit8 v4, v6, 0x3
+
+    .line 18
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto/16 :goto_8
+
+    .line 19
+    :pswitch_5
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 20
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    move-result v4
+
+    shl-int/lit8 v5, v6, 0x3
+
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzv(I)I
+
+    move-result v4
+
+    goto/16 :goto_5
+
+    .line 21
+    :pswitch_6
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 22
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    move-result v4
+
+    shl-int/lit8 v5, v6, 0x3
+
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto/16 :goto_5
+
+    .line 23
+    :pswitch_7
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 24
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/google/android/gms/internal/wearable/zzau;
+
+    shl-int/lit8 v5, v6, 0x3
+
+    .line 25
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    .line 26
+    invoke-virtual {v4}, Lcom/google/android/gms/internal/wearable/zzau;->zzc()I
+
+    move-result v4
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto/16 :goto_3
+
+    .line 27
+    :pswitch_8
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 28
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    .line 29
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v5
+
+    invoke-static {v6, v4, v5}, Lcom/google/android/gms/internal/wearable/zzdk;->zzw(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzdi;)I
+
+    move-result v4
+
+    goto/16 :goto_2
+
+    .line 30
+    :pswitch_9
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 31
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    .line 32
+    instance-of v5, v4, Lcom/google/android/gms/internal/wearable/zzau;
+
+    if-eqz v5, :cond_1
+
+    .line 33
+    check-cast v4, Lcom/google/android/gms/internal/wearable/zzau;
+
+    shl-int/lit8 v5, v6, 0x3
+
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    .line 34
+    invoke-virtual {v4}, Lcom/google/android/gms/internal/wearable/zzau;->zzc()I
+
+    move-result v4
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto/16 :goto_3
+
+    .line 35
+    :cond_1
+    check-cast v4, Ljava/lang/String;
+
+    shl-int/lit8 v5, v6, 0x3
+
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    .line 36
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzy(Ljava/lang/String;)I
+
+    move-result v4
+
+    goto/16 :goto_5
+
+    .line 37
+    :pswitch_a
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    shl-int/lit8 v4, v6, 0x3
+
+    .line 38
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto/16 :goto_4
+
+    .line 39
+    :pswitch_b
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    shl-int/lit8 v4, v6, 0x3
+
+    .line 40
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto/16 :goto_8
+
+    .line 41
+    :pswitch_c
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    shl-int/lit8 v4, v6, 0x3
+
+    .line 42
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto/16 :goto_9
+
+    .line 43
+    :pswitch_d
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 44
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    move-result v4
+
+    shl-int/lit8 v5, v6, 0x3
+
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzv(I)I
+
+    move-result v4
+
+    goto/16 :goto_5
+
+    .line 45
+    :pswitch_e
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 46
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    move-result-wide v4
+
+    shl-int/lit8 v6, v6, 0x3
+
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    invoke-static {v4, v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzx(J)I
+
+    move-result v4
+
+    goto/16 :goto_7
+
+    .line 47
+    :pswitch_f
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 48
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    move-result-wide v4
+
+    shl-int/lit8 v6, v6, 0x3
+
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    invoke-static {v4, v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzx(J)I
+
+    move-result v4
+
+    goto/16 :goto_7
+
+    .line 49
+    :pswitch_10
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    shl-int/lit8 v4, v6, 0x3
+
+    .line 50
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto/16 :goto_8
+
+    .line 51
+    :pswitch_11
+    invoke-direct {p0, p1, v6, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    shl-int/lit8 v4, v6, 0x3
+
+    .line 52
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto/16 :goto_9
+
+    .line 53
+    :pswitch_12
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzw(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    .line 54
+    invoke-static {v6, v4, v5}, Lcom/google/android/gms/internal/wearable/zzcs;->zza(ILjava/lang/Object;Ljava/lang/Object;)I
+
+    goto/16 :goto_a
+
+    .line 55
+    :pswitch_13
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 56
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v5
+
+    .line 57
+    invoke-static {v6, v4, v5}, Lcom/google/android/gms/internal/wearable/zzdk;->zzz(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzdi;)I
+
+    move-result v4
+
+    goto/16 :goto_2
+
+    .line 58
+    :pswitch_14
+    invoke-virtual {v0, p1, v7, v8}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 59
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzf(Ljava/util/List;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    .line 60
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto/16 :goto_1
+
+    .line 61
+    :pswitch_15
+    invoke-virtual {v0, p1, v7, v8}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 62
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzn(Ljava/util/List;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    .line 63
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto/16 :goto_1
+
+    .line 64
+    :pswitch_16
+    invoke-virtual {v0, p1, v7, v8}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 65
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzr(Ljava/util/List;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    .line 66
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto/16 :goto_1
+
+    .line 67
+    :pswitch_17
+    invoke-virtual {v0, p1, v7, v8}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 68
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzp(Ljava/util/List;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    .line 69
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto/16 :goto_1
+
+    .line 70
+    :pswitch_18
+    invoke-virtual {v0, p1, v7, v8}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 71
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzh(Ljava/util/List;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    .line 72
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto/16 :goto_1
+
+    .line 73
+    :pswitch_19
+    invoke-virtual {v0, p1, v7, v8}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 74
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzl(Ljava/util/List;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    .line 75
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto/16 :goto_1
+
+    .line 76
+    :pswitch_1a
+    invoke-virtual {v0, p1, v7, v8}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 77
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzt(Ljava/util/List;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    .line 78
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto/16 :goto_1
+
+    .line 79
+    :pswitch_1b
+    invoke-virtual {v0, p1, v7, v8}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 80
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzp(Ljava/util/List;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    .line 81
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto/16 :goto_1
+
+    .line 82
+    :pswitch_1c
+    invoke-virtual {v0, p1, v7, v8}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 83
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzr(Ljava/util/List;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    .line 84
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto :goto_1
+
+    .line 85
+    :pswitch_1d
+    invoke-virtual {v0, p1, v7, v8}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 86
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzj(Ljava/util/List;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    .line 87
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto :goto_1
+
+    .line 88
+    :pswitch_1e
+    invoke-virtual {v0, p1, v7, v8}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 89
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzd(Ljava/util/List;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    .line 90
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto :goto_1
+
+    .line 91
+    :pswitch_1f
+    invoke-virtual {v0, p1, v7, v8}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 92
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzb(Ljava/util/List;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    .line 93
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto :goto_1
+
+    .line 94
+    :pswitch_20
+    invoke-virtual {v0, p1, v7, v8}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 95
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzp(Ljava/util/List;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    .line 96
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto :goto_1
+
+    .line 97
+    :pswitch_21
+    invoke-virtual {v0, p1, v7, v8}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 98
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzr(Ljava/util/List;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    .line 99
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzu(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    :goto_1
+    add-int/2addr v5, v6
+
+    goto/16 :goto_5
+
+    .line 100
+    :pswitch_22
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 101
+    invoke-static {v6, v4, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzg(ILjava/util/List;Z)I
+
+    move-result v4
+
+    goto/16 :goto_2
+
+    .line 102
+    :pswitch_23
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 103
+    invoke-static {v6, v4, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzo(ILjava/util/List;Z)I
+
+    move-result v4
+
+    goto/16 :goto_2
+
+    .line 104
+    :pswitch_24
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 105
+    invoke-static {v6, v4, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzs(ILjava/util/List;Z)I
+
+    move-result v4
+
+    goto/16 :goto_2
+
+    .line 106
+    :pswitch_25
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 107
+    invoke-static {v6, v4, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzq(ILjava/util/List;Z)I
+
+    move-result v4
+
+    goto/16 :goto_2
+
+    .line 108
+    :pswitch_26
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 109
+    invoke-static {v6, v4, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzi(ILjava/util/List;Z)I
+
+    move-result v4
+
+    goto/16 :goto_2
+
+    .line 110
+    :pswitch_27
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 111
+    invoke-static {v6, v4, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzm(ILjava/util/List;Z)I
+
+    move-result v4
+
+    goto/16 :goto_2
+
+    .line 112
+    :pswitch_28
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 113
+    invoke-static {v6, v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzy(ILjava/util/List;)I
+
+    move-result v4
+
+    goto/16 :goto_2
+
+    .line 114
+    :pswitch_29
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 115
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v5
+
+    .line 116
+    invoke-static {v6, v4, v5}, Lcom/google/android/gms/internal/wearable/zzdk;->zzx(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzdi;)I
+
+    move-result v4
+
+    goto :goto_2
+
+    .line 117
+    :pswitch_2a
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 118
+    invoke-static {v6, v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzv(ILjava/util/List;)I
+
+    move-result v4
+
+    goto :goto_2
+
+    .line 119
+    :pswitch_2b
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 120
+    invoke-static {v6, v4, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzu(ILjava/util/List;Z)I
+
+    move-result v4
+
+    goto :goto_2
+
+    .line 121
+    :pswitch_2c
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 122
+    invoke-static {v6, v4, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzq(ILjava/util/List;Z)I
+
+    move-result v4
+
+    goto :goto_2
+
+    .line 123
+    :pswitch_2d
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 124
+    invoke-static {v6, v4, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzs(ILjava/util/List;Z)I
+
+    move-result v4
+
+    goto :goto_2
+
+    .line 125
+    :pswitch_2e
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 126
+    invoke-static {v6, v4, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzk(ILjava/util/List;Z)I
+
+    move-result v4
+
+    goto :goto_2
+
+    .line 127
+    :pswitch_2f
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 128
+    invoke-static {v6, v4, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zze(ILjava/util/List;Z)I
+
+    move-result v4
+
+    goto :goto_2
+
+    .line 129
+    :pswitch_30
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 130
+    invoke-static {v6, v4, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzc(ILjava/util/List;Z)I
+
+    move-result v4
+
+    goto :goto_2
+
+    .line 131
+    :pswitch_31
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 132
+    invoke-static {v6, v4, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzq(ILjava/util/List;Z)I
+
+    move-result v4
+
+    goto :goto_2
+
+    .line 133
+    :pswitch_32
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 134
+    invoke-static {v6, v4, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzs(ILjava/util/List;Z)I
+
+    move-result v4
+
+    :goto_2
+    add-int/2addr v3, v4
+
+    goto/16 :goto_a
+
+    .line 135
+    :pswitch_33
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 136
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/google/android/gms/internal/wearable/zzcx;
+
+    .line 137
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v5
+
+    .line 138
+    invoke-static {v6, v4, v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzE(ILcom/google/android/gms/internal/wearable/zzcx;Lcom/google/android/gms/internal/wearable/zzdi;)I
+
+    move-result v4
+
+    goto :goto_2
+
+    .line 139
+    :pswitch_34
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_3
+
+    .line 140
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    move-result-wide v7
+
+    shl-int/lit8 v5, v6, 0x3
+
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    add-long v9, v7, v7
+
+    shr-long v6, v7, v4
+
+    xor-long/2addr v6, v9
+
+    invoke-static {v6, v7}, Lcom/google/android/gms/internal/wearable/zzbb;->zzx(J)I
+
+    move-result v4
+
+    goto/16 :goto_5
+
+    .line 141
+    :pswitch_35
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 142
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    move-result v4
+
+    shl-int/lit8 v5, v6, 0x3
+
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    add-int v6, v4, v4
+
+    shr-int/lit8 v4, v4, 0x1f
+
+    xor-int/2addr v4, v6
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto/16 :goto_5
+
+    .line 143
+    :pswitch_36
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    shl-int/lit8 v4, v6, 0x3
+
+    .line 144
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto/16 :goto_9
+
+    .line 145
+    :pswitch_37
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    shl-int/lit8 v4, v6, 0x3
+
+    .line 146
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto/16 :goto_8
+
+    .line 147
+    :pswitch_38
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 148
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    move-result v4
+
+    shl-int/lit8 v5, v6, 0x3
+
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzv(I)I
+
+    move-result v4
+
+    goto/16 :goto_5
+
+    .line 149
+    :pswitch_39
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 150
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    move-result v4
+
+    shl-int/lit8 v5, v6, 0x3
+
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto/16 :goto_5
+
+    .line 151
+    :pswitch_3a
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 152
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/google/android/gms/internal/wearable/zzau;
+
+    shl-int/lit8 v5, v6, 0x3
+
+    .line 153
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    .line 154
+    invoke-virtual {v4}, Lcom/google/android/gms/internal/wearable/zzau;->zzc()I
+
+    move-result v4
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    :goto_3
+    add-int/2addr v6, v4
+
+    add-int/2addr v5, v6
+
+    goto/16 :goto_6
+
+    .line 155
+    :pswitch_3b
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 156
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    .line 157
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v5
+
+    invoke-static {v6, v4, v5}, Lcom/google/android/gms/internal/wearable/zzdk;->zzw(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzdi;)I
+
+    move-result v4
+
+    goto/16 :goto_2
+
+    .line 158
+    :pswitch_3c
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 159
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v4
+
+    .line 160
+    instance-of v5, v4, Lcom/google/android/gms/internal/wearable/zzau;
+
+    if-eqz v5, :cond_2
+
+    .line 161
+    check-cast v4, Lcom/google/android/gms/internal/wearable/zzau;
+
+    shl-int/lit8 v5, v6, 0x3
+
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    .line 162
+    invoke-virtual {v4}, Lcom/google/android/gms/internal/wearable/zzau;->zzc()I
+
+    move-result v4
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    goto :goto_3
+
+    .line 163
+    :cond_2
+    check-cast v4, Ljava/lang/String;
+
+    shl-int/lit8 v5, v6, 0x3
+
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    .line 164
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzy(Ljava/lang/String;)I
+
+    move-result v4
+
+    goto :goto_5
+
+    .line 165
+    :pswitch_3d
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    shl-int/lit8 v4, v6, 0x3
+
+    .line 166
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    :goto_4
+    add-int/lit8 v4, v4, 0x1
+
+    goto/16 :goto_2
+
+    .line 167
+    :pswitch_3e
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    shl-int/lit8 v4, v6, 0x3
+
+    .line 168
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto :goto_8
+
+    .line 169
+    :pswitch_3f
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    shl-int/lit8 v4, v6, 0x3
+
+    .line 170
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    goto :goto_9
+
+    .line 171
+    :pswitch_40
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 172
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    move-result v4
+
+    shl-int/lit8 v5, v6, 0x3
+
+    invoke-static {v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v5
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzv(I)I
+
+    move-result v4
+
+    :goto_5
+    add-int/2addr v5, v4
+
+    :goto_6
+    add-int/2addr v3, v5
+
+    goto :goto_a
+
+    .line 173
+    :pswitch_41
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 174
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    move-result-wide v4
+
+    shl-int/lit8 v6, v6, 0x3
+
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    invoke-static {v4, v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzx(J)I
+
+    move-result v4
+
+    goto :goto_7
+
+    .line 175
+    :pswitch_42
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    .line 176
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    move-result-wide v4
+
+    shl-int/lit8 v6, v6, 0x3
+
+    invoke-static {v6}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v6
+
+    invoke-static {v4, v5}, Lcom/google/android/gms/internal/wearable/zzbb;->zzx(J)I
+
+    move-result v4
+
+    :goto_7
+    add-int/2addr v6, v4
+
+    add-int/2addr v3, v6
+
+    goto :goto_a
+
+    .line 177
+    :pswitch_43
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    shl-int/lit8 v4, v6, 0x3
+
+    .line 178
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    :goto_8
+    add-int/lit8 v4, v4, 0x4
+
+    goto/16 :goto_2
+
+    .line 179
+    :pswitch_44
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    shl-int/lit8 v4, v6, 0x3
+
+    .line 180
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzbb;->zzw(I)I
+
+    move-result v4
+
+    :goto_9
+    add-int/lit8 v4, v4, 0x8
+
+    goto/16 :goto_2
+
+    :cond_3
+    :goto_a
+    add-int/lit8 v2, v2, 0x3
+
+    goto/16 :goto_0
+
+    .line 181
+    :cond_4
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzn:Lcom/google/android/gms/internal/wearable/zzdw;
+
+    .line 182
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/wearable/zzdw;->zzd(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    .line 183
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/wearable/zzdw;->zzh(Ljava/lang/Object;)I
+
+    move-result p1
+
+    add-int/2addr v3, p1
+
+    return v3
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_44
+        :pswitch_43
+        :pswitch_42
+        :pswitch_41
+        :pswitch_40
+        :pswitch_3f
+        :pswitch_3e
+        :pswitch_3d
+        :pswitch_3c
+        :pswitch_3b
+        :pswitch_3a
+        :pswitch_39
+        :pswitch_38
+        :pswitch_37
+        :pswitch_36
+        :pswitch_35
+        :pswitch_34
+        :pswitch_33
+        :pswitch_32
+        :pswitch_31
+        :pswitch_30
+        :pswitch_2f
+        :pswitch_2e
+        :pswitch_2d
+        :pswitch_2c
+        :pswitch_2b
+        :pswitch_2a
+        :pswitch_29
+        :pswitch_28
+        :pswitch_27
+        :pswitch_26
+        :pswitch_25
+        :pswitch_24
+        :pswitch_23
+        :pswitch_22
+        :pswitch_21
+        :pswitch_20
+        :pswitch_1f
+        :pswitch_1e
+        :pswitch_1d
+        :pswitch_1c
+        :pswitch_1b
+        :pswitch_1a
+        :pswitch_19
+        :pswitch_18
+        :pswitch_17
+        :pswitch_16
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method private final zzs(Ljava/lang/Object;[BIIIIIIJIJLcom/google/android/gms/internal/wearable/zzai;)I
+    .locals 15
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;[BIIIIIIJIJ",
+            "Lcom/google/android/gms/internal/wearable/zzai;",
+            ")I"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    move-object v0, p0
+
+    move-object/from16 v1, p1
+
+    move-object/from16 v3, p2
+
+    move/from16 v4, p3
+
+    move/from16 v5, p4
+
+    move/from16 v2, p5
+
+    move/from16 v6, p7
+
+    move/from16 v8, p8
+
+    move-wide/from16 v9, p12
+
+    move-object/from16 v7, p14
+
+    sget-object v11, Lcom/google/android/gms/internal/wearable/zzda;->zzb:Lsun/misc/Unsafe;
+
+    .line 1
+    invoke-virtual {v11, v1, v9, v10}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v12
+
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzbz;
+
+    .line 2
+    invoke-interface {v12}, Lcom/google/android/gms/internal/wearable/zzbz;->zza()Z
+
+    move-result v13
+
+    if-nez v13, :cond_1
+
+    .line 3
+    invoke-interface {v12}, Ljava/util/List;->size()I
+
+    move-result v13
+
+    if-nez v13, :cond_0
+
+    const/16 v13, 0xa
+
+    goto :goto_0
+
+    :cond_0
+    add-int/2addr v13, v13
+
+    .line 4
+    :goto_0
+    invoke-interface {v12, v13}, Lcom/google/android/gms/internal/wearable/zzbz;->zze(I)Lcom/google/android/gms/internal/wearable/zzbz;
+
+    move-result-object v12
+
+    .line 5
+    invoke-virtual {v11, v1, v9, v10, v12}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    :cond_1
+    const/4 v9, 0x5
+
+    const-wide/16 v10, 0x0
+
+    const/4 v13, 0x1
+
+    const/4 v14, 0x2
+
+    packed-switch p11, :pswitch_data_0
+
+    const/4 v1, 0x3
+
+    if-ne v6, v1, :cond_48
+
+    .line 6
+    invoke-direct {p0, v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v1
+
+    and-int/lit8 v6, v2, -0x8
+
+    or-int/lit8 v6, v6, 0x4
+
+    move-object/from16 p6, v1
+
+    move-object/from16 p7, p2
+
+    move/from16 p8, p3
+
+    move/from16 p9, p4
+
+    move/from16 p10, v6
+
+    move-object/from16 p11, p14
+
+    .line 7
+    invoke-static/range {p6 .. p11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzj(Lcom/google/android/gms/internal/wearable/zzdi;[BIIILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget-object v8, v7, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 8
+    invoke-interface {v12, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto/16 :goto_25
+
+    :pswitch_0
+    if-ne v6, v14, :cond_4
+
+    .line 9
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzcm;
+
+    .line 10
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget v2, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    add-int/2addr v2, v1
+
+    :goto_1
+    if-ge v1, v2, :cond_2
+
+    .line 11
+    invoke-static {v3, v1, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget-wide v4, v7, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    invoke-static {v4, v5}, Lcom/google/android/gms/internal/wearable/zzax;->zzc(J)J
+
+    move-result-wide v4
+
+    .line 12
+    invoke-virtual {v12, v4, v5}, Lcom/google/android/gms/internal/wearable/zzcm;->zzg(J)V
+
+    goto :goto_1
+
+    :cond_2
+    if-ne v1, v2, :cond_3
+
+    goto/16 :goto_28
+
+    .line 13
+    :cond_3
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzb()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    :cond_4
+    if-nez v6, :cond_48
+
+    .line 14
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzcm;
+
+    .line 15
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget-wide v8, v7, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    invoke-static {v8, v9}, Lcom/google/android/gms/internal/wearable/zzax;->zzc(J)J
+
+    move-result-wide v8
+
+    .line 16
+    invoke-virtual {v12, v8, v9}, Lcom/google/android/gms/internal/wearable/zzcm;->zzg(J)V
+
+    :goto_2
+    if-ge v1, v5, :cond_6
+
+    .line 17
+    invoke-static {v3, v1, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget v6, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-eq v2, v6, :cond_5
+
+    goto :goto_3
+
+    .line 18
+    :cond_5
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget-wide v8, v7, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    invoke-static {v8, v9}, Lcom/google/android/gms/internal/wearable/zzax;->zzc(J)J
+
+    move-result-wide v8
+
+    .line 19
+    invoke-virtual {v12, v8, v9}, Lcom/google/android/gms/internal/wearable/zzcm;->zzg(J)V
+
+    goto :goto_2
+
+    :cond_6
+    :goto_3
+    return v1
+
+    :pswitch_1
+    if-ne v6, v14, :cond_9
+
+    .line 20
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzbt;
+
+    .line 21
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget v2, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    add-int/2addr v2, v1
+
+    :goto_4
+    if-ge v1, v2, :cond_7
+
+    .line 22
+    invoke-static {v3, v1, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget v4, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzax;->zzb(I)I
+
+    move-result v4
+
+    .line 23
+    invoke-virtual {v12, v4}, Lcom/google/android/gms/internal/wearable/zzbt;->zzf(I)V
+
+    goto :goto_4
+
+    :cond_7
+    if-ne v1, v2, :cond_8
+
+    goto/16 :goto_28
+
+    .line 24
+    :cond_8
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzb()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    :cond_9
+    if-nez v6, :cond_48
+
+    .line 25
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzbt;
+
+    .line 26
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget v4, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzax;->zzb(I)I
+
+    move-result v4
+
+    .line 27
+    invoke-virtual {v12, v4}, Lcom/google/android/gms/internal/wearable/zzbt;->zzf(I)V
+
+    :goto_5
+    if-ge v1, v5, :cond_b
+
+    .line 28
+    invoke-static {v3, v1, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget v6, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-eq v2, v6, :cond_a
+
+    goto :goto_6
+
+    .line 29
+    :cond_a
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget v4, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    invoke-static {v4}, Lcom/google/android/gms/internal/wearable/zzax;->zzb(I)I
+
+    move-result v4
+
+    .line 30
+    invoke-virtual {v12, v4}, Lcom/google/android/gms/internal/wearable/zzbt;->zzf(I)V
+
+    goto :goto_5
+
+    :cond_b
+    :goto_6
+    return v1
+
+    :pswitch_2
+    if-ne v6, v14, :cond_c
+
+    .line 31
+    invoke-static {v3, v4, v12, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zzl([BILcom/google/android/gms/internal/wearable/zzbz;Lcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v2
+
+    goto :goto_7
+
+    :cond_c
+    if-nez v6, :cond_48
+
+    move/from16 v2, p5
+
+    move-object/from16 v3, p2
+
+    move/from16 v4, p3
+
+    move/from16 v5, p4
+
+    move-object v6, v12
+
+    move-object/from16 v7, p14
+
+    .line 32
+    invoke-static/range {v2 .. v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zzk(I[BIILcom/google/android/gms/internal/wearable/zzbz;Lcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v2
+
+    .line 33
+    :goto_7
+    check-cast v1, Lcom/google/android/gms/internal/wearable/zzbs;
+
+    iget-object v3, v1, Lcom/google/android/gms/internal/wearable/zzbs;->zzc:Lcom/google/android/gms/internal/wearable/zzdx;
+
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzdx;->zza()Lcom/google/android/gms/internal/wearable/zzdx;
+
+    move-result-object v4
+
+    if-ne v3, v4, :cond_d
+
+    const/4 v3, 0x0
+
+    .line 34
+    :cond_d
+    invoke-direct {p0, v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzx(I)Lcom/google/android/gms/internal/wearable/zzbw;
+
+    move-result-object v4
+
+    iget-object v5, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzn:Lcom/google/android/gms/internal/wearable/zzdw;
+
+    move/from16 v6, p6
+
+    .line 35
+    invoke-static {v6, v12, v4, v3, v5}, Lcom/google/android/gms/internal/wearable/zzdk;->zzG(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbw;Ljava/lang/Object;Lcom/google/android/gms/internal/wearable/zzdw;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    if-nez v3, :cond_e
+
+    goto/16 :goto_11
+
+    :cond_e
+    check-cast v3, Lcom/google/android/gms/internal/wearable/zzdx;
+
+    iput-object v3, v1, Lcom/google/android/gms/internal/wearable/zzbs;->zzc:Lcom/google/android/gms/internal/wearable/zzdx;
+
+    return v2
+
+    :pswitch_3
+    if-ne v6, v14, :cond_48
+
+    .line 36
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget v4, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-ltz v4, :cond_16
+
+    .line 37
+    array-length v6, v3
+
+    sub-int/2addr v6, v1
+
+    if-gt v4, v6, :cond_15
+
+    if-nez v4, :cond_f
+
+    .line 38
+    sget-object v4, Lcom/google/android/gms/internal/wearable/zzau;->zzb:Lcom/google/android/gms/internal/wearable/zzau;
+
+    invoke-interface {v12, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_9
+
+    .line 39
+    :cond_f
+    invoke-static {v3, v1, v4}, Lcom/google/android/gms/internal/wearable/zzau;->zzk([BII)Lcom/google/android/gms/internal/wearable/zzau;
+
+    move-result-object v6
+
+    invoke-interface {v12, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :goto_8
+    add-int/2addr v1, v4
+
+    :goto_9
+    if-ge v1, v5, :cond_14
+
+    .line 40
+    invoke-static {v3, v1, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget v6, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-eq v2, v6, :cond_10
+
+    goto :goto_a
+
+    .line 41
+    :cond_10
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget v4, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-ltz v4, :cond_13
+
+    .line 42
+    array-length v6, v3
+
+    sub-int/2addr v6, v1
+
+    if-gt v4, v6, :cond_12
+
+    if-nez v4, :cond_11
+
+    .line 43
+    sget-object v4, Lcom/google/android/gms/internal/wearable/zzau;->zzb:Lcom/google/android/gms/internal/wearable/zzau;
+
+    .line 44
+    invoke-interface {v12, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_9
+
+    .line 45
+    :cond_11
+    invoke-static {v3, v1, v4}, Lcom/google/android/gms/internal/wearable/zzau;->zzk([BII)Lcom/google/android/gms/internal/wearable/zzau;
+
+    move-result-object v6
+
+    invoke-interface {v12, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_8
+
+    .line 46
+    :cond_12
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzb()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    .line 47
+    :cond_13
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzc()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    :cond_14
+    :goto_a
+    return v1
+
+    .line 48
+    :cond_15
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzb()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    .line 49
+    :cond_16
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzc()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    :pswitch_4
+    if-eq v6, v14, :cond_17
+
+    goto/16 :goto_27
+
+    .line 50
+    :cond_17
+    invoke-direct {p0, v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v1
+
+    move-object/from16 p6, v1
+
+    move/from16 p7, p5
+
+    move-object/from16 p8, p2
+
+    move/from16 p9, p3
+
+    move/from16 p10, p4
+
+    move-object/from16 p11, v12
+
+    move-object/from16 p12, p14
+
+    .line 51
+    invoke-static/range {p6 .. p12}, Lcom/google/android/gms/internal/wearable/zzaj;->zzm(Lcom/google/android/gms/internal/wearable/zzdi;I[BIILcom/google/android/gms/internal/wearable/zzbz;Lcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    return v1
+
+    :pswitch_5
+    if-ne v6, v14, :cond_48
+
+    const-wide/32 v8, 0x20000000
+
+    and-long v8, p9, v8
+
+    const-string v1, ""
+
+    cmp-long v6, v8, v10
+
+    if-nez v6, :cond_1c
+
+    .line 52
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget v6, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-ltz v6, :cond_1b
+
+    if-nez v6, :cond_18
+
+    .line 53
+    invoke-interface {v12, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_c
+
+    .line 54
+    :cond_18
+    new-instance v8, Ljava/lang/String;
+
+    .line 55
+    sget-object v9, Lcom/google/android/gms/internal/wearable/zzca;->zza:Ljava/nio/charset/Charset;
+
+    invoke-direct {v8, v3, v4, v6, v9}, Ljava/lang/String;-><init>([BIILjava/nio/charset/Charset;)V
+
+    .line 56
+    invoke-interface {v12, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :goto_b
+    add-int/2addr v4, v6
+
+    :goto_c
+    if-ge v4, v5, :cond_48
+
+    .line 57
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v6
+
+    iget v8, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-ne v2, v8, :cond_48
+
+    .line 58
+    invoke-static {v3, v6, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget v6, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-ltz v6, :cond_1a
+
+    if-nez v6, :cond_19
+
+    .line 59
+    invoke-interface {v12, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_c
+
+    :cond_19
+    new-instance v8, Ljava/lang/String;
+
+    .line 60
+    sget-object v9, Lcom/google/android/gms/internal/wearable/zzca;->zza:Ljava/nio/charset/Charset;
+
+    invoke-direct {v8, v3, v4, v6, v9}, Ljava/lang/String;-><init>([BIILjava/nio/charset/Charset;)V
+
+    .line 61
+    invoke-interface {v12, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_b
+
+    .line 62
+    :cond_1a
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzc()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    .line 63
+    :cond_1b
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzc()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    .line 64
+    :cond_1c
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget v6, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-ltz v6, :cond_22
+
+    if-nez v6, :cond_1d
+
+    .line 65
+    invoke-interface {v12, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_e
+
+    :cond_1d
+    add-int v8, v4, v6
+
+    .line 66
+    invoke-static {v3, v4, v8}, Lcom/google/android/gms/internal/wearable/zzel;->zzb([BII)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_21
+
+    .line 67
+    new-instance v9, Ljava/lang/String;
+
+    .line 68
+    sget-object v10, Lcom/google/android/gms/internal/wearable/zzca;->zza:Ljava/nio/charset/Charset;
+
+    invoke-direct {v9, v3, v4, v6, v10}, Ljava/lang/String;-><init>([BIILjava/nio/charset/Charset;)V
+
+    .line 69
+    invoke-interface {v12, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :goto_d
+    move v4, v8
+
+    :goto_e
+    if-ge v4, v5, :cond_48
+
+    .line 70
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v6
+
+    iget v8, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-ne v2, v8, :cond_48
+
+    .line 71
+    invoke-static {v3, v6, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget v6, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-ltz v6, :cond_20
+
+    if-nez v6, :cond_1e
+
+    .line 72
+    invoke-interface {v12, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_e
+
+    :cond_1e
+    add-int v8, v4, v6
+
+    .line 73
+    invoke-static {v3, v4, v8}, Lcom/google/android/gms/internal/wearable/zzel;->zzb([BII)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_1f
+
+    .line 74
+    new-instance v9, Ljava/lang/String;
+
+    .line 75
+    sget-object v10, Lcom/google/android/gms/internal/wearable/zzca;->zza:Ljava/nio/charset/Charset;
+
+    invoke-direct {v9, v3, v4, v6, v10}, Ljava/lang/String;-><init>([BIILjava/nio/charset/Charset;)V
+
+    .line 76
+    invoke-interface {v12, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_d
+
+    .line 77
+    :cond_1f
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzg()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    .line 78
+    :cond_20
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzc()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    .line 79
+    :cond_21
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzg()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    .line 80
+    :cond_22
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzc()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    :pswitch_6
+    const/4 v1, 0x0
+
+    if-ne v6, v14, :cond_26
+
+    .line 81
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzak;
+
+    .line 82
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v2
+
+    iget v4, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    add-int/2addr v4, v2
+
+    :goto_f
+    if-ge v2, v4, :cond_24
+
+    .line 83
+    invoke-static {v3, v2, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v2
+
+    iget-wide v5, v7, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    cmp-long v8, v5, v10
+
+    if-eqz v8, :cond_23
+
+    const/4 v5, 0x1
+
+    goto :goto_10
+
+    :cond_23
+    const/4 v5, 0x0
+
+    .line 84
+    :goto_10
+    invoke-virtual {v12, v5}, Lcom/google/android/gms/internal/wearable/zzak;->zzd(Z)V
+
+    goto :goto_f
+
+    :cond_24
+    if-ne v2, v4, :cond_25
+
+    :goto_11
+    move v1, v2
+
+    goto/16 :goto_28
+
+    .line 85
+    :cond_25
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzb()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    :cond_26
+    if-nez v6, :cond_48
+
+    .line 86
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzak;
+
+    .line 87
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget-wide v8, v7, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    cmp-long v6, v8, v10
+
+    if-eqz v6, :cond_27
+
+    const/4 v6, 0x1
+
+    goto :goto_12
+
+    :cond_27
+    const/4 v6, 0x0
+
+    .line 88
+    :goto_12
+    invoke-virtual {v12, v6}, Lcom/google/android/gms/internal/wearable/zzak;->zzd(Z)V
+
+    :goto_13
+    if-ge v4, v5, :cond_2a
+
+    .line 89
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v6
+
+    iget v8, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-eq v2, v8, :cond_28
+
+    goto :goto_15
+
+    .line 90
+    :cond_28
+    invoke-static {v3, v6, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget-wide v8, v7, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    cmp-long v6, v8, v10
+
+    if-eqz v6, :cond_29
+
+    const/4 v6, 0x1
+
+    goto :goto_14
+
+    :cond_29
+    const/4 v6, 0x0
+
+    .line 91
+    :goto_14
+    invoke-virtual {v12, v6}, Lcom/google/android/gms/internal/wearable/zzak;->zzd(Z)V
+
+    goto :goto_13
+
+    :cond_2a
+    :goto_15
+    return v4
+
+    :pswitch_7
+    if-ne v6, v14, :cond_2d
+
+    .line 92
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzbt;
+
+    .line 93
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget v2, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    add-int/2addr v2, v1
+
+    :goto_16
+    if-ge v1, v2, :cond_2b
+
+    .line 94
+    invoke-static {v3, v1}, Lcom/google/android/gms/internal/wearable/zzaj;->zzd([BI)I
+
+    move-result v4
+
+    invoke-virtual {v12, v4}, Lcom/google/android/gms/internal/wearable/zzbt;->zzf(I)V
+
+    add-int/lit8 v1, v1, 0x4
+
+    goto :goto_16
+
+    :cond_2b
+    if-ne v1, v2, :cond_2c
+
+    goto/16 :goto_28
+
+    .line 95
+    :cond_2c
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzb()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    :cond_2d
+    if-ne v6, v9, :cond_48
+
+    .line 96
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzbt;
+
+    .line 97
+    invoke-static/range {p2 .. p3}, Lcom/google/android/gms/internal/wearable/zzaj;->zzd([BI)I
+
+    move-result v1
+
+    invoke-virtual {v12, v1}, Lcom/google/android/gms/internal/wearable/zzbt;->zzf(I)V
+
+    :goto_17
+    add-int/lit8 v1, v4, 0x4
+
+    if-ge v1, v5, :cond_2f
+
+    .line 98
+    invoke-static {v3, v1, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget v6, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-eq v2, v6, :cond_2e
+
+    goto :goto_18
+
+    .line 99
+    :cond_2e
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzaj;->zzd([BI)I
+
+    move-result v1
+
+    invoke-virtual {v12, v1}, Lcom/google/android/gms/internal/wearable/zzbt;->zzf(I)V
+
+    goto :goto_17
+
+    :cond_2f
+    :goto_18
+    return v1
+
+    :pswitch_8
+    if-ne v6, v14, :cond_32
+
+    .line 100
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzcm;
+
+    .line 101
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget v2, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    add-int/2addr v2, v1
+
+    :goto_19
+    if-ge v1, v2, :cond_30
+
+    .line 102
+    invoke-static {v3, v1}, Lcom/google/android/gms/internal/wearable/zzaj;->zze([BI)J
+
+    move-result-wide v4
+
+    invoke-virtual {v12, v4, v5}, Lcom/google/android/gms/internal/wearable/zzcm;->zzg(J)V
+
+    add-int/lit8 v1, v1, 0x8
+
+    goto :goto_19
+
+    :cond_30
+    if-ne v1, v2, :cond_31
+
+    goto/16 :goto_28
+
+    .line 103
+    :cond_31
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzb()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    :cond_32
+    if-ne v6, v13, :cond_48
+
+    .line 104
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzcm;
+
+    .line 105
+    invoke-static/range {p2 .. p3}, Lcom/google/android/gms/internal/wearable/zzaj;->zze([BI)J
+
+    move-result-wide v8
+
+    invoke-virtual {v12, v8, v9}, Lcom/google/android/gms/internal/wearable/zzcm;->zzg(J)V
+
+    :goto_1a
+    add-int/lit8 v1, v4, 0x8
+
+    if-ge v1, v5, :cond_34
+
+    .line 106
+    invoke-static {v3, v1, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget v6, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-eq v2, v6, :cond_33
+
+    goto :goto_1b
+
+    .line 107
+    :cond_33
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzaj;->zze([BI)J
+
+    move-result-wide v8
+
+    invoke-virtual {v12, v8, v9}, Lcom/google/android/gms/internal/wearable/zzcm;->zzg(J)V
+
+    goto :goto_1a
+
+    :cond_34
+    :goto_1b
+    return v1
+
+    :pswitch_9
+    if-ne v6, v14, :cond_35
+
+    .line 108
+    invoke-static {v3, v4, v12, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zzl([BILcom/google/android/gms/internal/wearable/zzbz;Lcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    goto/16 :goto_28
+
+    :cond_35
+    if-eqz v6, :cond_36
+
+    goto/16 :goto_27
+
+    :cond_36
+    move-object/from16 p6, p2
+
+    move/from16 p7, p3
+
+    move/from16 p8, p4
+
+    move-object/from16 p9, v12
+
+    move-object/from16 p10, p14
+
+    .line 109
+    invoke-static/range {p5 .. p10}, Lcom/google/android/gms/internal/wearable/zzaj;->zzk(I[BIILcom/google/android/gms/internal/wearable/zzbz;Lcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    return v1
+
+    :pswitch_a
+    if-ne v6, v14, :cond_39
+
+    .line 110
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzcm;
+
+    .line 111
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget v2, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    add-int/2addr v2, v1
+
+    :goto_1c
+    if-ge v1, v2, :cond_37
+
+    .line 112
+    invoke-static {v3, v1, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget-wide v4, v7, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    .line 113
+    invoke-virtual {v12, v4, v5}, Lcom/google/android/gms/internal/wearable/zzcm;->zzg(J)V
+
+    goto :goto_1c
+
+    :cond_37
+    if-ne v1, v2, :cond_38
+
+    goto/16 :goto_28
+
+    .line 114
+    :cond_38
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzb()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    :cond_39
+    if-nez v6, :cond_48
+
+    .line 115
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzcm;
+
+    .line 116
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget-wide v8, v7, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    .line 117
+    invoke-virtual {v12, v8, v9}, Lcom/google/android/gms/internal/wearable/zzcm;->zzg(J)V
+
+    :goto_1d
+    if-ge v1, v5, :cond_3b
+
+    .line 118
+    invoke-static {v3, v1, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget v6, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-eq v2, v6, :cond_3a
+
+    goto :goto_1e
+
+    .line 119
+    :cond_3a
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget-wide v8, v7, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    .line 120
+    invoke-virtual {v12, v8, v9}, Lcom/google/android/gms/internal/wearable/zzcm;->zzg(J)V
+
+    goto :goto_1d
+
+    :cond_3b
+    :goto_1e
+    return v1
+
+    :pswitch_b
+    if-ne v6, v14, :cond_3e
+
+    .line 121
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzbn;
+
+    .line 122
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget v2, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    add-int/2addr v2, v1
+
+    :goto_1f
+    if-ge v1, v2, :cond_3c
+
+    .line 123
+    invoke-static {v3, v1}, Lcom/google/android/gms/internal/wearable/zzaj;->zzd([BI)I
+
+    move-result v4
+
+    invoke-static {v4}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v4
+
+    .line 124
+    invoke-virtual {v12, v4}, Lcom/google/android/gms/internal/wearable/zzbn;->zzg(F)V
+
+    add-int/lit8 v1, v1, 0x4
+
+    goto :goto_1f
+
+    :cond_3c
+    if-ne v1, v2, :cond_3d
+
+    goto/16 :goto_28
+
+    .line 125
+    :cond_3d
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzb()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    :cond_3e
+    if-ne v6, v9, :cond_48
+
+    .line 126
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzbn;
+
+    .line 127
+    invoke-static/range {p2 .. p3}, Lcom/google/android/gms/internal/wearable/zzaj;->zzd([BI)I
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v1
+
+    .line 128
+    invoke-virtual {v12, v1}, Lcom/google/android/gms/internal/wearable/zzbn;->zzg(F)V
+
+    :goto_20
+    add-int/lit8 v1, v4, 0x4
+
+    if-ge v1, v5, :cond_40
+
+    .line 129
+    invoke-static {v3, v1, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget v6, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-eq v2, v6, :cond_3f
+
+    goto :goto_21
+
+    .line 130
+    :cond_3f
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzaj;->zzd([BI)I
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v1
+
+    .line 131
+    invoke-virtual {v12, v1}, Lcom/google/android/gms/internal/wearable/zzbn;->zzg(F)V
+
+    goto :goto_20
+
+    :cond_40
+    :goto_21
+    return v1
+
+    :pswitch_c
+    if-ne v6, v14, :cond_43
+
+    .line 132
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzbd;
+
+    .line 133
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v1
+
+    iget v2, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    add-int/2addr v2, v1
+
+    :goto_22
+    if-ge v1, v2, :cond_41
+
+    .line 134
+    invoke-static {v3, v1}, Lcom/google/android/gms/internal/wearable/zzaj;->zze([BI)J
+
+    move-result-wide v4
+
+    invoke-static {v4, v5}, Ljava/lang/Double;->longBitsToDouble(J)D
+
+    move-result-wide v4
+
+    .line 135
+    invoke-virtual {v12, v4, v5}, Lcom/google/android/gms/internal/wearable/zzbd;->zzd(D)V
+
+    add-int/lit8 v1, v1, 0x8
+
+    goto :goto_22
+
+    :cond_41
+    if-ne v1, v2, :cond_42
+
+    goto :goto_28
+
+    .line 136
+    :cond_42
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzb()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    :cond_43
+    if-ne v6, v13, :cond_48
+
+    .line 137
+    check-cast v12, Lcom/google/android/gms/internal/wearable/zzbd;
+
+    .line 138
+    invoke-static/range {p2 .. p3}, Lcom/google/android/gms/internal/wearable/zzaj;->zze([BI)J
+
+    move-result-wide v8
+
+    invoke-static {v8, v9}, Ljava/lang/Double;->longBitsToDouble(J)D
+
+    move-result-wide v8
+
+    .line 139
+    invoke-virtual {v12, v8, v9}, Lcom/google/android/gms/internal/wearable/zzbd;->zzd(D)V
+
+    :goto_23
+    add-int/lit8 v1, v4, 0x8
+
+    if-ge v1, v5, :cond_45
+
+    .line 140
+    invoke-static {v3, v1, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget v6, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-eq v2, v6, :cond_44
+
+    goto :goto_24
+
+    .line 141
+    :cond_44
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzaj;->zze([BI)J
+
+    move-result-wide v8
+
+    invoke-static {v8, v9}, Ljava/lang/Double;->longBitsToDouble(J)D
+
+    move-result-wide v8
+
+    .line 142
+    invoke-virtual {v12, v8, v9}, Lcom/google/android/gms/internal/wearable/zzbd;->zzd(D)V
+
+    goto :goto_23
+
+    :cond_45
+    :goto_24
+    return v1
+
+    :goto_25
+    if-ge v4, v5, :cond_47
+
+    .line 143
+    invoke-static {v3, v4, v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v8
+
+    iget v9, v7, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-eq v2, v9, :cond_46
+
+    goto :goto_26
+
+    :cond_46
+    move-object/from16 p6, v1
+
+    move-object/from16 p7, p2
+
+    move/from16 p8, v8
+
+    move/from16 p9, p4
+
+    move/from16 p10, v6
+
+    move-object/from16 p11, p14
+
+    .line 144
+    invoke-static/range {p6 .. p11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzj(Lcom/google/android/gms/internal/wearable/zzdi;[BIIILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v4
+
+    iget-object v8, v7, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 145
+    invoke-interface {v12, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_25
+
+    :cond_47
+    :goto_26
+    return v4
+
+    :cond_48
+    :goto_27
+    move v1, v4
+
+    :goto_28
+    return v1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x12
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_9
+        :pswitch_2
+        :pswitch_7
+        :pswitch_8
+        :pswitch_1
+        :pswitch_0
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_9
+        :pswitch_2
+        :pswitch_7
+        :pswitch_8
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method private final zzt(Ljava/lang/Object;[BIIIJLcom/google/android/gms/internal/wearable/zzai;)I
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<K:",
+            "Ljava/lang/Object;",
+            "V:",
+            "Ljava/lang/Object;",
+            ">(TT;[BIIIJ",
+            "Lcom/google/android/gms/internal/wearable/zzai;",
+            ")I"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    sget-object p2, Lcom/google/android/gms/internal/wearable/zzda;->zzb:Lsun/misc/Unsafe;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p5}, Lcom/google/android/gms/internal/wearable/zzda;->zzw(I)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p3
+
+    .line 7
+    invoke-virtual {p2, p1, p6, p7}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p4
+
+    .line 11
+    move-object p5, p4
+
+    .line 12
+    check-cast p5, Lcom/google/android/gms/internal/wearable/zzcr;
+
+    .line 13
+    .line 14
+    invoke-virtual {p5}, Lcom/google/android/gms/internal/wearable/zzcr;->zze()Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result p5
+
+    .line 18
+    if-eqz p5, :cond_0
+
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :cond_0
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcr;->zza()Lcom/google/android/gms/internal/wearable/zzcr;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p5
+
+    .line 25
+    invoke-virtual {p5}, Lcom/google/android/gms/internal/wearable/zzcr;->zzc()Lcom/google/android/gms/internal/wearable/zzcr;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p5
+
+    .line 29
+    invoke-static {p5, p4}, Lcom/google/android/gms/internal/wearable/zzcs;->zzb(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {p2, p1, p6, p7, p5}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 33
+    .line 34
+    .line 35
+    :goto_0
+    check-cast p3, Lcom/google/android/gms/internal/wearable/zzcq;
+
+    .line 36
+    .line 37
+    const/4 p1, 0x0
+
+    .line 38
+    throw p1
+.end method
+
+.method private final zzu(Ljava/lang/Object;[BIIIIIIIJILcom/google/android/gms/internal/wearable/zzai;)I
+    .locals 16
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;[BIIIIIIIJI",
+            "Lcom/google/android/gms/internal/wearable/zzai;",
+            ")I"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p1
+
+    move-object/from16 v3, p2
+
+    move/from16 v4, p3
+
+    move/from16 v2, p5
+
+    move/from16 v8, p6
+
+    move/from16 v5, p7
+
+    move-wide/from16 v9, p10
+
+    move/from16 v6, p12
+
+    move-object/from16 v11, p13
+
+    sget-object v12, Lcom/google/android/gms/internal/wearable/zzda;->zzb:Lsun/misc/Unsafe;
+
+    iget-object v7, v0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    add-int/lit8 v13, v6, 0x2
+
+    .line 1
+    aget v7, v7, v13
+
+    const v13, 0xfffff
+
+    and-int/2addr v7, v13
+
+    int-to-long v13, v7
+
+    const/4 v7, 0x5
+
+    const/4 v15, 0x2
+
+    packed-switch p9, :pswitch_data_0
+
+    goto/16 :goto_9
+
+    :pswitch_0
+    const/4 v7, 0x3
+
+    if-ne v5, v7, :cond_13
+
+    .line 2
+    invoke-direct {v0, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v5
+
+    and-int/lit8 v2, v2, -0x8
+
+    or-int/lit8 v6, v2, 0x4
+
+    move-object v2, v5
+
+    move-object/from16 v3, p2
+
+    move/from16 v4, p3
+
+    move/from16 v5, p4
+
+    move-object/from16 v7, p13
+
+    .line 3
+    invoke-static/range {v2 .. v7}, Lcom/google/android/gms/internal/wearable/zzaj;->zzj(Lcom/google/android/gms/internal/wearable/zzdi;[BIIILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v2
+
+    .line 4
+    invoke-virtual {v12, v1, v13, v14}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    move-result v3
+
+    if-ne v3, v8, :cond_0
+
+    .line 5
+    invoke-virtual {v12, v1, v9, v10}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v15
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v15, 0x0
+
+    :goto_0
+    if-nez v15, :cond_1
+
+    iget-object v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 6
+    invoke-virtual {v12, v1, v9, v10, v3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    goto :goto_1
+
+    .line 7
+    :cond_1
+    iget-object v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 8
+    invoke-static {v15, v3}, Lcom/google/android/gms/internal/wearable/zzca;->zzi(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 9
+    invoke-virtual {v12, v1, v9, v10, v3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 10
+    :goto_1
+    invoke-virtual {v12, v1, v13, v14, v8}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    goto/16 :goto_a
+
+    :pswitch_1
+    if-eqz v5, :cond_2
+
+    goto/16 :goto_9
+
+    .line 11
+    :cond_2
+    invoke-static {v3, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v2
+
+    iget-wide v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzax;->zzc(J)J
+
+    move-result-wide v3
+
+    .line 12
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v3
+
+    invoke-virtual {v12, v1, v9, v10, v3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 13
+    invoke-virtual {v12, v1, v13, v14, v8}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    return v2
+
+    :pswitch_2
+    if-eqz v5, :cond_3
+
+    goto/16 :goto_9
+
+    .line 14
+    :cond_3
+    invoke-static {v3, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v2
+
+    iget v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    invoke-static {v3}, Lcom/google/android/gms/internal/wearable/zzax;->zzb(I)I
+
+    move-result v3
+
+    .line 15
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v12, v1, v9, v10, v3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 16
+    invoke-virtual {v12, v1, v13, v14, v8}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    return v2
+
+    :pswitch_3
+    if-nez v5, :cond_13
+
+    .line 17
+    invoke-static {v3, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v3
+
+    iget v4, v11, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    .line 18
+    invoke-direct {v0, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzx(I)Lcom/google/android/gms/internal/wearable/zzbw;
+
+    move-result-object v5
+
+    if-eqz v5, :cond_5
+
+    .line 19
+    invoke-interface {v5, v4}, Lcom/google/android/gms/internal/wearable/zzbw;->zza(I)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_4
+
+    goto :goto_2
+
+    .line 20
+    :cond_4
+    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/internal/wearable/zzda;->zzf(Ljava/lang/Object;)Lcom/google/android/gms/internal/wearable/zzdx;
+
+    move-result-object v1
+
+    int-to-long v4, v4
+
+    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v4
+
+    invoke-virtual {v1, v2, v4}, Lcom/google/android/gms/internal/wearable/zzdx;->zzh(ILjava/lang/Object;)V
+
+    goto :goto_3
+
+    .line 21
+    :cond_5
+    :goto_2
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v12, v1, v9, v10, v2}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 22
+    invoke-virtual {v12, v1, v13, v14, v8}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    :goto_3
+    move v2, v3
+
+    goto/16 :goto_a
+
+    :pswitch_4
+    if-eq v5, v15, :cond_6
+
+    goto/16 :goto_9
+
+    .line 23
+    :cond_6
+    invoke-static {v3, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzh([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v2
+
+    iget-object v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 24
+    invoke-virtual {v12, v1, v9, v10, v3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 25
+    invoke-virtual {v12, v1, v13, v14, v8}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    return v2
+
+    :pswitch_5
+    if-ne v5, v15, :cond_13
+
+    .line 26
+    invoke-direct {v0, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    move-result-object v2
+
+    move/from16 v5, p4
+
+    .line 27
+    invoke-static {v2, v3, v4, v5, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzi(Lcom/google/android/gms/internal/wearable/zzdi;[BIILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v2
+
+    .line 28
+    invoke-virtual {v12, v1, v13, v14}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    move-result v3
+
+    if-ne v3, v8, :cond_7
+
+    .line 29
+    invoke-virtual {v12, v1, v9, v10}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    move-result-object v15
+
+    goto :goto_4
+
+    :cond_7
+    const/4 v15, 0x0
+
+    :goto_4
+    if-nez v15, :cond_8
+
+    iget-object v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 30
+    invoke-virtual {v12, v1, v9, v10, v3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    goto :goto_5
+
+    .line 31
+    :cond_8
+    iget-object v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 32
+    invoke-static {v15, v3}, Lcom/google/android/gms/internal/wearable/zzca;->zzi(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 33
+    invoke-virtual {v12, v1, v9, v10, v3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 34
+    :goto_5
+    invoke-virtual {v12, v1, v13, v14, v8}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    goto/16 :goto_a
+
+    :pswitch_6
+    if-ne v5, v15, :cond_13
+
+    .line 35
+    invoke-static {v3, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v2
+
+    iget v4, v11, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    if-nez v4, :cond_9
+
+    const-string v3, ""
+
+    .line 36
+    invoke-virtual {v12, v1, v9, v10, v3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    goto :goto_7
+
+    :cond_9
+    const/high16 v5, 0x20000000
+
+    and-int v5, p8, v5
+
+    if-eqz v5, :cond_b
+
+    add-int v5, v2, v4
+
+    .line 37
+    invoke-static {v3, v2, v5}, Lcom/google/android/gms/internal/wearable/zzel;->zzb([BII)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_a
+
+    goto :goto_6
+
+    .line 38
+    :cond_a
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzg()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    move-result-object v1
+
+    throw v1
+
+    .line 39
+    :cond_b
+    :goto_6
+    new-instance v5, Ljava/lang/String;
+
+    .line 40
+    sget-object v6, Lcom/google/android/gms/internal/wearable/zzca;->zza:Ljava/nio/charset/Charset;
+
+    invoke-direct {v5, v3, v2, v4, v6}, Ljava/lang/String;-><init>([BIILjava/nio/charset/Charset;)V
+
+    .line 41
+    invoke-virtual {v12, v1, v9, v10, v5}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    add-int/2addr v2, v4
+
+    .line 42
+    :goto_7
+    invoke-virtual {v12, v1, v13, v14, v8}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    goto/16 :goto_a
+
+    :pswitch_7
+    if-nez v5, :cond_13
+
+    .line 43
+    invoke-static {v3, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v2
+
+    iget-wide v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    const-wide/16 v5, 0x0
+
+    cmp-long v7, v3, v5
+
+    if-eqz v7, :cond_c
+
+    const/4 v15, 0x1
+
+    goto :goto_8
+
+    :cond_c
+    const/4 v15, 0x0
+
+    .line 44
+    :goto_8
+    invoke-static {v15}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v3
+
+    invoke-virtual {v12, v1, v9, v10, v3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 45
+    invoke-virtual {v12, v1, v13, v14, v8}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    return v2
+
+    :pswitch_8
+    if-eq v5, v7, :cond_d
+
+    goto/16 :goto_9
+
+    .line 46
+    :cond_d
+    invoke-static/range {p2 .. p3}, Lcom/google/android/gms/internal/wearable/zzaj;->zzd([BI)I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v12, v1, v9, v10, v2}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 47
+    invoke-virtual {v12, v1, v13, v14, v8}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    add-int/lit8 v1, v4, 0x4
+
+    return v1
+
+    :pswitch_9
+    const/4 v2, 0x1
+
+    if-eq v5, v2, :cond_e
+
+    goto :goto_9
+
+    .line 48
+    :cond_e
+    invoke-static/range {p2 .. p3}, Lcom/google/android/gms/internal/wearable/zzaj;->zze([BI)J
+
+    move-result-wide v2
+
+    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v2
+
+    invoke-virtual {v12, v1, v9, v10, v2}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 49
+    invoke-virtual {v12, v1, v13, v14, v8}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    add-int/lit8 v1, v4, 0x8
+
+    return v1
+
+    :pswitch_a
+    if-eqz v5, :cond_f
+
+    goto :goto_9
+
+    .line 50
+    :cond_f
+    invoke-static {v3, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v2
+
+    iget v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    .line 51
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v12, v1, v9, v10, v3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 52
+    invoke-virtual {v12, v1, v13, v14, v8}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    return v2
+
+    :pswitch_b
+    if-eqz v5, :cond_10
+
+    goto :goto_9
+
+    .line 53
+    :cond_10
+    invoke-static {v3, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    move-result v2
+
+    iget-wide v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    .line 54
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v3
+
+    invoke-virtual {v12, v1, v9, v10, v3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 55
+    invoke-virtual {v12, v1, v13, v14, v8}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    return v2
+
+    :pswitch_c
+    if-eq v5, v7, :cond_11
+
+    goto :goto_9
+
+    .line 56
+    :cond_11
+    invoke-static/range {p2 .. p3}, Lcom/google/android/gms/internal/wearable/zzaj;->zzd([BI)I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v2
+
+    .line 57
+    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v2
+
+    invoke-virtual {v12, v1, v9, v10, v2}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 58
+    invoke-virtual {v12, v1, v13, v14, v8}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    add-int/lit8 v1, v4, 0x4
+
+    return v1
+
+    :pswitch_d
+    const/4 v2, 0x1
+
+    if-eq v5, v2, :cond_12
+
+    goto :goto_9
+
+    .line 59
+    :cond_12
+    invoke-static/range {p2 .. p3}, Lcom/google/android/gms/internal/wearable/zzaj;->zze([BI)J
+
+    move-result-wide v2
+
+    invoke-static {v2, v3}, Ljava/lang/Double;->longBitsToDouble(J)D
+
+    move-result-wide v2
+
+    .line 60
+    invoke-static {v2, v3}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object v2
+
+    invoke-virtual {v12, v1, v9, v10, v2}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 61
+    invoke-virtual {v12, v1, v13, v14, v8}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    add-int/lit8 v1, v4, 0x8
+
+    return v1
+
+    :cond_13
+    :goto_9
+    move v2, v4
+
+    :goto_a
+    return v2
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x33
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_a
+        :pswitch_3
+        :pswitch_8
+        :pswitch_9
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method private final zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+    .locals 3
+
+    .line 1
+    div-int/lit8 p1, p1, 0x3
+
+    .line 2
+    .line 3
+    add-int/2addr p1, p1
+
+    .line 4
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzd:[Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    aget-object v0, v0, p1
+
+    .line 7
+    .line 8
+    check-cast v0, Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 9
+    .line 10
+    if-eqz v0, :cond_0
+
+    .line 11
+    .line 12
+    return-object v0
+
+    .line 13
+    :cond_0
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzdf;->zza()Lcom/google/android/gms/internal/wearable/zzdf;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    iget-object v1, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzd:[Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    add-int/lit8 v2, p1, 0x1
+
+    .line 20
+    .line 21
+    aget-object v1, v1, v2
+
+    .line 22
+    .line 23
+    check-cast v1, Ljava/lang/Class;
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/wearable/zzdf;->zzb(Ljava/lang/Class;)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    iget-object v1, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzd:[Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    aput-object v0, v1, p1
+
+    .line 32
+    .line 33
+    return-object v0
+.end method
+
+.method private final zzw(I)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    div-int/lit8 p1, p1, 0x3
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzd:[Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    add-int/2addr p1, p1
+
+    .line 6
+    aget-object p1, v0, p1
+
+    .line 7
+    .line 8
+    return-object p1
+.end method
+
+.method private final zzx(I)Lcom/google/android/gms/internal/wearable/zzbw;
+    .locals 1
+
+    .line 1
+    div-int/lit8 p1, p1, 0x3
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzd:[Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    add-int/2addr p1, p1
+
+    .line 6
+    add-int/lit8 p1, p1, 0x1
+
+    .line 7
+    .line 8
+    aget-object p1, v0, p1
+
+    .line 9
+    .line 10
+    check-cast p1, Lcom/google/android/gms/internal/wearable/zzbw;
+
+    .line 11
+    .line 12
+    return-object p1
+.end method
+
+.method private final zzy(Ljava/lang/Object;[BIILcom/google/android/gms/internal/wearable/zzai;)I
+    .locals 29
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;[BII",
+            "Lcom/google/android/gms/internal/wearable/zzai;",
+            ")I"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    move-object/from16 v15, p0
+
+    .line 2
+    .line 3
+    move-object/from16 v14, p1
+
+    .line 4
+    .line 5
+    move-object/from16 v12, p2
+
+    .line 6
+    .line 7
+    move/from16 v13, p4
+
+    .line 8
+    .line 9
+    move-object/from16 v11, p5
+
+    .line 10
+    .line 11
+    sget-object v9, Lcom/google/android/gms/internal/wearable/zzda;->zzb:Lsun/misc/Unsafe;
+
+    .line 12
+    .line 13
+    const v10, 0xfffff
+
+    .line 14
+    .line 15
+    .line 16
+    const/16 v16, 0x0
+
+    .line 17
+    .line 18
+    const/4 v8, -0x1
+
+    .line 19
+    move/from16 v0, p3
+
+    .line 20
+    .line 21
+    const/4 v1, -0x1
+
+    .line 22
+    const/4 v2, 0x0
+
+    .line 23
+    const/4 v6, 0x0
+
+    .line 24
+    const v7, 0xfffff
+
+    .line 25
+    .line 26
+    .line 27
+    :goto_0
+    if-ge v0, v13, :cond_15
+
+    .line 28
+    .line 29
+    add-int/lit8 v3, v0, 0x1
+
+    .line 30
+    .line 31
+    aget-byte v0, v12, v0
+
+    .line 32
+    .line 33
+    if-gez v0, :cond_0
+
+    .line 34
+    .line 35
+    invoke-static {v0, v12, v3, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzb(I[BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v0
+
+    .line 39
+    iget v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    .line 40
+    .line 41
+    move v4, v0
+
+    .line 42
+    move/from16 v17, v3
+
+    .line 43
+    .line 44
+    goto :goto_1
+
+    .line 45
+    :cond_0
+    move/from16 v17, v0
+
+    .line 46
+    .line 47
+    move v4, v3
+
+    .line 48
+    :goto_1
+    ushr-int/lit8 v5, v17, 0x3
+
+    .line 49
+    .line 50
+    and-int/lit8 v3, v17, 0x7
+
+    .line 51
+    .line 52
+    if-le v5, v1, :cond_1
+
+    .line 53
+    .line 54
+    div-int/lit8 v2, v2, 0x3
+
+    .line 55
+    .line 56
+    invoke-direct {v15, v5, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzP(II)I
+
+    .line 57
+    .line 58
+    .line 59
+    move-result v0
+
+    .line 60
+    goto :goto_2
+
+    .line 61
+    :cond_1
+    invoke-direct {v15, v5}, Lcom/google/android/gms/internal/wearable/zzda;->zzO(I)I
+
+    .line 62
+    .line 63
+    .line 64
+    move-result v0
+
+    .line 65
+    :goto_2
+    move v2, v0
+
+    .line 66
+    if-ne v2, v8, :cond_2
+
+    .line 67
+    .line 68
+    move v2, v4
+
+    .line 69
+    move/from16 v19, v5
+
+    .line 70
+    .line 71
+    move-object/from16 v28, v9
+
+    .line 72
+    .line 73
+    const/16 v18, 0x0
+
+    .line 74
+    .line 75
+    :goto_3
+    const/16 v27, -0x1
+
+    .line 76
+    .line 77
+    goto/16 :goto_11
+
+    .line 78
+    .line 79
+    :cond_2
+    iget-object v0, v15, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 80
+    .line 81
+    add-int/lit8 v1, v2, 0x1
+
+    .line 82
+    .line 83
+    aget v1, v0, v1
+
+    .line 84
+    .line 85
+    invoke-static {v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzC(I)I
+
+    .line 86
+    .line 87
+    .line 88
+    move-result v0
+
+    .line 89
+    and-int v8, v1, v10
+
+    .line 90
+    .line 91
+    int-to-long v10, v8
+
+    .line 92
+    const/16 v8, 0x11
+
+    .line 93
+    .line 94
+    move/from16 p3, v5
+
+    .line 95
+    .line 96
+    if-gt v0, v8, :cond_c
+
+    .line 97
+    .line 98
+    iget-object v8, v15, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 99
+    .line 100
+    add-int/lit8 v20, v2, 0x2
+
+    .line 101
+    .line 102
+    aget v8, v8, v20
+
+    .line 103
+    .line 104
+    ushr-int/lit8 v20, v8, 0x14
+
+    .line 105
+    .line 106
+    const/4 v5, 0x1
+
+    .line 107
+    shl-int v20, v5, v20
+
+    .line 108
+    .line 109
+    move-wide/from16 v22, v10
+
+    .line 110
+    .line 111
+    const v10, 0xfffff
+
+    .line 112
+    .line 113
+    .line 114
+    and-int/2addr v8, v10
+
+    .line 115
+    if-eq v8, v7, :cond_5
+
+    .line 116
+    .line 117
+    if-eq v7, v10, :cond_3
+
+    .line 118
+    .line 119
+    int-to-long v10, v7
+
+    .line 120
+    invoke-virtual {v9, v14, v10, v11, v6}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    .line 121
+    .line 122
+    .line 123
+    const v10, 0xfffff
+
+    .line 124
+    .line 125
+    .line 126
+    :cond_3
+    if-eq v8, v10, :cond_4
+
+    .line 127
+    .line 128
+    int-to-long v6, v8
+
+    .line 129
+    invoke-virtual {v9, v14, v6, v7}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    .line 130
+    .line 131
+    .line 132
+    move-result v6
+
+    .line 133
+    :cond_4
+    move v7, v8
+
+    .line 134
+    :cond_5
+    const/4 v8, 0x5
+
+    .line 135
+    packed-switch v0, :pswitch_data_0
+
+    .line 136
+    .line 137
+    .line 138
+    :cond_6
+    move/from16 v19, p3
+
+    .line 139
+    .line 140
+    move-object/from16 v11, p5
+
+    .line 141
+    .line 142
+    move v8, v2
+
+    .line 143
+    :cond_7
+    move/from16 p3, v6
+
+    .line 144
+    .line 145
+    goto/16 :goto_c
+
+    .line 146
+    .line 147
+    :pswitch_0
+    if-nez v3, :cond_6
+
+    .line 148
+    .line 149
+    move-object/from16 v11, p5
+
+    .line 150
+    .line 151
+    move-wide/from16 v0, v22
+
+    .line 152
+    .line 153
+    invoke-static {v12, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 154
+    .line 155
+    .line 156
+    move-result v8
+
+    .line 157
+    iget-wide v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    .line 158
+    .line 159
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzax;->zzc(J)J
+
+    .line 160
+    .line 161
+    .line 162
+    move-result-wide v4
+
+    .line 163
+    move-object v0, v9
+
+    .line 164
+    move-object/from16 v1, p1
+
+    .line 165
+    .line 166
+    move/from16 v17, v8
+
+    .line 167
+    .line 168
+    move v8, v2
+
+    .line 169
+    move-wide/from16 v2, v22
+
+    .line 170
+    .line 171
+    move/from16 v19, p3
+
+    .line 172
+    .line 173
+    invoke-virtual/range {v0 .. v5}, Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V
+
+    .line 174
+    .line 175
+    .line 176
+    or-int v6, v6, v20
+
+    .line 177
+    .line 178
+    goto/16 :goto_7
+
+    .line 179
+    .line 180
+    :pswitch_1
+    move/from16 v19, p3
+
+    .line 181
+    .line 182
+    move-object/from16 v11, p5
+
+    .line 183
+    .line 184
+    move v8, v2
+
+    .line 185
+    if-nez v3, :cond_7
+
+    .line 186
+    .line 187
+    invoke-static {v12, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 188
+    .line 189
+    .line 190
+    move-result v0
+
+    .line 191
+    iget v1, v11, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    .line 192
+    .line 193
+    invoke-static {v1}, Lcom/google/android/gms/internal/wearable/zzax;->zzb(I)I
+
+    .line 194
+    .line 195
+    .line 196
+    move-result v1
+
+    .line 197
+    move-wide/from16 v2, v22
+
+    .line 198
+    .line 199
+    invoke-virtual {v9, v14, v2, v3, v1}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    .line 200
+    .line 201
+    .line 202
+    or-int v6, v6, v20
+
+    .line 203
+    .line 204
+    goto/16 :goto_a
+
+    .line 205
+    .line 206
+    :pswitch_2
+    move/from16 v19, p3
+
+    .line 207
+    .line 208
+    move-object/from16 v11, p5
+
+    .line 209
+    .line 210
+    move v8, v2
+
+    .line 211
+    move-wide/from16 v0, v22
+
+    .line 212
+    .line 213
+    if-nez v3, :cond_7
+
+    .line 214
+    .line 215
+    invoke-static {v12, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 216
+    .line 217
+    .line 218
+    move-result v2
+
+    .line 219
+    iget v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    .line 220
+    .line 221
+    invoke-virtual {v9, v14, v0, v1, v3}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    .line 222
+    .line 223
+    .line 224
+    goto :goto_4
+
+    .line 225
+    :pswitch_3
+    move/from16 v19, p3
+
+    .line 226
+    .line 227
+    move-object/from16 v11, p5
+
+    .line 228
+    .line 229
+    move v8, v2
+
+    .line 230
+    move-wide/from16 v0, v22
+
+    .line 231
+    .line 232
+    const/4 v2, 0x2
+
+    .line 233
+    if-ne v3, v2, :cond_7
+
+    .line 234
+    .line 235
+    invoke-static {v12, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzh([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 236
+    .line 237
+    .line 238
+    move-result v2
+
+    .line 239
+    iget-object v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 240
+    .line 241
+    invoke-virtual {v9, v14, v0, v1, v3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 242
+    .line 243
+    .line 244
+    :goto_4
+    or-int v6, v6, v20
+
+    .line 245
+    .line 246
+    move v0, v2
+
+    .line 247
+    goto/16 :goto_a
+
+    .line 248
+    .line 249
+    :pswitch_4
+    move/from16 v19, p3
+
+    .line 250
+    .line 251
+    move-object/from16 v11, p5
+
+    .line 252
+    .line 253
+    move v8, v2
+
+    .line 254
+    move-wide/from16 v0, v22
+
+    .line 255
+    .line 256
+    const/4 v2, 0x2
+
+    .line 257
+    if-ne v3, v2, :cond_7
+
+    .line 258
+    .line 259
+    invoke-direct {v15, v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 260
+    .line 261
+    .line 262
+    move-result-object v2
+
+    .line 263
+    invoke-static {v2, v12, v4, v13, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzi(Lcom/google/android/gms/internal/wearable/zzdi;[BIILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 264
+    .line 265
+    .line 266
+    move-result v2
+
+    .line 267
+    invoke-virtual {v9, v14, v0, v1}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 268
+    .line 269
+    .line 270
+    move-result-object v3
+
+    .line 271
+    if-nez v3, :cond_8
+
+    .line 272
+    .line 273
+    iget-object v3, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 274
+    .line 275
+    invoke-virtual {v9, v14, v0, v1, v3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 276
+    .line 277
+    .line 278
+    goto :goto_4
+
+    .line 279
+    :cond_8
+    iget-object v4, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 280
+    .line 281
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzca;->zzi(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 282
+    .line 283
+    .line 284
+    move-result-object v3
+
+    .line 285
+    invoke-virtual {v9, v14, v0, v1, v3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 286
+    .line 287
+    .line 288
+    goto :goto_4
+
+    .line 289
+    :pswitch_5
+    move/from16 v19, p3
+
+    .line 290
+    .line 291
+    move-object/from16 v11, p5
+
+    .line 292
+    .line 293
+    move v8, v2
+
+    .line 294
+    move/from16 p3, v6
+
+    .line 295
+    .line 296
+    move-wide/from16 v5, v22
+
+    .line 297
+    .line 298
+    const/4 v0, 0x2
+
+    .line 299
+    if-ne v3, v0, :cond_b
+
+    .line 300
+    .line 301
+    const/high16 v0, 0x20000000
+
+    .line 302
+    .line 303
+    and-int/2addr v0, v1
+
+    .line 304
+    if-nez v0, :cond_9
+
+    .line 305
+    .line 306
+    invoke-static {v12, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzf([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 307
+    .line 308
+    .line 309
+    move-result v0
+
+    .line 310
+    goto :goto_5
+
+    .line 311
+    :cond_9
+    invoke-static {v12, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzg([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 312
+    .line 313
+    .line 314
+    move-result v0
+
+    .line 315
+    :goto_5
+    iget-object v1, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 316
+    .line 317
+    invoke-virtual {v9, v14, v5, v6, v1}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 318
+    .line 319
+    .line 320
+    goto/16 :goto_9
+
+    .line 321
+    .line 322
+    :pswitch_6
+    move/from16 v19, p3
+
+    .line 323
+    .line 324
+    move-object/from16 v11, p5
+
+    .line 325
+    .line 326
+    move v8, v2
+
+    .line 327
+    move/from16 p3, v6
+
+    .line 328
+    .line 329
+    move-wide/from16 v5, v22
+
+    .line 330
+    .line 331
+    const/4 v0, 0x1
+
+    .line 332
+    if-nez v3, :cond_b
+
+    .line 333
+    .line 334
+    invoke-static {v12, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 335
+    .line 336
+    .line 337
+    move-result v1
+
+    .line 338
+    iget-wide v2, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    .line 339
+    .line 340
+    const-wide/16 v21, 0x0
+
+    .line 341
+    .line 342
+    cmp-long v4, v2, v21
+
+    .line 343
+    .line 344
+    if-eqz v4, :cond_a
+
+    .line 345
+    .line 346
+    goto :goto_6
+
+    .line 347
+    :cond_a
+    const/4 v0, 0x0
+
+    .line 348
+    :goto_6
+    invoke-static {v14, v5, v6, v0}, Lcom/google/android/gms/internal/wearable/zzeg;->zzi(Ljava/lang/Object;JZ)V
+
+    .line 349
+    .line 350
+    .line 351
+    or-int v6, p3, v20
+
+    .line 352
+    .line 353
+    move v0, v1
+
+    .line 354
+    goto/16 :goto_a
+
+    .line 355
+    .line 356
+    :pswitch_7
+    move/from16 v19, p3
+
+    .line 357
+    .line 358
+    move-object/from16 v11, p5
+
+    .line 359
+    .line 360
+    move v8, v2
+
+    .line 361
+    move/from16 p3, v6
+
+    .line 362
+    .line 363
+    move-wide/from16 v5, v22
+
+    .line 364
+    .line 365
+    const/4 v0, 0x5
+
+    .line 366
+    if-ne v3, v0, :cond_b
+
+    .line 367
+    .line 368
+    invoke-static {v12, v4}, Lcom/google/android/gms/internal/wearable/zzaj;->zzd([BI)I
+
+    .line 369
+    .line 370
+    .line 371
+    move-result v0
+
+    .line 372
+    invoke-virtual {v9, v14, v5, v6, v0}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    .line 373
+    .line 374
+    .line 375
+    goto/16 :goto_8
+
+    .line 376
+    .line 377
+    :pswitch_8
+    move/from16 v19, p3
+
+    .line 378
+    .line 379
+    move-object/from16 v11, p5
+
+    .line 380
+    .line 381
+    move v8, v2
+
+    .line 382
+    move/from16 p3, v6
+
+    .line 383
+    .line 384
+    move-wide/from16 v5, v22
+
+    .line 385
+    .line 386
+    const/4 v0, 0x1
+
+    .line 387
+    if-ne v3, v0, :cond_b
+
+    .line 388
+    .line 389
+    invoke-static {v12, v4}, Lcom/google/android/gms/internal/wearable/zzaj;->zze([BI)J
+
+    .line 390
+    .line 391
+    .line 392
+    move-result-wide v21
+
+    .line 393
+    move-object v0, v9
+
+    .line 394
+    move-object/from16 v1, p1
+
+    .line 395
+    .line 396
+    move-wide v2, v5
+
+    .line 397
+    move v6, v4
+
+    .line 398
+    move-wide/from16 v4, v21
+
+    .line 399
+    .line 400
+    invoke-virtual/range {v0 .. v5}, Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V
+
+    .line 401
+    .line 402
+    .line 403
+    add-int/lit8 v0, v6, 0x8
+
+    .line 404
+    .line 405
+    goto/16 :goto_9
+
+    .line 406
+    .line 407
+    :pswitch_9
+    move/from16 v19, p3
+
+    .line 408
+    .line 409
+    move-object/from16 v11, p5
+
+    .line 410
+    .line 411
+    move v8, v2
+
+    .line 412
+    move/from16 p3, v6
+
+    .line 413
+    .line 414
+    move-wide/from16 v5, v22
+
+    .line 415
+    .line 416
+    if-nez v3, :cond_b
+
+    .line 417
+    .line 418
+    invoke-static {v12, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 419
+    .line 420
+    .line 421
+    move-result v0
+
+    .line 422
+    iget v1, v11, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    .line 423
+    .line 424
+    invoke-virtual {v9, v14, v5, v6, v1}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    .line 425
+    .line 426
+    .line 427
+    goto :goto_9
+
+    .line 428
+    :pswitch_a
+    move/from16 v19, p3
+
+    .line 429
+    .line 430
+    move-object/from16 v11, p5
+
+    .line 431
+    .line 432
+    move v8, v2
+
+    .line 433
+    move/from16 p3, v6
+
+    .line 434
+    .line 435
+    move-wide/from16 v5, v22
+
+    .line 436
+    .line 437
+    if-nez v3, :cond_b
+
+    .line 438
+    .line 439
+    invoke-static {v12, v4, v11}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 440
+    .line 441
+    .line 442
+    move-result v17
+
+    .line 443
+    iget-wide v2, v11, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    .line 444
+    .line 445
+    move-object v0, v9
+
+    .line 446
+    move-object/from16 v1, p1
+
+    .line 447
+    .line 448
+    move-wide/from16 v21, v2
+
+    .line 449
+    .line 450
+    move-wide v2, v5
+
+    .line 451
+    move-wide/from16 v4, v21
+
+    .line 452
+    .line 453
+    invoke-virtual/range {v0 .. v5}, Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V
+
+    .line 454
+    .line 455
+    .line 456
+    or-int v6, p3, v20
+
+    .line 457
+    .line 458
+    :goto_7
+    move v2, v8
+
+    .line 459
+    move/from16 v0, v17
+
+    .line 460
+    .line 461
+    goto :goto_b
+
+    .line 462
+    :pswitch_b
+    move/from16 v19, p3
+
+    .line 463
+    .line 464
+    move-object/from16 v11, p5
+
+    .line 465
+    .line 466
+    move v8, v2
+
+    .line 467
+    move/from16 p3, v6
+
+    .line 468
+    .line 469
+    move-wide/from16 v5, v22
+
+    .line 470
+    .line 471
+    const/4 v0, 0x5
+
+    .line 472
+    if-ne v3, v0, :cond_b
+
+    .line 473
+    .line 474
+    invoke-static {v12, v4}, Lcom/google/android/gms/internal/wearable/zzaj;->zzd([BI)I
+
+    .line 475
+    .line 476
+    .line 477
+    move-result v0
+
+    .line 478
+    invoke-static {v0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    .line 479
+    .line 480
+    .line 481
+    move-result v0
+
+    .line 482
+    invoke-static {v14, v5, v6, v0}, Lcom/google/android/gms/internal/wearable/zzeg;->zzk(Ljava/lang/Object;JF)V
+
+    .line 483
+    .line 484
+    .line 485
+    :goto_8
+    add-int/lit8 v0, v4, 0x4
+
+    .line 486
+    .line 487
+    goto :goto_9
+
+    .line 488
+    :pswitch_c
+    move/from16 v19, p3
+
+    .line 489
+    .line 490
+    move-object/from16 v11, p5
+
+    .line 491
+    .line 492
+    move v8, v2
+
+    .line 493
+    move/from16 p3, v6
+
+    .line 494
+    .line 495
+    move-wide/from16 v5, v22
+
+    .line 496
+    .line 497
+    const/4 v0, 0x1
+
+    .line 498
+    if-ne v3, v0, :cond_b
+
+    .line 499
+    .line 500
+    invoke-static {v12, v4}, Lcom/google/android/gms/internal/wearable/zzaj;->zze([BI)J
+
+    .line 501
+    .line 502
+    .line 503
+    move-result-wide v0
+
+    .line 504
+    invoke-static {v0, v1}, Ljava/lang/Double;->longBitsToDouble(J)D
+
+    .line 505
+    .line 506
+    .line 507
+    move-result-wide v0
+
+    .line 508
+    invoke-static {v14, v5, v6, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzm(Ljava/lang/Object;JD)V
+
+    .line 509
+    .line 510
+    .line 511
+    add-int/lit8 v0, v4, 0x8
+
+    .line 512
+    .line 513
+    :goto_9
+    or-int v6, p3, v20
+
+    .line 514
+    .line 515
+    :goto_a
+    move v2, v8
+
+    .line 516
+    :goto_b
+    move/from16 v1, v19
+
+    .line 517
+    .line 518
+    const/4 v8, -0x1
+
+    .line 519
+    goto/16 :goto_0
+
+    .line 520
+    .line 521
+    :cond_b
+    :goto_c
+    move/from16 v6, p3
+
+    .line 522
+    .line 523
+    move v2, v4
+
+    .line 524
+    move/from16 v18, v8
+
+    .line 525
+    .line 526
+    move-object/from16 v28, v9
+
+    .line 527
+    .line 528
+    goto/16 :goto_3
+
+    .line 529
+    .line 530
+    :cond_c
+    move/from16 v19, p3
+
+    .line 531
+    .line 532
+    move v8, v2
+
+    .line 533
+    move/from16 v20, v6
+
+    .line 534
+    .line 535
+    move-wide v5, v10
+
+    .line 536
+    const v10, 0xfffff
+
+    .line 537
+    .line 538
+    .line 539
+    move-object/from16 v11, p5
+
+    .line 540
+    .line 541
+    const/16 v2, 0x1b
+
+    .line 542
+    .line 543
+    if-ne v0, v2, :cond_10
+
+    .line 544
+    .line 545
+    const/4 v2, 0x2
+
+    .line 546
+    if-ne v3, v2, :cond_f
+
+    .line 547
+    .line 548
+    invoke-virtual {v9, v14, v5, v6}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 549
+    .line 550
+    .line 551
+    move-result-object v0
+
+    .line 552
+    check-cast v0, Lcom/google/android/gms/internal/wearable/zzbz;
+
+    .line 553
+    .line 554
+    invoke-interface {v0}, Lcom/google/android/gms/internal/wearable/zzbz;->zza()Z
+
+    .line 555
+    .line 556
+    .line 557
+    move-result v1
+
+    .line 558
+    if-nez v1, :cond_e
+
+    .line 559
+    .line 560
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    .line 561
+    .line 562
+    .line 563
+    move-result v1
+
+    .line 564
+    if-nez v1, :cond_d
+
+    .line 565
+    .line 566
+    const/16 v1, 0xa
+
+    .line 567
+    .line 568
+    goto :goto_d
+
+    .line 569
+    :cond_d
+    add-int/2addr v1, v1
+
+    .line 570
+    :goto_d
+    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/wearable/zzbz;->zze(I)Lcom/google/android/gms/internal/wearable/zzbz;
+
+    .line 571
+    .line 572
+    .line 573
+    move-result-object v0
+
+    .line 574
+    invoke-virtual {v9, v14, v5, v6, v0}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 575
+    .line 576
+    .line 577
+    :cond_e
+    move-object v5, v0
+
+    .line 578
+    invoke-direct {v15, v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 579
+    .line 580
+    .line 581
+    move-result-object v0
+
+    .line 582
+    move/from16 v1, v17
+
+    .line 583
+    .line 584
+    move-object/from16 v2, p2
+
+    .line 585
+    .line 586
+    move v3, v4
+
+    .line 587
+    move/from16 v4, p4
+
+    .line 588
+    .line 589
+    move/from16 v15, v20
+
+    .line 590
+    .line 591
+    move-object/from16 v6, p5
+
+    .line 592
+    .line 593
+    invoke-static/range {v0 .. v6}, Lcom/google/android/gms/internal/wearable/zzaj;->zzm(Lcom/google/android/gms/internal/wearable/zzdi;I[BIILcom/google/android/gms/internal/wearable/zzbz;Lcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 594
+    .line 595
+    .line 596
+    move-result v0
+
+    .line 597
+    move v2, v8
+
+    .line 598
+    move v6, v15
+
+    .line 599
+    move/from16 v1, v19
+
+    .line 600
+    .line 601
+    const/4 v8, -0x1
+
+    .line 602
+    move-object/from16 v15, p0
+
+    .line 603
+    .line 604
+    goto/16 :goto_0
+
+    .line 605
+    .line 606
+    :cond_f
+    move v15, v4
+
+    .line 607
+    move/from16 v26, v7
+
+    .line 608
+    .line 609
+    move/from16 v18, v8
+
+    .line 610
+    .line 611
+    move-object/from16 v28, v9
+
+    .line 612
+    .line 613
+    move/from16 v23, v20
+
+    .line 614
+    .line 615
+    const/16 v27, -0x1
+
+    .line 616
+    .line 617
+    goto/16 :goto_f
+
+    .line 618
+    .line 619
+    :cond_10
+    move/from16 v15, v20
+
+    .line 620
+    .line 621
+    const/16 v2, 0x31
+
+    .line 622
+    .line 623
+    if-gt v0, v2, :cond_12
+
+    .line 624
+    .line 625
+    int-to-long v1, v1
+
+    .line 626
+    move/from16 p3, v0
+
+    .line 627
+    .line 628
+    move-object/from16 v0, p0
+
+    .line 629
+    .line 630
+    move-wide/from16 v20, v1
+
+    .line 631
+    .line 632
+    move-object/from16 v1, p1
+
+    .line 633
+    .line 634
+    move-object/from16 v2, p2
+
+    .line 635
+    .line 636
+    move/from16 v22, v3
+
+    .line 637
+    .line 638
+    move v3, v4
+
+    .line 639
+    move/from16 v23, v15
+
+    .line 640
+    .line 641
+    move v15, v4
+
+    .line 642
+    move/from16 v4, p4
+
+    .line 643
+    .line 644
+    move-wide/from16 v24, v5
+
+    .line 645
+    .line 646
+    move/from16 v5, v17
+
+    .line 647
+    .line 648
+    move/from16 v6, v19
+
+    .line 649
+    .line 650
+    move/from16 v26, v7
+
+    .line 651
+    .line 652
+    move/from16 v7, v22
+
+    .line 653
+    .line 654
+    move/from16 v18, v8
+
+    .line 655
+    .line 656
+    const/16 v27, -0x1
+
+    .line 657
+    .line 658
+    move-object/from16 v28, v9
+
+    .line 659
+    .line 660
+    move-wide/from16 v9, v20
+
+    .line 661
+    .line 662
+    move/from16 v11, p3
+
+    .line 663
+    .line 664
+    move-wide/from16 v12, v24
+
+    .line 665
+    .line 666
+    move-object/from16 v14, p5
+
+    .line 667
+    .line 668
+    invoke-direct/range {v0 .. v14}, Lcom/google/android/gms/internal/wearable/zzda;->zzs(Ljava/lang/Object;[BIIIIIIJIJLcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 669
+    .line 670
+    .line 671
+    move-result v0
+
+    .line 672
+    if-eq v0, v15, :cond_11
+
+    .line 673
+    .line 674
+    :goto_e
+    move-object/from16 v15, p0
+
+    .line 675
+    .line 676
+    move-object/from16 v14, p1
+
+    .line 677
+    .line 678
+    move-object/from16 v12, p2
+
+    .line 679
+    .line 680
+    move/from16 v13, p4
+
+    .line 681
+    .line 682
+    move-object/from16 v11, p5
+
+    .line 683
+    .line 684
+    move/from16 v2, v18
+
+    .line 685
+    .line 686
+    move/from16 v1, v19
+
+    .line 687
+    .line 688
+    move/from16 v6, v23
+
+    .line 689
+    .line 690
+    move/from16 v7, v26
+
+    .line 691
+    .line 692
+    goto/16 :goto_12
+
+    .line 693
+    .line 694
+    :cond_11
+    move v2, v0
+
+    .line 695
+    goto :goto_10
+
+    .line 696
+    :cond_12
+    move/from16 p3, v0
+
+    .line 697
+    .line 698
+    move/from16 v22, v3
+
+    .line 699
+    .line 700
+    move-wide/from16 v24, v5
+
+    .line 701
+    .line 702
+    move/from16 v26, v7
+
+    .line 703
+    .line 704
+    move/from16 v18, v8
+
+    .line 705
+    .line 706
+    move-object/from16 v28, v9
+
+    .line 707
+    .line 708
+    move/from16 v23, v15
+
+    .line 709
+    .line 710
+    const/16 v27, -0x1
+
+    .line 711
+    .line 712
+    move v15, v4
+
+    .line 713
+    const/16 v0, 0x32
+
+    .line 714
+    .line 715
+    move/from16 v9, p3
+
+    .line 716
+    .line 717
+    if-ne v9, v0, :cond_14
+
+    .line 718
+    .line 719
+    move/from16 v7, v22
+
+    .line 720
+    .line 721
+    const/4 v0, 0x2
+
+    .line 722
+    if-ne v7, v0, :cond_13
+
+    .line 723
+    .line 724
+    move-object/from16 v0, p0
+
+    .line 725
+    .line 726
+    move-object/from16 v1, p1
+
+    .line 727
+    .line 728
+    move-object/from16 v2, p2
+
+    .line 729
+    .line 730
+    move v3, v15
+
+    .line 731
+    move/from16 v4, p4
+
+    .line 732
+    .line 733
+    move/from16 v5, v18
+
+    .line 734
+    .line 735
+    move-wide/from16 v6, v24
+
+    .line 736
+    .line 737
+    move-object/from16 v8, p5
+
+    .line 738
+    .line 739
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzt(Ljava/lang/Object;[BIIIJLcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 740
+    .line 741
+    .line 742
+    move-result v0
+
+    .line 743
+    if-eq v0, v15, :cond_11
+
+    .line 744
+    .line 745
+    goto :goto_e
+
+    .line 746
+    :cond_13
+    :goto_f
+    move v2, v15
+
+    .line 747
+    :goto_10
+    move/from16 v6, v23
+
+    .line 748
+    .line 749
+    move/from16 v7, v26
+
+    .line 750
+    .line 751
+    goto :goto_11
+
+    .line 752
+    :cond_14
+    move/from16 v7, v22
+
+    .line 753
+    .line 754
+    move-object/from16 v0, p0
+
+    .line 755
+    .line 756
+    move v8, v1
+
+    .line 757
+    move-object/from16 v1, p1
+
+    .line 758
+    .line 759
+    move-object/from16 v2, p2
+
+    .line 760
+    .line 761
+    move v3, v15
+
+    .line 762
+    move/from16 v4, p4
+
+    .line 763
+    .line 764
+    move/from16 v5, v17
+
+    .line 765
+    .line 766
+    move/from16 v6, v19
+
+    .line 767
+    .line 768
+    move-wide/from16 v10, v24
+
+    .line 769
+    .line 770
+    move/from16 v12, v18
+
+    .line 771
+    .line 772
+    move-object/from16 v13, p5
+
+    .line 773
+    .line 774
+    invoke-direct/range {v0 .. v13}, Lcom/google/android/gms/internal/wearable/zzda;->zzu(Ljava/lang/Object;[BIIIIIIIJILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 775
+    .line 776
+    .line 777
+    move-result v0
+
+    .line 778
+    if-eq v0, v15, :cond_11
+
+    .line 779
+    .line 780
+    goto :goto_e
+
+    .line 781
+    :goto_11
+    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/internal/wearable/zzda;->zzf(Ljava/lang/Object;)Lcom/google/android/gms/internal/wearable/zzdx;
+
+    .line 782
+    .line 783
+    .line 784
+    move-result-object v4
+
+    .line 785
+    move/from16 v0, v17
+
+    .line 786
+    .line 787
+    move-object/from16 v1, p2
+
+    .line 788
+    .line 789
+    move/from16 v3, p4
+
+    .line 790
+    .line 791
+    move-object/from16 v5, p5
+
+    .line 792
+    .line 793
+    invoke-static/range {v0 .. v5}, Lcom/google/android/gms/internal/wearable/zzaj;->zzn(I[BIILcom/google/android/gms/internal/wearable/zzdx;Lcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 794
+    .line 795
+    .line 796
+    move-result v0
+
+    .line 797
+    move-object/from16 v15, p0
+
+    .line 798
+    .line 799
+    move-object/from16 v14, p1
+
+    .line 800
+    .line 801
+    move-object/from16 v12, p2
+
+    .line 802
+    .line 803
+    move/from16 v13, p4
+
+    .line 804
+    .line 805
+    move-object/from16 v11, p5
+
+    .line 806
+    .line 807
+    move/from16 v2, v18
+
+    .line 808
+    .line 809
+    move/from16 v1, v19
+
+    .line 810
+    .line 811
+    :goto_12
+    move-object/from16 v9, v28
+
+    .line 812
+    .line 813
+    const/4 v8, -0x1
+
+    .line 814
+    const v10, 0xfffff
+
+    .line 815
+    .line 816
+    .line 817
+    goto/16 :goto_0
+
+    .line 818
+    .line 819
+    :cond_15
+    move/from16 v23, v6
+
+    .line 820
+    .line 821
+    move-object/from16 v28, v9
+
+    .line 822
+    .line 823
+    const v1, 0xfffff
+
+    .line 824
+    .line 825
+    .line 826
+    if-eq v7, v1, :cond_16
+
+    .line 827
+    .line 828
+    int-to-long v1, v7
+
+    .line 829
+    move-object/from16 v3, p1
+
+    .line 830
+    .line 831
+    move/from16 v6, v23
+
+    .line 832
+    .line 833
+    move-object/from16 v4, v28
+
+    .line 834
+    .line 835
+    invoke-virtual {v4, v3, v1, v2, v6}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    .line 836
+    .line 837
+    .line 838
+    :cond_16
+    move/from16 v1, p4
+
+    .line 839
+    .line 840
+    if-ne v0, v1, :cond_17
+
+    .line 841
+    .line 842
+    return v0
+
+    .line 843
+    :cond_17
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzf()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    .line 844
+    .line 845
+    .line 846
+    move-result-object v0
+
+    .line 847
+    throw v0
+
+    .line 848
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_9
+        :pswitch_2
+        :pswitch_7
+        :pswitch_8
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method private static zzz(Ljava/lang/Object;ILcom/google/android/gms/internal/wearable/zzdi;)Z
+    .locals 2
+
+    .line 1
+    const v0, 0xfffff
+
+    .line 2
+    .line 3
+    .line 4
+    and-int/2addr p1, v0
+
+    .line 5
+    int-to-long v0, p1
+
+    .line 6
+    invoke-static {p0, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    invoke-interface {p2, p0}, Lcom/google/android/gms/internal/wearable/zzdi;->zzj(Ljava/lang/Object;)Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p0
+
+    .line 14
+    return p0
+.end method
+
+
+# virtual methods
+.method public final zza()Ljava/lang/Object;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzg:Lcom/google/android/gms/internal/wearable/zzcx;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/google/android/gms/internal/wearable/zzbs;
+
+    .line 4
+    .line 5
+    const/4 v1, 0x4
+
+    .line 6
+    const/4 v2, 0x0
+
+    .line 7
+    invoke-virtual {v0, v1, v2, v2}, Lcom/google/android/gms/internal/wearable/zzbs;->zzG(ILjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    return-object v0
+.end method
+
+.method public final zzb(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)Z"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 2
+    .line 3
+    array-length v0, v0
+
+    .line 4
+    const/4 v1, 0x0
+
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    :goto_0
+    if-ge v2, v0, :cond_2
+
+    .line 7
+    .line 8
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzA(I)I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v3
+
+    .line 12
+    const v4, 0xfffff
+
+    .line 13
+    .line 14
+    .line 15
+    and-int v5, v3, v4
+
+    .line 16
+    .line 17
+    int-to-long v5, v5
+
+    .line 18
+    invoke-static {v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzC(I)I
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v3
+
+    .line 22
+    packed-switch v3, :pswitch_data_0
+
+    .line 23
+    .line 24
+    .line 25
+    goto/16 :goto_3
+
+    .line 26
+    .line 27
+    :pswitch_0
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzB(I)I
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v3
+
+    .line 31
+    and-int/2addr v3, v4
+
+    .line 32
+    int-to-long v3, v3
+
+    .line 33
+    invoke-static {p1, v3, v4}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 34
+    .line 35
+    .line 36
+    move-result v7
+
+    .line 37
+    invoke-static {p2, v3, v4}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v3
+
+    .line 41
+    if-ne v7, v3, :cond_0
+
+    .line 42
+    .line 43
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v3
+
+    .line 47
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v4
+
+    .line 51
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzD(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v3
+
+    .line 55
+    if-nez v3, :cond_1
+
+    .line 56
+    .line 57
+    goto/16 :goto_2
+
+    .line 58
+    .line 59
+    :pswitch_1
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object v3
+
+    .line 63
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v4
+
+    .line 67
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzD(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 68
+    .line 69
+    .line 70
+    move-result v3
+
+    .line 71
+    goto :goto_1
+
+    .line 72
+    :pswitch_2
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object v3
+
+    .line 76
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object v4
+
+    .line 80
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzD(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 81
+    .line 82
+    .line 83
+    move-result v3
+
+    .line 84
+    :goto_1
+    if-nez v3, :cond_1
+
+    .line 85
+    .line 86
+    goto/16 :goto_2
+
+    .line 87
+    .line 88
+    :pswitch_3
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 89
+    .line 90
+    .line 91
+    move-result v3
+
+    .line 92
+    if-eqz v3, :cond_0
+
+    .line 93
+    .line 94
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 95
+    .line 96
+    .line 97
+    move-result-object v3
+
+    .line 98
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 99
+    .line 100
+    .line 101
+    move-result-object v4
+
+    .line 102
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzD(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 103
+    .line 104
+    .line 105
+    move-result v3
+
+    .line 106
+    if-eqz v3, :cond_0
+
+    .line 107
+    .line 108
+    goto/16 :goto_3
+
+    .line 109
+    .line 110
+    :pswitch_4
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 111
+    .line 112
+    .line 113
+    move-result v3
+
+    .line 114
+    if-eqz v3, :cond_0
+
+    .line 115
+    .line 116
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 117
+    .line 118
+    .line 119
+    move-result-wide v3
+
+    .line 120
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 121
+    .line 122
+    .line 123
+    move-result-wide v5
+
+    .line 124
+    cmp-long v7, v3, v5
+
+    .line 125
+    .line 126
+    if-nez v7, :cond_0
+
+    .line 127
+    .line 128
+    goto/16 :goto_3
+
+    .line 129
+    .line 130
+    :pswitch_5
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 131
+    .line 132
+    .line 133
+    move-result v3
+
+    .line 134
+    if-eqz v3, :cond_0
+
+    .line 135
+    .line 136
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 137
+    .line 138
+    .line 139
+    move-result v3
+
+    .line 140
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 141
+    .line 142
+    .line 143
+    move-result v4
+
+    .line 144
+    if-ne v3, v4, :cond_0
+
+    .line 145
+    .line 146
+    goto/16 :goto_3
+
+    .line 147
+    .line 148
+    :pswitch_6
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 149
+    .line 150
+    .line 151
+    move-result v3
+
+    .line 152
+    if-eqz v3, :cond_0
+
+    .line 153
+    .line 154
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 155
+    .line 156
+    .line 157
+    move-result-wide v3
+
+    .line 158
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 159
+    .line 160
+    .line 161
+    move-result-wide v5
+
+    .line 162
+    cmp-long v7, v3, v5
+
+    .line 163
+    .line 164
+    if-nez v7, :cond_0
+
+    .line 165
+    .line 166
+    goto/16 :goto_3
+
+    .line 167
+    .line 168
+    :pswitch_7
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 169
+    .line 170
+    .line 171
+    move-result v3
+
+    .line 172
+    if-eqz v3, :cond_0
+
+    .line 173
+    .line 174
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 175
+    .line 176
+    .line 177
+    move-result v3
+
+    .line 178
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 179
+    .line 180
+    .line 181
+    move-result v4
+
+    .line 182
+    if-ne v3, v4, :cond_0
+
+    .line 183
+    .line 184
+    goto/16 :goto_3
+
+    .line 185
+    .line 186
+    :pswitch_8
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 187
+    .line 188
+    .line 189
+    move-result v3
+
+    .line 190
+    if-eqz v3, :cond_0
+
+    .line 191
+    .line 192
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 193
+    .line 194
+    .line 195
+    move-result v3
+
+    .line 196
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 197
+    .line 198
+    .line 199
+    move-result v4
+
+    .line 200
+    if-ne v3, v4, :cond_0
+
+    .line 201
+    .line 202
+    goto/16 :goto_3
+
+    .line 203
+    .line 204
+    :pswitch_9
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 205
+    .line 206
+    .line 207
+    move-result v3
+
+    .line 208
+    if-eqz v3, :cond_0
+
+    .line 209
+    .line 210
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 211
+    .line 212
+    .line 213
+    move-result v3
+
+    .line 214
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 215
+    .line 216
+    .line 217
+    move-result v4
+
+    .line 218
+    if-ne v3, v4, :cond_0
+
+    .line 219
+    .line 220
+    goto/16 :goto_3
+
+    .line 221
+    .line 222
+    :pswitch_a
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 223
+    .line 224
+    .line 225
+    move-result v3
+
+    .line 226
+    if-eqz v3, :cond_0
+
+    .line 227
+    .line 228
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 229
+    .line 230
+    .line 231
+    move-result-object v3
+
+    .line 232
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 233
+    .line 234
+    .line 235
+    move-result-object v4
+
+    .line 236
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzD(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 237
+    .line 238
+    .line 239
+    move-result v3
+
+    .line 240
+    if-eqz v3, :cond_0
+
+    .line 241
+    .line 242
+    goto/16 :goto_3
+
+    .line 243
+    .line 244
+    :pswitch_b
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 245
+    .line 246
+    .line 247
+    move-result v3
+
+    .line 248
+    if-eqz v3, :cond_0
+
+    .line 249
+    .line 250
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 251
+    .line 252
+    .line 253
+    move-result-object v3
+
+    .line 254
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 255
+    .line 256
+    .line 257
+    move-result-object v4
+
+    .line 258
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzD(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 259
+    .line 260
+    .line 261
+    move-result v3
+
+    .line 262
+    if-eqz v3, :cond_0
+
+    .line 263
+    .line 264
+    goto/16 :goto_3
+
+    .line 265
+    .line 266
+    :pswitch_c
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 267
+    .line 268
+    .line 269
+    move-result v3
+
+    .line 270
+    if-eqz v3, :cond_0
+
+    .line 271
+    .line 272
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 273
+    .line 274
+    .line 275
+    move-result-object v3
+
+    .line 276
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 277
+    .line 278
+    .line 279
+    move-result-object v4
+
+    .line 280
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzdk;->zzD(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 281
+    .line 282
+    .line 283
+    move-result v3
+
+    .line 284
+    if-eqz v3, :cond_0
+
+    .line 285
+    .line 286
+    goto/16 :goto_3
+
+    .line 287
+    .line 288
+    :pswitch_d
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 289
+    .line 290
+    .line 291
+    move-result v3
+
+    .line 292
+    if-eqz v3, :cond_0
+
+    .line 293
+    .line 294
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzh(Ljava/lang/Object;J)Z
+
+    .line 295
+    .line 296
+    .line 297
+    move-result v3
+
+    .line 298
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzh(Ljava/lang/Object;J)Z
+
+    .line 299
+    .line 300
+    .line 301
+    move-result v4
+
+    .line 302
+    if-ne v3, v4, :cond_0
+
+    .line 303
+    .line 304
+    goto/16 :goto_3
+
+    .line 305
+    .line 306
+    :pswitch_e
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 307
+    .line 308
+    .line 309
+    move-result v3
+
+    .line 310
+    if-eqz v3, :cond_0
+
+    .line 311
+    .line 312
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 313
+    .line 314
+    .line 315
+    move-result v3
+
+    .line 316
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 317
+    .line 318
+    .line 319
+    move-result v4
+
+    .line 320
+    if-ne v3, v4, :cond_0
+
+    .line 321
+    .line 322
+    goto/16 :goto_3
+
+    .line 323
+    .line 324
+    :pswitch_f
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 325
+    .line 326
+    .line 327
+    move-result v3
+
+    .line 328
+    if-eqz v3, :cond_0
+
+    .line 329
+    .line 330
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 331
+    .line 332
+    .line 333
+    move-result-wide v3
+
+    .line 334
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 335
+    .line 336
+    .line 337
+    move-result-wide v5
+
+    .line 338
+    cmp-long v7, v3, v5
+
+    .line 339
+    .line 340
+    if-nez v7, :cond_0
+
+    .line 341
+    .line 342
+    goto/16 :goto_3
+
+    .line 343
+    .line 344
+    :pswitch_10
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 345
+    .line 346
+    .line 347
+    move-result v3
+
+    .line 348
+    if-eqz v3, :cond_0
+
+    .line 349
+    .line 350
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 351
+    .line 352
+    .line 353
+    move-result v3
+
+    .line 354
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 355
+    .line 356
+    .line 357
+    move-result v4
+
+    .line 358
+    if-ne v3, v4, :cond_0
+
+    .line 359
+    .line 360
+    goto :goto_3
+
+    .line 361
+    :pswitch_11
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 362
+    .line 363
+    .line 364
+    move-result v3
+
+    .line 365
+    if-eqz v3, :cond_0
+
+    .line 366
+    .line 367
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 368
+    .line 369
+    .line 370
+    move-result-wide v3
+
+    .line 371
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 372
+    .line 373
+    .line 374
+    move-result-wide v5
+
+    .line 375
+    cmp-long v7, v3, v5
+
+    .line 376
+    .line 377
+    if-nez v7, :cond_0
+
+    .line 378
+    .line 379
+    goto :goto_3
+
+    .line 380
+    :pswitch_12
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 381
+    .line 382
+    .line 383
+    move-result v3
+
+    .line 384
+    if-eqz v3, :cond_0
+
+    .line 385
+    .line 386
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 387
+    .line 388
+    .line 389
+    move-result-wide v3
+
+    .line 390
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 391
+    .line 392
+    .line 393
+    move-result-wide v5
+
+    .line 394
+    cmp-long v7, v3, v5
+
+    .line 395
+    .line 396
+    if-nez v7, :cond_0
+
+    .line 397
+    .line 398
+    goto :goto_3
+
+    .line 399
+    :pswitch_13
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 400
+    .line 401
+    .line 402
+    move-result v3
+
+    .line 403
+    if-eqz v3, :cond_0
+
+    .line 404
+    .line 405
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzj(Ljava/lang/Object;J)F
+
+    .line 406
+    .line 407
+    .line 408
+    move-result v3
+
+    .line 409
+    invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 410
+    .line 411
+    .line 412
+    move-result v3
+
+    .line 413
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzj(Ljava/lang/Object;J)F
+
+    .line 414
+    .line 415
+    .line 416
+    move-result v4
+
+    .line 417
+    invoke-static {v4}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 418
+    .line 419
+    .line 420
+    move-result v4
+
+    .line 421
+    if-ne v3, v4, :cond_0
+
+    .line 422
+    .line 423
+    goto :goto_3
+
+    .line 424
+    :pswitch_14
+    invoke-direct {p0, p1, p2, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzI(Ljava/lang/Object;Ljava/lang/Object;I)Z
+
+    .line 425
+    .line 426
+    .line 427
+    move-result v3
+
+    .line 428
+    if-eqz v3, :cond_0
+
+    .line 429
+    .line 430
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzl(Ljava/lang/Object;J)D
+
+    .line 431
+    .line 432
+    .line 433
+    move-result-wide v3
+
+    .line 434
+    invoke-static {v3, v4}, Ljava/lang/Double;->doubleToLongBits(D)J
+
+    .line 435
+    .line 436
+    .line 437
+    move-result-wide v3
+
+    .line 438
+    invoke-static {p2, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzl(Ljava/lang/Object;J)D
+
+    .line 439
+    .line 440
+    .line 441
+    move-result-wide v5
+
+    .line 442
+    invoke-static {v5, v6}, Ljava/lang/Double;->doubleToLongBits(D)J
+
+    .line 443
+    .line 444
+    .line 445
+    move-result-wide v5
+
+    .line 446
+    cmp-long v7, v3, v5
+
+    .line 447
+    .line 448
+    if-nez v7, :cond_0
+
+    .line 449
+    .line 450
+    goto :goto_3
+
+    .line 451
+    :cond_0
+    :goto_2
+    return v1
+
+    .line 452
+    :cond_1
+    :goto_3
+    add-int/lit8 v2, v2, 0x3
+
+    .line 453
+    .line 454
+    goto/16 :goto_0
+
+    .line 455
+    .line 456
+    :cond_2
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzn:Lcom/google/android/gms/internal/wearable/zzdw;
+
+    .line 457
+    .line 458
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/wearable/zzdw;->zzd(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 459
+    .line 460
+    .line 461
+    move-result-object v0
+
+    .line 462
+    iget-object v2, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzn:Lcom/google/android/gms/internal/wearable/zzdw;
+
+    .line 463
+    .line 464
+    invoke-virtual {v2, p2}, Lcom/google/android/gms/internal/wearable/zzdw;->zzd(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 465
+    .line 466
+    .line 467
+    move-result-object v2
+
+    .line 468
+    invoke-virtual {v0, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 469
+    .line 470
+    .line 471
+    move-result v0
+
+    .line 472
+    if-nez v0, :cond_3
+
+    .line 473
+    .line 474
+    return v1
+
+    .line 475
+    :cond_3
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzh:Z
+
+    .line 476
+    .line 477
+    if-nez v0, :cond_4
+
+    .line 478
+    .line 479
+    const/4 p1, 0x1
+
+    .line 480
+    return p1
+
+    .line 481
+    :cond_4
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzo:Lcom/google/android/gms/internal/wearable/zzbh;
+
+    .line 482
+    .line 483
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/wearable/zzbh;->zzb(Ljava/lang/Object;)Lcom/google/android/gms/internal/wearable/zzbl;
+
+    .line 484
+    .line 485
+    .line 486
+    iget-object p1, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzo:Lcom/google/android/gms/internal/wearable/zzbh;
+
+    .line 487
+    .line 488
+    invoke-virtual {p1, p2}, Lcom/google/android/gms/internal/wearable/zzbh;->zzb(Ljava/lang/Object;)Lcom/google/android/gms/internal/wearable/zzbl;
+
+    .line 489
+    .line 490
+    .line 491
+    const/4 p1, 0x0
+
+    .line 492
+    throw p1
+
+    .line 493
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final zzc(Ljava/lang/Object;)I
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)I"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 2
+    .line 3
+    array-length v0, v0
+
+    .line 4
+    const/4 v1, 0x0
+
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    :goto_0
+    if-ge v1, v0, :cond_2
+
+    .line 7
+    .line 8
+    invoke-direct {p0, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzA(I)I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v3
+
+    .line 12
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 13
+    .line 14
+    aget v4, v4, v1
+
+    .line 15
+    .line 16
+    const v5, 0xfffff
+
+    .line 17
+    .line 18
+    .line 19
+    and-int/2addr v5, v3
+
+    .line 20
+    int-to-long v5, v5
+
+    .line 21
+    invoke-static {v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzC(I)I
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v3
+
+    .line 25
+    const/16 v7, 0x25
+
+    .line 26
+    .line 27
+    packed-switch v3, :pswitch_data_0
+
+    .line 28
+    .line 29
+    .line 30
+    goto/16 :goto_3
+
+    .line 31
+    .line 32
+    :pswitch_0
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v3
+
+    .line 36
+    if-eqz v3, :cond_1
+
+    .line 37
+    .line 38
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 39
+    .line 40
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v3
+
+    .line 44
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
+
+    .line 45
+    .line 46
+    .line 47
+    move-result v3
+
+    .line 48
+    goto/16 :goto_2
+
+    .line 49
+    .line 50
+    :pswitch_1
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 51
+    .line 52
+    .line 53
+    move-result v3
+
+    .line 54
+    if-eqz v3, :cond_1
+
+    .line 55
+    .line 56
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 57
+    .line 58
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-wide v3
+
+    .line 62
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzca;->zze(J)I
+
+    .line 63
+    .line 64
+    .line 65
+    move-result v3
+
+    .line 66
+    goto/16 :goto_2
+
+    .line 67
+    .line 68
+    :pswitch_2
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 69
+    .line 70
+    .line 71
+    move-result v3
+
+    .line 72
+    if-eqz v3, :cond_1
+
+    .line 73
+    .line 74
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 75
+    .line 76
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 77
+    .line 78
+    .line 79
+    move-result v3
+
+    .line 80
+    goto/16 :goto_2
+
+    .line 81
+    .line 82
+    :pswitch_3
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 83
+    .line 84
+    .line 85
+    move-result v3
+
+    .line 86
+    if-eqz v3, :cond_1
+
+    .line 87
+    .line 88
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 89
+    .line 90
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 91
+    .line 92
+    .line 93
+    move-result-wide v3
+
+    .line 94
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzca;->zze(J)I
+
+    .line 95
+    .line 96
+    .line 97
+    move-result v3
+
+    .line 98
+    goto/16 :goto_2
+
+    .line 99
+    .line 100
+    :pswitch_4
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 101
+    .line 102
+    .line 103
+    move-result v3
+
+    .line 104
+    if-eqz v3, :cond_1
+
+    .line 105
+    .line 106
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 107
+    .line 108
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 109
+    .line 110
+    .line 111
+    move-result v3
+
+    .line 112
+    goto/16 :goto_2
+
+    .line 113
+    .line 114
+    :pswitch_5
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 115
+    .line 116
+    .line 117
+    move-result v3
+
+    .line 118
+    if-eqz v3, :cond_1
+
+    .line 119
+    .line 120
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 121
+    .line 122
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 123
+    .line 124
+    .line 125
+    move-result v3
+
+    .line 126
+    goto/16 :goto_2
+
+    .line 127
+    .line 128
+    :pswitch_6
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 129
+    .line 130
+    .line 131
+    move-result v3
+
+    .line 132
+    if-eqz v3, :cond_1
+
+    .line 133
+    .line 134
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 135
+    .line 136
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 137
+    .line 138
+    .line 139
+    move-result v3
+
+    .line 140
+    goto/16 :goto_2
+
+    .line 141
+    .line 142
+    :pswitch_7
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 143
+    .line 144
+    .line 145
+    move-result v3
+
+    .line 146
+    if-eqz v3, :cond_1
+
+    .line 147
+    .line 148
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 149
+    .line 150
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 151
+    .line 152
+    .line 153
+    move-result-object v3
+
+    .line 154
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
+
+    .line 155
+    .line 156
+    .line 157
+    move-result v3
+
+    .line 158
+    goto/16 :goto_2
+
+    .line 159
+    .line 160
+    :pswitch_8
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 161
+    .line 162
+    .line 163
+    move-result v3
+
+    .line 164
+    if-eqz v3, :cond_1
+
+    .line 165
+    .line 166
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 167
+    .line 168
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 169
+    .line 170
+    .line 171
+    move-result-object v3
+
+    .line 172
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
+
+    .line 173
+    .line 174
+    .line 175
+    move-result v3
+
+    .line 176
+    goto/16 :goto_2
+
+    .line 177
+    .line 178
+    :pswitch_9
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 179
+    .line 180
+    .line 181
+    move-result v3
+
+    .line 182
+    if-eqz v3, :cond_1
+
+    .line 183
+    .line 184
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 185
+    .line 186
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 187
+    .line 188
+    .line 189
+    move-result-object v3
+
+    .line 190
+    check-cast v3, Ljava/lang/String;
+
+    .line 191
+    .line 192
+    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
+
+    .line 193
+    .line 194
+    .line 195
+    move-result v3
+
+    .line 196
+    goto/16 :goto_2
+
+    .line 197
+    .line 198
+    :pswitch_a
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 199
+    .line 200
+    .line 201
+    move-result v3
+
+    .line 202
+    if-eqz v3, :cond_1
+
+    .line 203
+    .line 204
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 205
+    .line 206
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzH(Ljava/lang/Object;J)Z
+
+    .line 207
+    .line 208
+    .line 209
+    move-result v3
+
+    .line 210
+    invoke-static {v3}, Lcom/google/android/gms/internal/wearable/zzca;->zzf(Z)I
+
+    .line 211
+    .line 212
+    .line 213
+    move-result v3
+
+    .line 214
+    goto/16 :goto_2
+
+    .line 215
+    .line 216
+    :pswitch_b
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 217
+    .line 218
+    .line 219
+    move-result v3
+
+    .line 220
+    if-eqz v3, :cond_1
+
+    .line 221
+    .line 222
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 223
+    .line 224
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 225
+    .line 226
+    .line 227
+    move-result v3
+
+    .line 228
+    goto/16 :goto_2
+
+    .line 229
+    .line 230
+    :pswitch_c
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 231
+    .line 232
+    .line 233
+    move-result v3
+
+    .line 234
+    if-eqz v3, :cond_1
+
+    .line 235
+    .line 236
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 237
+    .line 238
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 239
+    .line 240
+    .line 241
+    move-result-wide v3
+
+    .line 242
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzca;->zze(J)I
+
+    .line 243
+    .line 244
+    .line 245
+    move-result v3
+
+    .line 246
+    goto/16 :goto_2
+
+    .line 247
+    .line 248
+    :pswitch_d
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 249
+    .line 250
+    .line 251
+    move-result v3
+
+    .line 252
+    if-eqz v3, :cond_1
+
+    .line 253
+    .line 254
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 255
+    .line 256
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 257
+    .line 258
+    .line 259
+    move-result v3
+
+    .line 260
+    goto/16 :goto_2
+
+    .line 261
+    .line 262
+    :pswitch_e
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 263
+    .line 264
+    .line 265
+    move-result v3
+
+    .line 266
+    if-eqz v3, :cond_1
+
+    .line 267
+    .line 268
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 269
+    .line 270
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 271
+    .line 272
+    .line 273
+    move-result-wide v3
+
+    .line 274
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzca;->zze(J)I
+
+    .line 275
+    .line 276
+    .line 277
+    move-result v3
+
+    .line 278
+    goto/16 :goto_2
+
+    .line 279
+    .line 280
+    :pswitch_f
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 281
+    .line 282
+    .line 283
+    move-result v3
+
+    .line 284
+    if-eqz v3, :cond_1
+
+    .line 285
+    .line 286
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 287
+    .line 288
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 289
+    .line 290
+    .line 291
+    move-result-wide v3
+
+    .line 292
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzca;->zze(J)I
+
+    .line 293
+    .line 294
+    .line 295
+    move-result v3
+
+    .line 296
+    goto/16 :goto_2
+
+    .line 297
+    .line 298
+    :pswitch_10
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 299
+    .line 300
+    .line 301
+    move-result v3
+
+    .line 302
+    if-eqz v3, :cond_1
+
+    .line 303
+    .line 304
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 305
+    .line 306
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzE(Ljava/lang/Object;J)F
+
+    .line 307
+    .line 308
+    .line 309
+    move-result v3
+
+    .line 310
+    invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 311
+    .line 312
+    .line 313
+    move-result v3
+
+    .line 314
+    goto/16 :goto_2
+
+    .line 315
+    .line 316
+    :pswitch_11
+    invoke-direct {p0, p1, v4, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 317
+    .line 318
+    .line 319
+    move-result v3
+
+    .line 320
+    if-eqz v3, :cond_1
+
+    .line 321
+    .line 322
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 323
+    .line 324
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzD(Ljava/lang/Object;J)D
+
+    .line 325
+    .line 326
+    .line 327
+    move-result-wide v3
+
+    .line 328
+    invoke-static {v3, v4}, Ljava/lang/Double;->doubleToLongBits(D)J
+
+    .line 329
+    .line 330
+    .line 331
+    move-result-wide v3
+
+    .line 332
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzca;->zze(J)I
+
+    .line 333
+    .line 334
+    .line 335
+    move-result v3
+
+    .line 336
+    goto/16 :goto_2
+
+    .line 337
+    .line 338
+    :pswitch_12
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 339
+    .line 340
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 341
+    .line 342
+    .line 343
+    move-result-object v3
+
+    .line 344
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
+
+    .line 345
+    .line 346
+    .line 347
+    move-result v3
+
+    .line 348
+    goto/16 :goto_2
+
+    .line 349
+    .line 350
+    :pswitch_13
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 351
+    .line 352
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 353
+    .line 354
+    .line 355
+    move-result-object v3
+
+    .line 356
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
+
+    .line 357
+    .line 358
+    .line 359
+    move-result v3
+
+    .line 360
+    goto/16 :goto_2
+
+    .line 361
+    .line 362
+    :pswitch_14
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 363
+    .line 364
+    .line 365
+    move-result-object v3
+
+    .line 366
+    if-eqz v3, :cond_0
+
+    .line 367
+    .line 368
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
+
+    .line 369
+    .line 370
+    .line 371
+    move-result v7
+
+    .line 372
+    goto :goto_1
+
+    .line 373
+    :pswitch_15
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 374
+    .line 375
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 376
+    .line 377
+    .line 378
+    move-result-wide v3
+
+    .line 379
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzca;->zze(J)I
+
+    .line 380
+    .line 381
+    .line 382
+    move-result v3
+
+    .line 383
+    goto/16 :goto_2
+
+    .line 384
+    .line 385
+    :pswitch_16
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 386
+    .line 387
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 388
+    .line 389
+    .line 390
+    move-result v3
+
+    .line 391
+    goto/16 :goto_2
+
+    .line 392
+    .line 393
+    :pswitch_17
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 394
+    .line 395
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 396
+    .line 397
+    .line 398
+    move-result-wide v3
+
+    .line 399
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzca;->zze(J)I
+
+    .line 400
+    .line 401
+    .line 402
+    move-result v3
+
+    .line 403
+    goto/16 :goto_2
+
+    .line 404
+    .line 405
+    :pswitch_18
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 406
+    .line 407
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 408
+    .line 409
+    .line 410
+    move-result v3
+
+    .line 411
+    goto/16 :goto_2
+
+    .line 412
+    .line 413
+    :pswitch_19
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 414
+    .line 415
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 416
+    .line 417
+    .line 418
+    move-result v3
+
+    .line 419
+    goto/16 :goto_2
+
+    .line 420
+    .line 421
+    :pswitch_1a
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 422
+    .line 423
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 424
+    .line 425
+    .line 426
+    move-result v3
+
+    .line 427
+    goto/16 :goto_2
+
+    .line 428
+    .line 429
+    :pswitch_1b
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 430
+    .line 431
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 432
+    .line 433
+    .line 434
+    move-result-object v3
+
+    .line 435
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
+
+    .line 436
+    .line 437
+    .line 438
+    move-result v3
+
+    .line 439
+    goto/16 :goto_2
+
+    .line 440
+    .line 441
+    :pswitch_1c
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 442
+    .line 443
+    .line 444
+    move-result-object v3
+
+    .line 445
+    if-eqz v3, :cond_0
+
+    .line 446
+    .line 447
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
+
+    .line 448
+    .line 449
+    .line 450
+    move-result v7
+
+    .line 451
+    :cond_0
+    :goto_1
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 452
+    .line 453
+    add-int/2addr v2, v7
+
+    .line 454
+    goto :goto_3
+
+    .line 455
+    :pswitch_1d
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 456
+    .line 457
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 458
+    .line 459
+    .line 460
+    move-result-object v3
+
+    .line 461
+    check-cast v3, Ljava/lang/String;
+
+    .line 462
+    .line 463
+    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
+
+    .line 464
+    .line 465
+    .line 466
+    move-result v3
+
+    .line 467
+    goto :goto_2
+
+    .line 468
+    :pswitch_1e
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 469
+    .line 470
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzh(Ljava/lang/Object;J)Z
+
+    .line 471
+    .line 472
+    .line 473
+    move-result v3
+
+    .line 474
+    invoke-static {v3}, Lcom/google/android/gms/internal/wearable/zzca;->zzf(Z)I
+
+    .line 475
+    .line 476
+    .line 477
+    move-result v3
+
+    .line 478
+    goto :goto_2
+
+    .line 479
+    :pswitch_1f
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 480
+    .line 481
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 482
+    .line 483
+    .line 484
+    move-result v3
+
+    .line 485
+    goto :goto_2
+
+    .line 486
+    :pswitch_20
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 487
+    .line 488
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 489
+    .line 490
+    .line 491
+    move-result-wide v3
+
+    .line 492
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzca;->zze(J)I
+
+    .line 493
+    .line 494
+    .line 495
+    move-result v3
+
+    .line 496
+    goto :goto_2
+
+    .line 497
+    :pswitch_21
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 498
+    .line 499
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 500
+    .line 501
+    .line 502
+    move-result v3
+
+    .line 503
+    goto :goto_2
+
+    .line 504
+    :pswitch_22
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 505
+    .line 506
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 507
+    .line 508
+    .line 509
+    move-result-wide v3
+
+    .line 510
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzca;->zze(J)I
+
+    .line 511
+    .line 512
+    .line 513
+    move-result v3
+
+    .line 514
+    goto :goto_2
+
+    .line 515
+    :pswitch_23
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 516
+    .line 517
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 518
+    .line 519
+    .line 520
+    move-result-wide v3
+
+    .line 521
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzca;->zze(J)I
+
+    .line 522
+    .line 523
+    .line 524
+    move-result v3
+
+    .line 525
+    goto :goto_2
+
+    .line 526
+    :pswitch_24
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 527
+    .line 528
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzj(Ljava/lang/Object;J)F
+
+    .line 529
+    .line 530
+    .line 531
+    move-result v3
+
+    .line 532
+    invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 533
+    .line 534
+    .line 535
+    move-result v3
+
+    .line 536
+    goto :goto_2
+
+    .line 537
+    :pswitch_25
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 538
+    .line 539
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzl(Ljava/lang/Object;J)D
+
+    .line 540
+    .line 541
+    .line 542
+    move-result-wide v3
+
+    .line 543
+    invoke-static {v3, v4}, Ljava/lang/Double;->doubleToLongBits(D)J
+
+    .line 544
+    .line 545
+    .line 546
+    move-result-wide v3
+
+    .line 547
+    invoke-static {v3, v4}, Lcom/google/android/gms/internal/wearable/zzca;->zze(J)I
+
+    .line 548
+    .line 549
+    .line 550
+    move-result v3
+
+    .line 551
+    :goto_2
+    add-int/2addr v2, v3
+
+    .line 552
+    :cond_1
+    :goto_3
+    add-int/lit8 v1, v1, 0x3
+
+    .line 553
+    .line 554
+    goto/16 :goto_0
+
+    .line 555
+    .line 556
+    :cond_2
+    mul-int/lit8 v2, v2, 0x35
+
+    .line 557
+    .line 558
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzn:Lcom/google/android/gms/internal/wearable/zzdw;
+
+    .line 559
+    .line 560
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/wearable/zzdw;->zzd(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 561
+    .line 562
+    .line 563
+    move-result-object v0
+
+    .line 564
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 565
+    .line 566
+    .line 567
+    move-result v0
+
+    .line 568
+    add-int/2addr v2, v0
+
+    .line 569
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzh:Z
+
+    .line 570
+    .line 571
+    if-nez v0, :cond_3
+
+    .line 572
+    .line 573
+    return v2
+
+    .line 574
+    :cond_3
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzo:Lcom/google/android/gms/internal/wearable/zzbh;
+
+    .line 575
+    .line 576
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/wearable/zzbh;->zzb(Ljava/lang/Object;)Lcom/google/android/gms/internal/wearable/zzbl;
+
+    .line 577
+    .line 578
+    .line 579
+    const/4 p1, 0x0
+
+    .line 580
+    throw p1
+
+    .line 581
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_25
+        :pswitch_24
+        :pswitch_23
+        :pswitch_22
+        :pswitch_21
+        :pswitch_20
+        :pswitch_1f
+        :pswitch_1e
+        :pswitch_1d
+        :pswitch_1c
+        :pswitch_1b
+        :pswitch_1a
+        :pswitch_19
+        :pswitch_18
+        :pswitch_17
+        :pswitch_16
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final zzd(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    :goto_0
+    iget-object v1, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 6
+    .line 7
+    array-length v1, v1
+
+    .line 8
+    if-ge v0, v1, :cond_1
+
+    .line 9
+    .line 10
+    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzA(I)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v1
+
+    .line 14
+    const v2, 0xfffff
+
+    .line 15
+    .line 16
+    .line 17
+    and-int/2addr v2, v1
+
+    .line 18
+    int-to-long v2, v2
+
+    .line 19
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 20
+    .line 21
+    aget v4, v4, v0
+
+    .line 22
+    .line 23
+    invoke-static {v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzC(I)I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    packed-switch v1, :pswitch_data_0
+
+    .line 28
+    .line 29
+    .line 30
+    goto/16 :goto_1
+
+    .line 31
+    .line 32
+    :pswitch_0
+    invoke-direct {p0, p1, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzp(Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 33
+    .line 34
+    .line 35
+    goto/16 :goto_1
+
+    .line 36
+    .line 37
+    :pswitch_1
+    invoke-direct {p0, p2, v4, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v1
+
+    .line 41
+    if-eqz v1, :cond_0
+
+    .line 42
+    .line 43
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v1
+
+    .line 47
+    invoke-static {p1, v2, v3, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzo(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-direct {p0, p1, v4, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzN(Ljava/lang/Object;II)V
+
+    .line 51
+    .line 52
+    .line 53
+    goto/16 :goto_1
+
+    .line 54
+    .line 55
+    :pswitch_2
+    invoke-direct {p0, p1, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzp(Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 56
+    .line 57
+    .line 58
+    goto/16 :goto_1
+
+    .line 59
+    .line 60
+    :pswitch_3
+    invoke-direct {p0, p2, v4, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 61
+    .line 62
+    .line 63
+    move-result v1
+
+    .line 64
+    if-eqz v1, :cond_0
+
+    .line 65
+    .line 66
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object v1
+
+    .line 70
+    invoke-static {p1, v2, v3, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzo(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 71
+    .line 72
+    .line 73
+    invoke-direct {p0, p1, v4, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzN(Ljava/lang/Object;II)V
+
+    .line 74
+    .line 75
+    .line 76
+    goto/16 :goto_1
+
+    .line 77
+    .line 78
+    :pswitch_4
+    iget-object v1, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzq:Lcom/google/android/gms/internal/wearable/zzcs;
+
+    .line 79
+    .line 80
+    invoke-static {v1, p1, p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzdk;->zzI(Lcom/google/android/gms/internal/wearable/zzcs;Ljava/lang/Object;Ljava/lang/Object;J)V
+
+    .line 81
+    .line 82
+    .line 83
+    goto/16 :goto_1
+
+    .line 84
+    .line 85
+    :pswitch_5
+    iget-object v1, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzm:Lcom/google/android/gms/internal/wearable/zzcl;
+
+    .line 86
+    .line 87
+    invoke-virtual {v1, p1, p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzcl;->zzb(Ljava/lang/Object;Ljava/lang/Object;J)V
+
+    .line 88
+    .line 89
+    .line 90
+    goto/16 :goto_1
+
+    .line 91
+    .line 92
+    :pswitch_6
+    invoke-direct {p0, p1, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzo(Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 93
+    .line 94
+    .line 95
+    goto/16 :goto_1
+
+    .line 96
+    .line 97
+    :pswitch_7
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 98
+    .line 99
+    .line 100
+    move-result v1
+
+    .line 101
+    if-eqz v1, :cond_0
+
+    .line 102
+    .line 103
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 104
+    .line 105
+    .line 106
+    move-result-wide v4
+
+    .line 107
+    invoke-static {p1, v2, v3, v4, v5}, Lcom/google/android/gms/internal/wearable/zzeg;->zzg(Ljava/lang/Object;JJ)V
+
+    .line 108
+    .line 109
+    .line 110
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 111
+    .line 112
+    .line 113
+    goto/16 :goto_1
+
+    .line 114
+    .line 115
+    :pswitch_8
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 116
+    .line 117
+    .line 118
+    move-result v1
+
+    .line 119
+    if-eqz v1, :cond_0
+
+    .line 120
+    .line 121
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 122
+    .line 123
+    .line 124
+    move-result v1
+
+    .line 125
+    invoke-static {p1, v2, v3, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zze(Ljava/lang/Object;JI)V
+
+    .line 126
+    .line 127
+    .line 128
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 129
+    .line 130
+    .line 131
+    goto/16 :goto_1
+
+    .line 132
+    .line 133
+    :pswitch_9
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 134
+    .line 135
+    .line 136
+    move-result v1
+
+    .line 137
+    if-eqz v1, :cond_0
+
+    .line 138
+    .line 139
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 140
+    .line 141
+    .line 142
+    move-result-wide v4
+
+    .line 143
+    invoke-static {p1, v2, v3, v4, v5}, Lcom/google/android/gms/internal/wearable/zzeg;->zzg(Ljava/lang/Object;JJ)V
+
+    .line 144
+    .line 145
+    .line 146
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 147
+    .line 148
+    .line 149
+    goto/16 :goto_1
+
+    .line 150
+    .line 151
+    :pswitch_a
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 152
+    .line 153
+    .line 154
+    move-result v1
+
+    .line 155
+    if-eqz v1, :cond_0
+
+    .line 156
+    .line 157
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 158
+    .line 159
+    .line 160
+    move-result v1
+
+    .line 161
+    invoke-static {p1, v2, v3, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zze(Ljava/lang/Object;JI)V
+
+    .line 162
+    .line 163
+    .line 164
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 165
+    .line 166
+    .line 167
+    goto/16 :goto_1
+
+    .line 168
+    .line 169
+    :pswitch_b
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 170
+    .line 171
+    .line 172
+    move-result v1
+
+    .line 173
+    if-eqz v1, :cond_0
+
+    .line 174
+    .line 175
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 176
+    .line 177
+    .line 178
+    move-result v1
+
+    .line 179
+    invoke-static {p1, v2, v3, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zze(Ljava/lang/Object;JI)V
+
+    .line 180
+    .line 181
+    .line 182
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 183
+    .line 184
+    .line 185
+    goto/16 :goto_1
+
+    .line 186
+    .line 187
+    :pswitch_c
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 188
+    .line 189
+    .line 190
+    move-result v1
+
+    .line 191
+    if-eqz v1, :cond_0
+
+    .line 192
+    .line 193
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 194
+    .line 195
+    .line 196
+    move-result v1
+
+    .line 197
+    invoke-static {p1, v2, v3, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zze(Ljava/lang/Object;JI)V
+
+    .line 198
+    .line 199
+    .line 200
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 201
+    .line 202
+    .line 203
+    goto/16 :goto_1
+
+    .line 204
+    .line 205
+    :pswitch_d
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 206
+    .line 207
+    .line 208
+    move-result v1
+
+    .line 209
+    if-eqz v1, :cond_0
+
+    .line 210
+    .line 211
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 212
+    .line 213
+    .line 214
+    move-result-object v1
+
+    .line 215
+    invoke-static {p1, v2, v3, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzo(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 216
+    .line 217
+    .line 218
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 219
+    .line 220
+    .line 221
+    goto/16 :goto_1
+
+    .line 222
+    .line 223
+    :pswitch_e
+    invoke-direct {p0, p1, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzo(Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 224
+    .line 225
+    .line 226
+    goto/16 :goto_1
+
+    .line 227
+    .line 228
+    :pswitch_f
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 229
+    .line 230
+    .line 231
+    move-result v1
+
+    .line 232
+    if-eqz v1, :cond_0
+
+    .line 233
+    .line 234
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 235
+    .line 236
+    .line 237
+    move-result-object v1
+
+    .line 238
+    invoke-static {p1, v2, v3, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzo(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 239
+    .line 240
+    .line 241
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 242
+    .line 243
+    .line 244
+    goto/16 :goto_1
+
+    .line 245
+    .line 246
+    :pswitch_10
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 247
+    .line 248
+    .line 249
+    move-result v1
+
+    .line 250
+    if-eqz v1, :cond_0
+
+    .line 251
+    .line 252
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzh(Ljava/lang/Object;J)Z
+
+    .line 253
+    .line 254
+    .line 255
+    move-result v1
+
+    .line 256
+    invoke-static {p1, v2, v3, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzi(Ljava/lang/Object;JZ)V
+
+    .line 257
+    .line 258
+    .line 259
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 260
+    .line 261
+    .line 262
+    goto/16 :goto_1
+
+    .line 263
+    .line 264
+    :pswitch_11
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 265
+    .line 266
+    .line 267
+    move-result v1
+
+    .line 268
+    if-eqz v1, :cond_0
+
+    .line 269
+    .line 270
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 271
+    .line 272
+    .line 273
+    move-result v1
+
+    .line 274
+    invoke-static {p1, v2, v3, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zze(Ljava/lang/Object;JI)V
+
+    .line 275
+    .line 276
+    .line 277
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 278
+    .line 279
+    .line 280
+    goto :goto_1
+
+    .line 281
+    :pswitch_12
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 282
+    .line 283
+    .line 284
+    move-result v1
+
+    .line 285
+    if-eqz v1, :cond_0
+
+    .line 286
+    .line 287
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 288
+    .line 289
+    .line 290
+    move-result-wide v4
+
+    .line 291
+    invoke-static {p1, v2, v3, v4, v5}, Lcom/google/android/gms/internal/wearable/zzeg;->zzg(Ljava/lang/Object;JJ)V
+
+    .line 292
+    .line 293
+    .line 294
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 295
+    .line 296
+    .line 297
+    goto :goto_1
+
+    .line 298
+    :pswitch_13
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 299
+    .line 300
+    .line 301
+    move-result v1
+
+    .line 302
+    if-eqz v1, :cond_0
+
+    .line 303
+    .line 304
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 305
+    .line 306
+    .line 307
+    move-result v1
+
+    .line 308
+    invoke-static {p1, v2, v3, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zze(Ljava/lang/Object;JI)V
+
+    .line 309
+    .line 310
+    .line 311
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 312
+    .line 313
+    .line 314
+    goto :goto_1
+
+    .line 315
+    :pswitch_14
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 316
+    .line 317
+    .line 318
+    move-result v1
+
+    .line 319
+    if-eqz v1, :cond_0
+
+    .line 320
+    .line 321
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 322
+    .line 323
+    .line 324
+    move-result-wide v4
+
+    .line 325
+    invoke-static {p1, v2, v3, v4, v5}, Lcom/google/android/gms/internal/wearable/zzeg;->zzg(Ljava/lang/Object;JJ)V
+
+    .line 326
+    .line 327
+    .line 328
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 329
+    .line 330
+    .line 331
+    goto :goto_1
+
+    .line 332
+    :pswitch_15
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 333
+    .line 334
+    .line 335
+    move-result v1
+
+    .line 336
+    if-eqz v1, :cond_0
+
+    .line 337
+    .line 338
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 339
+    .line 340
+    .line 341
+    move-result-wide v4
+
+    .line 342
+    invoke-static {p1, v2, v3, v4, v5}, Lcom/google/android/gms/internal/wearable/zzeg;->zzg(Ljava/lang/Object;JJ)V
+
+    .line 343
+    .line 344
+    .line 345
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 346
+    .line 347
+    .line 348
+    goto :goto_1
+
+    .line 349
+    :pswitch_16
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 350
+    .line 351
+    .line 352
+    move-result v1
+
+    .line 353
+    if-eqz v1, :cond_0
+
+    .line 354
+    .line 355
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzj(Ljava/lang/Object;J)F
+
+    .line 356
+    .line 357
+    .line 358
+    move-result v1
+
+    .line 359
+    invoke-static {p1, v2, v3, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzk(Ljava/lang/Object;JF)V
+
+    .line 360
+    .line 361
+    .line 362
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 363
+    .line 364
+    .line 365
+    goto :goto_1
+
+    .line 366
+    :pswitch_17
+    invoke-direct {p0, p2, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 367
+    .line 368
+    .line 369
+    move-result v1
+
+    .line 370
+    if-eqz v1, :cond_0
+
+    .line 371
+    .line 372
+    invoke-static {p2, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzl(Ljava/lang/Object;J)D
+
+    .line 373
+    .line 374
+    .line 375
+    move-result-wide v4
+
+    .line 376
+    invoke-static {p1, v2, v3, v4, v5}, Lcom/google/android/gms/internal/wearable/zzeg;->zzm(Ljava/lang/Object;JD)V
+
+    .line 377
+    .line 378
+    .line 379
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzL(Ljava/lang/Object;I)V
+
+    .line 380
+    .line 381
+    .line 382
+    :cond_0
+    :goto_1
+    add-int/lit8 v0, v0, 0x3
+
+    .line 383
+    .line 384
+    goto/16 :goto_0
+
+    .line 385
+    .line 386
+    :cond_1
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzn:Lcom/google/android/gms/internal/wearable/zzdw;
+
+    .line 387
+    .line 388
+    invoke-static {v0, p1, p2}, Lcom/google/android/gms/internal/wearable/zzdk;->zzF(Lcom/google/android/gms/internal/wearable/zzdw;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 389
+    .line 390
+    .line 391
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzh:Z
+
+    .line 392
+    .line 393
+    if-eqz v0, :cond_2
+
+    .line 394
+    .line 395
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzo:Lcom/google/android/gms/internal/wearable/zzbh;
+
+    .line 396
+    .line 397
+    invoke-static {v0, p1, p2}, Lcom/google/android/gms/internal/wearable/zzdk;->zzE(Lcom/google/android/gms/internal/wearable/zzbh;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 398
+    .line 399
+    .line 400
+    :cond_2
+    return-void
+
+    .line 401
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_17
+        :pswitch_16
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final zze(Ljava/lang/Object;)I
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)I"
+        }
+    .end annotation
+
+    .line 1
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzi:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/wearable/zzda;->zzr(Ljava/lang/Object;)I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p1
+
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/wearable/zzda;->zzq(Ljava/lang/Object;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    :goto_0
+    return p1
+.end method
+
+.method final zzg(Ljava/lang/Object;[BIIILcom/google/android/gms/internal/wearable/zzai;)I
+    .locals 28
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;[BIII",
+            "Lcom/google/android/gms/internal/wearable/zzai;",
+            ")I"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    move-object/from16 v15, p0
+
+    .line 2
+    .line 3
+    move-object/from16 v14, p1
+
+    .line 4
+    .line 5
+    move-object/from16 v12, p2
+
+    .line 6
+    .line 7
+    move/from16 v13, p4
+
+    .line 8
+    .line 9
+    move/from16 v11, p5
+
+    .line 10
+    .line 11
+    move-object/from16 v9, p6
+
+    .line 12
+    .line 13
+    sget-object v10, Lcom/google/android/gms/internal/wearable/zzda;->zzb:Lsun/misc/Unsafe;
+
+    .line 14
+    .line 15
+    const/16 v16, 0x0
+
+    .line 16
+    .line 17
+    move/from16 v0, p3
+
+    .line 18
+    .line 19
+    const/4 v1, 0x0
+
+    .line 20
+    const/4 v2, -0x1
+
+    .line 21
+    const/4 v3, 0x0
+
+    .line 22
+    const/4 v5, 0x0
+
+    .line 23
+    const v6, 0xfffff
+
+    .line 24
+    .line 25
+    .line 26
+    :goto_0
+    const/16 v17, 0x0
+
+    .line 27
+    .line 28
+    if-ge v0, v13, :cond_1b
+
+    .line 29
+    .line 30
+    add-int/lit8 v1, v0, 0x1
+
+    .line 31
+    .line 32
+    aget-byte v0, v12, v0
+
+    .line 33
+    .line 34
+    if-gez v0, :cond_0
+
+    .line 35
+    .line 36
+    invoke-static {v0, v12, v1, v9}, Lcom/google/android/gms/internal/wearable/zzaj;->zzb(I[BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 37
+    .line 38
+    .line 39
+    move-result v0
+
+    .line 40
+    iget v1, v9, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    .line 41
+    .line 42
+    move v4, v1
+
+    .line 43
+    move v1, v0
+
+    .line 44
+    goto :goto_1
+
+    .line 45
+    :cond_0
+    move v4, v0
+
+    .line 46
+    :goto_1
+    ushr-int/lit8 v0, v4, 0x3
+
+    .line 47
+    .line 48
+    and-int/lit8 v8, v4, 0x7
+
+    .line 49
+    .line 50
+    const/4 v7, 0x3
+
+    .line 51
+    if-le v0, v2, :cond_1
+
+    .line 52
+    .line 53
+    div-int/2addr v3, v7
+
+    .line 54
+    invoke-direct {v15, v0, v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzP(II)I
+
+    .line 55
+    .line 56
+    .line 57
+    move-result v2
+
+    .line 58
+    goto :goto_2
+
+    .line 59
+    :cond_1
+    invoke-direct {v15, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzO(I)I
+
+    .line 60
+    .line 61
+    .line 62
+    move-result v2
+
+    .line 63
+    :goto_2
+    const/4 v3, -0x1
+
+    .line 64
+    if-ne v2, v3, :cond_2
+
+    .line 65
+    .line 66
+    move/from16 v20, v0
+
+    .line 67
+    .line 68
+    move v2, v1
+
+    .line 69
+    move v7, v4
+
+    .line 70
+    move/from16 v21, v5
+
+    .line 71
+    .line 72
+    move-object/from16 v27, v10
+
+    .line 73
+    .line 74
+    move v15, v11
+
+    .line 75
+    const/16 v19, 0x0
+
+    .line 76
+    .line 77
+    const/16 v26, -0x1
+
+    .line 78
+    .line 79
+    goto/16 :goto_11
+
+    .line 80
+    .line 81
+    :cond_2
+    iget-object v3, v15, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 82
+    .line 83
+    add-int/lit8 v20, v2, 0x1
+
+    .line 84
+    .line 85
+    aget v3, v3, v20
+
+    .line 86
+    .line 87
+    invoke-static {v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzC(I)I
+
+    .line 88
+    .line 89
+    .line 90
+    move-result v7
+
+    .line 91
+    move/from16 v20, v0
+
+    .line 92
+    .line 93
+    const v18, 0xfffff
+
+    .line 94
+    .line 95
+    .line 96
+    and-int v0, v3, v18
+
+    .line 97
+    .line 98
+    move/from16 v22, v3
+
+    .line 99
+    .line 100
+    move/from16 v21, v4
+
+    .line 101
+    .line 102
+    int-to-long v3, v0
+
+    .line 103
+    const/16 v0, 0x11
+
+    .line 104
+    .line 105
+    if-gt v7, v0, :cond_e
+
+    .line 106
+    .line 107
+    iget-object v0, v15, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 108
+    .line 109
+    add-int/lit8 v23, v2, 0x2
+
+    .line 110
+    .line 111
+    aget v0, v0, v23
+
+    .line 112
+    .line 113
+    ushr-int/lit8 v23, v0, 0x14
+
+    .line 114
+    .line 115
+    const/4 v11, 0x1
+
+    .line 116
+    shl-int v23, v11, v23
+
+    .line 117
+    .line 118
+    const v11, 0xfffff
+
+    .line 119
+    .line 120
+    .line 121
+    and-int/2addr v0, v11
+
+    .line 122
+    if-eq v0, v6, :cond_4
+
+    .line 123
+    .line 124
+    if-eq v6, v11, :cond_3
+
+    .line 125
+    .line 126
+    int-to-long v11, v6
+
+    .line 127
+    invoke-virtual {v10, v14, v11, v12, v5}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    .line 128
+    .line 129
+    .line 130
+    :cond_3
+    int-to-long v5, v0
+
+    .line 131
+    invoke-virtual {v10, v14, v5, v6}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    .line 132
+    .line 133
+    .line 134
+    move-result v5
+
+    .line 135
+    move v11, v0
+
+    .line 136
+    goto :goto_3
+
+    .line 137
+    :cond_4
+    move v11, v6
+
+    .line 138
+    :goto_3
+    move v6, v5
+
+    .line 139
+    const/4 v0, 0x5
+
+    .line 140
+    packed-switch v7, :pswitch_data_0
+
+    .line 141
+    .line 142
+    .line 143
+    move-object/from16 v12, p2
+
+    .line 144
+    .line 145
+    move v7, v2
+
+    .line 146
+    move/from16 p3, v11
+
+    .line 147
+    .line 148
+    move/from16 v13, v20
+
+    .line 149
+    .line 150
+    move/from16 v11, v21
+
+    .line 151
+    .line 152
+    const/4 v0, 0x3
+
+    .line 153
+    const/16 v19, -0x1
+
+    .line 154
+    .line 155
+    move v2, v1
+
+    .line 156
+    if-ne v8, v0, :cond_c
+
+    .line 157
+    .line 158
+    invoke-direct {v15, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 159
+    .line 160
+    .line 161
+    move-result-object v0
+
+    .line 162
+    shl-int/lit8 v1, v13, 0x3
+
+    .line 163
+    .line 164
+    or-int/lit8 v5, v1, 0x4
+
+    .line 165
+    .line 166
+    move-object/from16 v1, p2
+
+    .line 167
+    .line 168
+    move/from16 v20, v13
+
+    .line 169
+    .line 170
+    move-wide v12, v3
+
+    .line 171
+    move/from16 v3, p4
+
+    .line 172
+    .line 173
+    move v4, v5
+
+    .line 174
+    move-object/from16 v5, p6
+
+    .line 175
+    .line 176
+    invoke-static/range {v0 .. v5}, Lcom/google/android/gms/internal/wearable/zzaj;->zzj(Lcom/google/android/gms/internal/wearable/zzdi;[BIIILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 177
+    .line 178
+    .line 179
+    move-result v0
+
+    .line 180
+    and-int v1, v6, v23
+
+    .line 181
+    .line 182
+    if-nez v1, :cond_d
+
+    .line 183
+    .line 184
+    iget-object v1, v9, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 185
+    .line 186
+    invoke-virtual {v10, v14, v12, v13, v1}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 187
+    .line 188
+    .line 189
+    goto/16 :goto_a
+
+    .line 190
+    .line 191
+    :pswitch_0
+    if-nez v8, :cond_5
+
+    .line 192
+    .line 193
+    move-object/from16 v12, p2
+
+    .line 194
+    .line 195
+    invoke-static {v12, v1, v9}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 196
+    .line 197
+    .line 198
+    move-result v7
+
+    .line 199
+    iget-wide v0, v9, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    .line 200
+    .line 201
+    invoke-static {v0, v1}, Lcom/google/android/gms/internal/wearable/zzax;->zzc(J)J
+
+    .line 202
+    .line 203
+    .line 204
+    move-result-wide v24
+
+    .line 205
+    move/from16 v8, v20
+
+    .line 206
+    .line 207
+    move-object v0, v10
+
+    .line 208
+    move-object/from16 v1, p1
+
+    .line 209
+    .line 210
+    move v5, v2
+
+    .line 211
+    const/16 v19, -0x1
+
+    .line 212
+    .line 213
+    move-wide v2, v3
+
+    .line 214
+    move/from16 v17, v7
+
+    .line 215
+    .line 216
+    move/from16 p3, v11
+
+    .line 217
+    .line 218
+    move/from16 v11, v21
+
+    .line 219
+    .line 220
+    move v7, v5
+
+    .line 221
+    move-wide/from16 v4, v24
+
+    .line 222
+    .line 223
+    invoke-virtual/range {v0 .. v5}, Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V
+
+    .line 224
+    .line 225
+    .line 226
+    or-int v5, v6, v23
+
+    .line 227
+    .line 228
+    move/from16 v6, p3
+
+    .line 229
+    .line 230
+    move v3, v7
+
+    .line 231
+    move v2, v8
+
+    .line 232
+    move v1, v11
+
+    .line 233
+    move/from16 v0, v17
+
+    .line 234
+    .line 235
+    goto/16 :goto_d
+
+    .line 236
+    .line 237
+    :cond_5
+    move-object/from16 v12, p2
+
+    .line 238
+    .line 239
+    move v7, v2
+
+    .line 240
+    move/from16 p3, v11
+
+    .line 241
+    .line 242
+    move/from16 v11, v21
+
+    .line 243
+    .line 244
+    const/16 v19, -0x1
+
+    .line 245
+    .line 246
+    move v2, v1
+
+    .line 247
+    goto/16 :goto_b
+
+    .line 248
+    .line 249
+    :pswitch_1
+    move-object/from16 v12, p2
+
+    .line 250
+    .line 251
+    move v7, v2
+
+    .line 252
+    move/from16 p3, v11
+
+    .line 253
+    .line 254
+    move/from16 v5, v20
+
+    .line 255
+    .line 256
+    move/from16 v11, v21
+
+    .line 257
+    .line 258
+    const/16 v19, -0x1
+
+    .line 259
+    .line 260
+    if-nez v8, :cond_b
+
+    .line 261
+    .line 262
+    invoke-static {v12, v1, v9}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 263
+    .line 264
+    .line 265
+    move-result v0
+
+    .line 266
+    iget v1, v9, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    .line 267
+    .line 268
+    invoke-static {v1}, Lcom/google/android/gms/internal/wearable/zzax;->zzb(I)I
+
+    .line 269
+    .line 270
+    .line 271
+    move-result v1
+
+    .line 272
+    invoke-virtual {v10, v14, v3, v4, v1}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    .line 273
+    .line 274
+    .line 275
+    goto/16 :goto_7
+
+    .line 276
+    .line 277
+    :pswitch_2
+    move-object/from16 v12, p2
+
+    .line 278
+    .line 279
+    move v7, v2
+
+    .line 280
+    move/from16 p3, v11
+
+    .line 281
+    .line 282
+    move/from16 v5, v20
+
+    .line 283
+    .line 284
+    move/from16 v11, v21
+
+    .line 285
+    .line 286
+    const/16 v19, -0x1
+
+    .line 287
+    .line 288
+    if-nez v8, :cond_b
+
+    .line 289
+    .line 290
+    invoke-static {v12, v1, v9}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 291
+    .line 292
+    .line 293
+    move-result v0
+
+    .line 294
+    iget v1, v9, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    .line 295
+    .line 296
+    invoke-direct {v15, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzx(I)Lcom/google/android/gms/internal/wearable/zzbw;
+
+    .line 297
+    .line 298
+    .line 299
+    move-result-object v2
+
+    .line 300
+    if-eqz v2, :cond_7
+
+    .line 301
+    .line 302
+    invoke-interface {v2, v1}, Lcom/google/android/gms/internal/wearable/zzbw;->zza(I)Z
+
+    .line 303
+    .line 304
+    .line 305
+    move-result v2
+
+    .line 306
+    if-eqz v2, :cond_6
+
+    .line 307
+    .line 308
+    goto :goto_4
+
+    .line 309
+    :cond_6
+    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/internal/wearable/zzda;->zzf(Ljava/lang/Object;)Lcom/google/android/gms/internal/wearable/zzdx;
+
+    .line 310
+    .line 311
+    .line 312
+    move-result-object v2
+
+    .line 313
+    int-to-long v3, v1
+
+    .line 314
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 315
+    .line 316
+    .line 317
+    move-result-object v1
+
+    .line 318
+    invoke-virtual {v2, v11, v1}, Lcom/google/android/gms/internal/wearable/zzdx;->zzh(ILjava/lang/Object;)V
+
+    .line 319
+    .line 320
+    .line 321
+    move v2, v5
+
+    .line 322
+    move v5, v6
+
+    .line 323
+    move v3, v7
+
+    .line 324
+    move v1, v11
+
+    .line 325
+    move/from16 v6, p3
+
+    .line 326
+    .line 327
+    goto/16 :goto_d
+
+    .line 328
+    .line 329
+    :cond_7
+    :goto_4
+    invoke-virtual {v10, v14, v3, v4, v1}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    .line 330
+    .line 331
+    .line 332
+    goto/16 :goto_7
+
+    .line 333
+    .line 334
+    :pswitch_3
+    move-object/from16 v12, p2
+
+    .line 335
+    .line 336
+    move v7, v2
+
+    .line 337
+    move/from16 p3, v11
+
+    .line 338
+    .line 339
+    move/from16 v5, v20
+
+    .line 340
+    .line 341
+    move/from16 v11, v21
+
+    .line 342
+    .line 343
+    const/4 v0, 0x2
+
+    .line 344
+    const/16 v19, -0x1
+
+    .line 345
+    .line 346
+    if-ne v8, v0, :cond_b
+
+    .line 347
+    .line 348
+    invoke-static {v12, v1, v9}, Lcom/google/android/gms/internal/wearable/zzaj;->zzh([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 349
+    .line 350
+    .line 351
+    move-result v0
+
+    .line 352
+    iget-object v1, v9, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 353
+    .line 354
+    invoke-virtual {v10, v14, v3, v4, v1}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 355
+    .line 356
+    .line 357
+    goto/16 :goto_7
+
+    .line 358
+    .line 359
+    :pswitch_4
+    move-object/from16 v12, p2
+
+    .line 360
+    .line 361
+    move v7, v2
+
+    .line 362
+    move/from16 p3, v11
+
+    .line 363
+    .line 364
+    move/from16 v5, v20
+
+    .line 365
+    .line 366
+    move/from16 v11, v21
+
+    .line 367
+    .line 368
+    const/4 v0, 0x2
+
+    .line 369
+    const/16 v19, -0x1
+
+    .line 370
+    .line 371
+    if-ne v8, v0, :cond_b
+
+    .line 372
+    .line 373
+    invoke-direct {v15, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 374
+    .line 375
+    .line 376
+    move-result-object v0
+
+    .line 377
+    invoke-static {v0, v12, v1, v13, v9}, Lcom/google/android/gms/internal/wearable/zzaj;->zzi(Lcom/google/android/gms/internal/wearable/zzdi;[BIILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 378
+    .line 379
+    .line 380
+    move-result v0
+
+    .line 381
+    and-int v1, v6, v23
+
+    .line 382
+    .line 383
+    if-nez v1, :cond_8
+
+    .line 384
+    .line 385
+    iget-object v1, v9, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 386
+    .line 387
+    invoke-virtual {v10, v14, v3, v4, v1}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 388
+    .line 389
+    .line 390
+    goto/16 :goto_7
+
+    .line 391
+    .line 392
+    :cond_8
+    invoke-virtual {v10, v14, v3, v4}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 393
+    .line 394
+    .line 395
+    move-result-object v1
+
+    .line 396
+    iget-object v2, v9, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 397
+    .line 398
+    invoke-static {v1, v2}, Lcom/google/android/gms/internal/wearable/zzca;->zzi(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 399
+    .line 400
+    .line 401
+    move-result-object v1
+
+    .line 402
+    invoke-virtual {v10, v14, v3, v4, v1}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 403
+    .line 404
+    .line 405
+    goto :goto_7
+
+    .line 406
+    :pswitch_5
+    move-object/from16 v12, p2
+
+    .line 407
+    .line 408
+    move v7, v2
+
+    .line 409
+    move/from16 p3, v11
+
+    .line 410
+    .line 411
+    move/from16 v5, v20
+
+    .line 412
+    .line 413
+    move/from16 v11, v21
+
+    .line 414
+    .line 415
+    const/4 v0, 0x2
+
+    .line 416
+    const/16 v19, -0x1
+
+    .line 417
+    .line 418
+    if-ne v8, v0, :cond_b
+
+    .line 419
+    .line 420
+    const/high16 v0, 0x20000000
+
+    .line 421
+    .line 422
+    and-int v0, v22, v0
+
+    .line 423
+    .line 424
+    if-nez v0, :cond_9
+
+    .line 425
+    .line 426
+    invoke-static {v12, v1, v9}, Lcom/google/android/gms/internal/wearable/zzaj;->zzf([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 427
+    .line 428
+    .line 429
+    move-result v0
+
+    .line 430
+    goto :goto_5
+
+    .line 431
+    :cond_9
+    invoke-static {v12, v1, v9}, Lcom/google/android/gms/internal/wearable/zzaj;->zzg([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 432
+    .line 433
+    .line 434
+    move-result v0
+
+    .line 435
+    :goto_5
+    iget-object v1, v9, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 436
+    .line 437
+    invoke-virtual {v10, v14, v3, v4, v1}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 438
+    .line 439
+    .line 440
+    goto :goto_7
+
+    .line 441
+    :pswitch_6
+    move-object/from16 v12, p2
+
+    .line 442
+    .line 443
+    move v7, v2
+
+    .line 444
+    move/from16 p3, v11
+
+    .line 445
+    .line 446
+    move/from16 v5, v20
+
+    .line 447
+    .line 448
+    move/from16 v11, v21
+
+    .line 449
+    .line 450
+    const/16 v19, -0x1
+
+    .line 451
+    .line 452
+    if-nez v8, :cond_b
+
+    .line 453
+    .line 454
+    invoke-static {v12, v1, v9}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 455
+    .line 456
+    .line 457
+    move-result v0
+
+    .line 458
+    iget-wide v1, v9, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    .line 459
+    .line 460
+    const-wide/16 v20, 0x0
+
+    .line 461
+    .line 462
+    cmp-long v8, v1, v20
+
+    .line 463
+    .line 464
+    if-eqz v8, :cond_a
+
+    .line 465
+    .line 466
+    const/4 v1, 0x1
+
+    .line 467
+    goto :goto_6
+
+    .line 468
+    :cond_a
+    const/4 v1, 0x0
+
+    .line 469
+    :goto_6
+    invoke-static {v14, v3, v4, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzi(Ljava/lang/Object;JZ)V
+
+    .line 470
+    .line 471
+    .line 472
+    goto :goto_7
+
+    .line 473
+    :pswitch_7
+    move-object/from16 v12, p2
+
+    .line 474
+    .line 475
+    move v7, v2
+
+    .line 476
+    move/from16 p3, v11
+
+    .line 477
+    .line 478
+    move/from16 v5, v20
+
+    .line 479
+    .line 480
+    move/from16 v11, v21
+
+    .line 481
+    .line 482
+    const/16 v19, -0x1
+
+    .line 483
+    .line 484
+    if-ne v8, v0, :cond_b
+
+    .line 485
+    .line 486
+    invoke-static {v12, v1}, Lcom/google/android/gms/internal/wearable/zzaj;->zzd([BI)I
+
+    .line 487
+    .line 488
+    .line 489
+    move-result v0
+
+    .line 490
+    invoke-virtual {v10, v14, v3, v4, v0}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    .line 491
+    .line 492
+    .line 493
+    add-int/lit8 v0, v1, 0x4
+
+    .line 494
+    .line 495
+    :goto_7
+    or-int v1, v6, v23
+
+    .line 496
+    .line 497
+    move/from16 v6, p3
+
+    .line 498
+    .line 499
+    move v2, v5
+
+    .line 500
+    move v3, v7
+
+    .line 501
+    move v5, v1
+
+    .line 502
+    move v1, v11
+
+    .line 503
+    goto/16 :goto_d
+
+    .line 504
+    .line 505
+    :pswitch_8
+    move-object/from16 v12, p2
+
+    .line 506
+    .line 507
+    move v7, v2
+
+    .line 508
+    move/from16 p3, v11
+
+    .line 509
+    .line 510
+    move/from16 v5, v20
+
+    .line 511
+    .line 512
+    move/from16 v11, v21
+
+    .line 513
+    .line 514
+    const/4 v0, 0x1
+
+    .line 515
+    const/16 v19, -0x1
+
+    .line 516
+    .line 517
+    if-ne v8, v0, :cond_b
+
+    .line 518
+    .line 519
+    invoke-static {v12, v1}, Lcom/google/android/gms/internal/wearable/zzaj;->zze([BI)J
+
+    .line 520
+    .line 521
+    .line 522
+    move-result-wide v20
+
+    .line 523
+    move-object v0, v10
+
+    .line 524
+    move v8, v1
+
+    .line 525
+    move-object/from16 v1, p1
+
+    .line 526
+    .line 527
+    move-wide v2, v3
+
+    .line 528
+    move v13, v5
+
+    .line 529
+    move-wide/from16 v4, v20
+
+    .line 530
+    .line 531
+    invoke-virtual/range {v0 .. v5}, Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V
+
+    .line 532
+    .line 533
+    .line 534
+    add-int/lit8 v0, v8, 0x8
+
+    .line 535
+    .line 536
+    goto/16 :goto_8
+
+    .line 537
+    .line 538
+    :cond_b
+    move v2, v1
+
+    .line 539
+    move/from16 v20, v5
+
+    .line 540
+    .line 541
+    goto/16 :goto_b
+
+    .line 542
+    .line 543
+    :pswitch_9
+    move-object/from16 v12, p2
+
+    .line 544
+    .line 545
+    move v7, v2
+
+    .line 546
+    move/from16 p3, v11
+
+    .line 547
+    .line 548
+    move/from16 v13, v20
+
+    .line 549
+    .line 550
+    move/from16 v11, v21
+
+    .line 551
+    .line 552
+    const/16 v19, -0x1
+
+    .line 553
+    .line 554
+    move v2, v1
+
+    .line 555
+    if-nez v8, :cond_c
+
+    .line 556
+    .line 557
+    invoke-static {v12, v2, v9}, Lcom/google/android/gms/internal/wearable/zzaj;->zza([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 558
+    .line 559
+    .line 560
+    move-result v0
+
+    .line 561
+    iget v1, v9, Lcom/google/android/gms/internal/wearable/zzai;->zza:I
+
+    .line 562
+    .line 563
+    invoke-virtual {v10, v14, v3, v4, v1}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    .line 564
+    .line 565
+    .line 566
+    goto/16 :goto_8
+
+    .line 567
+    .line 568
+    :pswitch_a
+    move-object/from16 v12, p2
+
+    .line 569
+    .line 570
+    move v7, v2
+
+    .line 571
+    move/from16 p3, v11
+
+    .line 572
+    .line 573
+    move/from16 v13, v20
+
+    .line 574
+    .line 575
+    move/from16 v11, v21
+
+    .line 576
+    .line 577
+    const/16 v19, -0x1
+
+    .line 578
+    .line 579
+    move v2, v1
+
+    .line 580
+    if-nez v8, :cond_c
+
+    .line 581
+    .line 582
+    invoke-static {v12, v2, v9}, Lcom/google/android/gms/internal/wearable/zzaj;->zzc([BILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 583
+    .line 584
+    .line 585
+    move-result v8
+
+    .line 586
+    iget-wide v1, v9, Lcom/google/android/gms/internal/wearable/zzai;->zzb:J
+
+    .line 587
+    .line 588
+    move-object v0, v10
+
+    .line 589
+    move-wide/from16 v20, v1
+
+    .line 590
+    .line 591
+    move-object/from16 v1, p1
+
+    .line 592
+    .line 593
+    move-wide v2, v3
+
+    .line 594
+    move-wide/from16 v4, v20
+
+    .line 595
+    .line 596
+    invoke-virtual/range {v0 .. v5}, Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V
+
+    .line 597
+    .line 598
+    .line 599
+    or-int v5, v6, v23
+
+    .line 600
+    .line 601
+    move/from16 v6, p3
+
+    .line 602
+    .line 603
+    move v3, v7
+
+    .line 604
+    move v0, v8
+
+    .line 605
+    goto :goto_9
+
+    .line 606
+    :pswitch_b
+    move-object/from16 v12, p2
+
+    .line 607
+    .line 608
+    move v7, v2
+
+    .line 609
+    move/from16 p3, v11
+
+    .line 610
+    .line 611
+    move/from16 v13, v20
+
+    .line 612
+    .line 613
+    move/from16 v11, v21
+
+    .line 614
+    .line 615
+    const/16 v19, -0x1
+
+    .line 616
+    .line 617
+    move v2, v1
+
+    .line 618
+    if-ne v8, v0, :cond_c
+
+    .line 619
+    .line 620
+    invoke-static {v12, v2}, Lcom/google/android/gms/internal/wearable/zzaj;->zzd([BI)I
+
+    .line 621
+    .line 622
+    .line 623
+    move-result v0
+
+    .line 624
+    invoke-static {v0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    .line 625
+    .line 626
+    .line 627
+    move-result v0
+
+    .line 628
+    invoke-static {v14, v3, v4, v0}, Lcom/google/android/gms/internal/wearable/zzeg;->zzk(Ljava/lang/Object;JF)V
+
+    .line 629
+    .line 630
+    .line 631
+    add-int/lit8 v0, v2, 0x4
+
+    .line 632
+    .line 633
+    goto :goto_8
+
+    .line 634
+    :pswitch_c
+    move-object/from16 v12, p2
+
+    .line 635
+    .line 636
+    move v7, v2
+
+    .line 637
+    move/from16 p3, v11
+
+    .line 638
+    .line 639
+    move/from16 v13, v20
+
+    .line 640
+    .line 641
+    move/from16 v11, v21
+
+    .line 642
+    .line 643
+    const/4 v0, 0x1
+
+    .line 644
+    const/16 v19, -0x1
+
+    .line 645
+    .line 646
+    move v2, v1
+
+    .line 647
+    if-ne v8, v0, :cond_c
+
+    .line 648
+    .line 649
+    invoke-static {v12, v2}, Lcom/google/android/gms/internal/wearable/zzaj;->zze([BI)J
+
+    .line 650
+    .line 651
+    .line 652
+    move-result-wide v0
+
+    .line 653
+    invoke-static {v0, v1}, Ljava/lang/Double;->longBitsToDouble(J)D
+
+    .line 654
+    .line 655
+    .line 656
+    move-result-wide v0
+
+    .line 657
+    invoke-static {v14, v3, v4, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzm(Ljava/lang/Object;JD)V
+
+    .line 658
+    .line 659
+    .line 660
+    add-int/lit8 v0, v2, 0x8
+
+    .line 661
+    .line 662
+    :goto_8
+    or-int v5, v6, v23
+
+    .line 663
+    .line 664
+    move/from16 v6, p3
+
+    .line 665
+    .line 666
+    move v3, v7
+
+    .line 667
+    :goto_9
+    move v1, v11
+
+    .line 668
+    move v2, v13
+
+    .line 669
+    move/from16 v13, p4
+
+    .line 670
+    .line 671
+    goto/16 :goto_d
+
+    .line 672
+    .line 673
+    :cond_c
+    move/from16 v20, v13
+
+    .line 674
+    .line 675
+    goto :goto_b
+
+    .line 676
+    :cond_d
+    invoke-virtual {v10, v14, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 677
+    .line 678
+    .line 679
+    move-result-object v1
+
+    .line 680
+    iget-object v2, v9, Lcom/google/android/gms/internal/wearable/zzai;->zzc:Ljava/lang/Object;
+
+    .line 681
+    .line 682
+    invoke-static {v1, v2}, Lcom/google/android/gms/internal/wearable/zzca;->zzi(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 683
+    .line 684
+    .line 685
+    move-result-object v1
+
+    .line 686
+    invoke-virtual {v10, v14, v12, v13, v1}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 687
+    .line 688
+    .line 689
+    :goto_a
+    or-int v5, v6, v23
+
+    .line 690
+    .line 691
+    move-object/from16 v12, p2
+
+    .line 692
+    .line 693
+    move/from16 v6, p3
+
+    .line 694
+    .line 695
+    move/from16 v13, p4
+
+    .line 696
+    .line 697
+    move v3, v7
+
+    .line 698
+    move v1, v11
+
+    .line 699
+    move/from16 v2, v20
+
+    .line 700
+    .line 701
+    goto/16 :goto_d
+
+    .line 702
+    .line 703
+    :goto_b
+    move/from16 v15, p5
+
+    .line 704
+    .line 705
+    move/from16 v21, v6
+
+    .line 706
+    .line 707
+    move/from16 v19, v7
+
+    .line 708
+    .line 709
+    move-object/from16 v27, v10
+
+    .line 710
+    .line 711
+    move v7, v11
+
+    .line 712
+    const/16 v26, -0x1
+
+    .line 713
+    .line 714
+    move/from16 v6, p3
+
+    .line 715
+    .line 716
+    goto/16 :goto_11
+
+    .line 717
+    .line 718
+    :cond_e
+    move-wide v12, v3
+
+    .line 719
+    move v4, v7
+
+    .line 720
+    move/from16 v11, v21
+
+    .line 721
+    .line 722
+    const/16 v19, -0x1
+
+    .line 723
+    .line 724
+    move v7, v2
+
+    .line 725
+    move v2, v1
+
+    .line 726
+    const/16 v0, 0x1b
+
+    .line 727
+    .line 728
+    if-ne v4, v0, :cond_12
+
+    .line 729
+    .line 730
+    const/4 v0, 0x2
+
+    .line 731
+    if-ne v8, v0, :cond_11
+
+    .line 732
+    .line 733
+    invoke-virtual {v10, v14, v12, v13}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 734
+    .line 735
+    .line 736
+    move-result-object v0
+
+    .line 737
+    check-cast v0, Lcom/google/android/gms/internal/wearable/zzbz;
+
+    .line 738
+    .line 739
+    invoke-interface {v0}, Lcom/google/android/gms/internal/wearable/zzbz;->zza()Z
+
+    .line 740
+    .line 741
+    .line 742
+    move-result v1
+
+    .line 743
+    if-nez v1, :cond_10
+
+    .line 744
+    .line 745
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    .line 746
+    .line 747
+    .line 748
+    move-result v1
+
+    .line 749
+    if-nez v1, :cond_f
+
+    .line 750
+    .line 751
+    const/16 v1, 0xa
+
+    .line 752
+    .line 753
+    goto :goto_c
+
+    .line 754
+    :cond_f
+    add-int/2addr v1, v1
+
+    .line 755
+    :goto_c
+    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/wearable/zzbz;->zze(I)Lcom/google/android/gms/internal/wearable/zzbz;
+
+    .line 756
+    .line 757
+    .line 758
+    move-result-object v0
+
+    .line 759
+    invoke-virtual {v10, v14, v12, v13, v0}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 760
+    .line 761
+    .line 762
+    :cond_10
+    move-object v8, v0
+
+    .line 763
+    invoke-direct {v15, v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 764
+    .line 765
+    .line 766
+    move-result-object v0
+
+    .line 767
+    move v1, v11
+
+    .line 768
+    move v3, v2
+
+    .line 769
+    move-object/from16 v2, p2
+
+    .line 770
+    .line 771
+    move/from16 v4, p4
+
+    .line 772
+    .line 773
+    move/from16 v21, v5
+
+    .line 774
+    .line 775
+    move-object v5, v8
+
+    .line 776
+    move/from16 v23, v6
+
+    .line 777
+    .line 778
+    move-object/from16 v6, p6
+
+    .line 779
+    .line 780
+    invoke-static/range {v0 .. v6}, Lcom/google/android/gms/internal/wearable/zzaj;->zzm(Lcom/google/android/gms/internal/wearable/zzdi;I[BIILcom/google/android/gms/internal/wearable/zzbz;Lcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 781
+    .line 782
+    .line 783
+    move-result v0
+
+    .line 784
+    move-object/from16 v12, p2
+
+    .line 785
+    .line 786
+    move/from16 v13, p4
+
+    .line 787
+    .line 788
+    move v3, v7
+
+    .line 789
+    move/from16 v2, v20
+
+    .line 790
+    .line 791
+    move/from16 v5, v21
+
+    .line 792
+    .line 793
+    move/from16 v6, v23
+
+    .line 794
+    .line 795
+    :goto_d
+    move/from16 v11, p5
+
+    .line 796
+    .line 797
+    goto/16 :goto_0
+
+    .line 798
+    .line 799
+    :cond_11
+    move/from16 v21, v5
+
+    .line 800
+    .line 801
+    move/from16 v23, v6
+
+    .line 802
+    .line 803
+    move/from16 v15, p5
+
+    .line 804
+    .line 805
+    move v14, v2
+
+    .line 806
+    move/from16 v19, v7
+
+    .line 807
+    .line 808
+    move-object/from16 v27, v10
+
+    .line 809
+    .line 810
+    move/from16 v18, v11
+
+    .line 811
+    .line 812
+    const/16 v26, -0x1
+
+    .line 813
+    .line 814
+    goto/16 :goto_f
+
+    .line 815
+    .line 816
+    :cond_12
+    move v3, v2
+
+    .line 817
+    move/from16 v21, v5
+
+    .line 818
+    .line 819
+    move/from16 v23, v6
+
+    .line 820
+    .line 821
+    const/16 v0, 0x31
+
+    .line 822
+    .line 823
+    if-gt v4, v0, :cond_14
+
+    .line 824
+    .line 825
+    move/from16 v5, v22
+
+    .line 826
+    .line 827
+    int-to-long v5, v5
+
+    .line 828
+    move-object/from16 v0, p0
+
+    .line 829
+    .line 830
+    move-object/from16 v1, p1
+
+    .line 831
+    .line 832
+    move-object/from16 v2, p2
+
+    .line 833
+    .line 834
+    move/from16 p3, v3
+
+    .line 835
+    .line 836
+    move/from16 v22, v4
+
+    .line 837
+    .line 838
+    move/from16 v4, p4
+
+    .line 839
+    .line 840
+    move-wide/from16 v24, v5
+
+    .line 841
+    .line 842
+    move v5, v11
+
+    .line 843
+    move/from16 v6, v20
+
+    .line 844
+    .line 845
+    move/from16 v19, v7
+
+    .line 846
+    .line 847
+    const/16 v26, -0x1
+
+    .line 848
+    .line 849
+    move v7, v8
+
+    .line 850
+    move/from16 v8, v19
+
+    .line 851
+    .line 852
+    move-object/from16 v27, v10
+
+    .line 853
+    .line 854
+    move-wide/from16 v9, v24
+
+    .line 855
+    .line 856
+    move/from16 v15, p5
+
+    .line 857
+    .line 858
+    move/from16 v18, v11
+
+    .line 859
+    .line 860
+    move/from16 v11, v22
+
+    .line 861
+    .line 862
+    move-object/from16 v14, p6
+
+    .line 863
+    .line 864
+    invoke-direct/range {v0 .. v14}, Lcom/google/android/gms/internal/wearable/zzda;->zzs(Ljava/lang/Object;[BIIIIIIJIJLcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 865
+    .line 866
+    .line 867
+    move-result v0
+
+    .line 868
+    move/from16 v14, p3
+
+    .line 869
+    .line 870
+    if-eq v0, v14, :cond_13
+
+    .line 871
+    .line 872
+    :goto_e
+    move-object/from16 v14, p1
+
+    .line 873
+    .line 874
+    move-object/from16 v12, p2
+
+    .line 875
+    .line 876
+    move/from16 v13, p4
+
+    .line 877
+    .line 878
+    move-object/from16 v9, p6
+
+    .line 879
+    .line 880
+    move v11, v15
+
+    .line 881
+    move/from16 v1, v18
+
+    .line 882
+    .line 883
+    move/from16 v3, v19
+
+    .line 884
+    .line 885
+    move/from16 v2, v20
+
+    .line 886
+    .line 887
+    move/from16 v5, v21
+
+    .line 888
+    .line 889
+    move/from16 v6, v23
+
+    .line 890
+    .line 891
+    move-object/from16 v10, v27
+
+    .line 892
+    .line 893
+    move-object/from16 v15, p0
+
+    .line 894
+    .line 895
+    goto/16 :goto_0
+
+    .line 896
+    .line 897
+    :cond_13
+    move v2, v0
+
+    .line 898
+    goto :goto_10
+
+    .line 899
+    :cond_14
+    move/from16 v15, p5
+
+    .line 900
+    .line 901
+    move v14, v3
+
+    .line 902
+    move/from16 v19, v7
+
+    .line 903
+    .line 904
+    move-object/from16 v27, v10
+
+    .line 905
+    .line 906
+    move/from16 v18, v11
+
+    .line 907
+    .line 908
+    move/from16 v5, v22
+
+    .line 909
+    .line 910
+    const/16 v26, -0x1
+
+    .line 911
+    .line 912
+    move/from16 v22, v4
+
+    .line 913
+    .line 914
+    const/16 v0, 0x32
+
+    .line 915
+    .line 916
+    move/from16 v9, v22
+
+    .line 917
+    .line 918
+    if-ne v9, v0, :cond_16
+
+    .line 919
+    .line 920
+    const/4 v0, 0x2
+
+    .line 921
+    if-ne v8, v0, :cond_15
+
+    .line 922
+    .line 923
+    move-object/from16 v0, p0
+
+    .line 924
+    .line 925
+    move-object/from16 v1, p1
+
+    .line 926
+    .line 927
+    move-object/from16 v2, p2
+
+    .line 928
+    .line 929
+    move v3, v14
+
+    .line 930
+    move/from16 v4, p4
+
+    .line 931
+    .line 932
+    move/from16 v5, v19
+
+    .line 933
+    .line 934
+    move-wide v6, v12
+
+    .line 935
+    move-object/from16 v8, p6
+
+    .line 936
+    .line 937
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/gms/internal/wearable/zzda;->zzt(Ljava/lang/Object;[BIIIJLcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 938
+    .line 939
+    .line 940
+    move-result v0
+
+    .line 941
+    if-eq v0, v14, :cond_13
+
+    .line 942
+    .line 943
+    goto :goto_e
+
+    .line 944
+    :cond_15
+    :goto_f
+    move v2, v14
+
+    .line 945
+    :goto_10
+    move/from16 v7, v18
+
+    .line 946
+    .line 947
+    move/from16 v6, v23
+
+    .line 948
+    .line 949
+    goto :goto_11
+
+    .line 950
+    :cond_16
+    move-object/from16 v0, p0
+
+    .line 951
+    .line 952
+    move-object/from16 v1, p1
+
+    .line 953
+    .line 954
+    move-object/from16 v2, p2
+
+    .line 955
+    .line 956
+    move v10, v5
+
+    .line 957
+    move v3, v14
+
+    .line 958
+    move/from16 v4, p4
+
+    .line 959
+    .line 960
+    move/from16 v5, v18
+
+    .line 961
+    .line 962
+    move/from16 v6, v20
+
+    .line 963
+    .line 964
+    move v7, v8
+
+    .line 965
+    move v8, v10
+
+    .line 966
+    move-wide v10, v12
+
+    .line 967
+    move/from16 v12, v19
+
+    .line 968
+    .line 969
+    move-object/from16 v13, p6
+
+    .line 970
+    .line 971
+    invoke-direct/range {v0 .. v13}, Lcom/google/android/gms/internal/wearable/zzda;->zzu(Ljava/lang/Object;[BIIIIIIIJILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 972
+    .line 973
+    .line 974
+    move-result v0
+
+    .line 975
+    if-eq v0, v14, :cond_13
+
+    .line 976
+    .line 977
+    goto :goto_e
+
+    .line 978
+    :goto_11
+    if-ne v7, v15, :cond_17
+
+    .line 979
+    .line 980
+    if-eqz v15, :cond_17
+
+    .line 981
+    .line 982
+    move-object/from16 v8, p0
+
+    .line 983
+    .line 984
+    move-object/from16 v12, p1
+
+    .line 985
+    .line 986
+    move v0, v2
+
+    .line 987
+    move v1, v7
+
+    .line 988
+    move v9, v15
+
+    .line 989
+    move/from16 v5, v21
+
+    .line 990
+    .line 991
+    goto/16 :goto_14
+
+    .line 992
+    .line 993
+    :cond_17
+    move-object/from16 v8, p0
+
+    .line 994
+    .line 995
+    move v9, v15
+
+    .line 996
+    iget-boolean v0, v8, Lcom/google/android/gms/internal/wearable/zzda;->zzh:Z
+
+    .line 997
+    .line 998
+    if-eqz v0, :cond_1a
+
+    .line 999
+    .line 1000
+    move-object/from16 v10, p6
+
+    .line 1001
+    .line 1002
+    iget-object v0, v10, Lcom/google/android/gms/internal/wearable/zzai;->zzd:Lcom/google/android/gms/internal/wearable/zzbg;
+
+    .line 1003
+    .line 1004
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzbg;->zza()Lcom/google/android/gms/internal/wearable/zzbg;
+
+    .line 1005
+    .line 1006
+    .line 1007
+    move-result-object v1
+
+    .line 1008
+    if-eq v0, v1, :cond_19
+
+    .line 1009
+    .line 1010
+    iget-object v0, v8, Lcom/google/android/gms/internal/wearable/zzda;->zzg:Lcom/google/android/gms/internal/wearable/zzcx;
+
+    .line 1011
+    .line 1012
+    iget-object v1, v10, Lcom/google/android/gms/internal/wearable/zzai;->zzd:Lcom/google/android/gms/internal/wearable/zzbg;
+
+    .line 1013
+    .line 1014
+    move/from16 v11, v20
+
+    .line 1015
+    .line 1016
+    invoke-virtual {v1, v0, v11}, Lcom/google/android/gms/internal/wearable/zzbg;->zzb(Lcom/google/android/gms/internal/wearable/zzcx;I)Lcom/google/android/gms/internal/wearable/zzbr;
+
+    .line 1017
+    .line 1018
+    .line 1019
+    move-result-object v0
+
+    .line 1020
+    if-nez v0, :cond_18
+
+    .line 1021
+    .line 1022
+    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/internal/wearable/zzda;->zzf(Ljava/lang/Object;)Lcom/google/android/gms/internal/wearable/zzdx;
+
+    .line 1023
+    .line 1024
+    .line 1025
+    move-result-object v4
+
+    .line 1026
+    move v0, v7
+
+    .line 1027
+    move-object/from16 v1, p2
+
+    .line 1028
+    .line 1029
+    move/from16 v3, p4
+
+    .line 1030
+    .line 1031
+    move-object/from16 v5, p6
+
+    .line 1032
+    .line 1033
+    invoke-static/range {v0 .. v5}, Lcom/google/android/gms/internal/wearable/zzaj;->zzn(I[BIILcom/google/android/gms/internal/wearable/zzdx;Lcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 1034
+    .line 1035
+    .line 1036
+    move-result v0
+
+    .line 1037
+    move-object/from16 v12, p1
+
+    .line 1038
+    .line 1039
+    goto :goto_13
+
+    .line 1040
+    :cond_18
+    move-object/from16 v12, p1
+
+    .line 1041
+    .line 1042
+    move-object v0, v12
+
+    .line 1043
+    check-cast v0, Lcom/google/android/gms/internal/wearable/zzbq;
+
+    .line 1044
+    .line 1045
+    throw v17
+
+    .line 1046
+    :cond_19
+    move-object/from16 v12, p1
+
+    .line 1047
+    .line 1048
+    goto :goto_12
+
+    .line 1049
+    :cond_1a
+    move-object/from16 v12, p1
+
+    .line 1050
+    .line 1051
+    move-object/from16 v10, p6
+
+    .line 1052
+    .line 1053
+    :goto_12
+    move/from16 v11, v20
+
+    .line 1054
+    .line 1055
+    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/internal/wearable/zzda;->zzf(Ljava/lang/Object;)Lcom/google/android/gms/internal/wearable/zzdx;
+
+    .line 1056
+    .line 1057
+    .line 1058
+    move-result-object v4
+
+    .line 1059
+    move v0, v7
+
+    .line 1060
+    move-object/from16 v1, p2
+
+    .line 1061
+    .line 1062
+    move/from16 v3, p4
+
+    .line 1063
+    .line 1064
+    move-object/from16 v5, p6
+
+    .line 1065
+    .line 1066
+    invoke-static/range {v0 .. v5}, Lcom/google/android/gms/internal/wearable/zzaj;->zzn(I[BIILcom/google/android/gms/internal/wearable/zzdx;Lcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 1067
+    .line 1068
+    .line 1069
+    move-result v0
+
+    .line 1070
+    :goto_13
+    move/from16 v13, p4
+
+    .line 1071
+    .line 1072
+    move v1, v7
+
+    .line 1073
+    move-object v15, v8
+
+    .line 1074
+    move v2, v11
+
+    .line 1075
+    move-object v14, v12
+
+    .line 1076
+    move/from16 v3, v19
+
+    .line 1077
+    .line 1078
+    move/from16 v5, v21
+
+    .line 1079
+    .line 1080
+    move-object/from16 v12, p2
+
+    .line 1081
+    .line 1082
+    move v11, v9
+
+    .line 1083
+    move-object v9, v10
+
+    .line 1084
+    move-object/from16 v10, v27
+
+    .line 1085
+    .line 1086
+    goto/16 :goto_0
+
+    .line 1087
+    .line 1088
+    :cond_1b
+    move/from16 v21, v5
+
+    .line 1089
+    .line 1090
+    move/from16 v23, v6
+
+    .line 1091
+    .line 1092
+    move-object/from16 v27, v10
+
+    .line 1093
+    .line 1094
+    move v9, v11
+
+    .line 1095
+    move-object v12, v14
+
+    .line 1096
+    move-object v8, v15
+
+    .line 1097
+    :goto_14
+    const v2, 0xfffff
+
+    .line 1098
+    .line 1099
+    .line 1100
+    if-eq v6, v2, :cond_1c
+
+    .line 1101
+    .line 1102
+    int-to-long v3, v6
+
+    .line 1103
+    move-object/from16 v6, v27
+
+    .line 1104
+    .line 1105
+    invoke-virtual {v6, v12, v3, v4, v5}, Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V
+
+    .line 1106
+    .line 1107
+    .line 1108
+    :cond_1c
+    iget v3, v8, Lcom/google/android/gms/internal/wearable/zzda;->zzk:I
+
+    .line 1109
+    .line 1110
+    :goto_15
+    iget v4, v8, Lcom/google/android/gms/internal/wearable/zzda;->zzl:I
+
+    .line 1111
+    .line 1112
+    if-ge v3, v4, :cond_1f
+
+    .line 1113
+    .line 1114
+    iget-object v4, v8, Lcom/google/android/gms/internal/wearable/zzda;->zzj:[I
+
+    .line 1115
+    .line 1116
+    aget v4, v4, v3
+
+    .line 1117
+    .line 1118
+    iget-object v5, v8, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 1119
+    .line 1120
+    aget v5, v5, v4
+
+    .line 1121
+    .line 1122
+    invoke-direct {v8, v4}, Lcom/google/android/gms/internal/wearable/zzda;->zzA(I)I
+
+    .line 1123
+    .line 1124
+    .line 1125
+    move-result v5
+
+    .line 1126
+    and-int/2addr v5, v2
+
+    .line 1127
+    int-to-long v5, v5
+
+    .line 1128
+    invoke-static {v12, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 1129
+    .line 1130
+    .line 1131
+    move-result-object v5
+
+    .line 1132
+    if-nez v5, :cond_1d
+
+    .line 1133
+    .line 1134
+    goto :goto_16
+
+    .line 1135
+    :cond_1d
+    invoke-direct {v8, v4}, Lcom/google/android/gms/internal/wearable/zzda;->zzx(I)Lcom/google/android/gms/internal/wearable/zzbw;
+
+    .line 1136
+    .line 1137
+    .line 1138
+    move-result-object v6
+
+    .line 1139
+    if-nez v6, :cond_1e
+
+    .line 1140
+    .line 1141
+    :goto_16
+    add-int/lit8 v3, v3, 0x1
+
+    .line 1142
+    .line 1143
+    goto :goto_15
+
+    .line 1144
+    :cond_1e
+    check-cast v5, Lcom/google/android/gms/internal/wearable/zzcr;
+
+    .line 1145
+    .line 1146
+    invoke-direct {v8, v4}, Lcom/google/android/gms/internal/wearable/zzda;->zzw(I)Ljava/lang/Object;
+
+    .line 1147
+    .line 1148
+    .line 1149
+    move-result-object v0
+
+    .line 1150
+    check-cast v0, Lcom/google/android/gms/internal/wearable/zzcq;
+
+    .line 1151
+    .line 1152
+    throw v17
+
+    .line 1153
+    :cond_1f
+    if-nez v9, :cond_21
+
+    .line 1154
+    .line 1155
+    move/from16 v2, p4
+
+    .line 1156
+    .line 1157
+    if-ne v0, v2, :cond_20
+
+    .line 1158
+    .line 1159
+    goto :goto_17
+
+    .line 1160
+    :cond_20
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzf()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    .line 1161
+    .line 1162
+    .line 1163
+    move-result-object v0
+
+    .line 1164
+    throw v0
+
+    .line 1165
+    :cond_21
+    move/from16 v2, p4
+
+    .line 1166
+    .line 1167
+    if-gt v0, v2, :cond_22
+
+    .line 1168
+    .line 1169
+    if-ne v1, v9, :cond_22
+
+    .line 1170
+    .line 1171
+    :goto_17
+    return v0
+
+    .line 1172
+    :cond_22
+    invoke-static {}, Lcom/google/android/gms/internal/wearable/zzcc;->zzf()Lcom/google/android/gms/internal/wearable/zzcc;
+
+    .line 1173
+    .line 1174
+    .line 1175
+    move-result-object v0
+
+    .line 1176
+    throw v0
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_9
+        :pswitch_2
+        :pswitch_7
+        :pswitch_8
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final zzh(Ljava/lang/Object;[BIILcom/google/android/gms/internal/wearable/zzai;)V
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;[BII",
+            "Lcom/google/android/gms/internal/wearable/zzai;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzi:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-direct/range {p0 .. p5}, Lcom/google/android/gms/internal/wearable/zzda;->zzy(Ljava/lang/Object;[BIILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+
+    .line 9
+    :cond_0
+    const/4 v6, 0x0
+
+    .line 10
+    move-object v1, p0
+
+    .line 11
+    move-object v2, p1
+
+    .line 12
+    move-object v3, p2
+
+    .line 13
+    move v4, p3
+
+    .line 14
+    move v5, p4
+
+    .line 15
+    move-object v7, p5
+
+    .line 16
+    invoke-virtual/range {v1 .. v7}, Lcom/google/android/gms/internal/wearable/zzda;->zzg(Ljava/lang/Object;[BIIILcom/google/android/gms/internal/wearable/zzai;)I
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
+.end method
+
+.method public final zzi(Ljava/lang/Object;)V
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
+
+    .line 1
+    iget v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzk:I
+
+    .line 2
+    .line 3
+    :goto_0
+    iget v1, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzl:I
+
+    .line 4
+    .line 5
+    if-ge v0, v1, :cond_1
+
+    .line 6
+    .line 7
+    iget-object v1, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzj:[I
+
+    .line 8
+    .line 9
+    aget v1, v1, v0
+
+    .line 10
+    .line 11
+    invoke-direct {p0, v1}, Lcom/google/android/gms/internal/wearable/zzda;->zzA(I)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    const v2, 0xfffff
+
+    .line 16
+    .line 17
+    .line 18
+    and-int/2addr v1, v2
+
+    .line 19
+    int-to-long v1, v1
+
+    .line 20
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v3
+
+    .line 24
+    if-eqz v3, :cond_0
+
+    .line 25
+    .line 26
+    move-object v4, v3
+
+    .line 27
+    check-cast v4, Lcom/google/android/gms/internal/wearable/zzcr;
+
+    .line 28
+    .line 29
+    invoke-virtual {v4}, Lcom/google/android/gms/internal/wearable/zzcr;->zzd()V
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-static {p1, v1, v2, v3}, Lcom/google/android/gms/internal/wearable/zzeg;->zzo(Ljava/lang/Object;JLjava/lang/Object;)V
+
+    .line 33
+    .line 34
+    .line 35
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    .line 36
+    .line 37
+    goto :goto_0
+
+    .line 38
+    :cond_1
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzj:[I
+
+    .line 39
+    .line 40
+    array-length v0, v0
+
+    .line 41
+    :goto_1
+    if-ge v1, v0, :cond_2
+
+    .line 42
+    .line 43
+    iget-object v2, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzm:Lcom/google/android/gms/internal/wearable/zzcl;
+
+    .line 44
+    .line 45
+    iget-object v3, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzj:[I
+
+    .line 46
+    .line 47
+    aget v3, v3, v1
+
+    .line 48
+    .line 49
+    int-to-long v3, v3
+
+    .line 50
+    invoke-virtual {v2, p1, v3, v4}, Lcom/google/android/gms/internal/wearable/zzcl;->zza(Ljava/lang/Object;J)V
+
+    .line 51
+    .line 52
+    .line 53
+    add-int/lit8 v1, v1, 0x1
+
+    .line 54
+    .line 55
+    goto :goto_1
+
+    .line 56
+    :cond_2
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzn:Lcom/google/android/gms/internal/wearable/zzdw;
+
+    .line 57
+    .line 58
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/wearable/zzdw;->zze(Ljava/lang/Object;)V
+
+    .line 59
+    .line 60
+    .line 61
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzh:Z
+
+    .line 62
+    .line 63
+    if-eqz v0, :cond_3
+
+    .line 64
+    .line 65
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzo:Lcom/google/android/gms/internal/wearable/zzbh;
+
+    .line 66
+    .line 67
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/wearable/zzbh;->zzc(Ljava/lang/Object;)V
+
+    .line 68
+    .line 69
+    .line 70
+    :cond_3
+    return-void
+.end method
+
+.method public final zzj(Ljava/lang/Object;)Z
+    .locals 18
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)Z"
+        }
+    .end annotation
+
+    .line 1
+    move-object/from16 v6, p0
+
+    .line 2
+    .line 3
+    move-object/from16 v7, p1
+
+    .line 4
+    .line 5
+    const v8, 0xfffff
+
+    .line 6
+    .line 7
+    .line 8
+    const/4 v9, 0x0
+
+    .line 9
+    const v0, 0xfffff
+
+    .line 10
+    .line 11
+    .line 12
+    const/4 v1, 0x0
+
+    .line 13
+    const/4 v10, 0x0
+
+    .line 14
+    :goto_0
+    iget v2, v6, Lcom/google/android/gms/internal/wearable/zzda;->zzk:I
+
+    .line 15
+    .line 16
+    const/4 v11, 0x0
+
+    .line 17
+    const/4 v3, 0x1
+
+    .line 18
+    if-ge v10, v2, :cond_b
+
+    .line 19
+    .line 20
+    iget-object v2, v6, Lcom/google/android/gms/internal/wearable/zzda;->zzj:[I
+
+    .line 21
+    .line 22
+    aget v12, v2, v10
+
+    .line 23
+    .line 24
+    iget-object v2, v6, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 25
+    .line 26
+    aget v13, v2, v12
+
+    .line 27
+    .line 28
+    invoke-direct {v6, v12}, Lcom/google/android/gms/internal/wearable/zzda;->zzA(I)I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v14
+
+    .line 32
+    iget-object v2, v6, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 33
+    .line 34
+    add-int/lit8 v4, v12, 0x2
+
+    .line 35
+    .line 36
+    aget v2, v2, v4
+
+    .line 37
+    .line 38
+    and-int v4, v2, v8
+
+    .line 39
+    .line 40
+    ushr-int/lit8 v2, v2, 0x14
+
+    .line 41
+    .line 42
+    shl-int v15, v3, v2
+
+    .line 43
+    .line 44
+    if-eq v4, v0, :cond_1
+
+    .line 45
+    .line 46
+    if-eq v4, v8, :cond_0
+
+    .line 47
+    .line 48
+    sget-object v0, Lcom/google/android/gms/internal/wearable/zzda;->zzb:Lsun/misc/Unsafe;
+
+    .line 49
+    .line 50
+    int-to-long v1, v4
+
+    .line 51
+    invoke-virtual {v0, v7, v1, v2}, Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v1
+
+    .line 55
+    :cond_0
+    move/from16 v17, v1
+
+    .line 56
+    .line 57
+    move/from16 v16, v4
+
+    .line 58
+    .line 59
+    goto :goto_1
+
+    .line 60
+    :cond_1
+    move/from16 v16, v0
+
+    .line 61
+    .line 62
+    move/from16 v17, v1
+
+    .line 63
+    .line 64
+    :goto_1
+    const/high16 v0, 0x10000000
+
+    .line 65
+    .line 66
+    and-int/2addr v0, v14
+
+    .line 67
+    if-eqz v0, :cond_3
+
+    .line 68
+    .line 69
+    move-object/from16 v0, p0
+
+    .line 70
+    .line 71
+    move-object/from16 v1, p1
+
+    .line 72
+    .line 73
+    move v2, v12
+
+    .line 74
+    move/from16 v3, v16
+
+    .line 75
+    .line 76
+    move/from16 v4, v17
+
+    .line 77
+    .line 78
+    move v5, v15
+
+    .line 79
+    invoke-direct/range {v0 .. v5}, Lcom/google/android/gms/internal/wearable/zzda;->zzJ(Ljava/lang/Object;IIII)Z
+
+    .line 80
+    .line 81
+    .line 82
+    move-result v0
+
+    .line 83
+    if-eqz v0, :cond_2
+
+    .line 84
+    .line 85
+    goto :goto_2
+
+    .line 86
+    :cond_2
+    return v9
+
+    .line 87
+    :cond_3
+    :goto_2
+    invoke-static {v14}, Lcom/google/android/gms/internal/wearable/zzda;->zzC(I)I
+
+    .line 88
+    .line 89
+    .line 90
+    move-result v0
+
+    .line 91
+    const/16 v1, 0x9
+
+    .line 92
+    .line 93
+    if-eq v0, v1, :cond_9
+
+    .line 94
+    .line 95
+    const/16 v1, 0x11
+
+    .line 96
+    .line 97
+    if-eq v0, v1, :cond_9
+
+    .line 98
+    .line 99
+    const/16 v1, 0x1b
+
+    .line 100
+    .line 101
+    if-eq v0, v1, :cond_7
+
+    .line 102
+    .line 103
+    const/16 v1, 0x3c
+
+    .line 104
+    .line 105
+    if-eq v0, v1, :cond_6
+
+    .line 106
+    .line 107
+    const/16 v1, 0x44
+
+    .line 108
+    .line 109
+    if-eq v0, v1, :cond_6
+
+    .line 110
+    .line 111
+    const/16 v1, 0x31
+
+    .line 112
+    .line 113
+    if-eq v0, v1, :cond_7
+
+    .line 114
+    .line 115
+    const/16 v1, 0x32
+
+    .line 116
+    .line 117
+    if-eq v0, v1, :cond_4
+
+    .line 118
+    .line 119
+    goto/16 :goto_4
+
+    .line 120
+    .line 121
+    :cond_4
+    and-int v0, v14, v8
+
+    .line 122
+    .line 123
+    int-to-long v0, v0
+
+    .line 124
+    invoke-static {v7, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 125
+    .line 126
+    .line 127
+    move-result-object v0
+
+    .line 128
+    check-cast v0, Lcom/google/android/gms/internal/wearable/zzcr;
+
+    .line 129
+    .line 130
+    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
+
+    .line 131
+    .line 132
+    .line 133
+    move-result v0
+
+    .line 134
+    if-eqz v0, :cond_5
+
+    .line 135
+    .line 136
+    goto :goto_4
+
+    .line 137
+    :cond_5
+    invoke-direct {v6, v12}, Lcom/google/android/gms/internal/wearable/zzda;->zzw(I)Ljava/lang/Object;
+
+    .line 138
+    .line 139
+    .line 140
+    move-result-object v0
+
+    .line 141
+    check-cast v0, Lcom/google/android/gms/internal/wearable/zzcq;
+
+    .line 142
+    .line 143
+    throw v11
+
+    .line 144
+    :cond_6
+    invoke-direct {v6, v7, v13, v12}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 145
+    .line 146
+    .line 147
+    move-result v0
+
+    .line 148
+    if-eqz v0, :cond_a
+
+    .line 149
+    .line 150
+    invoke-direct {v6, v12}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 151
+    .line 152
+    .line 153
+    move-result-object v0
+
+    .line 154
+    invoke-static {v7, v14, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzz(Ljava/lang/Object;ILcom/google/android/gms/internal/wearable/zzdi;)Z
+
+    .line 155
+    .line 156
+    .line 157
+    move-result v0
+
+    .line 158
+    if-nez v0, :cond_a
+
+    .line 159
+    .line 160
+    return v9
+
+    .line 161
+    :cond_7
+    and-int v0, v14, v8
+
+    .line 162
+    .line 163
+    int-to-long v0, v0
+
+    .line 164
+    invoke-static {v7, v0, v1}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 165
+    .line 166
+    .line 167
+    move-result-object v0
+
+    .line 168
+    check-cast v0, Ljava/util/List;
+
+    .line 169
+    .line 170
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    .line 171
+    .line 172
+    .line 173
+    move-result v1
+
+    .line 174
+    if-nez v1, :cond_a
+
+    .line 175
+    .line 176
+    invoke-direct {v6, v12}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 177
+    .line 178
+    .line 179
+    move-result-object v1
+
+    .line 180
+    const/4 v2, 0x0
+
+    .line 181
+    :goto_3
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    .line 182
+    .line 183
+    .line 184
+    move-result v3
+
+    .line 185
+    if-ge v2, v3, :cond_a
+
+    .line 186
+    .line 187
+    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 188
+    .line 189
+    .line 190
+    move-result-object v3
+
+    .line 191
+    invoke-interface {v1, v3}, Lcom/google/android/gms/internal/wearable/zzdi;->zzj(Ljava/lang/Object;)Z
+
+    .line 192
+    .line 193
+    .line 194
+    move-result v3
+
+    .line 195
+    if-nez v3, :cond_8
+
+    .line 196
+    .line 197
+    return v9
+
+    .line 198
+    :cond_8
+    add-int/lit8 v2, v2, 0x1
+
+    .line 199
+    .line 200
+    goto :goto_3
+
+    .line 201
+    :cond_9
+    move-object/from16 v0, p0
+
+    .line 202
+    .line 203
+    move-object/from16 v1, p1
+
+    .line 204
+    .line 205
+    move v2, v12
+
+    .line 206
+    move/from16 v3, v16
+
+    .line 207
+    .line 208
+    move/from16 v4, v17
+
+    .line 209
+    .line 210
+    move v5, v15
+
+    .line 211
+    invoke-direct/range {v0 .. v5}, Lcom/google/android/gms/internal/wearable/zzda;->zzJ(Ljava/lang/Object;IIII)Z
+
+    .line 212
+    .line 213
+    .line 214
+    move-result v0
+
+    .line 215
+    if-eqz v0, :cond_a
+
+    .line 216
+    .line 217
+    invoke-direct {v6, v12}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 218
+    .line 219
+    .line 220
+    move-result-object v0
+
+    .line 221
+    invoke-static {v7, v14, v0}, Lcom/google/android/gms/internal/wearable/zzda;->zzz(Ljava/lang/Object;ILcom/google/android/gms/internal/wearable/zzdi;)Z
+
+    .line 222
+    .line 223
+    .line 224
+    move-result v0
+
+    .line 225
+    if-nez v0, :cond_a
+
+    .line 226
+    .line 227
+    return v9
+
+    .line 228
+    :cond_a
+    :goto_4
+    add-int/lit8 v10, v10, 0x1
+
+    .line 229
+    .line 230
+    move/from16 v0, v16
+
+    .line 231
+    .line 232
+    move/from16 v1, v17
+
+    .line 233
+    .line 234
+    goto/16 :goto_0
+
+    .line 235
+    .line 236
+    :cond_b
+    iget-boolean v0, v6, Lcom/google/android/gms/internal/wearable/zzda;->zzh:Z
+
+    .line 237
+    .line 238
+    if-nez v0, :cond_c
+
+    .line 239
+    .line 240
+    return v3
+
+    .line 241
+    :cond_c
+    iget-object v0, v6, Lcom/google/android/gms/internal/wearable/zzda;->zzo:Lcom/google/android/gms/internal/wearable/zzbh;
+
+    .line 242
+    .line 243
+    invoke-virtual {v0, v7}, Lcom/google/android/gms/internal/wearable/zzbh;->zzb(Ljava/lang/Object;)Lcom/google/android/gms/internal/wearable/zzbl;
+
+    .line 244
+    .line 245
+    .line 246
+    throw v11
+.end method
+
+.method public final zzm(Ljava/lang/Object;Lcom/google/android/gms/internal/wearable/zzbc;)V
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lcom/google/android/gms/internal/wearable/zzbc;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzi:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_3
+
+    .line 4
+    .line 5
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzh:Z
+
+    .line 6
+    .line 7
+    if-nez v0, :cond_2
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 10
+    .line 11
+    array-length v0, v0
+
+    .line 12
+    const/4 v1, 0x0
+
+    .line 13
+    const/4 v2, 0x0
+
+    .line 14
+    :goto_0
+    if-ge v2, v0, :cond_1
+
+    .line 15
+    .line 16
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzA(I)I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v3
+
+    .line 20
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 21
+    .line 22
+    aget v4, v4, v2
+
+    .line 23
+    .line 24
+    invoke-static {v3}, Lcom/google/android/gms/internal/wearable/zzda;->zzC(I)I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v5
+
+    .line 28
+    const/4 v6, 0x1
+
+    .line 29
+    const v7, 0xfffff
+
+    .line 30
+    .line 31
+    .line 32
+    packed-switch v5, :pswitch_data_0
+
+    .line 33
+    .line 34
+    .line 35
+    goto/16 :goto_1
+
+    .line 36
+    .line 37
+    :pswitch_0
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v5
+
+    .line 41
+    if-eqz v5, :cond_0
+
+    .line 42
+    .line 43
+    and-int/2addr v3, v7
+
+    .line 44
+    int-to-long v5, v3
+
+    .line 45
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v3
+
+    .line 49
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v5
+
+    .line 53
+    invoke-virtual {p2, v4, v3, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzs(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzdi;)V
+
+    .line 54
+    .line 55
+    .line 56
+    goto/16 :goto_1
+
+    .line 57
+    .line 58
+    :pswitch_1
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 59
+    .line 60
+    .line 61
+    move-result v5
+
+    .line 62
+    if-eqz v5, :cond_0
+
+    .line 63
+    .line 64
+    and-int/2addr v3, v7
+
+    .line 65
+    int-to-long v5, v3
+
+    .line 66
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-wide v5
+
+    .line 70
+    invoke-virtual {p2, v4, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzq(IJ)V
+
+    .line 71
+    .line 72
+    .line 73
+    goto/16 :goto_1
+
+    .line 74
+    .line 75
+    :pswitch_2
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 76
+    .line 77
+    .line 78
+    move-result v5
+
+    .line 79
+    if-eqz v5, :cond_0
+
+    .line 80
+    .line 81
+    and-int/2addr v3, v7
+
+    .line 82
+    int-to-long v5, v3
+
+    .line 83
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 84
+    .line 85
+    .line 86
+    move-result v3
+
+    .line 87
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzp(II)V
+
+    .line 88
+    .line 89
+    .line 90
+    goto/16 :goto_1
+
+    .line 91
+    .line 92
+    :pswitch_3
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 93
+    .line 94
+    .line 95
+    move-result v5
+
+    .line 96
+    if-eqz v5, :cond_0
+
+    .line 97
+    .line 98
+    and-int/2addr v3, v7
+
+    .line 99
+    int-to-long v5, v3
+
+    .line 100
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 101
+    .line 102
+    .line 103
+    move-result-wide v5
+
+    .line 104
+    invoke-virtual {p2, v4, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzd(IJ)V
+
+    .line 105
+    .line 106
+    .line 107
+    goto/16 :goto_1
+
+    .line 108
+    .line 109
+    :pswitch_4
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 110
+    .line 111
+    .line 112
+    move-result v5
+
+    .line 113
+    if-eqz v5, :cond_0
+
+    .line 114
+    .line 115
+    and-int/2addr v3, v7
+
+    .line 116
+    int-to-long v5, v3
+
+    .line 117
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 118
+    .line 119
+    .line 120
+    move-result v3
+
+    .line 121
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzb(II)V
+
+    .line 122
+    .line 123
+    .line 124
+    goto/16 :goto_1
+
+    .line 125
+    .line 126
+    :pswitch_5
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 127
+    .line 128
+    .line 129
+    move-result v5
+
+    .line 130
+    if-eqz v5, :cond_0
+
+    .line 131
+    .line 132
+    and-int/2addr v3, v7
+
+    .line 133
+    int-to-long v5, v3
+
+    .line 134
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 135
+    .line 136
+    .line 137
+    move-result v3
+
+    .line 138
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzg(II)V
+
+    .line 139
+    .line 140
+    .line 141
+    goto/16 :goto_1
+
+    .line 142
+    .line 143
+    :pswitch_6
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 144
+    .line 145
+    .line 146
+    move-result v5
+
+    .line 147
+    if-eqz v5, :cond_0
+
+    .line 148
+    .line 149
+    and-int/2addr v3, v7
+
+    .line 150
+    int-to-long v5, v3
+
+    .line 151
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 152
+    .line 153
+    .line 154
+    move-result v3
+
+    .line 155
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzo(II)V
+
+    .line 156
+    .line 157
+    .line 158
+    goto/16 :goto_1
+
+    .line 159
+    .line 160
+    :pswitch_7
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 161
+    .line 162
+    .line 163
+    move-result v5
+
+    .line 164
+    if-eqz v5, :cond_0
+
+    .line 165
+    .line 166
+    and-int/2addr v3, v7
+
+    .line 167
+    int-to-long v5, v3
+
+    .line 168
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 169
+    .line 170
+    .line 171
+    move-result-object v3
+
+    .line 172
+    check-cast v3, Lcom/google/android/gms/internal/wearable/zzau;
+
+    .line 173
+    .line 174
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzn(ILcom/google/android/gms/internal/wearable/zzau;)V
+
+    .line 175
+    .line 176
+    .line 177
+    goto/16 :goto_1
+
+    .line 178
+    .line 179
+    :pswitch_8
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 180
+    .line 181
+    .line 182
+    move-result v5
+
+    .line 183
+    if-eqz v5, :cond_0
+
+    .line 184
+    .line 185
+    and-int/2addr v3, v7
+
+    .line 186
+    int-to-long v5, v3
+
+    .line 187
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 188
+    .line 189
+    .line 190
+    move-result-object v3
+
+    .line 191
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 192
+    .line 193
+    .line 194
+    move-result-object v5
+
+    .line 195
+    invoke-virtual {p2, v4, v3, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzr(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzdi;)V
+
+    .line 196
+    .line 197
+    .line 198
+    goto/16 :goto_1
+
+    .line 199
+    .line 200
+    :pswitch_9
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 201
+    .line 202
+    .line 203
+    move-result v5
+
+    .line 204
+    if-eqz v5, :cond_0
+
+    .line 205
+    .line 206
+    and-int/2addr v3, v7
+
+    .line 207
+    int-to-long v5, v3
+
+    .line 208
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 209
+    .line 210
+    .line 211
+    move-result-object v3
+
+    .line 212
+    invoke-static {v4, v3, p2}, Lcom/google/android/gms/internal/wearable/zzda;->zzT(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzbc;)V
+
+    .line 213
+    .line 214
+    .line 215
+    goto/16 :goto_1
+
+    .line 216
+    .line 217
+    :pswitch_a
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 218
+    .line 219
+    .line 220
+    move-result v5
+
+    .line 221
+    if-eqz v5, :cond_0
+
+    .line 222
+    .line 223
+    and-int/2addr v3, v7
+
+    .line 224
+    int-to-long v5, v3
+
+    .line 225
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzH(Ljava/lang/Object;J)Z
+
+    .line 226
+    .line 227
+    .line 228
+    move-result v3
+
+    .line 229
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzl(IZ)V
+
+    .line 230
+    .line 231
+    .line 232
+    goto/16 :goto_1
+
+    .line 233
+    .line 234
+    :pswitch_b
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 235
+    .line 236
+    .line 237
+    move-result v5
+
+    .line 238
+    if-eqz v5, :cond_0
+
+    .line 239
+    .line 240
+    and-int/2addr v3, v7
+
+    .line 241
+    int-to-long v5, v3
+
+    .line 242
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 243
+    .line 244
+    .line 245
+    move-result v3
+
+    .line 246
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzk(II)V
+
+    .line 247
+    .line 248
+    .line 249
+    goto/16 :goto_1
+
+    .line 250
+    .line 251
+    :pswitch_c
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 252
+    .line 253
+    .line 254
+    move-result v5
+
+    .line 255
+    if-eqz v5, :cond_0
+
+    .line 256
+    .line 257
+    and-int/2addr v3, v7
+
+    .line 258
+    int-to-long v5, v3
+
+    .line 259
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 260
+    .line 261
+    .line 262
+    move-result-wide v5
+
+    .line 263
+    invoke-virtual {p2, v4, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzj(IJ)V
+
+    .line 264
+    .line 265
+    .line 266
+    goto/16 :goto_1
+
+    .line 267
+    .line 268
+    :pswitch_d
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 269
+    .line 270
+    .line 271
+    move-result v5
+
+    .line 272
+    if-eqz v5, :cond_0
+
+    .line 273
+    .line 274
+    and-int/2addr v3, v7
+
+    .line 275
+    int-to-long v5, v3
+
+    .line 276
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzF(Ljava/lang/Object;J)I
+
+    .line 277
+    .line 278
+    .line 279
+    move-result v3
+
+    .line 280
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzi(II)V
+
+    .line 281
+    .line 282
+    .line 283
+    goto/16 :goto_1
+
+    .line 284
+    .line 285
+    :pswitch_e
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 286
+    .line 287
+    .line 288
+    move-result v5
+
+    .line 289
+    if-eqz v5, :cond_0
+
+    .line 290
+    .line 291
+    and-int/2addr v3, v7
+
+    .line 292
+    int-to-long v5, v3
+
+    .line 293
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 294
+    .line 295
+    .line 296
+    move-result-wide v5
+
+    .line 297
+    invoke-virtual {p2, v4, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzh(IJ)V
+
+    .line 298
+    .line 299
+    .line 300
+    goto/16 :goto_1
+
+    .line 301
+    .line 302
+    :pswitch_f
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 303
+    .line 304
+    .line 305
+    move-result v5
+
+    .line 306
+    if-eqz v5, :cond_0
+
+    .line 307
+    .line 308
+    and-int/2addr v3, v7
+
+    .line 309
+    int-to-long v5, v3
+
+    .line 310
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzG(Ljava/lang/Object;J)J
+
+    .line 311
+    .line 312
+    .line 313
+    move-result-wide v5
+
+    .line 314
+    invoke-virtual {p2, v4, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzc(IJ)V
+
+    .line 315
+    .line 316
+    .line 317
+    goto/16 :goto_1
+
+    .line 318
+    .line 319
+    :pswitch_10
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 320
+    .line 321
+    .line 322
+    move-result v5
+
+    .line 323
+    if-eqz v5, :cond_0
+
+    .line 324
+    .line 325
+    and-int/2addr v3, v7
+
+    .line 326
+    int-to-long v5, v3
+
+    .line 327
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzE(Ljava/lang/Object;J)F
+
+    .line 328
+    .line 329
+    .line 330
+    move-result v3
+
+    .line 331
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zze(IF)V
+
+    .line 332
+    .line 333
+    .line 334
+    goto/16 :goto_1
+
+    .line 335
+    .line 336
+    :pswitch_11
+    invoke-direct {p0, p1, v4, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzM(Ljava/lang/Object;II)Z
+
+    .line 337
+    .line 338
+    .line 339
+    move-result v5
+
+    .line 340
+    if-eqz v5, :cond_0
+
+    .line 341
+    .line 342
+    and-int/2addr v3, v7
+
+    .line 343
+    int-to-long v5, v3
+
+    .line 344
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzda;->zzD(Ljava/lang/Object;J)D
+
+    .line 345
+    .line 346
+    .line 347
+    move-result-wide v5
+
+    .line 348
+    invoke-virtual {p2, v4, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzf(ID)V
+
+    .line 349
+    .line 350
+    .line 351
+    goto/16 :goto_1
+
+    .line 352
+    .line 353
+    :pswitch_12
+    and-int/2addr v3, v7
+
+    .line 354
+    int-to-long v5, v3
+
+    .line 355
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 356
+    .line 357
+    .line 358
+    move-result-object v3
+
+    .line 359
+    invoke-direct {p0, p2, v4, v3, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzS(Lcom/google/android/gms/internal/wearable/zzbc;ILjava/lang/Object;I)V
+
+    .line 360
+    .line 361
+    .line 362
+    goto/16 :goto_1
+
+    .line 363
+    .line 364
+    :pswitch_13
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 365
+    .line 366
+    aget v4, v4, v2
+
+    .line 367
+    .line 368
+    and-int/2addr v3, v7
+
+    .line 369
+    int-to-long v5, v3
+
+    .line 370
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 371
+    .line 372
+    .line 373
+    move-result-object v3
+
+    .line 374
+    check-cast v3, Ljava/util/List;
+
+    .line 375
+    .line 376
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 377
+    .line 378
+    .line 379
+    move-result-object v5
+
+    .line 380
+    invoke-static {v4, v3, p2, v5}, Lcom/google/android/gms/internal/wearable/zzdk;->zzaa(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Lcom/google/android/gms/internal/wearable/zzdi;)V
+
+    .line 381
+    .line 382
+    .line 383
+    goto/16 :goto_1
+
+    .line 384
+    .line 385
+    :pswitch_14
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 386
+    .line 387
+    aget v4, v4, v2
+
+    .line 388
+    .line 389
+    and-int/2addr v3, v7
+
+    .line 390
+    int-to-long v7, v3
+
+    .line 391
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 392
+    .line 393
+    .line 394
+    move-result-object v3
+
+    .line 395
+    check-cast v3, Ljava/util/List;
+
+    .line 396
+    .line 397
+    invoke-static {v4, v3, p2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzN(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 398
+    .line 399
+    .line 400
+    goto/16 :goto_1
+
+    .line 401
+    .line 402
+    :pswitch_15
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 403
+    .line 404
+    aget v4, v4, v2
+
+    .line 405
+    .line 406
+    and-int/2addr v3, v7
+
+    .line 407
+    int-to-long v7, v3
+
+    .line 408
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 409
+    .line 410
+    .line 411
+    move-result-object v3
+
+    .line 412
+    check-cast v3, Ljava/util/List;
+
+    .line 413
+    .line 414
+    invoke-static {v4, v3, p2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzS(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 415
+    .line 416
+    .line 417
+    goto/16 :goto_1
+
+    .line 418
+    .line 419
+    :pswitch_16
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 420
+    .line 421
+    aget v4, v4, v2
+
+    .line 422
+    .line 423
+    and-int/2addr v3, v7
+
+    .line 424
+    int-to-long v7, v3
+
+    .line 425
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 426
+    .line 427
+    .line 428
+    move-result-object v3
+
+    .line 429
+    check-cast v3, Ljava/util/List;
+
+    .line 430
+    .line 431
+    invoke-static {v4, v3, p2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzP(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 432
+    .line 433
+    .line 434
+    goto/16 :goto_1
+
+    .line 435
+    .line 436
+    :pswitch_17
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 437
+    .line 438
+    aget v4, v4, v2
+
+    .line 439
+    .line 440
+    and-int/2addr v3, v7
+
+    .line 441
+    int-to-long v7, v3
+
+    .line 442
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 443
+    .line 444
+    .line 445
+    move-result-object v3
+
+    .line 446
+    check-cast v3, Ljava/util/List;
+
+    .line 447
+    .line 448
+    invoke-static {v4, v3, p2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzU(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 449
+    .line 450
+    .line 451
+    goto/16 :goto_1
+
+    .line 452
+    .line 453
+    :pswitch_18
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 454
+    .line 455
+    aget v4, v4, v2
+
+    .line 456
+    .line 457
+    and-int/2addr v3, v7
+
+    .line 458
+    int-to-long v7, v3
+
+    .line 459
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 460
+    .line 461
+    .line 462
+    move-result-object v3
+
+    .line 463
+    check-cast v3, Ljava/util/List;
+
+    .line 464
+    .line 465
+    invoke-static {v4, v3, p2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzV(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 466
+    .line 467
+    .line 468
+    goto/16 :goto_1
+
+    .line 469
+    .line 470
+    :pswitch_19
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 471
+    .line 472
+    aget v4, v4, v2
+
+    .line 473
+    .line 474
+    and-int/2addr v3, v7
+
+    .line 475
+    int-to-long v7, v3
+
+    .line 476
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 477
+    .line 478
+    .line 479
+    move-result-object v3
+
+    .line 480
+    check-cast v3, Ljava/util/List;
+
+    .line 481
+    .line 482
+    invoke-static {v4, v3, p2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzR(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 483
+    .line 484
+    .line 485
+    goto/16 :goto_1
+
+    .line 486
+    .line 487
+    :pswitch_1a
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 488
+    .line 489
+    aget v4, v4, v2
+
+    .line 490
+    .line 491
+    and-int/2addr v3, v7
+
+    .line 492
+    int-to-long v7, v3
+
+    .line 493
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 494
+    .line 495
+    .line 496
+    move-result-object v3
+
+    .line 497
+    check-cast v3, Ljava/util/List;
+
+    .line 498
+    .line 499
+    invoke-static {v4, v3, p2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzW(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 500
+    .line 501
+    .line 502
+    goto/16 :goto_1
+
+    .line 503
+    .line 504
+    :pswitch_1b
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 505
+    .line 506
+    aget v4, v4, v2
+
+    .line 507
+    .line 508
+    and-int/2addr v3, v7
+
+    .line 509
+    int-to-long v7, v3
+
+    .line 510
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 511
+    .line 512
+    .line 513
+    move-result-object v3
+
+    .line 514
+    check-cast v3, Ljava/util/List;
+
+    .line 515
+    .line 516
+    invoke-static {v4, v3, p2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzT(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 517
+    .line 518
+    .line 519
+    goto/16 :goto_1
+
+    .line 520
+    .line 521
+    :pswitch_1c
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 522
+    .line 523
+    aget v4, v4, v2
+
+    .line 524
+    .line 525
+    and-int/2addr v3, v7
+
+    .line 526
+    int-to-long v7, v3
+
+    .line 527
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 528
+    .line 529
+    .line 530
+    move-result-object v3
+
+    .line 531
+    check-cast v3, Ljava/util/List;
+
+    .line 532
+    .line 533
+    invoke-static {v4, v3, p2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzO(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 534
+    .line 535
+    .line 536
+    goto/16 :goto_1
+
+    .line 537
+    .line 538
+    :pswitch_1d
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 539
+    .line 540
+    aget v4, v4, v2
+
+    .line 541
+    .line 542
+    and-int/2addr v3, v7
+
+    .line 543
+    int-to-long v7, v3
+
+    .line 544
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 545
+    .line 546
+    .line 547
+    move-result-object v3
+
+    .line 548
+    check-cast v3, Ljava/util/List;
+
+    .line 549
+    .line 550
+    invoke-static {v4, v3, p2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzQ(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 551
+    .line 552
+    .line 553
+    goto/16 :goto_1
+
+    .line 554
+    .line 555
+    :pswitch_1e
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 556
+    .line 557
+    aget v4, v4, v2
+
+    .line 558
+    .line 559
+    and-int/2addr v3, v7
+
+    .line 560
+    int-to-long v7, v3
+
+    .line 561
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 562
+    .line 563
+    .line 564
+    move-result-object v3
+
+    .line 565
+    check-cast v3, Ljava/util/List;
+
+    .line 566
+    .line 567
+    invoke-static {v4, v3, p2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzM(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 568
+    .line 569
+    .line 570
+    goto/16 :goto_1
+
+    .line 571
+    .line 572
+    :pswitch_1f
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 573
+    .line 574
+    aget v4, v4, v2
+
+    .line 575
+    .line 576
+    and-int/2addr v3, v7
+
+    .line 577
+    int-to-long v7, v3
+
+    .line 578
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 579
+    .line 580
+    .line 581
+    move-result-object v3
+
+    .line 582
+    check-cast v3, Ljava/util/List;
+
+    .line 583
+    .line 584
+    invoke-static {v4, v3, p2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzL(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 585
+    .line 586
+    .line 587
+    goto/16 :goto_1
+
+    .line 588
+    .line 589
+    :pswitch_20
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 590
+    .line 591
+    aget v4, v4, v2
+
+    .line 592
+    .line 593
+    and-int/2addr v3, v7
+
+    .line 594
+    int-to-long v7, v3
+
+    .line 595
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 596
+    .line 597
+    .line 598
+    move-result-object v3
+
+    .line 599
+    check-cast v3, Ljava/util/List;
+
+    .line 600
+    .line 601
+    invoke-static {v4, v3, p2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzK(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 602
+    .line 603
+    .line 604
+    goto/16 :goto_1
+
+    .line 605
+    .line 606
+    :pswitch_21
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 607
+    .line 608
+    aget v4, v4, v2
+
+    .line 609
+    .line 610
+    and-int/2addr v3, v7
+
+    .line 611
+    int-to-long v7, v3
+
+    .line 612
+    invoke-static {p1, v7, v8}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 613
+    .line 614
+    .line 615
+    move-result-object v3
+
+    .line 616
+    check-cast v3, Ljava/util/List;
+
+    .line 617
+    .line 618
+    invoke-static {v4, v3, p2, v6}, Lcom/google/android/gms/internal/wearable/zzdk;->zzJ(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 619
+    .line 620
+    .line 621
+    goto/16 :goto_1
+
+    .line 622
+    .line 623
+    :pswitch_22
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 624
+    .line 625
+    aget v4, v4, v2
+
+    .line 626
+    .line 627
+    and-int/2addr v3, v7
+
+    .line 628
+    int-to-long v5, v3
+
+    .line 629
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 630
+    .line 631
+    .line 632
+    move-result-object v3
+
+    .line 633
+    check-cast v3, Ljava/util/List;
+
+    .line 634
+    .line 635
+    invoke-static {v4, v3, p2, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzN(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 636
+    .line 637
+    .line 638
+    goto/16 :goto_1
+
+    .line 639
+    .line 640
+    :pswitch_23
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 641
+    .line 642
+    aget v4, v4, v2
+
+    .line 643
+    .line 644
+    and-int/2addr v3, v7
+
+    .line 645
+    int-to-long v5, v3
+
+    .line 646
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 647
+    .line 648
+    .line 649
+    move-result-object v3
+
+    .line 650
+    check-cast v3, Ljava/util/List;
+
+    .line 651
+    .line 652
+    invoke-static {v4, v3, p2, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzS(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 653
+    .line 654
+    .line 655
+    goto/16 :goto_1
+
+    .line 656
+    .line 657
+    :pswitch_24
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 658
+    .line 659
+    aget v4, v4, v2
+
+    .line 660
+    .line 661
+    and-int/2addr v3, v7
+
+    .line 662
+    int-to-long v5, v3
+
+    .line 663
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 664
+    .line 665
+    .line 666
+    move-result-object v3
+
+    .line 667
+    check-cast v3, Ljava/util/List;
+
+    .line 668
+    .line 669
+    invoke-static {v4, v3, p2, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzP(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 670
+    .line 671
+    .line 672
+    goto/16 :goto_1
+
+    .line 673
+    .line 674
+    :pswitch_25
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 675
+    .line 676
+    aget v4, v4, v2
+
+    .line 677
+    .line 678
+    and-int/2addr v3, v7
+
+    .line 679
+    int-to-long v5, v3
+
+    .line 680
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 681
+    .line 682
+    .line 683
+    move-result-object v3
+
+    .line 684
+    check-cast v3, Ljava/util/List;
+
+    .line 685
+    .line 686
+    invoke-static {v4, v3, p2, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzU(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 687
+    .line 688
+    .line 689
+    goto/16 :goto_1
+
+    .line 690
+    .line 691
+    :pswitch_26
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 692
+    .line 693
+    aget v4, v4, v2
+
+    .line 694
+    .line 695
+    and-int/2addr v3, v7
+
+    .line 696
+    int-to-long v5, v3
+
+    .line 697
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 698
+    .line 699
+    .line 700
+    move-result-object v3
+
+    .line 701
+    check-cast v3, Ljava/util/List;
+
+    .line 702
+    .line 703
+    invoke-static {v4, v3, p2, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzV(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 704
+    .line 705
+    .line 706
+    goto/16 :goto_1
+
+    .line 707
+    .line 708
+    :pswitch_27
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 709
+    .line 710
+    aget v4, v4, v2
+
+    .line 711
+    .line 712
+    and-int/2addr v3, v7
+
+    .line 713
+    int-to-long v5, v3
+
+    .line 714
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 715
+    .line 716
+    .line 717
+    move-result-object v3
+
+    .line 718
+    check-cast v3, Ljava/util/List;
+
+    .line 719
+    .line 720
+    invoke-static {v4, v3, p2, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzR(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 721
+    .line 722
+    .line 723
+    goto/16 :goto_1
+
+    .line 724
+    .line 725
+    :pswitch_28
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 726
+    .line 727
+    aget v4, v4, v2
+
+    .line 728
+    .line 729
+    and-int/2addr v3, v7
+
+    .line 730
+    int-to-long v5, v3
+
+    .line 731
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 732
+    .line 733
+    .line 734
+    move-result-object v3
+
+    .line 735
+    check-cast v3, Ljava/util/List;
+
+    .line 736
+    .line 737
+    invoke-static {v4, v3, p2}, Lcom/google/android/gms/internal/wearable/zzdk;->zzY(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;)V
+
+    .line 738
+    .line 739
+    .line 740
+    goto/16 :goto_1
+
+    .line 741
+    .line 742
+    :pswitch_29
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 743
+    .line 744
+    aget v4, v4, v2
+
+    .line 745
+    .line 746
+    and-int/2addr v3, v7
+
+    .line 747
+    int-to-long v5, v3
+
+    .line 748
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 749
+    .line 750
+    .line 751
+    move-result-object v3
+
+    .line 752
+    check-cast v3, Ljava/util/List;
+
+    .line 753
+    .line 754
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 755
+    .line 756
+    .line 757
+    move-result-object v5
+
+    .line 758
+    invoke-static {v4, v3, p2, v5}, Lcom/google/android/gms/internal/wearable/zzdk;->zzZ(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Lcom/google/android/gms/internal/wearable/zzdi;)V
+
+    .line 759
+    .line 760
+    .line 761
+    goto/16 :goto_1
+
+    .line 762
+    .line 763
+    :pswitch_2a
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 764
+    .line 765
+    aget v4, v4, v2
+
+    .line 766
+    .line 767
+    and-int/2addr v3, v7
+
+    .line 768
+    int-to-long v5, v3
+
+    .line 769
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 770
+    .line 771
+    .line 772
+    move-result-object v3
+
+    .line 773
+    check-cast v3, Ljava/util/List;
+
+    .line 774
+    .line 775
+    invoke-static {v4, v3, p2}, Lcom/google/android/gms/internal/wearable/zzdk;->zzX(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;)V
+
+    .line 776
+    .line 777
+    .line 778
+    goto/16 :goto_1
+
+    .line 779
+    .line 780
+    :pswitch_2b
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 781
+    .line 782
+    aget v4, v4, v2
+
+    .line 783
+    .line 784
+    and-int/2addr v3, v7
+
+    .line 785
+    int-to-long v5, v3
+
+    .line 786
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 787
+    .line 788
+    .line 789
+    move-result-object v3
+
+    .line 790
+    check-cast v3, Ljava/util/List;
+
+    .line 791
+    .line 792
+    invoke-static {v4, v3, p2, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzW(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 793
+    .line 794
+    .line 795
+    goto/16 :goto_1
+
+    .line 796
+    .line 797
+    :pswitch_2c
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 798
+    .line 799
+    aget v4, v4, v2
+
+    .line 800
+    .line 801
+    and-int/2addr v3, v7
+
+    .line 802
+    int-to-long v5, v3
+
+    .line 803
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 804
+    .line 805
+    .line 806
+    move-result-object v3
+
+    .line 807
+    check-cast v3, Ljava/util/List;
+
+    .line 808
+    .line 809
+    invoke-static {v4, v3, p2, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzT(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 810
+    .line 811
+    .line 812
+    goto/16 :goto_1
+
+    .line 813
+    .line 814
+    :pswitch_2d
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 815
+    .line 816
+    aget v4, v4, v2
+
+    .line 817
+    .line 818
+    and-int/2addr v3, v7
+
+    .line 819
+    int-to-long v5, v3
+
+    .line 820
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 821
+    .line 822
+    .line 823
+    move-result-object v3
+
+    .line 824
+    check-cast v3, Ljava/util/List;
+
+    .line 825
+    .line 826
+    invoke-static {v4, v3, p2, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzO(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 827
+    .line 828
+    .line 829
+    goto/16 :goto_1
+
+    .line 830
+    .line 831
+    :pswitch_2e
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 832
+    .line 833
+    aget v4, v4, v2
+
+    .line 834
+    .line 835
+    and-int/2addr v3, v7
+
+    .line 836
+    int-to-long v5, v3
+
+    .line 837
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 838
+    .line 839
+    .line 840
+    move-result-object v3
+
+    .line 841
+    check-cast v3, Ljava/util/List;
+
+    .line 842
+    .line 843
+    invoke-static {v4, v3, p2, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzQ(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 844
+    .line 845
+    .line 846
+    goto/16 :goto_1
+
+    .line 847
+    .line 848
+    :pswitch_2f
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 849
+    .line 850
+    aget v4, v4, v2
+
+    .line 851
+    .line 852
+    and-int/2addr v3, v7
+
+    .line 853
+    int-to-long v5, v3
+
+    .line 854
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 855
+    .line 856
+    .line 857
+    move-result-object v3
+
+    .line 858
+    check-cast v3, Ljava/util/List;
+
+    .line 859
+    .line 860
+    invoke-static {v4, v3, p2, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzM(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 861
+    .line 862
+    .line 863
+    goto/16 :goto_1
+
+    .line 864
+    .line 865
+    :pswitch_30
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 866
+    .line 867
+    aget v4, v4, v2
+
+    .line 868
+    .line 869
+    and-int/2addr v3, v7
+
+    .line 870
+    int-to-long v5, v3
+
+    .line 871
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 872
+    .line 873
+    .line 874
+    move-result-object v3
+
+    .line 875
+    check-cast v3, Ljava/util/List;
+
+    .line 876
+    .line 877
+    invoke-static {v4, v3, p2, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzL(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 878
+    .line 879
+    .line 880
+    goto/16 :goto_1
+
+    .line 881
+    .line 882
+    :pswitch_31
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 883
+    .line 884
+    aget v4, v4, v2
+
+    .line 885
+    .line 886
+    and-int/2addr v3, v7
+
+    .line 887
+    int-to-long v5, v3
+
+    .line 888
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 889
+    .line 890
+    .line 891
+    move-result-object v3
+
+    .line 892
+    check-cast v3, Ljava/util/List;
+
+    .line 893
+    .line 894
+    invoke-static {v4, v3, p2, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzK(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 895
+    .line 896
+    .line 897
+    goto/16 :goto_1
+
+    .line 898
+    .line 899
+    :pswitch_32
+    iget-object v4, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzc:[I
+
+    .line 900
+    .line 901
+    aget v4, v4, v2
+
+    .line 902
+    .line 903
+    and-int/2addr v3, v7
+
+    .line 904
+    int-to-long v5, v3
+
+    .line 905
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 906
+    .line 907
+    .line 908
+    move-result-object v3
+
+    .line 909
+    check-cast v3, Ljava/util/List;
+
+    .line 910
+    .line 911
+    invoke-static {v4, v3, p2, v1}, Lcom/google/android/gms/internal/wearable/zzdk;->zzJ(ILjava/util/List;Lcom/google/android/gms/internal/wearable/zzbc;Z)V
+
+    .line 912
+    .line 913
+    .line 914
+    goto/16 :goto_1
+
+    .line 915
+    .line 916
+    :pswitch_33
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 917
+    .line 918
+    .line 919
+    move-result v5
+
+    .line 920
+    if-eqz v5, :cond_0
+
+    .line 921
+    .line 922
+    and-int/2addr v3, v7
+
+    .line 923
+    int-to-long v5, v3
+
+    .line 924
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 925
+    .line 926
+    .line 927
+    move-result-object v3
+
+    .line 928
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 929
+    .line 930
+    .line 931
+    move-result-object v5
+
+    .line 932
+    invoke-virtual {p2, v4, v3, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzs(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzdi;)V
+
+    .line 933
+    .line 934
+    .line 935
+    goto/16 :goto_1
+
+    .line 936
+    .line 937
+    :pswitch_34
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 938
+    .line 939
+    .line 940
+    move-result v5
+
+    .line 941
+    if-eqz v5, :cond_0
+
+    .line 942
+    .line 943
+    and-int/2addr v3, v7
+
+    .line 944
+    int-to-long v5, v3
+
+    .line 945
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 946
+    .line 947
+    .line 948
+    move-result-wide v5
+
+    .line 949
+    invoke-virtual {p2, v4, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzq(IJ)V
+
+    .line 950
+    .line 951
+    .line 952
+    goto/16 :goto_1
+
+    .line 953
+    .line 954
+    :pswitch_35
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 955
+    .line 956
+    .line 957
+    move-result v5
+
+    .line 958
+    if-eqz v5, :cond_0
+
+    .line 959
+    .line 960
+    and-int/2addr v3, v7
+
+    .line 961
+    int-to-long v5, v3
+
+    .line 962
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 963
+    .line 964
+    .line 965
+    move-result v3
+
+    .line 966
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzp(II)V
+
+    .line 967
+    .line 968
+    .line 969
+    goto/16 :goto_1
+
+    .line 970
+    .line 971
+    :pswitch_36
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 972
+    .line 973
+    .line 974
+    move-result v5
+
+    .line 975
+    if-eqz v5, :cond_0
+
+    .line 976
+    .line 977
+    and-int/2addr v3, v7
+
+    .line 978
+    int-to-long v5, v3
+
+    .line 979
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 980
+    .line 981
+    .line 982
+    move-result-wide v5
+
+    .line 983
+    invoke-virtual {p2, v4, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzd(IJ)V
+
+    .line 984
+    .line 985
+    .line 986
+    goto/16 :goto_1
+
+    .line 987
+    .line 988
+    :pswitch_37
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 989
+    .line 990
+    .line 991
+    move-result v5
+
+    .line 992
+    if-eqz v5, :cond_0
+
+    .line 993
+    .line 994
+    and-int/2addr v3, v7
+
+    .line 995
+    int-to-long v5, v3
+
+    .line 996
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 997
+    .line 998
+    .line 999
+    move-result v3
+
+    .line 1000
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzb(II)V
+
+    .line 1001
+    .line 1002
+    .line 1003
+    goto/16 :goto_1
+
+    .line 1004
+    .line 1005
+    :pswitch_38
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 1006
+    .line 1007
+    .line 1008
+    move-result v5
+
+    .line 1009
+    if-eqz v5, :cond_0
+
+    .line 1010
+    .line 1011
+    and-int/2addr v3, v7
+
+    .line 1012
+    int-to-long v5, v3
+
+    .line 1013
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 1014
+    .line 1015
+    .line 1016
+    move-result v3
+
+    .line 1017
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzg(II)V
+
+    .line 1018
+    .line 1019
+    .line 1020
+    goto/16 :goto_1
+
+    .line 1021
+    .line 1022
+    :pswitch_39
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 1023
+    .line 1024
+    .line 1025
+    move-result v5
+
+    .line 1026
+    if-eqz v5, :cond_0
+
+    .line 1027
+    .line 1028
+    and-int/2addr v3, v7
+
+    .line 1029
+    int-to-long v5, v3
+
+    .line 1030
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 1031
+    .line 1032
+    .line 1033
+    move-result v3
+
+    .line 1034
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzo(II)V
+
+    .line 1035
+    .line 1036
+    .line 1037
+    goto/16 :goto_1
+
+    .line 1038
+    .line 1039
+    :pswitch_3a
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 1040
+    .line 1041
+    .line 1042
+    move-result v5
+
+    .line 1043
+    if-eqz v5, :cond_0
+
+    .line 1044
+    .line 1045
+    and-int/2addr v3, v7
+
+    .line 1046
+    int-to-long v5, v3
+
+    .line 1047
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 1048
+    .line 1049
+    .line 1050
+    move-result-object v3
+
+    .line 1051
+    check-cast v3, Lcom/google/android/gms/internal/wearable/zzau;
+
+    .line 1052
+    .line 1053
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzn(ILcom/google/android/gms/internal/wearable/zzau;)V
+
+    .line 1054
+    .line 1055
+    .line 1056
+    goto/16 :goto_1
+
+    .line 1057
+    .line 1058
+    :pswitch_3b
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 1059
+    .line 1060
+    .line 1061
+    move-result v5
+
+    .line 1062
+    if-eqz v5, :cond_0
+
+    .line 1063
+    .line 1064
+    and-int/2addr v3, v7
+
+    .line 1065
+    int-to-long v5, v3
+
+    .line 1066
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 1067
+    .line 1068
+    .line 1069
+    move-result-object v3
+
+    .line 1070
+    invoke-direct {p0, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzv(I)Lcom/google/android/gms/internal/wearable/zzdi;
+
+    .line 1071
+    .line 1072
+    .line 1073
+    move-result-object v5
+
+    .line 1074
+    invoke-virtual {p2, v4, v3, v5}, Lcom/google/android/gms/internal/wearable/zzbc;->zzr(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzdi;)V
+
+    .line 1075
+    .line 1076
+    .line 1077
+    goto/16 :goto_1
+
+    .line 1078
+    .line 1079
+    :pswitch_3c
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 1080
+    .line 1081
+    .line 1082
+    move-result v5
+
+    .line 1083
+    if-eqz v5, :cond_0
+
+    .line 1084
+    .line 1085
+    and-int/2addr v3, v7
+
+    .line 1086
+    int-to-long v5, v3
+
+    .line 1087
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzn(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 1088
+    .line 1089
+    .line 1090
+    move-result-object v3
+
+    .line 1091
+    invoke-static {v4, v3, p2}, Lcom/google/android/gms/internal/wearable/zzda;->zzT(ILjava/lang/Object;Lcom/google/android/gms/internal/wearable/zzbc;)V
+
+    .line 1092
+    .line 1093
+    .line 1094
+    goto/16 :goto_1
+
+    .line 1095
+    .line 1096
+    :pswitch_3d
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 1097
+    .line 1098
+    .line 1099
+    move-result v5
+
+    .line 1100
+    if-eqz v5, :cond_0
+
+    .line 1101
+    .line 1102
+    and-int/2addr v3, v7
+
+    .line 1103
+    int-to-long v5, v3
+
+    .line 1104
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzh(Ljava/lang/Object;J)Z
+
+    .line 1105
+    .line 1106
+    .line 1107
+    move-result v3
+
+    .line 1108
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzl(IZ)V
+
+    .line 1109
+    .line 1110
+    .line 1111
+    goto/16 :goto_1
+
+    .line 1112
+    .line 1113
+    :pswitch_3e
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 1114
+    .line 1115
+    .line 1116
+    move-result v5
+
+    .line 1117
+    if-eqz v5, :cond_0
+
+    .line 1118
+    .line 1119
+    and-int/2addr v3, v7
+
+    .line 1120
+    int-to-long v5, v3
+
+    .line 1121
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 1122
+    .line 1123
+    .line 1124
+    move-result v3
+
+    .line 1125
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzk(II)V
+
+    .line 1126
+    .line 1127
+    .line 1128
+    goto :goto_1
+
+    .line 1129
+    :pswitch_3f
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 1130
+    .line 1131
+    .line 1132
+    move-result v5
+
+    .line 1133
+    if-eqz v5, :cond_0
+
+    .line 1134
+    .line 1135
+    and-int/2addr v3, v7
+
+    .line 1136
+    int-to-long v5, v3
+
+    .line 1137
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 1138
+    .line 1139
+    .line 1140
+    move-result-wide v5
+
+    .line 1141
+    invoke-virtual {p2, v4, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzj(IJ)V
+
+    .line 1142
+    .line 1143
+    .line 1144
+    goto :goto_1
+
+    .line 1145
+    :pswitch_40
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 1146
+    .line 1147
+    .line 1148
+    move-result v5
+
+    .line 1149
+    if-eqz v5, :cond_0
+
+    .line 1150
+    .line 1151
+    and-int/2addr v3, v7
+
+    .line 1152
+    int-to-long v5, v3
+
+    .line 1153
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzd(Ljava/lang/Object;J)I
+
+    .line 1154
+    .line 1155
+    .line 1156
+    move-result v3
+
+    .line 1157
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zzi(II)V
+
+    .line 1158
+    .line 1159
+    .line 1160
+    goto :goto_1
+
+    .line 1161
+    :pswitch_41
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 1162
+    .line 1163
+    .line 1164
+    move-result v5
+
+    .line 1165
+    if-eqz v5, :cond_0
+
+    .line 1166
+    .line 1167
+    and-int/2addr v3, v7
+
+    .line 1168
+    int-to-long v5, v3
+
+    .line 1169
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 1170
+    .line 1171
+    .line 1172
+    move-result-wide v5
+
+    .line 1173
+    invoke-virtual {p2, v4, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzh(IJ)V
+
+    .line 1174
+    .line 1175
+    .line 1176
+    goto :goto_1
+
+    .line 1177
+    :pswitch_42
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 1178
+    .line 1179
+    .line 1180
+    move-result v5
+
+    .line 1181
+    if-eqz v5, :cond_0
+
+    .line 1182
+    .line 1183
+    and-int/2addr v3, v7
+
+    .line 1184
+    int-to-long v5, v3
+
+    .line 1185
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzf(Ljava/lang/Object;J)J
+
+    .line 1186
+    .line 1187
+    .line 1188
+    move-result-wide v5
+
+    .line 1189
+    invoke-virtual {p2, v4, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzc(IJ)V
+
+    .line 1190
+    .line 1191
+    .line 1192
+    goto :goto_1
+
+    .line 1193
+    :pswitch_43
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 1194
+    .line 1195
+    .line 1196
+    move-result v5
+
+    .line 1197
+    if-eqz v5, :cond_0
+
+    .line 1198
+    .line 1199
+    and-int/2addr v3, v7
+
+    .line 1200
+    int-to-long v5, v3
+
+    .line 1201
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzj(Ljava/lang/Object;J)F
+
+    .line 1202
+    .line 1203
+    .line 1204
+    move-result v3
+
+    .line 1205
+    invoke-virtual {p2, v4, v3}, Lcom/google/android/gms/internal/wearable/zzbc;->zze(IF)V
+
+    .line 1206
+    .line 1207
+    .line 1208
+    goto :goto_1
+
+    .line 1209
+    :pswitch_44
+    invoke-direct {p0, p1, v2}, Lcom/google/android/gms/internal/wearable/zzda;->zzK(Ljava/lang/Object;I)Z
+
+    .line 1210
+    .line 1211
+    .line 1212
+    move-result v5
+
+    .line 1213
+    if-eqz v5, :cond_0
+
+    .line 1214
+    .line 1215
+    and-int/2addr v3, v7
+
+    .line 1216
+    int-to-long v5, v3
+
+    .line 1217
+    invoke-static {p1, v5, v6}, Lcom/google/android/gms/internal/wearable/zzeg;->zzl(Ljava/lang/Object;J)D
+
+    .line 1218
+    .line 1219
+    .line 1220
+    move-result-wide v5
+
+    .line 1221
+    invoke-virtual {p2, v4, v5, v6}, Lcom/google/android/gms/internal/wearable/zzbc;->zzf(ID)V
+
+    .line 1222
+    .line 1223
+    .line 1224
+    :cond_0
+    :goto_1
+    add-int/lit8 v2, v2, 0x3
+
+    .line 1225
+    .line 1226
+    goto/16 :goto_0
+
+    .line 1227
+    .line 1228
+    :cond_1
+    iget-object v0, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzn:Lcom/google/android/gms/internal/wearable/zzdw;
+
+    .line 1229
+    .line 1230
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/wearable/zzdw;->zzd(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1231
+    .line 1232
+    .line 1233
+    move-result-object p1
+
+    .line 1234
+    invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/wearable/zzdw;->zzi(Ljava/lang/Object;Lcom/google/android/gms/internal/wearable/zzbc;)V
+
+    .line 1235
+    .line 1236
+    .line 1237
+    return-void
+
+    .line 1238
+    :cond_2
+    iget-object p2, p0, Lcom/google/android/gms/internal/wearable/zzda;->zzo:Lcom/google/android/gms/internal/wearable/zzbh;
+
+    .line 1239
+    .line 1240
+    invoke-virtual {p2, p1}, Lcom/google/android/gms/internal/wearable/zzbh;->zzb(Ljava/lang/Object;)Lcom/google/android/gms/internal/wearable/zzbl;
+
+    .line 1241
+    .line 1242
+    .line 1243
+    const/4 p1, 0x0
+
+    .line 1244
+    throw p1
+
+    .line 1245
+    :cond_3
+    invoke-direct {p0, p1, p2}, Lcom/google/android/gms/internal/wearable/zzda;->zzR(Ljava/lang/Object;Lcom/google/android/gms/internal/wearable/zzbc;)V
+
+    .line 1246
+    .line 1247
+    .line 1248
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_44
+        :pswitch_43
+        :pswitch_42
+        :pswitch_41
+        :pswitch_40
+        :pswitch_3f
+        :pswitch_3e
+        :pswitch_3d
+        :pswitch_3c
+        :pswitch_3b
+        :pswitch_3a
+        :pswitch_39
+        :pswitch_38
+        :pswitch_37
+        :pswitch_36
+        :pswitch_35
+        :pswitch_34
+        :pswitch_33
+        :pswitch_32
+        :pswitch_31
+        :pswitch_30
+        :pswitch_2f
+        :pswitch_2e
+        :pswitch_2d
+        :pswitch_2c
+        :pswitch_2b
+        :pswitch_2a
+        :pswitch_29
+        :pswitch_28
+        :pswitch_27
+        :pswitch_26
+        :pswitch_25
+        :pswitch_24
+        :pswitch_23
+        :pswitch_22
+        :pswitch_21
+        :pswitch_20
+        :pswitch_1f
+        :pswitch_1e
+        :pswitch_1d
+        :pswitch_1c
+        :pswitch_1b
+        :pswitch_1a
+        :pswitch_19
+        :pswitch_18
+        :pswitch_17
+        :pswitch_16
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
