@@ -1,6 +1,5 @@
-# Strelok Pro (Custom Edition & Reverse Engineering)
+# Means Shooting Logik Pro (Custom Edition & Reverse Engineering)
 
-Reverse-engineered and customized build of **Strelok Pro v6.9.1** (`com.borisov.strelokpro`).
 
 ## Features & Modifications
 - **Custom Ammo App Launcher Icon**: Updated the application launcher icon to match the Ammo Reloader brand (`@drawable/app_logo`).
